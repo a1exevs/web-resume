@@ -1,8 +1,22 @@
 .header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10px;
 
-  &Photo {
-    height: 240px;
+  &__mainLabel {
+    color: #e8e6e3;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  &__lastUpdateDate {
+    &Label {
+      padding-bottom: 5px;
+    }
+    &Value {
+
+    }
   }
 }

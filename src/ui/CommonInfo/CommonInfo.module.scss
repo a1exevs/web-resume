@@ -1,0 +1,8 @@
+.commonInfo {
+  display: flex;
+  flex-direction: row;
+
+  &__Photo {
+    height: 240px;
+  }
+}
