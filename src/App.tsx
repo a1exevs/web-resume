@@ -1,16 +1,16 @@
 import React from 'react';
 import photo from 'src/assets/images/photo.jpg';
 import 'src/App.scss';
+import Header from "./ui/Header/Header";
+import Content from "./ui/Content/Comtent";
+import Footer from "./ui/Footer/Footer";
 
 function App() {
   return (
     <div className="app">
-      <header className="app-header">
-        <img className={"app-photo"} src={photo}/>
-        <div>Common info</div>
-      </header>
-      <div>Tabs</div>
-      <footer>Footer</footer>
+      <Header photo={photo}/>
+      <Content/>
+      <Footer/>
     </div>
   );
 }

@@ -4,15 +4,6 @@
   height: calc(100vh - 120px);
   padding: 60px;
 
-  &-header {
-    display: flex;
-    flex-direction: row;
-  }
-
-  &-photo {
-    height: 240px;
-  }
-
   &-link {
     color: #61dafb;
   }
