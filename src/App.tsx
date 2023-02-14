@@ -1,5 +1,4 @@
 import React from 'react';
-import photo from 'src/assets/images/photo.jpg';
 import 'src/App.scss';
 import CommonInfo from "./ui/CommonInfo/CommonInfo";
 import Content from "./ui/Content/Comtent";
@@ -18,8 +17,8 @@ type Props = {
 const AppContainer: React.FC<Props> = (props) => {
   return (
     <div className="App">
-      <Header data={props.headerData}/>
-      <CommonInfo photo={photo}/>
+      <Header {...props.headerData}/>
+      <CommonInfo {...props.commonInfoData}/>
       <Content/>
       <Footer/>
     </div>

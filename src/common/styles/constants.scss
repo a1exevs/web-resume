@@ -1,0 +1,25 @@
+$default-text-color: #e8e6e3;
+$gray-text-color: #a39b8e;
+$link-color: #61dafb;
+
+$tiny-space: 5px;
+$small-space: 10px;
+$medium-space: 30px;
+$large-space: 60px;
+
+$tiny-font-size: 16px;
+$small-font-size: 20px;
+$medium-font-size: 24px;
+$large-font-size: 30px;
+
+$tiny-line-height: 20px;
+$small-line-height: 24px;
+$medium-line-height: 30px;
+$large-line-height: 36px;
+
+$app-background-color: #181a1b;
+$app-padding: $large-space;
+$app-height: calc(100vh - 2*$large-space);
+$app-width: 90vw;
+$app-margin: 0 auto;
+$app-photo-height: 240px;

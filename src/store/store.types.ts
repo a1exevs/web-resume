@@ -2,7 +2,14 @@ export type HeaderData = {
   lastUpdateDate: string,
 }
 
-export type CommonInfoData = {}
+export type CommonInfoData = {
+  photoPath: string,
+  fullName: string,
+  birthday: string,
+  city: string
+  workAt: string
+  summary: string
+}
 
 export type ContentData = {}
 

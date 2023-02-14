@@ -1,0 +1,20 @@
+@import "src/common/styles/constants";
+
+@mixin tiny-padding {
+  padding: $tiny-space;
+}
+
+@mixin small-normal-text($text-color: $default-text-color) {
+  @include font($small-font-size, normal, $small-line-height, $text-color)
+}
+
+@mixin medium-bold-text {
+  @include font($medium-font-size, bold, $medium-line-height)
+}
+
+@mixin font($size, $weight, $height, $color: $default-text-color) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}

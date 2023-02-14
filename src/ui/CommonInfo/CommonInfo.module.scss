@@ -1,8 +1,16 @@
-.commonInfo {
+@import "src/common/styles/constants";
+
+.CommonInfo {
   display: flex;
   flex-direction: row;
+  padding: $tiny-space;
 
   &__Photo {
-    height: 240px;
+    height: $app-photo-height;
+  }
+
+  &__Main {
+    margin: 0 $medium-space;
+    min-width: max-content;
   }
 }

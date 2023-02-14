@@ -1,0 +1,24 @@
+@import "src/common/styles/constants";
+
+.Field {
+  margin: $tiny-space $small-space;
+  display: flex;
+  flex-direction: row;
+
+  &_block {
+    flex-direction: column;
+  }
+
+  &__Label {
+    &_tinyRightPadding {
+      padding-right: $tiny-space;
+    }
+    &_tinyBottomPadding {
+      padding-bottom: $tiny-space;
+    }
+  }
+
+  &__Value {
+
+  }
+}
