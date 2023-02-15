@@ -1,0 +1,33 @@
+@import "src/common/styles/constants";
+@import "src/common/styles/mixins";
+
+.Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: $normal-flex;
+  min-height: calc(2*$small-line-height);
+
+  :hover {
+    background: $hover-color;
+    opacity: $hover-opacity;
+    transition: $transition-fast-duration ease-in-out;
+  }
+
+  &__Name {
+    @include font($small-font-size, $bold-font-weight, $small-line-height, $default-text-color);
+
+    &_active {
+      @include font($small-font-size, $super-bold-font-weight, $small-line-height, $active-element-color);
+      border-bottom: $medium-active-bar;
+    }
+  }
+
+  &_withRightBorder {
+    border-right: $tiny-border;
+  }
+
+  &_active {
+
+  }
+}

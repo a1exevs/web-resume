@@ -1,6 +1,7 @@
 import React from "react";
+import {FooterData} from "../../store/store.types";
 
-type Props = {}
+type Props = FooterData
 
 const Footer: React.FC<Props> = (props) => {
   return (

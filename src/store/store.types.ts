@@ -11,7 +11,15 @@ export type CommonInfoData = {
   summary: string
 }
 
-export type ContentData = {}
+export enum ContentTabNames {
+  TECHNICAL_SKILLS = 'Technical skills',
+  CAREER_HISTORY = 'Career history',
+  PERSONAL_INFORMATION = 'Personal information'
+}
+
+export type ContentData = {
+  tabs: ContentTabNames[],
+}
 
 export type FooterData = {}
 

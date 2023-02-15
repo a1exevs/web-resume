@@ -3,7 +3,7 @@
 .CommonInfo {
   display: flex;
   flex-direction: row;
-  padding: $tiny-space;
+  padding: $tiny-space $tiny-space $medium-space;
 
   &__Photo {
     height: $app-photo-height;
