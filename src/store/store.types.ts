@@ -17,8 +17,18 @@ export enum ContentTabNames {
   PERSONAL_INFORMATION = 'Personal information'
 }
 
+export type TechArea = {
+  name: string,
+  yearsCount: number
+}
+
+export type TechnicalSkillsData = {
+  technicalAreas: TechArea[]
+}
+
 export type ContentData = {
   tabs: ContentTabNames[],
+  technicalSkills: TechnicalSkillsData,
 }
 
 export type FooterData = {}

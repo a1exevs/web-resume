@@ -15,6 +15,7 @@
   }
 
   &__Name {
+    text-transform: uppercase;
     @include font($small-font-size, $bold-font-weight, $small-line-height, $default-text-color);
 
     &_active {

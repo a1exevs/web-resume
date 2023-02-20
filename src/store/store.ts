@@ -11,14 +11,25 @@ const store: Store = {
     birthday: "22.02.1996",
     city: "Voronezh (Russia)",
     workAt: "DSR Corporation",
-    summary: "Over 3 years of experience in software engineering\n" + "including system analysis, design, application development and writing technical documentation."
+    summary: "Over 3 years of experience in software engineering including system analysis, design, application development and writing technical documentation."
   },
   content: {
     tabs: [
       ContentTabNames.TECHNICAL_SKILLS,
       ContentTabNames.CAREER_HISTORY,
       ContentTabNames.PERSONAL_INFORMATION,
-    ]
+    ],
+    technicalSkills: {
+      technicalAreas: [
+        { name: 'Frontend Development - JS/TS', yearsCount: 3 },
+        { name: 'Backend Development - NodeJS', yearsCount: 3 },
+        { name: 'Mobile development - JS/TS', yearsCount: 1 },
+        { name: 'Desktop Development - C++ (Qt5)', yearsCount: 3 },
+        { name: 'Python', yearsCount: 1 },
+        { name: 'PHP', yearsCount: 3 },
+        { name: 'MatLab', yearsCount: 3 },
+      ]
+    }
   },
   footer: {}
 }

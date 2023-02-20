@@ -1,0 +1,19 @@
+@import "src/common/styles/constants";
+@import "src/common/styles/mixins";
+
+.TechnicalSkills {
+  padding: $medium-space $tiny-space;
+
+  &__AreasData {
+    &Title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: $small-space;
+    }
+
+    &Wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

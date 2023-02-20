@@ -4,6 +4,7 @@
 .App {
   margin: $app-margin;
   width: $app-width;
+  max-width: 1920px;
   height: $app-height;
   padding: $app-padding;
   background: $app-background-color;
