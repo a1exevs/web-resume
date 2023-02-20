@@ -3,7 +3,7 @@ $default-text-color: #e8e6e3;
 $gray-text-color: #a39b8e;
 $link-color: #61dafb;
 $border-color: #a39b8e;
-$active-element-color: red;
+$active-element-color: #3391ff;
 
 //paddings/margins
 $tiny-space: 5px;
@@ -41,7 +41,7 @@ $normal-flex: 1;
 
 //borders/bars
 $tiny-border: 1px solid $border-color;
-$medium-active-bar: 5px solid $active-element-color;
+$medium-active-border: 5px solid $active-element-color;
 $dotted-border: 2px dotted $default-text-color;
 
 //transitions

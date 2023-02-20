@@ -28,7 +28,8 @@ const store: Store = {
         { name: 'Python', yearsCount: 1 },
         { name: 'PHP', yearsCount: 3 },
         { name: 'MatLab', yearsCount: 3 },
-      ]
+      ],
+      languages: ['JS/TS', 'HTML', 'CSS/LESS/SASS/SCSS', 'SQL', 'C/C++', 'PHP', 'Python', 'Bash']
     }
   },
   footer: {}

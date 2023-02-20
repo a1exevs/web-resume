@@ -4,16 +4,21 @@
 .TechnicalSkills {
   padding: $medium-space $tiny-space;
 
-  &__AreasData {
-    &Title {
-      display: flex;
-      justify-content: center;
-      margin-bottom: $small-space;
-    }
+  &__Title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $small-space;
 
-    &Wrapper {
-      display: flex;
-      justify-content: center;
+    &_withTopMargin {
+      margin-top: $small-space;
     }
+  }
+
+  &__AreasData {
+
+  }
+
+  &__LanguagesData {
+
   }
 }

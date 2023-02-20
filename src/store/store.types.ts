@@ -23,7 +23,8 @@ export type TechArea = {
 }
 
 export type TechnicalSkillsData = {
-  technicalAreas: TechArea[]
+  technicalAreas: TechArea[],
+  languages: string[],
 }
 
 export type ContentData = {

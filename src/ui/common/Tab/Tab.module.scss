@@ -20,7 +20,7 @@
 
     &_active {
       @include font($small-font-size, $super-bold-font-weight, $small-line-height, $active-element-color);
-      border-bottom: $medium-active-bar;
+      border-bottom: $medium-active-border;
     }
   }
 

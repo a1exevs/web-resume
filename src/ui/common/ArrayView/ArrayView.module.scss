@@ -1,0 +1,20 @@
+@import "src/common/styles/constants";
+@import "src/common/styles/mixins";
+
+$grid-gap: $small-space;
+$line-height: $small-line-height;
+
+.ArrayView {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $grid-gap;
+  justify-items: stretch;
+  align-items: center;
+
+  &__Item {
+    text-align: center;
+    padding: $small-space $medium-space;
+    border: $medium-active-border;
+    border-radius: calc($grid-gap*2 + $line-height)
+  }
+}

@@ -9,16 +9,16 @@ type Props = {
 
 const List: React.FC<Props> = ({ items = [], withMinWith = true }) => {
   return (
-    <React.Fragment>
-      <ul className={cn(classes.List, { [classes.List_withMinWith]: withMinWith} )}>
+    <div className={classes.List}>
+      <ul className={cn(classes.List__Content, { [classes.List__Content_withMinWith]: withMinWith} )}>
         {items.map((item) =>
-          <li className={classes.List__Item}>
-            <label className={classes.List__ItemName}>{item.name}</label>
-            <label className={classes.List__ItemValue}>{item.value}</label>
+          <li className={classes.List__ContentItem}>
+            <label className={classes.List__ContentItemName}>{item.name}</label>
+            <label className={classes.List__ContentItemValue}>{item.value}</label>
           </li>)
         }
       </ul>
-    </React.Fragment>
+    </div>
   )
 }
 

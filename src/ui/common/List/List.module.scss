@@ -2,37 +2,42 @@
 @import "src/common/styles/mixins";
 
 .List {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: center;
 
-  &_withMinWith {
-    min-width: 50%;
-  }
+  &__Content {
+    padding: 0;
+    margin: 0;
 
-  &__Item {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    &:after {
-      z-index: 0;
-      box-sizing: border-box;
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 0;
-      line-height: 0;
-      border-bottom: $dotted-border;
+    &_withMinWith {
+      min-width: 50%;
     }
 
-    &Name {
-      z-index: 1;
-      background: $app-background-color;
-    }
-    &Value {
-      z-index: 1;
-      background: $app-background-color;
+    &Item {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &:after {
+        z-index: 0;
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        border-bottom: $dotted-border;
+      }
+
+      &Name {
+        z-index: 1;
+        background: $app-background-color;
+      }
+      &Value {
+        z-index: 1;
+        background: $app-background-color;
+      }
     }
   }
 }
