@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "src/ui/common/List/List.module.scss";
+import classes from "src/ui/common/RecordsList/RecordsList.module.scss";
 import cn from "classnames";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   withMinWith?: boolean
 }
 
-const List: React.FC<Props> = ({ items = [], withMinWith = true }) => {
+const RecordsList: React.FC<Props> = ({ items = [], withMinWith = true }) => {
   return (
     <div className={classes.List}>
       <ul className={cn(classes.List__Content, { [classes.List__Content_withMinWith]: withMinWith} )}>
@@ -22,4 +22,4 @@ const List: React.FC<Props> = ({ items = [], withMinWith = true }) => {
   )
 }
 
-export default List;
+export default RecordsList;
