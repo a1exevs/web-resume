@@ -22,9 +22,23 @@ export type TechArea = {
   yearsCount: number
 }
 
+export type TechnologySet = {
+  language: string,
+  technologies: string[]
+}
+
+export type SoftwareCategory = {
+  id: number,
+  softList: string[]
+}
+
 export type TechnicalSkillsData = {
   technicalAreas: TechArea[],
   languages: string[],
+  operatingSystems: string[],
+  technologies: TechnologySet[],
+  software: SoftwareCategory[],
+  networking: string[],
 }
 
 export type ContentData = {

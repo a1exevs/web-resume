@@ -10,8 +10,13 @@
     margin-bottom: $small-space;
 
     &_withTopMargin {
-      margin-top: $small-space;
+      margin-top: $medium-space;
     }
+  }
+
+  &__ListsBlock {
+    display: flex;
+    justify-content: center;
   }
 
   &__AreasData {
@@ -20,5 +25,13 @@
 
   &__LanguagesData {
 
+  }
+
+  &__OperatingSystemsData {
+    margin: 0 $medium-space;
+  }
+
+  &__NetworkingData {
+    margin: 0 $medium-space;
   }
 }

@@ -7,7 +7,7 @@ import ArrayView from "../../common/ArrayView/ArrayView";
 
 type Props = TechnicalSkillsData
 
-const TechnicalSkills: React.FC<Props> = ({technicalAreas, languages}) => {
+const TechnicalSkills: React.FC<Props> = ({technicalAreas, languages, operatingSystems, networking}) => {
   const getYearsInAreaLabel = (yearsCount: number): string => {
     return `${yearsCount} ${(yearsCount === 1) ? 'year' : 'years'}`
   }

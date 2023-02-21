@@ -3,14 +3,21 @@ import classes from "./ArrayView.module.scss";
 import cn from "classnames";
 
 type Props = {
-  items: string[]
+  items: string[],
+  itemPaddingPx?: number,
+  columnsCount?: number | ''
 }
 
-const ArrayView: React.FC<Props> = ({ items }) => {
+const columnsCountKey = '--columns-count' as any
+
+const ArrayView: React.FC<Props> = ({ items, itemPaddingPx, columnsCount = ''}) => {
   return (
-    <div className={classes.ArrayView}>
+    <div style={{[columnsCountKey]: `${columnsCount}`}} className={classes.ArrayView}>
       { items.map((item) =>
-        <label className={cn(classes.ArrayView__Item, 'Title')}>{item}</label>) }
+        <label className={cn(classes.ArrayView__Item, 'Title')}
+               style={{ padding: `${itemPaddingPx}px` }}>
+          {item}
+        </label>) }
     </div>
   )
 }
