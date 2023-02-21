@@ -9,12 +9,12 @@ type Props = {
 
 const RecordsList: React.FC<Props> = ({ items = [], withMinWith = true }) => {
   return (
-    <div className={classes.List}>
-      <ul className={cn(classes.List__Content, { [classes.List__Content_withMinWith]: withMinWith} )}>
+    <div className={classes.RecordList}>
+      <ul className={cn(classes.RecordList__Content, { [classes.RecordList__Content_withMinWith]: withMinWith} )}>
         {items.map((item) =>
-          <li className={classes.List__ContentItem}>
-            <label className={classes.List__ContentItemName}>{item.name}</label>
-            <label className={classes.List__ContentItemValue}>{item.value}</label>
+          <li className={classes.RecordList__ContentItem}>
+            <label className={classes.RecordList__ContentItemName}>{item.name}</label>
+            <label className={classes.RecordList__ContentItemValue}>{item.value}</label>
           </li>)
         }
       </ul>
