@@ -19,7 +19,7 @@ const Tabs: React.FC<Props> = ({tabs, active, activeTabChanged}) => {
     <div className={classes.Tabs}>
       {tabs.length && tabs.map(
         (tab, index) =>
-          <Tab key={tab}
+          <Tab key={index}
                tabName={tab}
                activeTabChanged={changeActiveTab}
                active={tab === activeTab}/>

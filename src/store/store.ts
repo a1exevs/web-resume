@@ -60,7 +60,7 @@ const store: Store = {
         { id: 4, softList: ["Linux shell and server administration (LAMP)"]},
         { id: 5, softList: ["Docker/Docker Compose"]},
       ],
-      networking: ["TCP/IP", "REST", "SOAP", "sockets", "Cisco CCNA education"],
+      networking: ["TCP/IP", "REST", "SOAP", "Sockets", "Cisco CCNA education"],
     }
   },
   footer: {}

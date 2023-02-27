@@ -11,8 +11,8 @@ const RecordsList: React.FC<Props> = ({ items = [], withMinWith = true }) => {
   return (
     <div className={classes.RecordList}>
       <ul className={cn(classes.RecordList__Content, { [classes.RecordList__Content_withMinWith]: withMinWith} )}>
-        {items.map((item) =>
-          <li className={classes.RecordList__ContentItem}>
+        {items.map((item, index) =>
+          <li key={index} className={classes.RecordList__ContentItem}>
             <label className={classes.RecordList__ContentItemName}>{item.name}</label>
             <label className={classes.RecordList__ContentItemValue}>{item.value}</label>
           </li>)
