@@ -7,7 +7,7 @@ import PersonalInformation from "./PersonalInformation/PersonalInformation";
 
 type Props = ContentData
 
-const Content: React.FC<Props> = ({tabs, technicalSkills}) => {
+const Content: React.FC<Props> = ({tabs, technicalSkills, careerHistory}) => {
   const [activeTab, setActiveTab] = useState<ContentTabNames>(tabs[0])
   const changeActiveTab = (tabName: ContentTabNames) => {
     setActiveTab(tabName)
@@ -22,7 +22,7 @@ const Content: React.FC<Props> = ({tabs, technicalSkills}) => {
       }
       {
         activeTab === ContentTabNames.CAREER_HISTORY &&
-        <CareerHistory/>
+        <CareerHistory {...careerHistory}/>
       }
       {
         activeTab === ContentTabNames.PERSONAL_INFORMATION &&

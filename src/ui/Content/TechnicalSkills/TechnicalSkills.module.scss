@@ -4,16 +4,6 @@
 .TechnicalSkills {
   padding: $medium-space $tiny-space;
 
-  &__Title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: $small-space;
-
-    &_withTopMargin {
-      margin-top: $medium-space;
-    }
-  }
-
   &__ListsBlock {
     display: flex;
     justify-content: center;

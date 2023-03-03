@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import classes from "src/ui/common/Tabs/Tabs.module.scss"
-import Tab from "src/ui/common/Tab/Tab";
+import Tab from "src/ui/common/Tabs/Tab/Tab";
 import {ContentTabNames} from "src/store/store.types";
 
 type Props = {

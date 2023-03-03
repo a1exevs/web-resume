@@ -5,7 +5,7 @@
   margin: $app-margin;
   width: $app-width;
   max-width: 1920px;
-  height: $app-height;
+  height: fit-content;
   padding: $app-padding;
   background: $app-background-color;
 }
@@ -16,6 +16,26 @@
 
 .Title {
   @include medium-bold-text;
+}
+
+.IntermediateTitle {
+  @include medium-bold-text;
+  display: flex;
+  margin-bottom: $small-space;
+  margin-top: $medium-space;
+  justify-content: flex-start;
+
+  &_withCenterAlignment {
+    justify-content: center;
+  }
+
+  &_withRightAlignment {
+    justify-content: flex-end;
+  }
+
+  &_withoutTopMargin {
+    margin-top: 0;
+  }
 }
 
 .Label {

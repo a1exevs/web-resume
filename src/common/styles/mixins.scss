@@ -22,3 +22,8 @@
   font-weight: $weight;
   line-height: $height;
 }
+
+@mixin block {
+  padding: $small-space;
+  margin: $small-space;
+}

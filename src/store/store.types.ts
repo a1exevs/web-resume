@@ -41,9 +41,27 @@ export type TechnicalSkillsData = {
   networking: string[],
 }
 
+export type ProjectData = {
+  projectDescription: string,
+  environment: string[],
+  responsibilities: string[],
+}
+
+export type CompanyExperience = {
+  workPeriod: string,
+  companyName: string,
+  career: string,
+  projectList: ProjectData[]
+}
+
+export type CareerHistoryData = {
+  companyExperiences: CompanyExperience[],
+}
+
 export type ContentData = {
   tabs: ContentTabNames[],
   technicalSkills: TechnicalSkillsData,
+  careerHistory: CareerHistoryData,
 }
 
 export type FooterData = {}

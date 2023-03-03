@@ -1,0 +1,61 @@
+@import "src/common/styles/constants";
+@import "src/common/styles/mixins";
+
+$indicator-size: 24px;
+$indicator-size-offset: 4px;
+$indicator-active-size: $indicator-size + $indicator-size-offset;
+$indicator-radius: 50%;
+$indicator-active-color: #53a7eb;
+$indicator-color: $border-color;
+$line-width: 1px;
+
+.Step {
+  display: flex;
+
+  &__LeftBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_withBottomBorder {
+      border-bottom: $line-width dotted $border-color;
+    }
+  }
+
+  &__Indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: $indicator-size;
+    width: $indicator-size;
+    background-color: $indicator-color;
+    border-radius: $indicator-radius;
+    margin: 0 $indicator-size-offset/2;
+
+    &_current {
+      margin: 0;
+      background-color: $indicator-active-color;
+      height: $indicator-active-size;
+      width: $indicator-active-size;
+    }
+  }
+
+  &__Content {
+    display: flex;
+    margin: $small-space;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__Arrow {
+    margin: $small-space 0;
+    width: 0;
+    height: calc(100% - $indicator-size - 2 * $small-space);
+    border-right: $line-width dotted $border-color;
+
+    &_current {
+      height: calc(100% - $indicator-active-size - 2 * $small-space);
+    }
+  }
+}

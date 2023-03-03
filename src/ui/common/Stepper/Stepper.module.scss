@@ -1,6 +1,7 @@
 @import "src/common/styles/constants";
 @import "src/common/styles/mixins";
 
-.CareerHistory {
-  padding: $medium-space $tiny-space;
+.Stepper {
+  display: flex;
+  flex-direction: column;
 }
