@@ -1,8 +1,9 @@
 @import "src/common/styles/constants";
 @import "src/common/styles/mixins";
+@import "src/ui/Content/common/style/mixins";
 
 .TechnicalSkills {
-  padding: $medium-space $tiny-space;
+  @include content-page;
 
   &__ListsBlock {
     display: flex;

@@ -1,11 +1,11 @@
-import React from "react";
-import classes from "./CommonInfo.module.scss"
-import {CommonInfoData} from "../../store/store.types";
-import Field from "../common/Field/Field";
+import React from 'react';
+import classes from './CommonInfo.module.scss';
+import {CommonInfoData} from '../../store/store.types';
+import Field from '../common/Field/Field';
 
 type Props = CommonInfoData;
 
-const CommonInfo: React.FC<Props> = (props) => {
+const CommonInfo: React.FC<Props> = props => {
   return (
     <div className={classes.CommonInfo}>
       <img className={classes.CommonInfo__Photo} src={props.photoPath}/>
@@ -19,7 +19,7 @@ const CommonInfo: React.FC<Props> = (props) => {
         <Field label={'Summary'} value={props.summary} type="block"/>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CommonInfo;

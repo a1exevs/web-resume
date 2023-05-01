@@ -1,0 +1,5 @@
+@import "src/common/styles/constants";
+
+@mixin content-page {
+  padding: $medium-space $tiny-space;
+}

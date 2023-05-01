@@ -1,25 +1,25 @@
-import React from "react";
-import classes from "./ArrayView.module.scss";
-import cn from "classnames";
+import React from 'react';
+import classes from './ArrayView.module.scss';
+import cn from 'classnames';
 
 type Props = {
-  items: string[],
-  itemPaddingPx?: number,
-  columnsCount?: number | ''
-}
+  items: string[];
+  itemPaddingPx?: number;
+  columnsCount?: number | '';
+};
 
-const columnsCountKey = '--columns-count' as any
+const columnsCountKey = '--columns-count' as any;
 
-const ArrayView: React.FC<Props> = ({ items, itemPaddingPx, columnsCount = ''}) => {
+const ArrayView: React.FC<Props> = ({items, itemPaddingPx, columnsCount = ''}) => {
   return (
     <div style={{[columnsCountKey]: `${columnsCount}`}} className={classes.ArrayView}>
-      { items.map((item, index) =>
-        <label key={item} className={cn(classes.ArrayView__Item, 'Title')}
-               style={{ padding: `${itemPaddingPx}px` }}>
+      {items.map((item, index) => (
+        <label key={item} className={cn(classes.ArrayView__Item, 'Title')} style={{padding: `${itemPaddingPx}px`}}>
           {item}
-        </label>) }
+        </label>
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default ArrayView;
