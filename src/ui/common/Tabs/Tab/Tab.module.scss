@@ -1,5 +1,5 @@
-@import "../../../../common/styles/constants";
-@import "../../../../common/styles/mixins";
+@import "src/common/styles/constants";
+@import "src/common/styles/mixins";
 
 .Tab {
   display: flex;
@@ -8,12 +8,6 @@
   flex: $normal-flex;
   min-height: calc(2*$small-line-height);
 
-  :hover {
-    background: $hover-color;
-    opacity: $hover-opacity;
-    transition: $transition-fast-duration ease-in-out;
-  }
-
   &__Name {
     text-transform: uppercase;
     @include font($small-font-size, $bold-font-weight, $small-line-height, $default-text-color);
@@ -21,6 +15,12 @@
     &_active {
       @include font($small-font-size, $super-bold-font-weight, $small-line-height, $active-element-color);
       border-bottom: $medium-active-border;
+    }
+
+    &:hover {
+      background: $hover-color;
+      opacity: $hover-opacity;
+      transition: $transition-fast-duration ease-in-out;
     }
   }
 

@@ -1,6 +1,6 @@
 import React, {ReactNode} from 'react';
-import classes from './Stepper.module.scss';
-import Step from './Step/Step';
+import classes from 'src/ui/common/Stepper/Stepper.module.scss';
+import Step from 'src/ui/common/Stepper/Step/Step';
 
 type Props = {
   children: ReactNode[];

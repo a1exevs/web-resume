@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react';
-import classes from './Step.module.scss';
+import classes from 'src/ui/common/Stepper/Step/Step.module.scss';
 import cn from 'classnames';
 
 type Props = {

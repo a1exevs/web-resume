@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from 'src/ui/Content/TechnicalSkills/TechnicalSkills.module.scss';
 import {TechnicalSkillsData} from 'src/store/store.types';
-import RecordsList from '../../common/RecordsList/RecordsList';
-import ArrayView from '../../common/ArrayView/ArrayView';
-import SimpleList from '../../common/SimpleList/SimpleList';
-import Field from '../../common/Field/Field';
+import RecordsList from 'src/ui/common/RecordsList/RecordsList';
+import ArrayView from 'src/ui/common/ArrayView/ArrayView';
+import SimpleList from 'src/ui/common/SimpleList/SimpleList';
+import Field from 'src/ui/common/Field/Field';
 
 type Props = TechnicalSkillsData;
 

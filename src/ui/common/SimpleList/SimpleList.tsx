@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SimpleList.module.scss';
+import classes from 'src/ui/common/SimpleList/SimpleList.module.scss';
 import cn from 'classnames';
 
 type Props = {

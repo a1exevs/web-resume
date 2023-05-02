@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './Header.module.scss';
-import {HeaderData} from '../../store/store.types';
-import Field from '../common/Field/Field';
+import classes from 'src/ui/Header/Header.module.scss';
+import {HeaderData} from 'src/store/store.types';
+import Field from 'src/ui/common/Field/Field';
 
 type Props = HeaderData;
 

@@ -128,6 +128,73 @@ const store: Store = {
             },
           ],
         },
+        {
+          workPeriod: '11.2018 – 05.2019',
+          companyName: 'Ratex (on the basis of VSU)',
+          career: 'Junior Physics Researcher',
+          projectList: [
+            {
+              projectDescription: 'Software for research in the area of SISO and MIMO Radio channels',
+              environment: ['Windows', 'Matlab', 'Qt5', 'qmake', 'C++11'],
+              responsibilities: ['implementation', 'debug', 'testing'],
+            },
+          ],
+        },
+      ],
+    },
+    personalInformation: {
+      contacts: [
+        {
+          name: 'Github',
+          address: 'https://github.com/a1exevs',
+          isLink: true,
+        },
+        {
+          name: 'hh.ru',
+          address: 'https://voronezh.hh.ru/resume/10aa6646ff077b3cb70039ed1f47394e4f476f',
+          isLink: true,
+        },
+        {
+          name: 'Linkedin',
+          address: 'https://www.linkedin.com/mwlite/in/alexander-evstafiadi-b17b96267',
+          isLink: true,
+        },
+        {
+          name: 'VK',
+          address: 'https://vk.com/alexevs_gb',
+          isLink: true,
+        },
+        {
+          name: 'Google email',
+          address: 'aleksandrevstafiadi@gmail.com',
+          isLink: false,
+        },
+        {
+          name: 'Yandex email',
+          address: 'evstafiadi.shura@yandex.ru',
+          isLink: false,
+        },
+        {
+          name: 'Youtube',
+          address: 'https://www.youtube.com/channel/UCVrwEd4-3guB5NFQ_oidREg',
+          isLink: true,
+        },
+      ],
+      education: [
+        {
+          name: 'Voronezh State University',
+          degree: "Master's degree",
+          fieldOfStudy: 'Radio Physical Sciences',
+          studyPeriod: '2019 - 2021',
+          website: 'https://vsu.ru',
+        },
+        {
+          name: 'Voronezh State University',
+          degree: "Master's degree",
+          fieldOfStudy: 'Radio Physical Sciences',
+          studyPeriod: '2019 - 2021',
+          website: 'https://vsu.ru',
+        },
       ],
     },
   },

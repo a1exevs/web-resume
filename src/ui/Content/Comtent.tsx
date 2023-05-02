@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {ContentData, ContentTabNames} from 'src/store/store.types';
 import Tabs from 'src/ui/common/Tabs/Tabs';
-import TechnicalSkills from './TechnicalSkills/TechnicalSkills';
-import CareerHistory from './CareerHistory/CareerHistory';
-import PersonalInformation from './PersonalInformation/PersonalInformation';
+import TechnicalSkills from 'src/ui/Content/TechnicalSkills/TechnicalSkills';
+import CareerHistory from 'src/ui/Content/CareerHistory/CareerHistory';
+import PersonalInformation from 'src/ui/Content/PersonalInformation/PersonalInformation';
 
 type Props = ContentData;
 
-const Content: React.FC<Props> = ({tabs, technicalSkills, careerHistory}) => {
+const Content: React.FC<Props> = ({tabs, technicalSkills, careerHistory, personalInformation}) => {
   const [activeTab, setActiveTab] = useState<ContentTabNames>(tabs[0]);
   const changeActiveTab = (tabName: ContentTabNames) => {
     setActiveTab(tabName);
@@ -18,7 +18,7 @@ const Content: React.FC<Props> = ({tabs, technicalSkills, careerHistory}) => {
       <Tabs tabs={tabs} activeTabChanged={changeActiveTab}/>
       {activeTab === ContentTabNames.TECHNICAL_SKILLS && <TechnicalSkills {...technicalSkills} />}
       {activeTab === ContentTabNames.CAREER_HISTORY && <CareerHistory {...careerHistory} />}
-      {activeTab === ContentTabNames.PERSONAL_INFORMATION && <PersonalInformation/>}
+      {activeTab === ContentTabNames.PERSONAL_INFORMATION && <PersonalInformation {...personalInformation} />}
     </div>
   );
 };

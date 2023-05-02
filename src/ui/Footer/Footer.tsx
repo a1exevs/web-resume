@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterData} from '../../store/store.types';
+import {FooterData} from 'src/store/store.types';
 
 type Props = FooterData;
 

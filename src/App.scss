@@ -11,7 +11,13 @@
 }
 
 .Link {
+  @include small-normal-text;
   color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .Title {

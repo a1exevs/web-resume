@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './CommonInfo.module.scss';
-import {CommonInfoData} from '../../store/store.types';
-import Field from '../common/Field/Field';
+import classes from 'src/ui/CommonInfo/CommonInfo.module.scss';
+import {CommonInfoData} from 'src/store/store.types';
+import Field from 'src/ui/common/Field/Field';
 
 type Props = CommonInfoData;
 

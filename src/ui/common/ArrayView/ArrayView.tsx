@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ArrayView.module.scss';
+import classes from 'src/ui/common/ArrayView/ArrayView.module.scss';
 import cn from 'classnames';
 
 type Props = {

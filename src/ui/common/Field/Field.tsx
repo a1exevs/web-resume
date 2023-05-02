@@ -1,14 +1,15 @@
 import React from 'react';
 import cn from 'classnames';
-import classes from './Field.module.scss';
+import classes from 'src/ui/common/Field/Field.module.scss';
 
 type Props = {
   label?: string;
   value: string;
   type?: 'inline' | 'block';
+  isLink?: boolean;
 };
 
-const Field: React.FC<Props> = ({label, value, type = 'inline'}) => {
+const Field: React.FC<Props> = ({label, value, type = 'inline', isLink = false}) => {
   return (
     <div className={cn(classes.Field, {[classes.Field_block]: type === 'block'})}>
       {label && (
@@ -21,9 +22,15 @@ const Field: React.FC<Props> = ({label, value, type = 'inline'}) => {
           {label + ':'}
         </label>
       )}
-      <span className={cn(classes.Field__Value, 'Text')} title={value}>
-        {value}
-      </span>
+      {isLink ? (
+        <a className={cn(classes.Field__Value, 'Link')} title={value} href={value}>
+          {value}
+        </a>
+      ) : (
+        <span className={cn(classes.Field__Value, 'Text')} title={value}>
+          {value}
+        </span>
+      )}
     </div>
   );
 };

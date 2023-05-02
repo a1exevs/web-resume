@@ -54,14 +54,34 @@ export type CompanyExperience = {
   projectList: ProjectData[];
 };
 
+export type ContactData = {
+  name: string;
+  address: string;
+  isLink: boolean;
+};
+
+export type EducationData = {
+  name: string;
+  degree: string;
+  fieldOfStudy: string;
+  studyPeriod: string;
+  website: string;
+};
+
 export type CareerHistoryData = {
   companyExperiences: CompanyExperience[];
+};
+
+export type PersonalInformationData = {
+  contacts: ContactData[];
+  education: EducationData[];
 };
 
 export type ContentData = {
   tabs: ContentTabNames[];
   technicalSkills: TechnicalSkillsData;
   careerHistory: CareerHistoryData;
+  personalInformation: PersonalInformationData;
 };
 
 export type FooterData = {};
