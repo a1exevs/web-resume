@@ -188,13 +188,6 @@ const store: Store = {
           studyPeriod: '2019 - 2021',
           website: 'https://vsu.ru',
         },
-        {
-          name: 'Voronezh State University',
-          degree: "Master's degree",
-          fieldOfStudy: 'Radio Physical Sciences',
-          studyPeriod: '2019 - 2021',
-          website: 'https://vsu.ru',
-        },
       ],
     },
   },
