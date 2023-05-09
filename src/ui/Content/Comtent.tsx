@@ -7,7 +7,12 @@ import PersonalInformation from 'src/ui/Content/PersonalInformation/PersonalInfo
 
 type Props = ContentData;
 
-const Content: React.FC<Props> = ({tabs, technicalSkills, careerHistory, personalInformation}) => {
+const Content: React.FC<Props> = ({
+                                    tabs,
+                                    technicalSkills,
+                                    careerHistory,
+                                    personalInformation,
+                                  }) => {
   const [activeTab, setActiveTab] = useState<ContentTabNames>(tabs[0]);
   const changeActiveTab = (tabName: ContentTabNames) => {
     setActiveTab(tabName);

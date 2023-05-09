@@ -1,0 +1,14 @@
+@import "src/common/styles/constants";
+@import "src/common/styles/mixins";
+@import "src/ui/Content/common/style/mixins";
+
+.Footer {
+  display: flex;
+  align-items: center;
+  padding: $medium-space $tiny-space;
+  border-top: $footer-border;
+
+  &__CopyrightLabel {
+    color: $light-gray-text-color;
+  }
+}

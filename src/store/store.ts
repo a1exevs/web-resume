@@ -191,7 +191,9 @@ const store: Store = {
       ],
     },
   },
-  footer: {},
+  footer: {
+    copyrightLabel: '© 2023 Alexander Evstafiadi'
+  },
 };
 
 export default store;

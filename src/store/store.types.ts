@@ -84,7 +84,9 @@ export type ContentData = {
   personalInformation: PersonalInformationData;
 };
 
-export type FooterData = {};
+export type FooterData = {
+  copyrightLabel: string
+};
 
 export type Store = {
   header: HeaderData;
