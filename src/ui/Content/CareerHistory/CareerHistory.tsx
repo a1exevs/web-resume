@@ -16,6 +16,7 @@ const CareerHistory: React.FC<Props> = ({companyExperiences}) => {
           <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <Block>
               <Field label={'Company'} value={experience.companyName}/>
+              <Field label={'Website'} value={experience.website} isLink/>
               <Field label={'Period'} value={experience.workPeriod}/>
               <Field label={'Career'} value={experience.career}/>
             </Block>

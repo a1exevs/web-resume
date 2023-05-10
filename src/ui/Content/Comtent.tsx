@@ -5,14 +5,10 @@ import TechnicalSkills from 'src/ui/Content/TechnicalSkills/TechnicalSkills';
 import CareerHistory from 'src/ui/Content/CareerHistory/CareerHistory';
 import PersonalInformation from 'src/ui/Content/PersonalInformation/PersonalInformation';
 
-type Props = ContentData;
+type Props = { data: ContentData };
 
-const Content: React.FC<Props> = ({
-                                    tabs,
-                                    technicalSkills,
-                                    careerHistory,
-                                    personalInformation,
-                                  }) => {
+const Content: React.FC<Props> = ({data}) => {
+  const {tabs, technicalSkills, careerHistory, personalInformation} = data;
   const [activeTab, setActiveTab] = useState<ContentTabNames>(tabs[0]);
   const changeActiveTab = (tabName: ContentTabNames) => {
     setActiveTab(tabName);

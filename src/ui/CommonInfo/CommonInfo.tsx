@@ -3,20 +3,20 @@ import classes from 'src/ui/CommonInfo/CommonInfo.module.scss';
 import {CommonInfoData} from 'src/store/store.types';
 import Field from 'src/ui/common/Field/Field';
 
-type Props = CommonInfoData;
+type Props = { data: CommonInfoData };
 
-const CommonInfo: React.FC<Props> = props => {
+const CommonInfo: React.FC<Props> = ({data}) => {
   return (
     <div className={classes.CommonInfo}>
-      <img className={classes.CommonInfo__Photo} src={props.photoPath}/>
+      <img className={classes.CommonInfo__Photo} src={data.photoPath}/>
       <div className={classes.CommonInfo__Main}>
-        <Field label={'Full name'} value={props.fullName}/>
-        <Field label={'BirthDate'} value={props.birthday}/>
-        <Field label={'City'} value={props.city}/>
-        <Field label={'Work at'} value={props.workAt}/>
+        <Field label={'Full name'} value={data.fullName}/>
+        <Field label={'BirthDate'} value={data.birthday}/>
+        <Field label={'City'} value={data.city}/>
+        <Field label={'Work at'} value={data.workAt}/>
       </div>
       <div className={classes.CommonInfo__Summary}>
-        <Field label={'Summary'} value={props.summary} type="block"/>
+        <Field label={'Summary'} value={data.summary} type="block"/>
       </div>
     </div>
   );

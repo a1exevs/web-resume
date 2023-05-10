@@ -14,13 +14,13 @@ type Props = {
   footerData: FooterData;
 };
 
-const AppContainer: React.FC<Props> = props => {
+const AppContainer: React.FC<Props> = ({headerData, commonInfoData, contentData, footerData}) => {
   return (
     <div className="App">
-      <Header {...props.headerData} />
-      <CommonInfo {...props.commonInfoData} />
-      <Content {...props.contentData} />
-      <Footer {...props.footerData} />
+      <Header data={headerData}/>
+      <CommonInfo data={commonInfoData}/>
+      <Content data={contentData}/>
+      <Footer data={footerData}/>
     </div>
   );
 };

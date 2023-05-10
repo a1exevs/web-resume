@@ -50,6 +50,7 @@ export type ProjectData = {
 export type CompanyExperience = {
   workPeriod: string;
   companyName: string;
+  website: string,
   career: string;
   projectList: ProjectData[];
 };
@@ -85,7 +86,7 @@ export type ContentData = {
 };
 
 export type FooterData = {
-  copyrightLabel: string
+  copyrightLabel: string;
 };
 
 export type Store = {

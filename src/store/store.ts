@@ -76,6 +76,7 @@ const store: Store = {
         {
           workPeriod: '21.03.2022 – Present',
           companyName: 'DSR Corporation',
+          website: 'https://en.dsr-corporation.com',
           career: 'Software Engineer',
           projectList: [
             {
@@ -104,6 +105,7 @@ const store: Store = {
         {
           workPeriod: '22.11.2019 – 18.03.2022',
           companyName: 'Technomarket',
+          website: 'https://tm-v.ru',
           career: 'Software Engineer',
           projectList: [
             {
@@ -131,6 +133,7 @@ const store: Store = {
         {
           workPeriod: '11.2018 – 05.2019',
           companyName: 'Ratex (on the basis of VSU)',
+          website: 'https://www.rusprofile.ru/id/2201449',
           career: 'Junior Physics Researcher',
           projectList: [
             {
@@ -192,7 +195,7 @@ const store: Store = {
     },
   },
   footer: {
-    copyrightLabel: '© 2023 Alexander Evstafiadi'
+    copyrightLabel: '© 2023 Alexander Evstafiadi',
   },
 };
 
