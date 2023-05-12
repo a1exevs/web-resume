@@ -1,6 +1,7 @@
-import React from 'react';
-import classes from 'src/ui/common/ArrayView/ArrayView.module.scss';
 import cn from 'classnames';
+import React, { CSSProperties } from 'react';
+
+import classes from 'src/ui/common/ArrayView/ArrayView.module.scss';
 
 type Props = {
   items: string[];
@@ -8,18 +9,16 @@ type Props = {
   columnsCount?: number | '';
 };
 
-const columnsCountKey = '--columns-count' as any;
+const columnsCountKey = '--columns-count';
 
-const ArrayView: React.FC<Props> = ({items, itemPaddingPx, columnsCount = ''}) => {
-  return (
-    <div style={{[columnsCountKey]: `${columnsCount}`}} className={classes.ArrayView}>
-      {items.map((item, index) => (
-        <label key={item} className={cn(classes.ArrayView__Item, 'Title')} style={{padding: `${itemPaddingPx}px`}}>
-          {item}
-        </label>
-      ))}
-    </div>
-  );
-};
+const ArrayView: React.FC<Props> = ({ items, itemPaddingPx, columnsCount = '' }) => (
+  <div style={{ [columnsCountKey]: `${columnsCount}` } as CSSProperties} className={classes.ArrayView}>
+    {items.map(item => (
+      <label key={item} className={cn(classes.ArrayView__Item, 'Title')} style={{ padding: `${itemPaddingPx}px` }}>
+        {item}
+      </label>
+    ))}
+  </div>
+);
 
 export default ArrayView;

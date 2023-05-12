@@ -1,6 +1,6 @@
-@import "src/common/styles/constants";
-@import "src/common/styles/mixins";
-@import "src/ui/Content/common/style/mixins";
+@import 'src/common/styles/constants';
+@import 'src/common/styles/mixins';
+@import 'src/ui/Content/common/style/mixins';
 
 .TechnicalSkills {
   @include content-page;
@@ -11,11 +11,9 @@
   }
 
   &__AreasData {
-
   }
 
   &__LanguagesData {
-
   }
 
   &__OperatingSystemsData {
@@ -27,6 +25,5 @@
   }
 
   &__TechnologiesData {
-
   }
 }

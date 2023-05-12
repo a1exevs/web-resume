@@ -1,5 +1,5 @@
-@import "src/common/styles/constants";
-@import "src/common/styles/mixins";
+@import 'src/common/styles/constants';
+@import 'src/common/styles/mixins';
 
 $indicator-size: 24px;
 $indicator-size-offset: 4px;
@@ -31,7 +31,7 @@ $line-width: 1px;
     width: $indicator-size;
     background-color: $indicator-color;
     border-radius: $indicator-radius;
-    margin: 0 $indicator-size-offset/2;
+    margin: 0 calc($indicator-size-offset / 2);
 
     &_current {
       margin: 0;

@@ -1,14 +1,15 @@
-import React from 'react';
-import classes from 'src/ui/common/Block/Block.module.scss';
 import cn from 'classnames';
+import React from 'react';
+
+import classes from 'src/ui/common/Block/Block.module.scss';
 
 type Props = {
   withoutSpaces?: boolean;
   children: React.ReactNode;
 };
 
-const Block = ({children, withoutSpaces = false}: Props) => {
-  return <div className={cn(classes.Block, {[classes.Block_withoutSpaces]: withoutSpaces})}>{children}</div>;
-};
+const Block = ({ children, withoutSpaces = false }: Props) => (
+  <div className={cn(classes.Block, { [classes.Block_withoutSpaces]: withoutSpaces })}>{children}</div>
+);
 
 export default Block;

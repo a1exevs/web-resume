@@ -1,7 +1,8 @@
-import React from 'react';
 import cn from 'classnames';
+import React from 'react';
+
+import { ContentTabNames } from 'src/store/store.types';
 import classes from 'src/ui/common/Tabs/Tab/Tab.module.scss';
-import {ContentTabNames} from 'src/store/store.types';
 
 type Props = {
   tabName: ContentTabNames;
@@ -10,7 +11,7 @@ type Props = {
   activeTabChanged: (tabName: ContentTabNames) => void;
 };
 
-const Tab: React.FC<Props> = ({tabName, withRightBorder = false, active = true, activeTabChanged}) => {
+const Tab: React.FC<Props> = ({ tabName, withRightBorder = false, active = true, activeTabChanged }) => {
   const onActiveTabChange = () => {
     activeTabChanged(tabName);
   };

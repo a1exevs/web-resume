@@ -1,5 +1,5 @@
-@import "src/common/styles/constants";
-@import "src/common/styles/mixins";
+@import 'src/common/styles/constants';
+@import 'src/common/styles/mixins';
 
 $grid-gap: $small-space;
 $line-height: $small-line-height;
@@ -15,6 +15,6 @@ $line-height: $small-line-height;
     text-align: center;
     padding: $small-space $medium-space;
     border: $medium-active-border;
-    border-radius: calc($grid-gap*2 + $line-height)
+    border-radius: calc($grid-gap * 2 + $line-height);
   }
 }

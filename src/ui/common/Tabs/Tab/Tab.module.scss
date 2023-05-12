@@ -1,12 +1,12 @@
-@import "src/common/styles/constants";
-@import "src/common/styles/mixins";
+@import 'src/common/styles/constants';
+@import 'src/common/styles/mixins';
 
 .Tab {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: $normal-flex;
-  min-height: calc(2*$small-line-height);
+  min-height: calc(2 * $small-line-height);
 
   &__Name {
     text-transform: uppercase;
@@ -29,6 +29,5 @@
   }
 
   &_active {
-
   }
 }

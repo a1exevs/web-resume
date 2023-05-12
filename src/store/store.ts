@@ -1,5 +1,5 @@
-import {ContentTabNames, Store} from 'src/store/store.types';
 import photo from 'src/assets/images/photo.jpg';
+import { ContentTabNames, Store } from 'src/store/store.types';
 
 const store: Store = {
   header: {
@@ -18,10 +18,10 @@ const store: Store = {
     tabs: [ContentTabNames.TECHNICAL_SKILLS, ContentTabNames.CAREER_HISTORY, ContentTabNames.PERSONAL_INFORMATION],
     technicalSkills: {
       technicalAreas: [
-        {name: 'Frontend Development - JS/TS', yearsCount: 3},
-        {name: 'Backend Development - NodeJS', yearsCount: 3},
-        {name: 'Mobile development - JS/TS', yearsCount: 1},
-        {name: 'Desktop Development - C++ (Qt5)', yearsCount: 3},
+        { name: 'Frontend Development - JS/TS', yearsCount: 3 },
+        { name: 'Backend Development - NodeJS', yearsCount: 3 },
+        { name: 'Mobile development - JS/TS', yearsCount: 1 },
+        { name: 'Desktop Development - C++ (Qt5)', yearsCount: 3 },
       ],
       languages: ['JS/TS', 'HTML', 'CSS/LESS/SASS/SCSS', 'SQL', 'C/C++', 'PHP', 'Python', 'Bash'],
       operatingSystems: ['Linux', 'Windows', 'Android', 'iOS', 'MacOS'],
@@ -44,8 +44,8 @@ const store: Store = {
             'Webpack',
           ],
         },
-        {language: 'C/C++', technologies: ['Qt5', 'CMake', 'qmake', 'qsoap']},
-        {language: 'PHP', technologies: ['Kohana', 'Zend Soap']},
+        { language: 'C/C++', technologies: ['Qt5', 'CMake', 'qmake', 'qsoap'] },
+        { language: 'PHP', technologies: ['Kohana', 'Zend Soap'] },
       ],
       software: [
         {
@@ -63,11 +63,11 @@ const store: Store = {
             'Git Kraken',
           ],
         },
-        {id: 1, softList: ['Git', 'Jenkins', 'Jira', 'Celoxis', 'Figma', 'Azure', 'Github', 'Gitlab']},
-        {id: 2, softList: ['Vim', 'GDB', 'Valgrind', 'Eclipse']},
-        {id: 3, softList: ['Swagger', 'Doxygen', 'TeX', 'MSOffice', 'LibreOffice', 'GoogleDrive', 'Google Sites']},
-        {id: 4, softList: ['Linux shell and server administration (LAMP)']},
-        {id: 5, softList: ['Docker/Docker Compose']},
+        { id: 1, softList: ['Git', 'Jenkins', 'Jira', 'Celoxis', 'Figma', 'Azure', 'Github', 'Gitlab'] },
+        { id: 2, softList: ['Vim', 'GDB', 'Valgrind', 'Eclipse'] },
+        { id: 3, softList: ['Swagger', 'Doxygen', 'TeX', 'MSOffice', 'LibreOffice', 'GoogleDrive', 'Google Sites'] },
+        { id: 4, softList: ['Linux shell and server administration (LAMP)'] },
+        { id: 5, softList: ['Docker/Docker Compose'] },
       ],
       networking: ['TCP/IP', 'REST', 'SOAP', 'Sockets', 'Cisco CCNA education'],
     },

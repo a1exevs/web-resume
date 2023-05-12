@@ -50,7 +50,7 @@ export type ProjectData = {
 export type CompanyExperience = {
   workPeriod: string;
   companyName: string;
-  website: string,
+  website: string;
   career: string;
   projectList: ProjectData[];
 };

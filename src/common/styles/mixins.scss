@@ -1,19 +1,19 @@
-@import "src/common/styles/constants";
+@import 'src/common/styles/constants';
 
 @mixin tiny-padding {
   padding: $tiny-space;
 }
 
 @mixin small-normal-text($text-color: $default-text-color) {
-  @include font($small-font-size, $normal-font-weight, $small-line-height, $text-color)
+  @include font($small-font-size, $normal-font-weight, $small-line-height, $text-color);
 }
 
 @mixin small-bold-text($text-color: $default-text-color) {
-  @include font($small-font-size, $bold-font-weight, $small-line-height, $text-color)
+  @include font($small-font-size, $bold-font-weight, $small-line-height, $text-color);
 }
 
 @mixin medium-bold-text {
-  @include font($medium-font-size, $bold-font-weight, $medium-line-height)
+  @include font($medium-font-size, $bold-font-weight, $medium-line-height);
 }
 
 @mixin font($size, $weight, $height, $color: $default-text-color) {

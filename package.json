@@ -5,7 +5,7 @@
   "author": "AlexEvs",
   "dependencies": {
     "@types/jest": "29.5.1",
-    "@types/node": "20.1.2",
+    "@types/node": "20.1.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "classnames": "2.3.2",
@@ -19,20 +19,17 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "eject": "react-scripts eject",
-    "prebuild": "yarn run build",
+    "prebuild": "yarn run build:prod",
+    "build:prod": "react-scripts build",
     "serve": "serve -s build",
+    "test": "react-scripts test",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,scss}\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "eject": "react-scripts eject",
     "check-deps": "yarn outdated",
-    "upgrade-deps": "yarn upgrade --latest"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "upgrade-deps": "yarn upgrade --latest",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -50,6 +47,14 @@
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
+    "@typescript-eslint/eslint-plugin": "5.59.5",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-import-resolver-typescript": "3.5.5",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.2",
     "prettier": "2.8.8"
   }
 }

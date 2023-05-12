@@ -21,7 +21,12 @@
     "jsx": "react-jsx",
     "rootDir": "./",
     "baseUrl": "./",
-    "outDir": "build"
+    "outDir": "build",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "build", "coverage", "**/*.test.ts", "**/*.test.tsx", "**/*.old.ts", "**/*.old.tsx"]
