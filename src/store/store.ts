@@ -3,12 +3,12 @@ import { ContentTabNames, Store } from 'src/store/store.types';
 
 const store: Store = {
   header: {
-    lastUpdateDate: '13.02.2023',
+    lastUpdateDate: new Date('2/13/2023'),
   },
   commonInfo: {
     photoPath: photo,
     fullName: 'Alexander Olegovich Evstafiadi',
-    birthday: '22.02.1996',
+    birthday: new Date('2/22/1996'),
     city: 'Voronezh (Russia)',
     workAt: 'DSR Corporation',
     summary:

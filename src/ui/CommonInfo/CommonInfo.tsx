@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { dateToString } from 'src/common/helpers/date-helper';
 import { CommonInfoData } from 'src/store/store.types';
 import Field from 'src/ui/common/Field/Field';
 import classes from 'src/ui/CommonInfo/CommonInfo.module.scss';
@@ -11,7 +12,7 @@ const CommonInfo: React.FC<Props> = ({ data }) => (
     <img alt="" className={classes.CommonInfo__Photo} src={data.photoPath} />
     <div className={classes.CommonInfo__Main}>
       <Field label={'Full name'} value={data.fullName} />
-      <Field label={'BirthDate'} value={data.birthday} />
+      <Field label={'Birthday'} value={dateToString(data.birthday)} />
       <Field label={'City'} value={data.city} />
       <Field label={'Work at'} value={data.workAt} />
     </div>

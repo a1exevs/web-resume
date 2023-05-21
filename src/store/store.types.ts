@@ -1,11 +1,11 @@
 export type HeaderData = {
-  lastUpdateDate: string;
+  lastUpdateDate: Date;
 };
 
 export type CommonInfoData = {
   photoPath: string;
   fullName: string;
-  birthday: string;
+  birthday: Date;
   city: string;
   workAt: string;
   summary: string;
