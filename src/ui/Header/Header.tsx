@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React from 'react';
 
 import { dateToString } from 'src/common/helpers/date-helper';
@@ -9,8 +10,10 @@ type Props = { data: HeaderData };
 
 const Header: React.FC<Props> = ({ data }) => (
   <header className={classes.Header}>
-    <label className="Title">Resume of Alexander Olegovich Evstafiadi</label>
-    <Field label={'Last update'} value={dateToString(data.lastUpdateDate)} type={'block'} />
+    <div className={cn(classes.Header__Content, classes.Header__Content_fixedTopPosition)}>
+      <label className="Title">Web-resume</label>
+      <Field label={'Last update'} value={dateToString(data.lastUpdateDate)} type={'block'} />
+    </div>
   </header>
 );
 

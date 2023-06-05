@@ -21,6 +21,7 @@
   font-size: $size;
   font-weight: $weight;
   line-height: $height;
+  word-break: break-word;
 }
 
 @mixin block {

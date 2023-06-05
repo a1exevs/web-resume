@@ -1,8 +1,25 @@
 @import 'src/common/styles/constants';
 
 .Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: $tiny-space;
+  min-height: calc($large-space + ($medium-space / 2));
+
+  &__Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $tiny-space $small-space * 2;
+
+    box-shadow: $app-bar-shadow;
+    background-color: $app-bar-background-color;
+
+    &_fixedTopPosition {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      z-index: $z-index-large;
+      box-sizing: border-box;
+    }
+  }
 }

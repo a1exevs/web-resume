@@ -2,12 +2,16 @@
 @import 'src/common/styles/mixins';
 
 .App {
-  margin: $app-margin;
-  width: $app-width;
+  margin: 0 auto;
+  width: 100%;
   max-width: 1920px;
-  height: fit-content;
-  padding: $app-padding;
+  min-height: 100vh;
+  @media (max-width: $sm) {
+    width: fit-content;
+  }
+  padding: 0 $large-space;
   background: $app-background-color;
+  box-sizing: border-box;
 }
 
 .Link {
