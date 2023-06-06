@@ -23,7 +23,7 @@ const store: Store = {
         { name: 'Mobile development - JS/TS', yearsCount: 1 },
         { name: 'Desktop Development - C++ (Qt5)', yearsCount: 3 },
       ],
-      languages: ['JS/TS', 'HTML', 'CSS/LESS/SASS/SCSS', 'SQL', 'C/C++', 'PHP', 'Python', 'Bash'],
+      languages: ['JS/TS', 'HTML', 'CSS/LESS/SCSS', 'SQL', 'C/C++', 'PHP', 'Python', 'Bash'],
       operatingSystems: ['Linux', 'Windows', 'Android', 'iOS', 'MacOS'],
       technologies: [
         {

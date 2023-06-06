@@ -3,14 +3,25 @@
 .CommonInfo {
   display: flex;
   flex-direction: row;
+  gap: $medium-space;
   padding: $tiny-space $tiny-space $medium-space;
 
   &__Photo {
+    width: $app-photo-width;
     height: $app-photo-height;
   }
 
   &__Main {
-    margin: 0 $medium-space;
     min-width: max-content;
+  }
+}
+
+@media (max-width: $md) {
+  .CommonInfo {
+    flex-direction: column;
+
+    &__Photo {
+      align-self: center;
+    }
   }
 }
