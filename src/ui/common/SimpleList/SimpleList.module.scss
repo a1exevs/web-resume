@@ -3,9 +3,11 @@
     padding: 0;
     margin: 0;
     list-style-type: '\2713';
-    &Item {
-      &Value {
-      }
-    }
+  }
+
+  &__ContentItem {
+  }
+
+  &__ContentItemValue {
   }
 }

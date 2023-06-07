@@ -7,6 +7,7 @@
 
   &__ListsBlock {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
@@ -25,5 +26,13 @@
   }
 
   &__TechnologiesData {
+  }
+}
+
+@media (max-width: $sm) {
+  .TechnicalSkills {
+    &__ListsBlock {
+      flex-direction: column;
+    }
   }
 }
