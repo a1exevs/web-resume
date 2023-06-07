@@ -1,7 +1,7 @@
 @import 'src/common/styles/constants';
 
 .Header {
-  min-height: calc($large-space + ($medium-space / 2));
+  min-height: calc($large-space + $tiny-space);
 
   &__Content {
     display: flex;
