@@ -42,3 +42,13 @@
     background: $app-background-color;
   }
 }
+
+@media (max-width: $md) {
+  .RecordList {
+    &__Content {
+      &_withMinWith {
+        min-width: 100%;
+      }
+    }
+  }
+}
