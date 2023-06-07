@@ -17,7 +17,7 @@ const CommonInfo: React.FC<Props> = ({ data }) => (
       <Field label={'Work at'} value={data.workAt} />
     </div>
     <div className={classes.CommonInfo__Summary}>
-      <Field label={'Summary'} value={data.summary} type="block" />
+      <Field label={'Summary'} value={data.summary} orientation={'column'} />
     </div>
   </div>
 );

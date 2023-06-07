@@ -5,7 +5,7 @@ $indicator-size: 24px;
 $indicator-size-offset: 4px;
 $indicator-active-size: $indicator-size + $indicator-size-offset;
 $indicator-radius: 50%;
-$indicator-active-color: #53a7eb;
+$indicator-active-color: $active-element-color;
 $indicator-color: $border-color;
 $line-width: 1px;
 

@@ -4,20 +4,21 @@
   margin: $tiny-space $small-space;
   display: flex;
   flex-direction: row;
+  gap: $tiny-space;
 
   &_block {
     flex-direction: column;
   }
 
   &__Label {
-    &_tinyRightPadding {
-      padding-right: $tiny-space;
-    }
-    &_tinyBottomPadding {
-      padding-bottom: $tiny-space;
-    }
   }
 
   &__Value {
+  }
+}
+
+@media (max-width: $sm) {
+  .Field {
+    flex-direction: column;
   }
 }

@@ -46,13 +46,18 @@ const TechnicalSkills: React.FC<Props> = ({
       <div className={classes.TechnicalSkills__TechnologiesData}>
         <label className="IntermediateTitle IntermediateTitle_withCenterAlignment">{'Technologies:'}</label>
         {technologies.map((technology, index) => (
-          <Field key={index} type={'block'} label={technology.language} value={technology.technologies.join(', ')} />
+          <Field
+            key={index}
+            orientation={'column'}
+            label={technology.language}
+            value={technology.technologies.join(', ')}
+          />
         ))}
       </div>
       <div className={classes.TechnicalSkills__TechnologiesData}>
         <label className="IntermediateTitle IntermediateTitle_withCenterAlignment">{'Software:'}</label>
         {software.map(softwareItem => (
-          <Field key={softwareItem.id} type={'block'} value={softwareItem.softList.join(', ')} />
+          <Field key={softwareItem.id} orientation={'column'} value={softwareItem.softList.join(', ')} />
         ))}
       </div>
     </div>

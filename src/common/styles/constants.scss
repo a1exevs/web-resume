@@ -1,9 +1,15 @@
 //breakpoints
-$xs: 0;
-$sm: 600px;
-$md: 900px;
-$lg: 1200px;
-$xl: 1536px;
+$xsPx: 0;
+$smPx: 600;
+$mdPx: 900;
+$lgPx: 1200;
+$xlPx: 1536;
+
+$xs: $xsPx * 1px;
+$sm: $smPx * 1px;
+$md: $mdPx * 1px;
+$lg: $lgPx * 1px;
+$xl: $xlPx * 1px;
 
 //colors
 $default-text-color: #e8e6e3;
@@ -64,3 +70,11 @@ $hover-opacity: 0.8;
 
 //z-indexes
 $z-index-large: 1000;
+
+:export {
+  xs: $xsPx;
+  sm: $smPx;
+  md: $mdPx;
+  lg: $lgPx;
+  xl: $xlPx;
+}

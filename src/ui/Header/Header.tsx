@@ -12,7 +12,7 @@ const Header: React.FC<Props> = ({ data }) => (
   <header className={classes.Header}>
     <div className={cn(classes.Header__Content, classes.Header__Content_fixedTopPosition)}>
       <label className="Title">Web-resume</label>
-      <Field label={'Last update'} value={dateToString(data.lastUpdateDate)} type={'block'} />
+      <Field label={'Last update'} value={dateToString(data.lastUpdateDate)} orientation={'column'} />
     </div>
   </header>
 );
