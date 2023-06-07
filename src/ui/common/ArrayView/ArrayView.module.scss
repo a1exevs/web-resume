@@ -3,10 +3,15 @@
 
 $grid-gap: $small-space;
 $line-height: $small-line-height;
+$default-column-count: 4;
+$column-count: var(--columns-count, 4);
+$column-count-md: calc($column-count * 0.75);
+$column-count-sm: calc($column-count * 0.5);
+$column-count-xs: 1;
 
 .ArrayView {
   display: grid;
-  grid-template-columns: repeat(var(--columns-count, 4), 1fr);
+  grid-template-columns: repeat($column-count, 1fr);
   grid-gap: $grid-gap;
   justify-items: stretch;
   align-items: center;
@@ -16,5 +21,23 @@ $line-height: $small-line-height;
     padding: $small-space $medium-space;
     border: $medium-active-border;
     border-radius: calc($grid-gap * 2 + $line-height);
+  }
+}
+
+@media (max-width: $lg) {
+  .ArrayView {
+    grid-template-columns: repeat($column-count-md, 1fr);
+  }
+}
+
+@media (max-width: $md) {
+  .ArrayView {
+    grid-template-columns: repeat($column-count-sm, 1fr);
+  }
+}
+
+@media (max-width: $sm) {
+  .ArrayView {
+    grid-template-columns: repeat($column-count-xs, 1fr);
   }
 }
