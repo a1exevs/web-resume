@@ -12,9 +12,24 @@ type Props = {
    */
   orientation?: 'row' | 'column';
   isLink?: boolean;
+  withoutHSpace?: boolean;
+  withoutVSpace?: boolean;
 };
-const Field: React.FC<Props> = ({ label, value, orientation = 'row', isLink = false }) => (
-  <div className={cn(classes.Field, { [classes.Field_block]: orientation === 'column' })}>
+const Field: React.FC<Props> = ({
+  label,
+  value,
+  orientation = 'row',
+  isLink = false,
+  withoutHSpace = false,
+  withoutVSpace = false,
+}) => (
+  <div
+    className={cn(classes.Field, {
+      [classes.Field_block]: orientation === 'column',
+      [classes.Field_withoutHMargin]: withoutHSpace,
+      [classes.Field_withoutVMargin]: withoutVSpace,
+    })}
+  >
     {label && <label className={cn(classes.Field__Label, 'Label')}>{`${label}:`}</label>}
     {isLink ? (
       <a className={cn(classes.Field__Value, 'Link')} title={value} href={value}>

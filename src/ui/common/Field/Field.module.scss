@@ -6,6 +6,16 @@
   flex-direction: row;
   gap: $tiny-space;
 
+  &_withoutHMargin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &_withoutVMargin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   &_block {
     flex-direction: column;
   }
