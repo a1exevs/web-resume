@@ -10,6 +10,7 @@ $tab-height: calc(2 * $small-line-height);
   flex: $normal-flex;
   min-height: $tab-height;
   cursor: pointer;
+  -webkit-tap-highlight-color: $active-element-tap-color;
 
   &__Name {
     display: flex;
