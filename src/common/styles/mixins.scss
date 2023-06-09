@@ -28,3 +28,15 @@
   padding: $small-space;
   margin: $small-space;
 }
+
+@mixin tabName($active: false) {
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  @if ($active) {
+    @include font($small-font-size, $super-bold-font-weight, $small-line-height, $active-element-color);
+  } @else {
+    @include font($small-font-size, $bold-font-weight, $small-line-height, $default-text-color);
+  }
+}

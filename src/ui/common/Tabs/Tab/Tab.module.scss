@@ -1,26 +1,30 @@
 @import 'src/common/styles/constants';
 @import 'src/common/styles/mixins';
 
+$tab-height: calc(2 * $small-line-height);
+
 .Tab {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: $normal-flex;
-  min-height: calc(2 * $small-line-height);
+  min-height: $tab-height;
+  cursor: pointer;
 
   &__Name {
+    display: flex;
+    gap: $small-space;
     text-transform: uppercase;
-    @include font($small-font-size, $bold-font-weight, $small-line-height, $default-text-color);
+    @include tabName(false);
 
     &_active {
-      @include font($small-font-size, $super-bold-font-weight, $small-line-height, $active-element-color);
-      border-bottom: $medium-active-border;
+      @include tabName(true);
     }
 
     &:hover {
       background: $hover-color;
       opacity: $hover-opacity;
-      transition: $transition-fast-duration ease-in-out;
+      transition: $transition-tiny-duration ease-in-out;
     }
   }
 
@@ -29,5 +33,14 @@
   }
 
   &_active {
+    background-color: $card-background-color;
+  }
+}
+
+@media (max-width: $sm) {
+  .Tab {
+    &__NameText {
+      display: none;
+    }
   }
 }

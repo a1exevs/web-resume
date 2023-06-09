@@ -4,11 +4,16 @@
   display: flex;
   flex-direction: row;
   gap: $medium-space;
-  padding: $tiny-space $small-space $medium-space;
+  padding: $medium-space $small-space;
 
   &__Photo {
-    width: $app-photo-width;
-    height: $app-photo-height;
+    min-width: $app-photo-height;
+    min-height: $app-photo-height;
+    max-width: $app-photo-height;
+    max-height: $app-photo-height;
+    object-fit: cover;
+    border-radius: 50%;
+    border: $avatar-border;
   }
 
   &__Main {

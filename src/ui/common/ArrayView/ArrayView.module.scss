@@ -18,9 +18,9 @@ $column-count-xs: 1;
 
   &__Item {
     text-align: center;
-    padding: $small-space $medium-space;
-    border: $medium-active-border;
-    border-radius: calc($grid-gap * 2 + $line-height);
+    padding: $tiny-space $medium-space;
+    border: $accent-border;
+    border-radius: 1em;
   }
 }
 

@@ -1,3 +1,5 @@
+import { IconName } from 'src/ui/common/Icon/Icon';
+
 export type HeaderData = {
   lastUpdateDate: Date;
 };
@@ -11,11 +13,17 @@ export type CommonInfoData = {
   summary: string;
 };
 
-export enum ContentTabNames {
-  TECHNICAL_SKILLS = 'Technical skills',
-  CAREER_HISTORY = 'Career history',
-  PERSONAL_INFORMATION = 'Personal information',
+export enum ContentTabName {
+  TECHNICAL_SKILLS = 'TECHNICAL_SKILLS',
+  CAREER_HISTORY = 'CAREER_HISTORY',
+  PERSONAL_INFORMATION = 'PERSONAL_INFORMATION',
 }
+
+export type Tab = {
+  tabId: ContentTabName;
+  displayName: string;
+  tabIcon?: IconName;
+};
 
 export type TechArea = {
   name: string;
@@ -79,7 +87,7 @@ export type PersonalInformationData = {
 };
 
 export type ContentData = {
-  tabs: ContentTabNames[];
+  tabs: Tab[];
   technicalSkills: TechnicalSkillsData;
   careerHistory: CareerHistoryData;
   personalInformation: PersonalInformationData;

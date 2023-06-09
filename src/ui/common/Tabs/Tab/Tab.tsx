@@ -1,19 +1,28 @@
 import cn from 'classnames';
 import React from 'react';
 
-import { ContentTabNames } from 'src/store/store.types';
+import { Icon, IconName } from 'src/ui/common/Icon/Icon';
 import classes from 'src/ui/common/Tabs/Tab/Tab.module.scss';
 
 type Props = {
-  tabName: ContentTabNames;
+  tabId: string;
+  tabName: string;
+  tabIcon?: IconName;
   withRightBorder?: boolean;
   active?: boolean;
-  activeTabChanged: (tabName: ContentTabNames) => void;
+  activeTabChanged: (tabId: string) => void;
 };
 
-const Tab: React.FC<Props> = ({ tabName, withRightBorder = false, active = true, activeTabChanged }) => {
+const Tab: React.FC<Props> = ({
+  tabId,
+  tabName,
+  tabIcon,
+  withRightBorder = false,
+  active = true,
+  activeTabChanged,
+}) => {
   const onActiveTabChange = () => {
-    activeTabChanged(tabName);
+    activeTabChanged(tabId);
   };
 
   return (
@@ -22,14 +31,15 @@ const Tab: React.FC<Props> = ({ tabName, withRightBorder = false, active = true,
         [classes.Tab_withRightBorder]: withRightBorder,
         [classes.Tab_active]: active,
       })}
+      onClick={onActiveTabChange}
     >
       <label
         className={cn(classes.Tab__Name, {
           [classes.Tab__Name_active]: active,
         })}
-        onClick={onActiveTabChange}
       >
-        {tabName}
+        {tabIcon && <Icon name={tabIcon} />}
+        <span className={classes.Tab__NameText}>{tabName}</span>
       </label>
     </div>
   );

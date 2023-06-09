@@ -1,5 +1,6 @@
 import photo from 'src/assets/images/photo.jpg';
-import { ContentTabNames, Store } from 'src/store/store.types';
+import { ContentTabName, Store } from 'src/store/store.types';
+import { IconName } from 'src/ui/common/Icon/Icon';
 
 const store: Store = {
   header: {
@@ -15,7 +16,23 @@ const store: Store = {
       'Over 3 years of experience in software engineering including system analysis, design, application development and writing technical documentation.',
   },
   content: {
-    tabs: [ContentTabNames.TECHNICAL_SKILLS, ContentTabNames.CAREER_HISTORY, ContentTabNames.PERSONAL_INFORMATION],
+    tabs: [
+      {
+        tabId: ContentTabName.TECHNICAL_SKILLS,
+        displayName: 'Technical skills',
+        tabIcon: IconName.TECHNICAL_SHILLS,
+      },
+      {
+        tabId: ContentTabName.CAREER_HISTORY,
+        displayName: 'Career history',
+        tabIcon: IconName.CAREER_HISTORY,
+      },
+      {
+        tabId: ContentTabName.PERSONAL_INFORMATION,
+        displayName: 'Personal information',
+        tabIcon: IconName.PERSONAL_INFORMATION,
+      },
+    ],
     technicalSkills: {
       technicalAreas: [
         { name: 'Frontend Development - JS/TS', yearsCount: 3 },

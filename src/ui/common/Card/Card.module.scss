@@ -1,11 +1,12 @@
 @import 'src/common/styles/constants';
 @import 'src/common/styles/mixins';
 
-$box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+$box-shadow: 0 4px 8px #2121211a;
 $card-border-radius: 4px;
 
 .Card {
   @include block;
   box-shadow: $box-shadow;
   border-radius: $card-border-radius;
+  background-color: $card-background-color;
 }

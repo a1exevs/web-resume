@@ -19,6 +19,7 @@ $link-color: #00ff2b;
 $border-color: #a39b8e;
 $active-element-color: #36ba01;
 $green-border-color: #009a22;
+$card-background-color: #212121;
 
 //paddings/margins
 $tiny-space: 5px;
@@ -57,12 +58,17 @@ $normal-flex: 1;
 
 //borders/bars
 $tiny-border: 1px solid $border-color;
-$medium-active-border: 5px solid $green-border-color;
+$accent-border: 1px solid $green-border-color;
 $dotted-border: 2px dotted $default-text-color;
-$footer-border: 1px solid $border-color;
+$green-underline: 3px solid $active-element-color;
+$avatar-border: 2px solid $border-color;
 
 //transitions
-$transition-fast-duration: 0.2s;
+$transition-tiny-duration: 0.2s;
+$transition-small-duration: 0.3s;
+
+//cubic bezier
+$cb-like-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 
 //hovers
 $hover-color: transparent;
