@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React from 'react';
 
-import classes from 'src/ui/common/Field/Field.module.scss';
+import classes from 'src/ui/common/components/Field/Field.module.scss';
 
 type Props = {
   label?: string;

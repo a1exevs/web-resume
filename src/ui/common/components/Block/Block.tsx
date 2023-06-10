@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React from 'react';
 
-import classes from 'src/ui/common/Block/Block.module.scss';
+import classes from 'src/ui/common/components/Block/Block.module.scss';
 
 type Props = {
   withoutSpaces?: boolean;

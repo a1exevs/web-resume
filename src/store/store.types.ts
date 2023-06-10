@@ -1,4 +1,4 @@
-import { IconName } from 'src/ui/common/Icon/Icon';
+import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 export type HeaderData = {
   lastUpdateDate: Date;

@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React, { CSSProperties } from 'react';
 
-import classes from 'src/ui/common/ArrayView/ArrayView.module.scss';
+import classes from 'src/ui/common/components/ArrayView/ArrayView.module.scss';
 
 type Props = {
   items: string[];

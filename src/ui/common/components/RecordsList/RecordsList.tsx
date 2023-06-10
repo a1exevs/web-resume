@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React from 'react';
 
-import classes from 'src/ui/common/RecordsList/RecordsList.module.scss';
+import classes from 'src/ui/common/components/RecordsList/RecordsList.module.scss';
 
 type Props = {
   items: { name: string; value: string }[];

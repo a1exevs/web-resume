@@ -3,7 +3,7 @@ import React from 'react';
 
 import { dateToString } from 'src/common/helpers/date-helper';
 import { HeaderData } from 'src/store/store.types';
-import Field from 'src/ui/common/Field/Field';
+import Field from 'src/ui/common/components/Field/Field';
 import classes from 'src/ui/Header/Header.module.scss';
 
 type Props = { data: HeaderData };

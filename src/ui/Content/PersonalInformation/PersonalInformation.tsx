@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { PersonalInformationData } from 'src/store/store.types';
-import Block from 'src/ui/common/Block/Block';
-import Card from 'src/ui/common/Card/Card';
-import Field from 'src/ui/common/Field/Field';
+import Block from 'src/ui/common/components/Block/Block';
+import Card from 'src/ui/common/components/Card/Card';
+import Field from 'src/ui/common/components/Field/Field';
 import classes from 'src/ui/Content/PersonalInformation/PersonalInformation.module.scss';
 
 type Props = PersonalInformationData;

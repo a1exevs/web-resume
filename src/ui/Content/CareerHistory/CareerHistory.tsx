@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { CareerHistoryData } from 'src/store/store.types';
-import Block from 'src/ui/common/Block/Block';
-import Card from 'src/ui/common/Card/Card';
-import Field from 'src/ui/common/Field/Field';
-import Stepper from 'src/ui/common/Stepper/Stepper';
+import Block from 'src/ui/common/components/Block/Block';
+import Card from 'src/ui/common/components/Card/Card';
+import Field from 'src/ui/common/components/Field/Field';
+import Stepper from 'src/ui/common/components/Stepper/Stepper';
 import classes from 'src/ui/Content/CareerHistory/CareerHistory.module.scss';
 
 type Props = CareerHistoryData;

@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React from 'react';
 
-import classes from 'src/ui/common/SimpleList/SimpleList.module.scss';
+import classes from 'src/ui/common/components/SimpleList/SimpleList.module.scss';
 
 type Props = {
   items: string[];

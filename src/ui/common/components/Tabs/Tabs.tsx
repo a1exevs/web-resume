@@ -3,8 +3,8 @@ import React, { CSSProperties, useState } from 'react';
 
 import { isUndefined } from 'src/common/helpers/type-guards.helper';
 import { Tab } from 'src/store/store.types';
-import TabComponent from 'src/ui/common/Tabs/Tab/Tab';
-import classes from 'src/ui/common/Tabs/Tabs.module.scss';
+import TabComponent from 'src/ui/common/components/Tabs/Tab/Tab';
+import classes from 'src/ui/common/components/Tabs/Tabs.module.scss';
 
 type Props = {
   tabs: Tab[];

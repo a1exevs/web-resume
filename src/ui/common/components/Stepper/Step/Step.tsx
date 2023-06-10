@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React, { ReactNode } from 'react';
 
-import classes from 'src/ui/common/Stepper/Step/Step.module.scss';
+import classes from 'src/ui/common/components/Stepper/Step/Step.module.scss';
 
 type Props = {
   current?: boolean;

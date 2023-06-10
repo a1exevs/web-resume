@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { ContentData, ContentTabName } from 'src/store/store.types';
-import Tabs from 'src/ui/common/Tabs/Tabs';
+import Tabs from 'src/ui/common/components/Tabs/Tabs';
 import CareerHistory from 'src/ui/Content/CareerHistory/CareerHistory';
 import classes from 'src/ui/Content/Content.module.scss';
 import PersonalInformation from 'src/ui/Content/PersonalInformation/PersonalInformation';

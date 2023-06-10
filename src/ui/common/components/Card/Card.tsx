@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from 'src/ui/common/Card/Card.module.scss';
+import classes from 'src/ui/common/components/Card/Card.module.scss';
 
 type Props = {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 import photo from 'src/assets/images/photo.jpg';
 import { ContentTabName, Store } from 'src/store/store.types';
-import { IconName } from 'src/ui/common/Icon/Icon';
+import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 const store: Store = {
   header: {

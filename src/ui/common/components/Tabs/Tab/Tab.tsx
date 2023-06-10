@@ -1,8 +1,8 @@
 import cn from 'classnames';
 import React from 'react';
 
-import { Icon, IconName } from 'src/ui/common/Icon/Icon';
-import classes from 'src/ui/common/Tabs/Tab/Tab.module.scss';
+import { Icon, IconName } from 'src/ui/common/components/Icon/Icon';
+import classes from 'src/ui/common/components/Tabs/Tab/Tab.module.scss';
 
 type Props = {
   tabId: string;
