@@ -21,10 +21,11 @@ const CareerHistory: React.FC<Props> = ({ companyExperiences }) => (
             <Field label={'Career'} value={experience.career} />
           </Block>
           <label
-            className={'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutTopMargin'}
+            className={'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'}
           >
-            {'Project list (the most recent projects at the top)'}
+            {'Project list'}
           </label>
+          <label className={'Label Label_tiny Label_alignment-center'}>{'(the most recent projects at the top)'}</label>
           {experience.projectList.map((project, index) => (
             <Card key={index}>
               <Field label={'Project description'} value={project.projectDescription} />

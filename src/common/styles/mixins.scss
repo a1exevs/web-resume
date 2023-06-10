@@ -4,6 +4,10 @@
   padding: $tiny-space;
 }
 
+@mixin tiny-normal-text($text-color: $default-text-color) {
+  @include font($tiny-font-size, $normal-font-weight, $tiny-line-height, $text-color);
+}
+
 @mixin small-normal-text($text-color: $default-text-color) {
   @include font($small-font-size, $normal-font-weight, $small-line-height, $text-color);
 }

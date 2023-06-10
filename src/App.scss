@@ -46,10 +46,27 @@
   &_withoutTopMargin {
     margin-top: 0;
   }
+
+  &_withoutBottomMargin {
+    margin-bottom: 0;
+  }
+
+  &_withoutVMargins {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .Label {
   @include small-normal-text($gray-text-color);
+
+  &_tiny {
+    @include tiny-normal-text($gray-text-color);
+  }
+
+  &_alignment-center {
+    text-align: center;
+  }
 }
 
 .Text {
