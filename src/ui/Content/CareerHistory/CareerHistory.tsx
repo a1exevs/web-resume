@@ -13,7 +13,7 @@ const CareerHistory: React.FC<Props> = ({ companyExperiences }) => (
   <div className={classes.CareerHistory}>
     <Stepper>
       {companyExperiences.map((experience, index) => (
-        <div key={index} style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+        <div className={classes.CareerHistory__HistoryItem} key={index}>
           <Block>
             <Field label={'Company'} value={experience.companyName} />
             <Field label={'Website'} value={experience.website} isLink />
