@@ -1,13 +1,21 @@
 @import 'src/common/styles/constants';
 
+/**
+  *  paddings + gap + two rows height
+  */
+$content-height: calc(($tiny-space * 2 + $tiny-space) + 2.5em);
+$header-v-space: $tiny-space;
+
 .Header {
-  min-height: calc($large-space + $tiny-space);
+  min-height: calc($content-height + $header-v-space * 2);
+  box-sizing: border-box;
 
   &__Content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $tiny-space $small-space * 2;
+
+    padding: $header-v-space $small-space * 2;
 
     box-shadow: $app-bar-shadow;
     background-color: $app-bar-background-color;
