@@ -1,0 +1,22 @@
+@import 'src/common/styles/constants';
+@import 'src/common/styles/mixins';
+
+.Chip {
+  display: flex;
+  background-color: transparent;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  border-radius: 1em;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: $tiny-border;
+  padding: 0 $small-space;
+  overflow: hidden;
+
+  &__Text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

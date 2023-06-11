@@ -40,9 +40,15 @@ export type SoftwareCategory = {
   softList: string[];
 };
 
+export type LanguageData = {
+  name: string;
+  link?: string;
+  isMain: boolean;
+};
+
 export type TechnicalSkillsData = {
   technicalAreas: TechArea[];
-  languages: string[];
+  languages: LanguageData[];
   operatingSystems: string[];
   technologies: TechnologySet[];
   software: SoftwareCategory[];

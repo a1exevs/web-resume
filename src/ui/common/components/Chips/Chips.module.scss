@@ -9,7 +9,7 @@ $column-count-md: calc($column-count * 0.75);
 $column-count-sm: calc($column-count * 0.5);
 $column-count-xs: 1;
 
-.ArrayView {
+.Chips {
   display: grid;
   grid-template-columns: repeat($column-count, 1fr);
   grid-gap: $grid-gap;
@@ -25,19 +25,19 @@ $column-count-xs: 1;
 }
 
 @media (max-width: $lg) {
-  .ArrayView {
+  .Chips {
     grid-template-columns: repeat($column-count-md, 1fr);
   }
 }
 
 @media (max-width: $md) {
-  .ArrayView {
+  .Chips {
     grid-template-columns: repeat($column-count-sm, 1fr);
   }
 }
 
 @media (max-width: $sm) {
-  .ArrayView {
+  .Chips {
     grid-template-columns: repeat($column-count-xs, 1fr);
   }
 }

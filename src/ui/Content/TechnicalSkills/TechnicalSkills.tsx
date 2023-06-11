@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { TechnicalSkillsData } from 'src/store/store.types';
-import ArrayView from 'src/ui/common/components/ArrayView/ArrayView';
+import Block from 'src/ui/common/components/Block/Block';
+import Chip from 'src/ui/common/components/Chip/Chip';
 import Field from 'src/ui/common/components/Field/Field';
 import RecordsList from 'src/ui/common/components/RecordsList/RecordsList';
 import SimpleList from 'src/ui/common/components/SimpleList/SimpleList';
@@ -20,6 +21,8 @@ const TechnicalSkills: React.FC<Props> = ({
   const getYearsInAreaLabel = (yearsCount: number): string => `${yearsCount} ${yearsCount === 1 ? 'year' : 'years'}`;
 
   const listItems = technicalAreas.map(area => ({ name: area.name, value: getYearsInAreaLabel(area.yearsCount) }));
+  const mainLanguages = languages.filter(_ => _.isMain);
+  const additionalLanguages = languages.filter(_ => !_.isMain);
 
   return (
     <div className={classes.TechnicalSkills}>
@@ -31,7 +34,20 @@ const TechnicalSkills: React.FC<Props> = ({
       </div>
       <div className={classes.TechnicalSkills__LanguagesData}>
         <label className="IntermediateTitle IntermediateTitle_withCenterAlignment">{'Languages:'}</label>
-        <ArrayView items={languages} />
+        <div className={classes.TechnicalSkills__Languages}>
+          <Block inline>
+            <label className="Label">{'Main:'}</label>
+            {mainLanguages.map(language => (
+              <Chip text={language.name} />
+            ))}
+          </Block>
+          <Block inline>
+            <label className="Label">{'Also worked with:'}</label>
+            {additionalLanguages.map(language => (
+              <Chip text={language.name} />
+            ))}
+          </Block>
+        </div>
       </div>
       <div className={classes.TechnicalSkills__ListsBlock}>
         <div className={classes.TechnicalSkills__OperatingSystemsData}>

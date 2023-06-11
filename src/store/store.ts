@@ -35,12 +35,45 @@ const store: Store = {
     ],
     technicalSkills: {
       technicalAreas: [
-        { name: 'Frontend Development - JS/TS', yearsCount: 3 },
-        { name: 'Backend Development - NodeJS', yearsCount: 3 },
-        { name: 'Mobile development - JS/TS', yearsCount: 1 },
-        { name: 'Desktop Development - C++ (Qt5)', yearsCount: 3 },
+        { name: 'Frontend Development - (Angular, React)', yearsCount: 2 },
+        { name: 'Backend Development - NodeJS', yearsCount: 2 },
+        { name: 'Mobile development - (React Native)', yearsCount: 1 },
+        { name: 'Desktop Development - (Qt5)', yearsCount: 3 },
       ],
-      languages: ['JS/TS', 'HTML', 'CSS/LESS/SCSS', 'SQL', 'C/C++', 'PHP', 'Python', 'Bash'],
+      languages: [
+        {
+          name: 'JS/TS',
+          isMain: true,
+        },
+        {
+          name: 'HTML',
+          isMain: true,
+        },
+        {
+          name: 'CSS/LESS/SCSS',
+          isMain: true,
+        },
+        {
+          name: 'SQL',
+          isMain: false,
+        },
+        {
+          name: 'C/C++',
+          isMain: false,
+        },
+        {
+          name: 'PHP',
+          isMain: false,
+        },
+        {
+          name: 'Python',
+          isMain: false,
+        },
+        {
+          name: 'Bash',
+          isMain: false,
+        },
+      ],
       operatingSystems: ['Linux', 'Windows', 'Android', 'iOS', 'MacOS'],
       technologies: [
         {

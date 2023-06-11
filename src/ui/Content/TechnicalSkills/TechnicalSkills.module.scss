@@ -17,6 +17,12 @@
   &__LanguagesData {
   }
 
+  &__Languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__OperatingSystemsData {
     margin: 0 $medium-space;
   }
