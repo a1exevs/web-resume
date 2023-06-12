@@ -37,14 +37,14 @@ const TechnicalSkills: React.FC<Props> = ({
         <div className={classes.TechnicalSkills__Languages}>
           <Block inline>
             <label className="Label">{'Main:'}</label>
-            {mainLanguages.map(language => (
-              <Chip text={language.name} />
+            {mainLanguages.map((language, index) => (
+              <Chip key={index} text={language.name} />
             ))}
           </Block>
           <Block inline>
             <label className="Label">{'Also worked with:'}</label>
-            {additionalLanguages.map(language => (
-              <Chip text={language.name} />
+            {additionalLanguages.map((language, index) => (
+              <Chip key={index} text={language.name} />
             ))}
           </Block>
         </div>

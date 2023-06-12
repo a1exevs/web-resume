@@ -20,13 +20,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn run predeploy`
+### `yarn run build:dev`
 
-Builds the app (via `yarn run build:prod`). Needs for deployment.
+Builds the app for testing (via local static site) before deployment to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `yarn run deploy`
+### `yarn run serve`
 
-Deploys app on Github Pages.
+Serves a static site (after app building via 'yarn run build:dev').
 
 ### `yarn run build:prod`
 
@@ -38,9 +39,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn run serve`
+### `yarn run predeploy`
 
-Serves a static site (after app building).
+Runs prettier, linter, tests, then builds the app (via `yarn run build:prod`). Needs for deployment.
+
+### `yarn run deploy`
+
+Deploys app on Github Pages.
 
 ### `yarn run test`
 
