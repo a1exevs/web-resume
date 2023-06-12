@@ -41,7 +41,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn run predeploy`
 
-Builds the app (via `yarn run build:prod`). Needs for deployment.
+Runs prettier, linter, tests, then builds the app (via `yarn run build:prod`). Needs for deployment.
 
 ### `yarn run deploy`
 
