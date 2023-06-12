@@ -33,7 +33,7 @@
 
     "build:prod": "react-scripts build",
     "predeploy": "yarn run format && yarn run lint:fix && yarn run test && yarn run build:prod",
-    "deploy": "gh-pages -d build -m 'Release <vers>' -n",
+    "deploy": "gh-pages -d build -m 'Release <version>' -n",
 
     "prepare": "husky install",
     "eject": "react-scripts eject"
