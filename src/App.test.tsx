@@ -5,6 +5,6 @@ import App from 'src/App';
 
 test('Renders title of resume', () => {
   render(<App />);
-  const linkElement = screen.getByText('Resume of Alexander Olegovich Evstafiadi');
+  const linkElement = screen.getByText('Web-resume');
   expect(linkElement).toBeInTheDocument();
 });
