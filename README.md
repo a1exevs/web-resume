@@ -20,9 +20,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn run prebuild`
+### `yarn run predeploy`
 
 Builds the app (via `yarn run build:prod`). Needs for deployment.
+
+### `yarn run deploy`
+
+Deploys app on Github Pages.
 
 ### `yarn run build:prod`
 
