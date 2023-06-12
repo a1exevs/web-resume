@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build:dev": "PUBLIC_URL=/ react-scripts build",
     "build:prod": "react-scripts build",
     "serve": "serve -s build",
     "test": "react-scripts test",
