@@ -8,10 +8,11 @@ function useScreenWidthLessThen(screenWidth: number): boolean {
     function updateState() {
       setScreenLessThen(window.innerWidth <= screenWidth);
     }
+    const throttledUpdateStateFn = throttleTime(updateState);
 
-    window.addEventListener('resize', throttleTime(updateState));
+    window.addEventListener('resize', throttledUpdateStateFn);
     updateState();
-    return () => window.removeEventListener('resize', throttleTime(updateState));
+    return () => window.removeEventListener('resize', throttledUpdateStateFn);
   }, [screenWidth]);
   return isScreenLessThen;
 }
