@@ -88,7 +88,7 @@ Lifecycle yarn script. Executes Husky installation.
 
 ## Node version
 
-v18.16.0. Use NVM:
+v20.9.0. Use NVM:
 
 1. nvm current - check current version of Node
 2. nvm list - show list of available Node versions
