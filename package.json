@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:dev": "PUBLIC_URL=/ react-scripts build",
+    "build:dev": "set PUBLIC_URL= && react-scripts build",
     "serve": "serve -s build",
 
     "test": "react-scripts test",
@@ -33,7 +33,7 @@
 
     "build:prod": "react-scripts build",
     "predeploy": "yarn run format && yarn run lint:fix && yarn run test && yarn run build:prod",
-    "deploy": "gh-pages -d build -m 'Release <version>' -n",
+    "deploy": "gh-pages -d build",
 
     "prepare": "husky install",
     "eject": "react-scripts eject"
