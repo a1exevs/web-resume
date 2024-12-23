@@ -1,6 +1,7 @@
+import { isNull, Nullable } from '@alexevs/ts-guards';
+
 import { randomFloat, randomInt } from 'src/common/helpers/number.helper';
 import { getCharArray } from 'src/common/helpers/string.helper';
-import { isNull } from 'src/common/helpers/type-guards.helper';
 
 const WIDTH = window.innerWidth;
 const HEIGHT = window.innerHeight;
@@ -65,12 +66,12 @@ function fillArrayWithChars(fallingCharArr: Point[], charsCount: number) {
 const charsCountInLine = Math.floor(WIDTH / Point.fontSize);
 const fallingCharArr: Point[] = [];
 
-const canvas1 = document.getElementById('canvas1') as HTMLCanvasElement | null;
-const canvas2 = document.getElementById('canvas2') as HTMLCanvasElement | null;
+const canvas1 = document.getElementById('canvas1') as Nullable<HTMLCanvasElement>;
+const canvas2 = document.getElementById('canvas2') as Nullable<HTMLCanvasElement>;
 const canvasBackgroundColor = '#0000000d';
 
-let context1: CanvasRenderingContext2D | null = null;
-let context2: CanvasRenderingContext2D | null = null;
+let context1: Nullable<CanvasRenderingContext2D> = null;
+let context2: Nullable<CanvasRenderingContext2D> = null;
 
 if (!isNull(canvas1) && !isNull(canvas2)) {
   canvas1.width = canvas2.width = WIDTH;

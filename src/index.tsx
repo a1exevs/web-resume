@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import 'src/index.scss';
 import App from 'src/App';
 import { drawMatrixCanvas } from 'src/MatrixCanvas';
 import reportWebVitals from 'src/reportWebVitals';
+
+import 'src/index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
