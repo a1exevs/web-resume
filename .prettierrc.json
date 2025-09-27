@@ -1,7 +1,6 @@
 {
   "printWidth": 120,
   "tabWidth": 2,
-  "tabs": false,
   "semi": true,
   "singleQuote": true,
   "quoteProps": "as-needed",
@@ -19,6 +18,5 @@
   "vueIndentScriptAndStyle": false,
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
-  "singleAttributePerLine": false,
-  "editorconfig": true
+  "singleAttributePerLine": false
 }

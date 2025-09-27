@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
 body {
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 13 13 / var(--tw-bg-opacity, 1));
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -22,4 +24,42 @@ canvas {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+}
+
+// TODO: [REDESIGN] Use constants instead magic numbers
+:root {
+  --primary-color: #05c705;
+}
+.glitch {
+  text-shadow: -1px -1px 0px var(--primary-color), 1px 1px 0px #00ffff;
+  animation: glitch-effect 1.5s infinite;
+}
+@keyframes glitch-effect {
+  0% {
+    text-shadow: -1px -1px 0px var(--primary-color), 1px 1px 0px #00ffff;
+  }
+  25% {
+    text-shadow: 1px 1px 0px var(--primary-color), -1px -1px 0px #00ffff;
+  }
+  50% {
+    text-shadow: 1px -1px 0px var(--primary-color), -1px 1px 0px #00ffff;
+  }
+  75% {
+    text-shadow: -1px 1px 0px var(--primary-color), 1px -1px 0px #00ffff;
+  }
+  100% {
+    text-shadow: -1px -1px 0px var(--primary-color), 1px 1px 0px #00ffff;
+  }
+}
+
+a.active {
+  color: var(--primary-color);
+}
+
+a.pending {
+  animate: pulse 1s infinite;
+}
+
+a.transitioning {
+  /* css transition is running */
 }

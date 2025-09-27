@@ -4,7 +4,8 @@ import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 const store: Store = {
   header: {
-    lastUpdateDate: new Date('2/13/2023'),
+    photoPath: photo,
+    lastUpdateDate: '2/13/2023',
   },
   commonInfo: {
     photoPath: photo,

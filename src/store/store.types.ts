@@ -1,7 +1,8 @@
 import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 export type HeaderData = {
-  lastUpdateDate: Date;
+  photoPath: string;
+  lastUpdateDate: string;
 };
 
 export type CommonInfoData = {

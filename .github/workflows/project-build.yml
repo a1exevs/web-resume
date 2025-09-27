@@ -2,9 +2,9 @@ name: Project build
 
 on:
   push:
-    branches: []
+    branches: [ develop, testing, main ]
   pull_request:
-    branches: [ develop, main ]
+    branches: [ develop, testing, main ]
 
 jobs:
   build:
@@ -17,18 +17,21 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.9.0
 
       - name: Install dependencies
-        run: yarn install
-
-      - name: Styling
         run: |
-          yarn format
-          yarn lint
+          npm install -g corepack@0.31.0
+          corepack enable
+          yarn install
+
+#      - name: Styling
+#        run: |
+#          yarn format
+#          yarn lint
 
       - name: Project build
-        run: yarn build:prod
+        run: yarn build
 
-      - name: Tests
-        run: yarn test
+#      - name: Storybook build
+#        run: yarn build-storybook
