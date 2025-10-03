@@ -30,7 +30,7 @@ const Field: React.FC<Props> = ({
       [classes.Field_withoutVMargin]: withoutVSpace,
     })}
   >
-    {label && <label className={cn(classes.Field__Label, 'Label')}>{`${label}:`}</label>}
+    {label && <label className={cn(classes.Field__Label, 'Label', 'Label_keepWordBreak')}>{`${label}:`}</label>}
     {isLink ? (
       <a className={cn(classes.Field__Value, 'Link')} title={value} href={value}>
         {value}

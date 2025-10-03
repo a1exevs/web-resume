@@ -58,8 +58,10 @@ export type TechnicalSkillsData = {
 
 export type ProjectData = {
   projectDescription: string;
+  workPeriod: string;
   environment: string[];
   responsibilities: string[];
+  keyContributions: string[];
 };
 
 export type CompanyExperience = {

@@ -90,6 +90,10 @@
   &_alignment-center {
     text-align: center;
   }
+
+  &_keepWordBreak {
+    word-break: keep-all;
+  }
 }
 
 .Text {
