@@ -1,7 +1,7 @@
 /**
  * Returns random integer number
- * @param min
- * @param max
+ * @param min - min value
+ * @param max - max value
  */
 export function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min) + min);
@@ -9,8 +9,8 @@ export function randomInt(min: number, max: number) {
 
 /**
  * Returns random float number
- * @param min
- * @param max
+ * @param min - min value
+ * @param max - max value
  */
 export function randomFloat(min: number, max: number) {
   return Math.random() * (max - min) + min;

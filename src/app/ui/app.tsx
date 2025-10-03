@@ -1,10 +1,11 @@
 import React from 'react';
+import { Outlet } from 'react-router';
 
-import 'src/App.scss';
 import store from 'src/store/store';
 import { CommonInfoData, ContentData, FooterData, HeaderData } from 'src/store/store.types';
 import Header from 'src/ui/Header/Header';
-import { Outlet } from 'react-router';
+
+import 'src/app/ui/app.scss';
 
 type Props = {
   headerData: HeaderData;
@@ -13,12 +14,18 @@ type Props = {
   footerData: FooterData;
 };
 
-const AppContainer: React.FC<Props> = ({ headerData, commonInfoData }) => (
+const AppContainer: React.FC<Props> = ({ headerData }) => (
   <div className="App">
     <div className="App__Canvas"></div>
     <div className="App__Content">
       <Header data={headerData} />
-      <Outlet />
+      <main className="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40">
+        <div className="mx-auto max-w-5xl">
+          <div className="border border-[#273a27] bg-black/50 p-6 backdrop-blur-sm">
+            <Outlet />
+          </div>
+        </div>
+      </main>
     </div>
   </div>
 );

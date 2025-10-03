@@ -1,7 +1,7 @@
 /**
  *
- * @param callback
- * @param delay
+ * @param callback - callback function
+ * @param delay - delay in milliseconds
  */
 export function throttleTime<T extends unknown[]>(callback: (...args: T) => unknown, delay = 250) {
   let shouldWait = false;

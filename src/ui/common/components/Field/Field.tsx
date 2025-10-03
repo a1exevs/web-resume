@@ -8,7 +8,7 @@ type Props = {
   value: string;
   /**
    * Orientation of field label and value
-   * @warning. For mobile version orientation always is 'column'
+   * For mobile version orientation always is 'column'
    */
   orientation?: 'row' | 'column';
   isLink?: boolean;
