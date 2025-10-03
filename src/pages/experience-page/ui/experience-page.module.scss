@@ -1,0 +1,22 @@
+@import 'src/common/styles/constants';
+@import 'src/common/styles/mixins';
+@import 'src/ui/Content/common/style/mixins';
+
+.ExperiencePage {
+  &__Content {
+    @include content-page;
+  }
+  &__HistoryItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__ContributionsData {
+    display: flex;
+    flex-direction: column;
+    gap: $small-space;
+  }
+  &__ContributionsList {
+    padding: 0 4*$small-space;
+  }
+}
