@@ -25,10 +25,10 @@ jobs:
           corepack enable
           yarn install
 
-#      - name: Styling
-#        run: |
-#          yarn format
-#          yarn lint
+      - name: Styling
+        run: |
+          yarn format
+          yarn lint
 
       - name: Project build
         run: yarn build

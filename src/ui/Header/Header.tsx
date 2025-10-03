@@ -1,7 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 import { HeaderData } from 'src/store/store.types';
-import { NavLink } from 'react-router';
 
 // TODO: [REDESIGN] Rewrite without tailwing
 
