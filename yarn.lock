@@ -12,10 +12,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@alexevs/ts-guards@npm:0.7.3":
-  version: 0.7.3
-  resolution: "@alexevs/ts-guards@npm:0.7.3"
-  checksum: 10c0/548697ac3f34d6db3ae1065f53492c96336a68230ad0fbe3616d3e852defe562b4ce8005f25b6d5e6a6d9cf10ec0c1379c7fd7f4c6593bbc29096262e2614ebc
+"@alexevs/prettier-config@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@alexevs/prettier-config@npm:1.0.0"
+  peerDependencies:
+    prettier: 3.5.3
+  checksum: 10c0/a295d5f54e5770a85d30c44e3042af02adebf29921b26a0cc712993b5e446306f3ed8eb7177d40b1a952d139634b73ac64458de28444afaca79e03ebec572446
+  languageName: node
+  linkType: hard
+
+"@alexevs/ts-guards@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@alexevs/ts-guards@npm:1.0.5"
+  checksum: 10c0/381291392d55131284728b22a923b048ef4988d698960fe9bd8ad454667bf3121ffd22f596333c6d77edd1437898f4b4a06d1b3a270f95f55701119d45275618
   languageName: node
   linkType: hard
 
@@ -15343,7 +15352,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web-resume@workspace:."
   dependencies:
-    "@alexevs/ts-guards": "npm:0.7.3"
+    "@alexevs/prettier-config": "npm:1.0.0"
+    "@alexevs/ts-guards": "npm:1.0.5"
     "@babel/plugin-proposal-private-property-in-object": "npm:7.21.11"
     "@eslint/js": "npm:9.23.0"
     "@testing-library/jest-dom": "npm:5.16.5"
