@@ -1,7 +1,8 @@
 import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 export type HeaderData = {
-  lastUpdateDate: Date;
+  photoPath: string;
+  lastUpdateDate: string;
 };
 
 export type CommonInfoData = {
@@ -57,8 +58,10 @@ export type TechnicalSkillsData = {
 
 export type ProjectData = {
   projectDescription: string;
+  workPeriod: string;
   environment: string[];
   responsibilities: string[];
+  keyContributions: string[];
 };
 
 export type CompanyExperience = {

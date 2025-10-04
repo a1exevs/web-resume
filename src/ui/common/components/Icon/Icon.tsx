@@ -6,7 +6,7 @@ export enum IconName {
   PERSONAL_INFORMATION = 'PERSONAL_INFORMATION',
 }
 
-const getIconPath = (iconName: IconName): React.JSX.Element => {
+const getIconPath = (iconName: IconName): React.ReactNode => {
   switch (iconName) {
     case IconName.TECHNICAL_SHILLS: {
       return (

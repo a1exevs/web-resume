@@ -4,7 +4,8 @@ import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 const store: Store = {
   header: {
-    lastUpdateDate: new Date('2/13/2023'),
+    photoPath: photo,
+    lastUpdateDate: '2/13/2023',
   },
   commonInfo: {
     photoPath: photo,
@@ -124,72 +125,123 @@ const store: Store = {
     careerHistory: {
       companyExperiences: [
         {
-          workPeriod: '21.03.2022 – Present',
+          workPeriod: 'Mar 2022 – Present',
           companyName: 'DSR Corporation',
           website: 'https://en.dsr-corporation.com',
           career: 'Software Engineer',
           projectList: [
             {
-              projectDescription: 'Frontend development (LABWORKS Web Client)',
-              environment: ['Windows', 'Git', 'Azure', 'Angular2+/AngularJS/React', 'RxJS', 'TS/JS', 'Jest'],
-              responsibilities: ['design', 'implementation', 'debug', 'testing'],
+              projectDescription:
+                'eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories.',
+              workPeriod: 'Jun 2022 – Present',
+              environment: [
+                'Angular 2+ / AngularJS',
+                'React',
+                'RxJS',
+                'TypeScript',
+                'LESS',
+                'Azure',
+                'Webpack',
+                'Jasmine',
+                'Karma',
+                'Playwright',
+              ],
+              responsibilities: [
+                'front-end development',
+                'feature implementation',
+                'debugging',
+                'testing',
+                'code review',
+                'design',
+                'dev validation',
+              ],
+              keyContributions: [
+                'As part of a feature team, developed the Layout Builder module — a visual content layout configuration tool for dialog windows;',
+                'Built an Excel-like table within a dedicated module with complex business logic support;',
+                'Maintained the Alias mechanism for dynamic renaming of business entities throughout the system;',
+                'Implemented license-based feature control, adjusting functionality availability based on active licenses;',
+                'Contributed to the statistics module: implemented and optimized chart rendering logic and patched the D3 library to meet project-specific requirements.',
+              ],
             },
             {
-              projectDescription: 'Microfrontend/REST API development (REDX Ad Builder)',
-              environment: [
-                'Windows',
-                'WSL2',
-                'Git',
-                'Gitlab',
-                'Vue',
-                'NestJS',
-                'MariaDB',
-                'MicroORM',
-                'TS/JS',
-                'Jest',
+              projectDescription:
+                'Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data.',
+              workPeriod: 'Jan 2024 – Mar 2024',
+              environment: ['Angular 2+', 'RxJS', 'TypeScript', 'Jasmine', 'Karma', 'Azure', 'MS Excel'],
+              responsibilities: [
+                'front-end development',
+                'feature implementation',
+                'debugging',
+                'testing',
+                'code review',
+                'design',
+                'dev validation',
               ],
-              responsibilities: ['design', 'implementation', 'debug', 'testing'],
+              keyContributions: [
+                'Optimized the plugin’s performance in the web version of Excel, significantly speeding up several resource-intensive operations;',
+                'Took part in designing and implementing the application versioning mechanism.',
+              ],
+            },
+            {
+              projectDescription:
+                'eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories.',
+              workPeriod: 'Sep 2023 – Jan 2024',
+              environment: ['Angular 2+', 'NgXs', 'RxJS', 'TypeScript', 'Jasmine', 'Cypress', 'Azure'],
+              responsibilities: [
+                'front-end development',
+                'feature implementation',
+                'debugging',
+                'testing',
+                'code review',
+                'design',
+                'dev validation',
+              ],
+              keyContributions: [
+                'Implemented a specific column resizing, ordering, and selection mechanism for new pages (distinct in behavior from existing ones) based on customer requirements, applying the Strategy design pattern;',
+                'Optimized user access control logic across pages and UI elements based on permissions.',
+              ],
+            },
+            {
+              projectDescription:
+                'Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms.',
+              workPeriod: 'Mar 2022 – Jun 2022',
+              environment: ['React', 'Redux', 'NestJS', 'MikroORM', 'MariaDB', 'GitLab'],
+              responsibilities: ['full-stack development', 'feature implementation', 'debugging', 'testing'],
+              keyContributions: [
+                'Joined the project from day one and helped define its architecture;',
+                'Integrated third-party services such as Facebook and Instagram;',
+                'Significantly improved the deployment pipeline using containerization (Docker), speeding up delivery and app maintenance.',
+              ],
             },
           ],
         },
         {
-          workPeriod: '22.11.2019 – 18.03.2022',
+          workPeriod: 'Nov 2019 – Mar 2022',
           companyName: 'Technomarket',
           website: 'https://tm-v.ru',
           career: 'Software Engineer',
           projectList: [
             {
-              projectDescription: 'REST API development',
-              environment: ['Linux', 'Git', 'NestJS', 'MySql', 'Sequilize', 'TypeScript'],
-              responsibilities: ['implementation', 'debug', 'testing'],
-            },
-            {
-              projectDescription: 'Web client development (SPA)',
-              environment: ['Linux', 'Git', 'React', 'Redux', 'Jest', 'TypeScript'],
-              responsibilities: ['design', 'implementation', 'debug', 'testing'],
-            },
-            {
-              projectDescription: 'Desktop client',
-              environment: ['Linux', 'Jenkins', 'Git', 'Qt5', 'qmake', 'C++11'],
-              responsibilities: ['tech leading', 'design', 'implementation', 'debug', 'testing'],
-            },
-            {
-              projectDescription: 'SOAP/REST-server development',
-              environment: ['Linux', 'Kohana', 'MySql', 'Zend Soap', 'PHP'],
-              responsibilities: ['implementation', 'tech leading', 'debug', 'testing'],
-            },
-          ],
-        },
-        {
-          workPeriod: '11.2018 – 05.2019',
-          companyName: 'Ratex (on the basis of VSU)',
-          website: 'https://www.rusprofile.ru/id/2201449',
-          career: 'Junior Physics Researcher',
-          projectList: [
-            {
-              projectDescription: 'Software for research in the area of SISO and MIMO Radio channels',
-              environment: ['Windows', 'Matlab', 'Qt5', 'qmake', 'C++11'],
-              responsibilities: ['implementation', 'debug', 'testing'],
+              projectDescription:
+                'SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields.',
+              workPeriod: 'Nov 2019 – Mar 2022',
+              environment: ['React', 'Redux', 'NestJS', 'MySql', 'Sequilize', 'Jest', 'TypeScript', 'Git', 'Linux'],
+              responsibilities: [
+                'full-stack development',
+                'tech leadership',
+                'features implementation',
+                'debugging',
+                'refactoring',
+                'testing',
+                'code review',
+              ],
+              keyContributions: [
+                'Took part in end-to-end development of all major components — web client, web server, and desktop app — from MVP to a full-scale system now used across multiple healthcare facilities in the Voronezh and Lipetsk regions;',
+                'Led development of the “Report Builder” module, enabling dynamic form generation and PDF templates based on flexible XML schemas;',
+                'Helped integrate the system with other medical platforms like VOKKDC and MedSoft;',
+                'Contributed to the architecture of the “Configurator” — a core module for setting up organizations, workstations, and their relationships;',
+                'Migrated key functionality from the legacy desktop app to a modern web-based solution.',
+              ],
             },
           ],
         },

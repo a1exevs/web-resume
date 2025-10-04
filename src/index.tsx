@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { RouterProvider } from 'react-router';
 
-import App from 'src/App';
+import { router } from 'src/app/ui/router';
 import { drawMatrixCanvas } from 'src/MatrixCanvas';
 import reportWebVitals from 'src/reportWebVitals';
 
@@ -10,7 +11,7 @@ import 'src/index.scss';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
 

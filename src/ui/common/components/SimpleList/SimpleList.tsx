@@ -1,3 +1,4 @@
+import { isEmpty } from '@alexevs/ts-guards';
 import cn from 'classnames';
 import React from 'react';
 
@@ -5,10 +6,11 @@ import classes from 'src/ui/common/components/SimpleList/SimpleList.module.scss'
 
 type Props = {
   items: string[];
+  className?: string;
 };
 
-const SimpleList: React.FC<Props> = ({ items = [] }) => (
-  <div className={classes.SimpleList}>
+const SimpleList: React.FC<Props> = ({ items = [], className = '' }) => (
+  <div className={cn(classes.SimpleList, isEmpty(className) ? '' : className)}>
     <ul className={cn(classes.SimpleList__Content)}>
       {items.map((item, index) => (
         <li key={index} className={classes.SimpleList__ContentItem}>
