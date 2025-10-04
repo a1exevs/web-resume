@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 
+import logo from 'src/logo.svg';
 import { HeaderData } from 'src/store/store.types';
 
 // TODO: [REDESIGN] Rewrite without tailwing
@@ -10,8 +11,8 @@ type Props = { data: HeaderData };
 const Header: React.FC<Props> = ({ data }) => (
   <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3">
     <div className="flex items-center gap-3 text-[var(--primary-color)]">
-      <span className="material-symbols-outlined text-2xl"> data_object </span>
-      <h1 className="glitch text-xl font-bold uppercase tracking-widest">RESUME.HTML</h1>
+      <img alt="logo" src={logo} width={48} />
+      <h1 className="glitch text-xl font-bold tracking-widest">Web-resume</h1>
     </div>
     <div className="hidden items-center gap-8 md:flex">
       <NavLink className="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]" to="/">
