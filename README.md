@@ -1,5 +1,7 @@
 # Web-resume
 
+![](./public/logo-og.png)
+
 # Description
 The project is a web resume for easy demonstration of the basic skills of a software engineer.
 
