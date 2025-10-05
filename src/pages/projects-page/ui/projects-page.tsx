@@ -9,7 +9,7 @@ const ProjectsPage: React.FC = () => {
   return (
     <div>
       <h2 className="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]">
-        PROJECTS
+        Projects
       </h2>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div className="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]">
