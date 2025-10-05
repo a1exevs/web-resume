@@ -1,3 +1,17 @@
+# Release v1.1.2
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.1.1 by @a1exevs in https://github.com/a1exevs/web-resume/pull/26
+* [Common] Dev-dependencies (doc, tests, storybook) by @a1exevs in https://github.com/a1exevs/web-resume/pull/28
+* [Common] renovate.json by @a1exevs in https://github.com/a1exevs/web-resume/pull/30
+* [Common] typedoc.json by @a1exevs in https://github.com/a1exevs/web-resume/pull/31
+* [Common] Story Book configuration and stories for all pages by @a1exevs in https://github.com/a1exevs/web-resume/pull/32
+* [Common] update-version.sh script by @a1exevs in https://github.com/a1exevs/web-resume/pull/29
+* [Bugfix] Twitter:title issue fix (incorrect value) by @a1exevs in https://github.com/a1exevs/web-resume/pull/34
+* [Common] README.md (Release steps) corrections by @a1exevs in https://github.com/a1exevs/web-resume/pull/35
+* [Common] Version increase v1.1.2 by @a1exevs in https://github.com/a1exevs/web-resume/pull/36
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.1.1...v1.1.2
+
 # Release v1.1.1
 ## What's Changed
 * [Bugfix] useScreenWidthLessThen hook fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/8
