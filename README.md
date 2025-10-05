@@ -119,10 +119,12 @@ Automatically runs after dependencies installation to set up git hooks through h
 1) run yarn update-version:patch (or :minor, :major)
 2) create PR with message "[Common] Version increase vX.X.X" from "common/version-increase" into "develop"
 3) create PR with message "[Testing] Release vX.X.X" from "develop" into "testing"
-4) create PR with message "Release vX.X.X" from "testing" into "main"
-5) go to [Github page](https://a1exevs.github.io/lipsync-timing-checker),
-   wait for the production server update to complete, make sure everything is working
-6) go to [Github Repo Home page](https://github.com/a1exevs/lipsync-timing-checker) -> Tags -> Releases -> Draft a new release.
+4) go to [Vercel project](https://vercel.com/a1exevs-projects/web-resume/deployments),
+   wait for the production server update to complete, go to the [production site](https://sit36.ru) and make sure everything is working
+5) create PR with message "Release vX.X.X" from "testing" into "main"
+6) go to [Vercel project](https://vercel.com/a1exevs-projects/web-resume/deployments),
+   wait for the production server update to complete, go to the [production site](https://web-resume-eosin.vercel.app) and make sure everything is working
+7) go to [Github Repo Home page](https://github.com/a1exevs/web-resume) -> Tags -> Releases -> Draft a new release.
 
    a) create a new tag via "Choose a tag" autocomplete
 
@@ -133,9 +135,9 @@ Automatically runs after dependencies installation to set up git hooks through h
    d) select "main" branch as a target
 
    e) click the "Publish release"
-7) checkout "testing" and pull, then merge "main" into "testing" and push
-8) checkout "develop" and pull, then merge "testing" into "develop" and push
-9) update RELEASE-NOTES.md with using generated notes in step 6, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md update vX.X.X"
+8) checkout "testing" and pull, then merge "main" into "testing" and push
+9) checkout "develop" and pull, then merge "testing" into "develop" and push
+10) update RELEASE-NOTES.md with using generated notes in step 7, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md update vX.X.X"
 
 ## Repository
 Link to repository https://github.com/a1exevs/web-resume.
