@@ -3,6 +3,7 @@ import { RouteObject } from 'react-router';
 
 import App from 'src/app/ui/app';
 import { ContactsPage, ExperiencePage, HomePage, ProjectsPage, SkillsPage } from 'src/pages';
+import { RoutePath } from 'src/shared';
 import store from 'src/store/store';
 
 const appRoutes: RouteObject[] = [
@@ -11,23 +12,23 @@ const appRoutes: RouteObject[] = [
     element: <App />,
     children: [
       {
-        path: '',
+        path: RoutePath.HOME,
         element: <HomePage commonInfoData={store.commonInfo} />,
       },
       {
-        path: '/experience',
+        path: RoutePath.EXPERIENCE,
         element: <ExperiencePage careerHistoryData={store.content.careerHistory} />,
       },
       {
-        path: '/skills',
+        path: RoutePath.SKILLS,
         element: <SkillsPage />,
       },
       {
-        path: '/projects',
+        path: RoutePath.PROJECTS,
         element: <ProjectsPage />,
       },
       {
-        path: '/contacts',
+        path: RoutePath.CONTACTS,
         element: <ContactsPage />,
       },
     ],
