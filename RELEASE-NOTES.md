@@ -1,3 +1,12 @@
+# Release v1.1.3
+## What's Changed
+* [Common] RELEASE-NOTES.md v1.1.2 by @a1exevs in https://github.com/a1exevs/web-resume/pull/39
+* [Bugfix] Open Graph and Twitter card fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/40
+* [Common] Version increase v1.1.3 by @a1exevs in https://github.com/a1exevs/web-resume/pull/41
+* [Common] README.md logo by @a1exevs in https://github.com/a1exevs/web-resume/pull/42
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.1.2...v1.1.3
+
 # Release v1.1.2
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.1.1 by @a1exevs in https://github.com/a1exevs/web-resume/pull/26
