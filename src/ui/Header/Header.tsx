@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router';
 
 import logo from 'src/logo.svg';
+import { RoutePath } from 'src/shared';
 import { HeaderData } from 'src/store/store.types';
 
 // TODO: [REDESIGN] Rewrite without tailwing
@@ -13,11 +14,11 @@ const Header: React.FC<Props> = ({ data }) => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const links = [
-    { to: '/', label: '/Home' },
-    { to: '/experience', label: '/Experience' },
-    { to: '/skills', label: '/Skills' },
-    { to: '/projects', label: '/Projects' },
-    { to: '/contacts', label: '/Contacts' },
+    { to: RoutePath.HOME, label: '/Home' },
+    { to: RoutePath.EXPERIENCE, label: '/Experience' },
+    { to: RoutePath.SKILLS, label: '/Skills' },
+    { to: RoutePath.PROJECTS, label: '/Projects' },
+    { to: RoutePath.CONTACTS, label: '/Contacts' },
   ];
 
   useEffect(() => {

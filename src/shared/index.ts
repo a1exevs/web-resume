@@ -4,4 +4,5 @@ export {
   DESKTOP_SCREEN_WIDTH_PX,
   TABLET_SCREEN_WIDTH_PX,
   MOBILE_SCREEN_WIDTH_PX,
+  RoutePath,
 } from 'src/shared/model';
