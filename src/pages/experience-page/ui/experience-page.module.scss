@@ -1,6 +1,5 @@
-@import 'src/common/styles/constants';
-@import 'src/common/styles/mixins';
-@import 'src/ui/Content/common/style/mixins';
+@import 'src/shared';
+@import "src/ui/Content/common/style/mixins";
 
 .ExperiencePage {
   &__Content {
