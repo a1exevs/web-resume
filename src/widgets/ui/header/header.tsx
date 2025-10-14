@@ -4,16 +4,16 @@ import { NavLink } from 'react-router';
 import logo from 'src/logo.svg';
 import { RoutePath } from 'src/shared';
 import { HeaderData } from 'src/store/store.types';
-
-// TODO: [REDESIGN] Rewrite without tailwing
+import classes from 'src/widgets/ui/header/header.module.scss';
 
 type Props = { data: HeaderData };
 
-const Header: React.FC<Props> = ({ data }) => {
+const Header: React.FC<Props> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const links = [
+  // TODO Move to consts
+  const LINKS = [
     { to: RoutePath.HOME, label: '/Home' },
     { to: RoutePath.EXPERIENCE, label: '/Experience' },
     { to: RoutePath.SKILLS, label: '/Skills' },
@@ -21,6 +21,7 @@ const Header: React.FC<Props> = ({ data }) => {
     { to: RoutePath.CONTACTS, label: '/Contacts' },
   ];
 
+  // TODO move to HeaderContainer
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (!isMenuOpen) {
@@ -37,47 +38,46 @@ const Header: React.FC<Props> = ({ data }) => {
   const handleNavClick = () => setIsMenuOpen(false);
 
   return (
-    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3">
-      <div className="flex items-center gap-3 text-[var(--primary-color)]">
-        <img alt="logo" src={logo} width={48} />
-        <h1 className="glitch text-xl font-bold tracking-widest">Web-resume</h1>
+    <header className={classes.Header}>
+      <div className={classes.Header__LeftBlock}>
+        <img alt="logo" src={logo} width={64} />
+        <h1 className={classes.Header__LogoText}>
+          <div>Web</div>
+          <div>Resume</div>
+        </h1>
       </div>
 
       {/* Desktop navigation */}
-      <div className="hidden items-center gap-8 md:flex">
-        {links.map(link => (
-          <NavLink
-            key={link.to}
-            className="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
-            to={link.to}
-          >
+      <div className={classes.Header__NavLinks}>
+        {LINKS.map(link => (
+          <NavLink key={link.to} className={classes.Header__NavLink} to={link.to}>
             {link.label}
           </NavLink>
         ))}
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className={classes.Header__RightBlock}>
         {/* Mobile menu */}
-        <div className="relative md:hidden z-10" ref={menuRef}>
+        <div className={classes.Header__Menu} ref={menuRef}>
           <button
             type="button"
             aria-haspopup="menu"
             aria-expanded={isMenuOpen}
             aria-label="Open menu"
             onClick={() => setIsMenuOpen(open => !open)}
-            className="flex cursor-pointer items-center justify-center rounded-sm bg-[#273a27] p-2 text-white transition-colors hover:bg-[var(--primary-color)]"
+            className={classes.Header__MenuButton}
           >
             <span className="material-symbols-outlined"> menu </span>
           </button>
           {isMenuOpen && (
-            <div className="absolute right-0 top-full mt-2 w-56 border border-[#273a27] bg-black/90 backdrop-blur-sm shadow-lg">
-              <nav className="flex flex-col" role="menu">
-                {links.map(link => (
+            <div className={classes.Header__MenuItemsWrapper}>
+              <nav className={classes.Header__MenuItems} role="menu">
+                {LINKS.map(link => (
                   <NavLink
                     key={link.to}
                     to={link.to}
                     onClick={handleNavClick}
-                    className="block px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-white/5 hover:text-[var(--primary-color)]"
+                    className={classes.Header__MenuItem}
                     role="menuitem"
                   >
                     {link.label}
@@ -87,12 +87,6 @@ const Header: React.FC<Props> = ({ data }) => {
             </div>
           )}
         </div>
-
-        <img
-          alt=""
-          className="hidden h-10 w-10 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center bg-no-repeat sm:block"
-          src={data.photoPath}
-        ></img>
       </div>
     </header>
   );

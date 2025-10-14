@@ -1,11 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 
+import classes from 'src/app/ui/app.module.scss';
 import store from 'src/store/store';
 import { CommonInfoData, ContentData, FooterData, HeaderData } from 'src/store/store.types';
-import Header from 'src/ui/Header/Header';
-
-import 'src/app/ui/app.scss';
+import { Header } from 'src/widgets';
 
 type Props = {
   headerData: HeaderData;
@@ -15,9 +14,9 @@ type Props = {
 };
 
 const AppContainer: React.FC<Props> = ({ headerData }) => (
-  <div className="App">
-    <div className="App__Canvas"></div>
-    <div className="App__Content">
+  <div className={classes.App}>
+    <div className={classes.App__Canvas}></div>
+    <div className={classes.App__Wrapper}>
       <Header data={headerData} />
       <main className="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40">
         <div className="mx-auto max-w-5xl">
