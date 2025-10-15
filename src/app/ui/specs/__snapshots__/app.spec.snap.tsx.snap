@@ -9,59 +9,64 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
       class="App__Canvas"
     />
     <div
-      class="App__Content"
+      class="App__Wrapper"
     >
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3"
+        class="Header"
       >
         <div
-          class="flex items-center gap-3 text-[var(--primary-color)]"
+          class="Header__LeftBlock"
         >
           <img
             alt="logo"
             src="FileMock"
-            width="48"
+            width="64"
           />
           <h1
-            class="glitch text-xl font-bold tracking-widest"
+            class="Header__LogoText"
           >
-            Web-resume
+            <div>
+              Web
+            </div>
+            <div>
+              Resume
+            </div>
           </h1>
         </div>
         <div
-          class="hidden items-center gap-8 md:flex"
+          class="Header__NavLinks"
         >
           <a
             aria-current="page"
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)] active"
+            class="Header__NavLink active"
             data-discover="true"
             href="/"
           >
             /Home
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/experience"
           >
             /Experience
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/skills"
           >
             /Skills
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/projects"
           >
             /Projects
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/contacts"
           >
@@ -69,16 +74,16 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
           </a>
         </div>
         <div
-          class="flex items-center gap-4"
+          class="Header__RightBlock"
         >
           <div
-            class="relative md:hidden z-10"
+            class="Header__Menu"
           >
             <button
               aria-expanded="false"
               aria-haspopup="menu"
               aria-label="Open menu"
-              class="flex cursor-pointer items-center justify-center rounded-sm bg-[#273a27] p-2 text-white transition-colors hover:bg-[var(--primary-color)]"
+              class="Header__MenuButton"
               type="button"
             >
               <span
@@ -88,11 +93,6 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               </span>
             </button>
           </div>
-          <img
-            alt=""
-            class="hidden h-10 w-10 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center bg-no-repeat sm:block"
-            src="FileMock"
-          />
         </div>
       </header>
       <main
@@ -356,51 +356,56 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
       class="App__Canvas"
     />
     <div
-      class="App__Content"
+      class="App__Wrapper"
     >
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3"
+        class="Header"
       >
         <div
-          class="flex items-center gap-3 text-[var(--primary-color)]"
+          class="Header__LeftBlock"
         >
           <img
             alt="logo"
             src="FileMock"
-            width="48"
+            width="64"
           />
           <h1
-            class="glitch text-xl font-bold tracking-widest"
+            class="Header__LogoText"
           >
-            Web-resume
+            <div>
+              Web
+            </div>
+            <div>
+              Resume
+            </div>
           </h1>
         </div>
         <div
-          class="hidden items-center gap-8 md:flex"
+          class="Header__NavLinks"
         >
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/"
           >
             /Home
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/experience"
           >
             /Experience
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/skills"
           >
             /Skills
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/projects"
           >
@@ -408,7 +413,7 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
           </a>
           <a
             aria-current="page"
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)] active"
+            class="Header__NavLink active"
             data-discover="true"
             href="/contacts"
           >
@@ -416,16 +421,16 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
           </a>
         </div>
         <div
-          class="flex items-center gap-4"
+          class="Header__RightBlock"
         >
           <div
-            class="relative md:hidden z-10"
+            class="Header__Menu"
           >
             <button
               aria-expanded="false"
               aria-haspopup="menu"
               aria-label="Open menu"
-              class="flex cursor-pointer items-center justify-center rounded-sm bg-[#273a27] p-2 text-white transition-colors hover:bg-[var(--primary-color)]"
+              class="Header__MenuButton"
               type="button"
             >
               <span
@@ -435,11 +440,6 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
               </span>
             </button>
           </div>
-          <img
-            alt=""
-            class="hidden h-10 w-10 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center bg-no-repeat sm:block"
-            src="FileMock"
-          />
         </div>
       </header>
       <main
@@ -699,30 +699,35 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
       class="App__Canvas"
     />
     <div
-      class="App__Content"
+      class="App__Wrapper"
     >
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3"
+        class="Header"
       >
         <div
-          class="flex items-center gap-3 text-[var(--primary-color)]"
+          class="Header__LeftBlock"
         >
           <img
             alt="logo"
             src="FileMock"
-            width="48"
+            width="64"
           />
           <h1
-            class="glitch text-xl font-bold tracking-widest"
+            class="Header__LogoText"
           >
-            Web-resume
+            <div>
+              Web
+            </div>
+            <div>
+              Resume
+            </div>
           </h1>
         </div>
         <div
-          class="hidden items-center gap-8 md:flex"
+          class="Header__NavLinks"
         >
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/"
           >
@@ -730,28 +735,28 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
           </a>
           <a
             aria-current="page"
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)] active"
+            class="Header__NavLink active"
             data-discover="true"
             href="/experience"
           >
             /Experience
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/skills"
           >
             /Skills
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/projects"
           >
             /Projects
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/contacts"
           >
@@ -759,16 +764,16 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
           </a>
         </div>
         <div
-          class="flex items-center gap-4"
+          class="Header__RightBlock"
         >
           <div
-            class="relative md:hidden z-10"
+            class="Header__Menu"
           >
             <button
               aria-expanded="false"
               aria-haspopup="menu"
               aria-label="Open menu"
-              class="flex cursor-pointer items-center justify-center rounded-sm bg-[#273a27] p-2 text-white transition-colors hover:bg-[var(--primary-color)]"
+              class="Header__MenuButton"
               type="button"
             >
               <span
@@ -778,11 +783,6 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
               </span>
             </button>
           </div>
-          <img
-            alt=""
-            class="hidden h-10 w-10 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center bg-no-repeat sm:block"
-            src="FileMock"
-          />
         </div>
       </header>
       <main
@@ -1584,44 +1584,49 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
       class="App__Canvas"
     />
     <div
-      class="App__Content"
+      class="App__Wrapper"
     >
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3"
+        class="Header"
       >
         <div
-          class="flex items-center gap-3 text-[var(--primary-color)]"
+          class="Header__LeftBlock"
         >
           <img
             alt="logo"
             src="FileMock"
-            width="48"
+            width="64"
           />
           <h1
-            class="glitch text-xl font-bold tracking-widest"
+            class="Header__LogoText"
           >
-            Web-resume
+            <div>
+              Web
+            </div>
+            <div>
+              Resume
+            </div>
           </h1>
         </div>
         <div
-          class="hidden items-center gap-8 md:flex"
+          class="Header__NavLinks"
         >
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/"
           >
             /Home
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/experience"
           >
             /Experience
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/skills"
           >
@@ -1629,14 +1634,14 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
           </a>
           <a
             aria-current="page"
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)] active"
+            class="Header__NavLink active"
             data-discover="true"
             href="/projects"
           >
             /Projects
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/contacts"
           >
@@ -1644,16 +1649,16 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
           </a>
         </div>
         <div
-          class="flex items-center gap-4"
+          class="Header__RightBlock"
         >
           <div
-            class="relative md:hidden z-10"
+            class="Header__Menu"
           >
             <button
               aria-expanded="false"
               aria-haspopup="menu"
               aria-label="Open menu"
-              class="flex cursor-pointer items-center justify-center rounded-sm bg-[#273a27] p-2 text-white transition-colors hover:bg-[var(--primary-color)]"
+              class="Header__MenuButton"
               type="button"
             >
               <span
@@ -1663,11 +1668,6 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
               </span>
             </button>
           </div>
-          <img
-            alt=""
-            class="hidden h-10 w-10 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center bg-no-repeat sm:block"
-            src="FileMock"
-          />
         </div>
       </header>
       <main
@@ -2079,37 +2079,42 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
       class="App__Canvas"
     />
     <div
-      class="App__Content"
+      class="App__Wrapper"
     >
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#273a27] px-10 py-3"
+        class="Header"
       >
         <div
-          class="flex items-center gap-3 text-[var(--primary-color)]"
+          class="Header__LeftBlock"
         >
           <img
             alt="logo"
             src="FileMock"
-            width="48"
+            width="64"
           />
           <h1
-            class="glitch text-xl font-bold tracking-widest"
+            class="Header__LogoText"
           >
-            Web-resume
+            <div>
+              Web
+            </div>
+            <div>
+              Resume
+            </div>
           </h1>
         </div>
         <div
-          class="hidden items-center gap-8 md:flex"
+          class="Header__NavLinks"
         >
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/"
           >
             /Home
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/experience"
           >
@@ -2117,21 +2122,21 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
           </a>
           <a
             aria-current="page"
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)] active"
+            class="Header__NavLink active"
             data-discover="true"
             href="/skills"
           >
             /Skills
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/projects"
           >
             /Projects
           </a>
           <a
-            class="text-sm font-medium text-white/80 transition-colors hover:text-[var(--primary-color)]"
+            class="Header__NavLink"
             data-discover="true"
             href="/contacts"
           >
@@ -2139,16 +2144,16 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
           </a>
         </div>
         <div
-          class="flex items-center gap-4"
+          class="Header__RightBlock"
         >
           <div
-            class="relative md:hidden z-10"
+            class="Header__Menu"
           >
             <button
               aria-expanded="false"
               aria-haspopup="menu"
               aria-label="Open menu"
-              class="flex cursor-pointer items-center justify-center rounded-sm bg-[#273a27] p-2 text-white transition-colors hover:bg-[var(--primary-color)]"
+              class="Header__MenuButton"
               type="button"
             >
               <span
@@ -2158,11 +2163,6 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
               </span>
             </button>
           </div>
-          <img
-            alt=""
-            class="hidden h-10 w-10 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center bg-no-repeat sm:block"
-            src="FileMock"
-          />
         </div>
       </header>
       <main
