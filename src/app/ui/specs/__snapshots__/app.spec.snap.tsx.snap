@@ -96,249 +96,245 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
         </div>
       </header>
       <main
-        class="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40"
+        class="MainLayout"
       >
         <div
-          class="mx-auto max-w-5xl"
+          class="MainLayout__Wrapper"
         >
           <div
-            class="border border-[#273a27] bg-black/50 p-6 backdrop-blur-sm"
+            class="flex flex-col items-center gap-6 sm:flex-row"
           >
+            <img
+              alt=""
+              class="h-32 w-32 min-w-32 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+              src="FileMock"
+            />
             <div
-              class="flex flex-col items-center gap-6 sm:flex-row"
+              class="text-center sm:text-left"
             >
-              <img
-                alt=""
-                class="h-32 w-32 min-w-32 rounded-full border-2 border-[var(--primary-color)] bg-cover bg-center shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                src="FileMock"
-              />
-              <div
-                class="text-center sm:text-left"
+              <h2
+                class="text-3xl font-bold text-white"
               >
-                <h2
-                  class="text-3xl font-bold text-white"
-                >
-                  Alexander Evstafiadi
-                </h2>
-                <p
-                  class="text-[var(--primary-color)]"
-                >
-                  &gt;Senior Software Engineer
-                </p>
-                <div
-                  class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-neutral-400 sm:justify-start"
-                >
-                  <span>
-                    <span
-                      class="text-green-500/70"
-                    >
-                      //
-                    </span>
-                     STATUS: Not looking for a job
-                  </span>
-                  <span>
-                    <span
-                      class="text-green-500/70"
-                    >
-                      //
-                    </span>
-                     LOCATION: Voronezh, Russia
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2"
-            >
-              <div>
-                <h3
-                  class="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]"
-                >
-                  Personal_Info
-                </h3>
-                <div
-                  class="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm"
-                >
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Age
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : 29
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Date_of_birthday
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : February 22, 1996
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Relocation
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : Open to offers
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Business_trips
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : Willing to travel
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <h3
-                  class="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]"
-                >
-                  Education
-                </h3>
-                <div
-                  class="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm"
-                >
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      University
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : Voronezh State University
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Degree
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : Master's degree
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Field_of_study
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : Radio Physical Sciences
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Website
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : https://vsu.ru
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <h3
-                  class="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]"
-                >
-                  Contact_Details
-                </h3>
-                <div
-                  class="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm"
-                >
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Phone
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : +7 (960)-125-41-38
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Email
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : aleksandrevstafiadi@gmail.com
-                    </span>
-                  </p>
-                  <p>
-                    <span
-                      class="w-32 inline-block text-neutral-400 uppercase"
-                    >
-                      Linkedin
-                    </span>
-                     
-                    <span
-                      class="text-white"
-                    >
-                      : https://www.linkedin.com/in/alexander-evstafiadi
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="mt-8 text-right text-xs text-neutral-500"
-            >
-              <p>
-                LAST UPDATE: 
-                <span
-                  class="text-[var(--primary-color)]/80"
-                >
-                  July 26, 2024
-                </span>
+                Alexander Evstafiadi
+              </h2>
+              <p
+                class="text-[var(--primary-color)]"
+              >
+                &gt;Senior Software Engineer
               </p>
+              <div
+                class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-neutral-400 sm:justify-start"
+              >
+                <span>
+                  <span
+                    class="text-green-500/70"
+                  >
+                    //
+                  </span>
+                   STATUS: Not looking for a job
+                </span>
+                <span>
+                  <span
+                    class="text-green-500/70"
+                  >
+                    //
+                  </span>
+                   LOCATION: Voronezh, Russia
+                </span>
+              </div>
             </div>
+          </div>
+          <div
+            class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2"
+          >
+            <div>
+              <h3
+                class="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]"
+              >
+                Personal_Info
+              </h3>
+              <div
+                class="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm"
+              >
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Age
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : 29
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Date_of_birthday
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : February 22, 1996
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Relocation
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : Open to offers
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Business_trips
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : Willing to travel
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]"
+              >
+                Education
+              </h3>
+              <div
+                class="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm"
+              >
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    University
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : Voronezh State University
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Degree
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : Master's degree
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Field_of_study
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : Radio Physical Sciences
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Website
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : https://vsu.ru
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]"
+              >
+                Contact_Details
+              </h3>
+              <div
+                class="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm"
+              >
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Phone
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : +7 (960)-125-41-38
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Email
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : aleksandrevstafiadi@gmail.com
+                  </span>
+                </p>
+                <p>
+                  <span
+                    class="w-32 inline-block text-neutral-400 uppercase"
+                  >
+                    Linkedin
+                  </span>
+                   
+                  <span
+                    class="text-white"
+                  >
+                    : https://www.linkedin.com/in/alexander-evstafiadi
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-8 text-right text-xs text-neutral-500"
+          >
+            <p>
+              LAST UPDATE: 
+              <span
+                class="text-[var(--primary-color)]/80"
+              >
+                July 26, 2024
+              </span>
+            </p>
           </div>
         </div>
       </main>
@@ -443,244 +439,280 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
         </div>
       </header>
       <main
-        class="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40"
+        class="MainLayout"
       >
         <div
-          class="mx-auto max-w-5xl"
+          class="MainLayout__Wrapper"
         >
-          <div
-            class="border border-[#273a27] bg-black/50 p-6 backdrop-blur-sm"
-          >
-            <div>
-              <h2
-                class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+          <div>
+            <h2
+              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+            >
+              Contacts
+            </h2>
+            <div
+              class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2"
+            >
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://github.com/a1exevs"
+                target="_blank"
               >
-                Contacts
-              </h2>
-              <div
-                class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2"
-              >
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://github.com/a1exevs"
-                  target="_blank"
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  version="1.1"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="contact-icon text-3xl text-neutral-400 transition-colors duration-300 material-symbols-outlined"
-                  >
-                     
-                    code
-                     
-                  </span>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  <title>
                     Github
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://voronezh.hh.ru/resume/10aa6646ff077b3cb70039ed1f47394e4f476f"
-                  target="_blank"
+                  </title>
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                  >
+                    <g
+                      fill="currentColor"
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-140.000000, -7559.000000)"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                          id="github-[#142]"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <span
-                    class="contact-icon text-3xl font-bold text-neutral-400 transition-colors duration-300"
-                  >
-                    hh
-                  </span>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
-                    hh.ru
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://www.linkedin.com/in/alexander-evstafiadi/"
-                  target="_blank"
+                  Github
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://voronezh.hh.ru/resume/10aa6646ff077b3cb70039ed1f47394e4f476f"
+                target="_blank"
+              >
+                <span
+                  class="contact-icon text-3xl font-bold text-neutral-400 transition-colors duration-300"
                 >
-                  <svg
-                    class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
-                    fill="currentColor"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      LinkedIn
-                    </title>
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                    />
-                  </svg>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  hh
+                </span>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
+                >
+                  hh.ru
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://www.linkedin.com/in/alexander-evstafiadi/"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     LinkedIn
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="mailto:aleksandrevstafiadi@gmail.com"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <span
-                    class="contact-icon text-3xl text-neutral-400 transition-colors duration-300 material-symbols-outlined"
-                  >
-                     
-                    mail
-                     
-                  </span>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  LinkedIn
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="mailto:aleksandrevstafiadi@gmail.com"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  viewBox="0 -960 960 960"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     Google Email
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="mailto:evstafiadi.shura@yandex.ru"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <span
-                    class="contact-icon text-3xl text-neutral-400 transition-colors duration-300 material-symbols-outlined"
-                  >
-                     
-                    mail_outline
-                     
-                  </span>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  Google Email
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="mailto:evstafiadi.shura@yandex.ru"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  viewBox="0 -960 960 960"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     Yandex Email
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://www.youtube.com/channel/UCVrwEd4-3guB5NFQ_oidREg"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <svg
-                    class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
-                    fill="currentColor"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      YouTube
-                    </title>
-                    <path
-                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                    />
-                  </svg>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  Yandex Email
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://www.youtube.com/channel/UCVrwEd4-3guB5NFQ_oidREg"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     YouTube
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://leetcode.com/u/a1exevs/"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <svg
-                    class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
-                    fill="currentColor"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      LeetCode
-                    </title>
-                    <path
-                      d="M13.48 0L15.34 3.09H9.06L10.92 0h2.56zM21.9 8.24L17.58 12l4.32 3.76-2.04 3.53L13.48 14.5v9.5h-2.56v-9.5L4.54 19.29l-2.04-3.53L6.82 12 2.5 8.24l2.04-3.53L10.92 9.5V0h2.56v9.5l6.38-4.79 2.04 3.53z"
-                    />
-                  </svg>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  YouTube
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://leetcode.com/u/a1exevs/"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     LeetCode
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://www.instagram.com/alexevs_gb"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <svg
-                    class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
-                    fill="currentColor"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      Instagram
-                    </title>
-                    <path
-                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.936 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.314.936 20.644.523 19.86.227 19.094-.06 18.225-.262 16.947-.32 15.667-.385 15.26-.399 12-.399h0zm0 2.16c3.203 0 3.585.012 4.85.07 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.012 3.585-.07 4.85c-.055 1.17-.249 1.805-.415 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.012-4.85-.07c-1.17-.055-1.805-.249-2.227-.415-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.012-3.585.07-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"
-                    />
-                  </svg>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  LeetCode
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://www.instagram.com/alexevs_gb"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     Instagram
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://api.whatsapp.com/send?phone=79601254138"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.936 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.314.936 20.644.523 19.86.227 19.094-.06 18.225-.262 16.947-.32 15.667-.385 15.26-.399 12-.399h0zm0 2.16c3.203 0 3.585.012 4.85.07 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.012 3.585-.07 4.85c-.055 1.17-.249 1.805-.415 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.012-4.85-.07c-1.17-.055-1.805-.249-2.227-.415-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.012-3.585.07-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <svg
-                    class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
-                    fill="currentColor"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      WhatsApp
-                    </title>
-                    <path
-                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                    />
-                  </svg>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  Instagram
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://api.whatsapp.com/send?phone=79601254138"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     WhatsApp
-                  </span>
-                </a>
-                <a
-                  class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
-                  href="https://t.me/AlexanderEvstafiadi"
-                  target="_blank"
+                  </title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
                 >
-                  <svg
-                    class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
-                    fill="currentColor"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      Telegram
-                    </title>
-                    <path
-                      d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.17.91-.494 1.208-.822 1.23-.696.047-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.04-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.662 3.488-1.513 5.823-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
-                    />
-                  </svg>
-                  <span
-                    class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
-                  >
+                  WhatsApp
+                </span>
+              </a>
+              <a
+                class="contact-link group flex items-center gap-4 border border-transparent p-3 transition-all duration-300 hover:border-[var(--primary-color)] hover:bg-green-900/20 hover:shadow-[0_0_15px_rgba(5,199,5,0.5)]"
+                href="https://t.me/AlexanderEvstafiadi"
+                target="_blank"
+              >
+                <svg
+                  class="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+                  fill="currentColor"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
                     Telegram
-                  </span>
-                </a>
-              </div>
+                  </title>
+                  <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.17.91-.494 1.208-.822 1.23-.696.047-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.04-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.662 3.488-1.513 5.823-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                  />
+                </svg>
+                <span
+                  class="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300"
+                >
+                  Telegram
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -786,779 +818,775 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
         </div>
       </header>
       <main
-        class="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40"
+        class="MainLayout"
       >
         <div
-          class="mx-auto max-w-5xl"
+          class="MainLayout__Wrapper"
         >
           <div
-            class="border border-[#273a27] bg-black/50 p-6 backdrop-blur-sm"
+            class="ExperiencePage"
           >
-            <div
-              class="ExperiencePage"
+            <h2
+              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
             >
-              <h2
-                class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
-              >
-                Work_Experience
-              </h2>
+              Work_Experience
+            </h2>
+            <div
+              class="ExperiencePage__Content"
+            >
               <div
-                class="ExperiencePage__Content"
+                class="Stepper"
               >
                 <div
-                  class="Stepper"
+                  class="Step"
                 >
                   <div
-                    class="Step"
+                    class="Step__LeftBlock"
                   >
                     <div
-                      class="Step__LeftBlock"
+                      class="Step__Indicator Step__Indicator_current"
                     >
-                      <div
-                        class="Step__Indicator Step__Indicator_current"
-                      >
-                        2
-                      </div>
-                      <div
-                        class="Step__Arrow Step__Arrow_current"
-                      />
+                      2
                     </div>
                     <div
-                      class="Step__Content"
+                      class="Step__Arrow Step__Arrow_current"
+                    />
+                  </div>
+                  <div
+                    class="Step__Content"
+                  >
+                    <div
+                      class="ExperiencePage__HistoryItem"
                     >
                       <div
-                        class="ExperiencePage__HistoryItem"
+                        class="Block"
                       >
                         <div
-                          class="Block"
+                          class="Field"
                         >
-                          <div
-                            class="Field"
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Company:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="DSR Corporation"
-                            >
-                              DSR Corporation
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Company:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="DSR Corporation"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Website:
-                            </label>
-                            <a
-                              class="Field__Value Link"
-                              href="https://en.dsr-corporation.com"
-                              title="https://en.dsr-corporation.com"
-                            >
-                              https://en.dsr-corporation.com
-                            </a>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Mar 2022 – Present"
-                            >
-                              Mar 2022 – Present
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Career:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Software Engineer"
-                            >
-                              Software Engineer
-                            </span>
-                          </div>
-                        </div>
-                        <label
-                          class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
-                        >
-                          Project list
-                        </label>
-                        <label
-                          class="Label Label_tiny Label_alignment-center"
-                        >
-                          (the most recent projects at the top)
-                        </label>
-                        <div
-                          class="Card"
-                        >
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Project:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories."
-                            >
-                              eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories.
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Jun 2022 – Present"
-                            >
-                              Jun 2022 – Present
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Environment:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Angular 2+ / AngularJS, React, RxJS, TypeScript, LESS, Azure, Webpack, Jasmine, Karma, Playwright"
-                            >
-                              Angular 2+ / AngularJS, React, RxJS, TypeScript, LESS, Azure, Webpack, Jasmine, Karma, Playwright
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Responsibilities:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
-                            >
-                              front-end development, feature implementation, debugging, testing, code review, design, dev validation
-                            </span>
-                          </div>
-                          <div
-                            class="ExperiencePage__ContributionsData"
-                          >
-                            <label
-                              class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
-                            >
-                              Key contributions
-                            </label>
-                            <div
-                              class="SimpleList ExperiencePage__ContributionsList"
-                            >
-                              <ul
-                                class="SimpleList__Content"
-                              >
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    As part of a feature team, developed the Layout Builder module — a visual content layout configuration tool for dialog windows;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Built an Excel-like table within a dedicated module with complex business logic support;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Maintained the Alias mechanism for dynamic renaming of business entities throughout the system;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Implemented license-based feature control, adjusting functionality availability based on active licenses;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Contributed to the statistics module: implemented and optimized chart rendering logic and patched the D3 library to meet project-specific requirements.
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                            DSR Corporation
+                          </span>
                         </div>
                         <div
-                          class="Card"
+                          class="Field"
                         >
-                          <div
-                            class="Field"
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Project:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data."
-                            >
-                              Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data.
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Website:
+                          </label>
+                          <a
+                            class="Field__Value Link"
+                            href="https://en.dsr-corporation.com"
+                            title="https://en.dsr-corporation.com"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Jan 2024 – Mar 2024"
-                            >
-                              Jan 2024 – Mar 2024
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Environment:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Angular 2+, RxJS, TypeScript, Jasmine, Karma, Azure, MS Excel"
-                            >
-                              Angular 2+, RxJS, TypeScript, Jasmine, Karma, Azure, MS Excel
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Responsibilities:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
-                            >
-                              front-end development, feature implementation, debugging, testing, code review, design, dev validation
-                            </span>
-                          </div>
-                          <div
-                            class="ExperiencePage__ContributionsData"
-                          >
-                            <label
-                              class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
-                            >
-                              Key contributions
-                            </label>
-                            <div
-                              class="SimpleList ExperiencePage__ContributionsList"
-                            >
-                              <ul
-                                class="SimpleList__Content"
-                              >
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Optimized the plugin’s performance in the web version of Excel, significantly speeding up several resource-intensive operations;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Took part in designing and implementing the application versioning mechanism.
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                            https://en.dsr-corporation.com
+                          </a>
                         </div>
                         <div
-                          class="Card"
+                          class="Field"
                         >
-                          <div
-                            class="Field"
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Project:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories."
-                            >
-                              eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories.
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Mar 2022 – Present"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Sep 2023 – Jan 2024"
-                            >
-                              Sep 2023 – Jan 2024
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Environment:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Angular 2+, NgXs, RxJS, TypeScript, Jasmine, Cypress, Azure"
-                            >
-                              Angular 2+, NgXs, RxJS, TypeScript, Jasmine, Cypress, Azure
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Responsibilities:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
-                            >
-                              front-end development, feature implementation, debugging, testing, code review, design, dev validation
-                            </span>
-                          </div>
-                          <div
-                            class="ExperiencePage__ContributionsData"
-                          >
-                            <label
-                              class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
-                            >
-                              Key contributions
-                            </label>
-                            <div
-                              class="SimpleList ExperiencePage__ContributionsList"
-                            >
-                              <ul
-                                class="SimpleList__Content"
-                              >
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Implemented a specific column resizing, ordering, and selection mechanism for new pages (distinct in behavior from existing ones) based on customer requirements, applying the Strategy design pattern;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
-                                >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Optimized user access control logic across pages and UI elements based on permissions.
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                            Mar 2022 – Present
+                          </span>
                         </div>
                         <div
-                          class="Card"
+                          class="Field"
                         >
-                          <div
-                            class="Field"
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Project:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms."
-                            >
-                              Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms.
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Career:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Software Engineer"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Mar 2022 – Jun 2022"
-                            >
-                              Mar 2022 – Jun 2022
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Software Engineer
+                          </span>
+                        </div>
+                      </div>
+                      <label
+                        class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                      >
+                        Project list
+                      </label>
+                      <label
+                        class="Label Label_tiny Label_alignment-center"
+                      >
+                        (the most recent projects at the top)
+                      </label>
+                      <div
+                        class="Card"
+                      >
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Environment:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="React, Redux, NestJS, MikroORM, MariaDB, GitLab"
-                            >
-                              React, Redux, NestJS, MikroORM, MariaDB, GitLab
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Project:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories."
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Responsibilities:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="full-stack development, feature implementation, debugging, testing"
-                            >
-                              full-stack development, feature implementation, debugging, testing
-                            </span>
-                          </div>
-                          <div
-                            class="ExperiencePage__ContributionsData"
+                            eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories.
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Jun 2022 – Present"
+                          >
+                            Jun 2022 – Present
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Environment:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Angular 2+ / AngularJS, React, RxJS, TypeScript, LESS, Azure, Webpack, Jasmine, Karma, Playwright"
+                          >
+                            Angular 2+ / AngularJS, React, RxJS, TypeScript, LESS, Azure, Webpack, Jasmine, Karma, Playwright
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Responsibilities:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
+                          >
+                            front-end development, feature implementation, debugging, testing, code review, design, dev validation
+                          </span>
+                        </div>
+                        <div
+                          class="ExperiencePage__ContributionsData"
+                        >
+                          <label
+                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                          >
+                            Key contributions
+                          </label>
+                          <div
+                            class="SimpleList ExperiencePage__ContributionsList"
+                          >
+                            <ul
+                              class="SimpleList__Content"
                             >
-                              Key contributions
-                            </label>
-                            <div
-                              class="SimpleList ExperiencePage__ContributionsList"
-                            >
-                              <ul
-                                class="SimpleList__Content"
+                              <li
+                                class="SimpleList__ContentItem"
                               >
-                                <li
-                                  class="SimpleList__ContentItem"
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Joined the project from day one and helped define its architecture;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
+                                  As part of a feature team, developed the Layout Builder module — a visual content layout configuration tool for dialog windows;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Integrated third-party services such as Facebook and Instagram;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
+                                  Built an Excel-like table within a dedicated module with complex business logic support;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Significantly improved the deployment pipeline using containerization (Docker), speeding up delivery and app maintenance.
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
+                                  Maintained the Alias mechanism for dynamic renaming of business entities throughout the system;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Implemented license-based feature control, adjusting functionality availability based on active licenses;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Contributed to the statistics module: implemented and optimized chart rendering logic and patched the D3 library to meet project-specific requirements.
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="Card"
+                      >
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Project:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data."
+                          >
+                            Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data.
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Jan 2024 – Mar 2024"
+                          >
+                            Jan 2024 – Mar 2024
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Environment:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Angular 2+, RxJS, TypeScript, Jasmine, Karma, Azure, MS Excel"
+                          >
+                            Angular 2+, RxJS, TypeScript, Jasmine, Karma, Azure, MS Excel
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Responsibilities:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
+                          >
+                            front-end development, feature implementation, debugging, testing, code review, design, dev validation
+                          </span>
+                        </div>
+                        <div
+                          class="ExperiencePage__ContributionsData"
+                        >
+                          <label
+                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                          >
+                            Key contributions
+                          </label>
+                          <div
+                            class="SimpleList ExperiencePage__ContributionsList"
+                          >
+                            <ul
+                              class="SimpleList__Content"
+                            >
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Optimized the plugin’s performance in the web version of Excel, significantly speeding up several resource-intensive operations;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Took part in designing and implementing the application versioning mechanism.
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="Card"
+                      >
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Project:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories."
+                          >
+                            eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories.
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Sep 2023 – Jan 2024"
+                          >
+                            Sep 2023 – Jan 2024
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Environment:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Angular 2+, NgXs, RxJS, TypeScript, Jasmine, Cypress, Azure"
+                          >
+                            Angular 2+, NgXs, RxJS, TypeScript, Jasmine, Cypress, Azure
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Responsibilities:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
+                          >
+                            front-end development, feature implementation, debugging, testing, code review, design, dev validation
+                          </span>
+                        </div>
+                        <div
+                          class="ExperiencePage__ContributionsData"
+                        >
+                          <label
+                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                          >
+                            Key contributions
+                          </label>
+                          <div
+                            class="SimpleList ExperiencePage__ContributionsList"
+                          >
+                            <ul
+                              class="SimpleList__Content"
+                            >
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Implemented a specific column resizing, ordering, and selection mechanism for new pages (distinct in behavior from existing ones) based on customer requirements, applying the Strategy design pattern;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Optimized user access control logic across pages and UI elements based on permissions.
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="Card"
+                      >
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Project:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms."
+                          >
+                            Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms.
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Mar 2022 – Jun 2022"
+                          >
+                            Mar 2022 – Jun 2022
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Environment:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="React, Redux, NestJS, MikroORM, MariaDB, GitLab"
+                          >
+                            React, Redux, NestJS, MikroORM, MariaDB, GitLab
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Responsibilities:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="full-stack development, feature implementation, debugging, testing"
+                          >
+                            full-stack development, feature implementation, debugging, testing
+                          </span>
+                        </div>
+                        <div
+                          class="ExperiencePage__ContributionsData"
+                        >
+                          <label
+                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                          >
+                            Key contributions
+                          </label>
+                          <div
+                            class="SimpleList ExperiencePage__ContributionsList"
+                          >
+                            <ul
+                              class="SimpleList__Content"
+                            >
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Joined the project from day one and helped define its architecture;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Integrated third-party services such as Facebook and Instagram;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
+                                >
+                                  Significantly improved the deployment pipeline using containerization (Docker), speeding up delivery and app maintenance.
+                                </label>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div
+                  class="Step"
+                >
                   <div
-                    class="Step"
+                    class="Step__LeftBlock Step__LeftBlock_withBottomBorder"
                   >
                     <div
-                      class="Step__LeftBlock Step__LeftBlock_withBottomBorder"
+                      class="Step__Indicator"
                     >
-                      <div
-                        class="Step__Indicator"
-                      >
-                        1
-                      </div>
-                      <div
-                        class="Step__Arrow"
-                      />
+                      1
                     </div>
                     <div
-                      class="Step__Content"
+                      class="Step__Arrow"
+                    />
+                  </div>
+                  <div
+                    class="Step__Content"
+                  >
+                    <div
+                      class="ExperiencePage__HistoryItem"
                     >
                       <div
-                        class="ExperiencePage__HistoryItem"
+                        class="Block"
                       >
                         <div
-                          class="Block"
+                          class="Field"
                         >
-                          <div
-                            class="Field"
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Company:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Technomarket"
-                            >
-                              Technomarket
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Company:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Technomarket"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Website:
-                            </label>
-                            <a
-                              class="Field__Value Link"
-                              href="https://tm-v.ru"
-                              title="https://tm-v.ru"
-                            >
-                              https://tm-v.ru
-                            </a>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Nov 2019 – Mar 2022"
-                            >
-                              Nov 2019 – Mar 2022
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
-                          >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Career:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Software Engineer"
-                            >
-                              Software Engineer
-                            </span>
-                          </div>
+                            Technomarket
+                          </span>
                         </div>
-                        <label
-                          class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
-                        >
-                          Project list
-                        </label>
-                        <label
-                          class="Label Label_tiny Label_alignment-center"
-                        >
-                          (the most recent projects at the top)
-                        </label>
                         <div
-                          class="Card"
+                          class="Field"
                         >
-                          <div
-                            class="Field"
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Project:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields."
-                            >
-                              SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields.
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Website:
+                          </label>
+                          <a
+                            class="Field__Value Link"
+                            href="https://tm-v.ru"
+                            title="https://tm-v.ru"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Period:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="Nov 2019 – Mar 2022"
-                            >
-                              Nov 2019 – Mar 2022
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            https://tm-v.ru
+                          </a>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Environment:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="React, Redux, NestJS, MySql, Sequilize, Jest, TypeScript, Git, Linux"
-                            >
-                              React, Redux, NestJS, MySql, Sequilize, Jest, TypeScript, Git, Linux
-                            </span>
-                          </div>
-                          <div
-                            class="Field"
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Nov 2019 – Mar 2022"
                           >
-                            <label
-                              class="Field__Label Label Label_keepWordBreak"
-                            >
-                              Responsibilities:
-                            </label>
-                            <span
-                              class="Field__Value Text"
-                              title="full-stack development, tech leadership, features implementation, debugging, refactoring, testing, code review"
-                            >
-                              full-stack development, tech leadership, features implementation, debugging, refactoring, testing, code review
-                            </span>
-                          </div>
-                          <div
-                            class="ExperiencePage__ContributionsData"
+                            Nov 2019 – Mar 2022
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
                           >
-                            <label
-                              class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            Career:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Software Engineer"
+                          >
+                            Software Engineer
+                          </span>
+                        </div>
+                      </div>
+                      <label
+                        class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                      >
+                        Project list
+                      </label>
+                      <label
+                        class="Label Label_tiny Label_alignment-center"
+                      >
+                        (the most recent projects at the top)
+                      </label>
+                      <div
+                        class="Card"
+                      >
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Project:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields."
+                          >
+                            SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields.
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Period:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="Nov 2019 – Mar 2022"
+                          >
+                            Nov 2019 – Mar 2022
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Environment:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="React, Redux, NestJS, MySql, Sequilize, Jest, TypeScript, Git, Linux"
+                          >
+                            React, Redux, NestJS, MySql, Sequilize, Jest, TypeScript, Git, Linux
+                          </span>
+                        </div>
+                        <div
+                          class="Field"
+                        >
+                          <label
+                            class="Field__Label Label Label_keepWordBreak"
+                          >
+                            Responsibilities:
+                          </label>
+                          <span
+                            class="Field__Value Text"
+                            title="full-stack development, tech leadership, features implementation, debugging, refactoring, testing, code review"
+                          >
+                            full-stack development, tech leadership, features implementation, debugging, refactoring, testing, code review
+                          </span>
+                        </div>
+                        <div
+                          class="ExperiencePage__ContributionsData"
+                        >
+                          <label
+                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                          >
+                            Key contributions
+                          </label>
+                          <div
+                            class="SimpleList ExperiencePage__ContributionsList"
+                          >
+                            <ul
+                              class="SimpleList__Content"
                             >
-                              Key contributions
-                            </label>
-                            <div
-                              class="SimpleList ExperiencePage__ContributionsList"
-                            >
-                              <ul
-                                class="SimpleList__Content"
+                              <li
+                                class="SimpleList__ContentItem"
                               >
-                                <li
-                                  class="SimpleList__ContentItem"
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Took part in end-to-end development of all major components — web client, web server, and desktop app — from MVP to a full-scale system now used across multiple healthcare facilities in the Voronezh and Lipetsk regions;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
+                                  Took part in end-to-end development of all major components — web client, web server, and desktop app — from MVP to a full-scale system now used across multiple healthcare facilities in the Voronezh and Lipetsk regions;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Led development of the “Report Builder” module, enabling dynamic form generation and PDF templates based on flexible XML schemas;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
+                                  Led development of the “Report Builder” module, enabling dynamic form generation and PDF templates based on flexible XML schemas;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Helped integrate the system with other medical platforms like VOKKDC and MedSoft;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
+                                  Helped integrate the system with other medical platforms like VOKKDC and MedSoft;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Contributed to the architecture of the “Configurator” — a core module for setting up organizations, workstations, and their relationships;
-                                  </label>
-                                </li>
-                                <li
-                                  class="SimpleList__ContentItem"
+                                  Contributed to the architecture of the “Configurator” — a core module for setting up organizations, workstations, and their relationships;
+                                </label>
+                              </li>
+                              <li
+                                class="SimpleList__ContentItem"
+                              >
+                                <label
+                                  class="SimpleList__ContentItemValue"
                                 >
-                                  <label
-                                    class="SimpleList__ContentItemValue"
-                                  >
-                                    Migrated key functionality from the legacy desktop app to a modern web-based solution.
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
+                                  Migrated key functionality from the legacy desktop app to a modern web-based solution.
+                                </label>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -1671,393 +1699,389 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
         </div>
       </header>
       <main
-        class="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40"
+        class="MainLayout"
       >
         <div
-          class="mx-auto max-w-5xl"
+          class="MainLayout__Wrapper"
         >
-          <div
-            class="border border-[#273a27] bg-black/50 p-6 backdrop-blur-sm"
-          >
-            <div>
-              <h2
-                class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
-              >
-                Projects
-              </h2>
+          <div>
+            <h2
+              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+            >
+              Projects
+            </h2>
+            <div
+              class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+            >
               <div
-                class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
               >
                 <div
-                  class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                  class="relative overflow-hidden"
                 >
+                  <img
+                    alt="Project 1"
+                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    src="FileMock"
+                  />
                   <div
-                    class="relative overflow-hidden"
-                  >
-                    <img
-                      alt="Project 1"
-                      class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
-                      src="FileMock"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
-                    />
-                  </div>
-                  <div
-                    class="mt-4"
-                  >
-                    <h3
-                      class="project-title text-xl font-bold text-white transition-colors duration-300"
-                    >
-                      HandySurf
-                    </h3>
-                    <p
-                      class="mt-2 text-sm text-neutral-400"
-                    >
-                      Chrome extension. Your ultimate hands-free browser control with advanced gesture recognition and AI-powered navigation.
-                    </p>
-                    <div
-                      class="mt-4"
-                    >
-                      <h4
-                        class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
-                      >
-                        STACK:
-                      </h4>
-                      <div
-                        class="mt-2 flex flex-wrap gap-2"
-                      >
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          React
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          RxJS
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Zustand
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          MUI
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          MediaPipe
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Webpack
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Typescript
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Python
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class="mt-4 flex items-center justify-between"
-                    >
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://chromewebstore.google.com/detail/handysurf/bbpfkcnjhagmkpcglcmpgnnlkimpdeoo"
-                        target="_blank"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           link 
-                        </span>
-                        Live Demo
-                      </a>
-                    </div>
-                  </div>
+                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                  />
                 </div>
                 <div
-                  class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                  class="mt-4"
                 >
-                  <div
-                    class="relative overflow-hidden"
+                  <h3
+                    class="project-title text-xl font-bold text-white transition-colors duration-300"
                   >
-                    <img
-                      alt="Project 2"
-                      class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
-                      src="FileMock"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
-                    />
-                  </div>
+                    HandySurf
+                  </h3>
+                  <p
+                    class="mt-2 text-sm text-neutral-400"
+                  >
+                    Chrome extension. Your ultimate hands-free browser control with advanced gesture recognition and AI-powered navigation.
+                  </p>
                   <div
                     class="mt-4"
                   >
-                    <h3
-                      class="project-title text-xl font-bold text-white transition-colors duration-300"
+                    <h4
+                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
                     >
-                      SIT36 Website
-                    </h3>
-                    <p
-                      class="mt-2 text-sm text-neutral-400"
-                    >
-                      A website for a company "StroyInTekh" specializing in the manufacturing of storage and purification equipment.
-                    </p>
+                      STACK:
+                    </h4>
                     <div
-                      class="mt-4"
+                      class="mt-2 flex flex-wrap gap-2"
                     >
-                      <h4
-                        class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
                       >
-                        STACK:
-                      </h4>
-                      <div
-                        class="mt-2 flex flex-wrap gap-2"
+                        React
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
                       >
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Next.js
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          SCSS
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Jest
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Playwright
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          StoryBook
-                        </span>
-                      </div>
+                        RxJS
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Zustand
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        MUI
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        MediaPipe
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Webpack
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Typescript
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Python
+                      </span>
                     </div>
-                    <div
-                      class="mt-4 flex items-center justify-between"
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between"
+                  >
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://chromewebstore.google.com/detail/handysurf/bbpfkcnjhagmkpcglcmpgnnlkimpdeoo"
+                      target="_blank"
                     >
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://sit36.ru"
-                        target="_blank"
+                      <span
+                        class="material-symbols-outlined text-base"
                       >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           link 
-                        </span>
-                        Live Demo
-                      </a>
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://github.com/a1exevs/stroy-in-tekh"
-                        target="_blank"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           code 
-                        </span>
-                        Repository
-                      </a>
-                    </div>
+                         link 
+                      </span>
+                      Live Demo
+                    </a>
                   </div>
                 </div>
+              </div>
+              <div
+                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+              >
                 <div
-                  class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                  class="relative overflow-hidden"
                 >
+                  <img
+                    alt="Project 2"
+                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    src="FileMock"
+                  />
                   <div
-                    class="relative overflow-hidden"
-                  >
-                    <img
-                      alt="Project 3"
-                      class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
-                      src="FileMock"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
-                    />
-                  </div>
-                  <div
-                    class="mt-4"
-                  >
-                    <h3
-                      class="project-title text-xl font-bold text-white transition-colors duration-300"
-                    >
-                      Lipsync Timing Checker
-                    </h3>
-                    <p
-                      class="mt-2 text-sm text-neutral-400"
-                    >
-                      Application for calibrating viseme according to Audio track.
-                    </p>
-                    <div
-                      class="mt-4"
-                    >
-                      <h4
-                        class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
-                      >
-                        STACK:
-                      </h4>
-                      <div
-                        class="mt-2 flex flex-wrap gap-2"
-                      >
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          React
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Tailwind
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Wavesurfer
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Jest
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Playwright
-                        </span>
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          StoryBook
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class="mt-4 flex items-center justify-between"
-                    >
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://a1exevs.github.io/lipsync-timing-checker"
-                        target="_blank"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           link 
-                        </span>
-                        Live Demo
-                      </a>
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://github.com/a1exevs/lipsync-timing-checker"
-                        target="_blank"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           code 
-                        </span>
-                        Repository
-                      </a>
-                    </div>
-                  </div>
+                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                  />
                 </div>
                 <div
-                  class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                  class="mt-4"
                 >
-                  <div
-                    class="relative overflow-hidden"
+                  <h3
+                    class="project-title text-xl font-bold text-white transition-colors duration-300"
                   >
-                    <img
-                      alt="Project 4"
-                      class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
-                      src="FileMock"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
-                    />
-                  </div>
+                    SIT36 Website
+                  </h3>
+                  <p
+                    class="mt-2 text-sm text-neutral-400"
+                  >
+                    A website for a company "StroyInTekh" specializing in the manufacturing of storage and purification equipment.
+                  </p>
                   <div
                     class="mt-4"
                   >
-                    <h3
-                      class="project-title text-xl font-bold text-white transition-colors duration-300"
+                    <h4
+                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
                     >
-                      TS-guards
-                    </h3>
-                    <p
-                      class="mt-2 text-sm text-neutral-400"
-                    >
-                      Typescript guards library. This library provides a robust set of utility functions to simplify and streamline type-checking and guard validation in your code.
-                    </p>
+                      STACK:
+                    </h4>
                     <div
-                      class="mt-4"
+                      class="mt-2 flex flex-wrap gap-2"
                     >
-                      <h4
-                        class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
                       >
-                        STACK:
-                      </h4>
-                      <div
-                        class="mt-2 flex flex-wrap gap-2"
+                        Next.js
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
                       >
-                        <span
-                          class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
-                        >
-                          Typescript
-                        </span>
-                      </div>
+                        SCSS
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Jest
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Playwright
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        StoryBook
+                      </span>
                     </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between"
+                  >
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://sit36.ru"
+                      target="_blank"
+                    >
+                      <span
+                        class="material-symbols-outlined text-base"
+                      >
+                         link 
+                      </span>
+                      Live Demo
+                    </a>
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://github.com/a1exevs/stroy-in-tekh"
+                      target="_blank"
+                    >
+                      <span
+                        class="material-symbols-outlined text-base"
+                      >
+                         code 
+                      </span>
+                      Repository
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+              >
+                <div
+                  class="relative overflow-hidden"
+                >
+                  <img
+                    alt="Project 3"
+                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    src="FileMock"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                  />
+                </div>
+                <div
+                  class="mt-4"
+                >
+                  <h3
+                    class="project-title text-xl font-bold text-white transition-colors duration-300"
+                  >
+                    Lipsync Timing Checker
+                  </h3>
+                  <p
+                    class="mt-2 text-sm text-neutral-400"
+                  >
+                    Application for calibrating viseme according to Audio track.
+                  </p>
+                  <div
+                    class="mt-4"
+                  >
+                    <h4
+                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                    >
+                      STACK:
+                    </h4>
                     <div
-                      class="mt-4 flex items-center justify-between"
+                      class="mt-2 flex flex-wrap gap-2"
                     >
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://www.npmjs.com/package/@alexevs/ts-guards?activeTab=readme"
-                        target="_blank"
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
                       >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           link 
-                        </span>
-                        Live Demo
-                      </a>
-                      <a
-                        class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
-                        href="https://github.com/a1exevs/ts-guards"
-                        target="_blank"
+                        React
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
                       >
-                        <span
-                          class="material-symbols-outlined text-base"
-                        >
-                           code 
-                        </span>
-                        Repository
-                      </a>
+                        Tailwind
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Wavesurfer
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Jest
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Playwright
+                      </span>
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        StoryBook
+                      </span>
                     </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between"
+                  >
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://a1exevs.github.io/lipsync-timing-checker"
+                      target="_blank"
+                    >
+                      <span
+                        class="material-symbols-outlined text-base"
+                      >
+                         link 
+                      </span>
+                      Live Demo
+                    </a>
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://github.com/a1exevs/lipsync-timing-checker"
+                      target="_blank"
+                    >
+                      <span
+                        class="material-symbols-outlined text-base"
+                      >
+                         code 
+                      </span>
+                      Repository
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+              >
+                <div
+                  class="relative overflow-hidden"
+                >
+                  <img
+                    alt="Project 4"
+                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    src="FileMock"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                  />
+                </div>
+                <div
+                  class="mt-4"
+                >
+                  <h3
+                    class="project-title text-xl font-bold text-white transition-colors duration-300"
+                  >
+                    TS-guards
+                  </h3>
+                  <p
+                    class="mt-2 text-sm text-neutral-400"
+                  >
+                    Typescript guards library. This library provides a robust set of utility functions to simplify and streamline type-checking and guard validation in your code.
+                  </p>
+                  <div
+                    class="mt-4"
+                  >
+                    <h4
+                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                    >
+                      STACK:
+                    </h4>
+                    <div
+                      class="mt-2 flex flex-wrap gap-2"
+                    >
+                      <span
+                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                      >
+                        Typescript
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between"
+                  >
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://www.npmjs.com/package/@alexevs/ts-guards?activeTab=readme"
+                      target="_blank"
+                    >
+                      <span
+                        class="material-symbols-outlined text-base"
+                      >
+                         link 
+                      </span>
+                      Live Demo
+                    </a>
+                    <a
+                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      href="https://github.com/a1exevs/ts-guards"
+                      target="_blank"
+                    >
+                      <span
+                        class="material-symbols-outlined text-base"
+                      >
+                         code 
+                      </span>
+                      Repository
+                    </a>
                   </div>
                 </div>
               </div>
@@ -2166,355 +2190,351 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
         </div>
       </header>
       <main
-        class="flex-1 px-4 py-8 sm:px-10 md:px-20 lg:px-40"
+        class="MainLayout"
       >
         <div
-          class="mx-auto max-w-5xl"
+          class="MainLayout__Wrapper"
         >
-          <div
-            class="border border-[#273a27] bg-black/50 p-6 backdrop-blur-sm"
-          >
-            <div>
-              <h2
-                class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
-              >
-                Skills_Matrix
-              </h2>
+          <div>
+            <h2
+              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+            >
+              Skills_Matrix
+            </h2>
+            <div
+              class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+            >
               <div
-                class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+                class="border border-[var(--primary-color)]/30 p-4"
               >
-                <div
-                  class="border border-[var(--primary-color)]/30 p-4"
-                >
-                  <h3
-                    class="mb-4 text-lg font-bold text-white"
-                  >
-                    <span
-                      class="text-[var(--primary-color)]"
-                    >
-                      &gt;
-                    </span>
-                     Programming_Languages
-                  </h3>
-                  <ul
-                    class="space-y-2 text-sm text-neutral-300"
-                  >
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       JavaScript
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       TypeScript
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       HTML
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       CSS/LESS/SCSS
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="border border-[var(--primary-color)]/30 p-4"
-                >
-                  <h3
-                    class="mb-4 text-lg font-bold text-white"
-                  >
-                    <span
-                      class="text-[var(--primary-color)]"
-                    >
-                      &gt;
-                    </span>
-                     Frameworks_&_Libraries
-                  </h3>
-                  <ul
-                    class="space-y-2 text-sm text-neutral-300"
-                  >
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Angular
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       React
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Next.js
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       NestJS
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="border border-[var(--primary-color)]/30 p-4"
-                >
-                  <h3
-                    class="mb-4 text-lg font-bold text-white"
-                  >
-                    <span
-                      class="text-[var(--primary-color)]"
-                    >
-                      &gt;
-                    </span>
-                     Databases
-                  </h3>
-                  <ul
-                    class="space-y-2 text-sm text-neutral-300"
-                  >
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       PostgreSQL
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       MySQL
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="border border-[var(--primary-color)]/30 p-4"
-                >
-                  <h3
-                    class="mb-4 text-lg font-bold text-white"
-                  >
-                    <span
-                      class="text-[var(--primary-color)]"
-                    >
-                      &gt;
-                    </span>
-                     Tools_&_Platforms
-                  </h3>
-                  <ul
-                    class="space-y-2 text-sm text-neutral-300"
-                  >
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Git & GitHub & GitLub
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Docker
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Webpack
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Jira & Confluence
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Azure
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="border border-[var(--primary-color)]/30 p-4"
-                >
-                  <h3
-                    class="mb-4 text-lg font-bold text-white"
-                  >
-                    <span
-                      class="text-[var(--primary-color)]"
-                    >
-                      &gt;
-                    </span>
-                     Soft_Skills
-                  </h3>
-                  <ul
-                    class="space-y-2 text-sm text-neutral-300"
-                  >
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Mentoring
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Problem Solving
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Team Collaboration
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Agile Methodologies
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Communication
-                    </li>
-                    <li
-                      class="flex items-center gap-2"
-                    >
-                      <span
-                        class="text-[var(--primary-color)]"
-                      >
-                        //
-                      </span>
-                       Adaptability
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="border border-[var(--primary-color)]/30 p-4 flex flex-col justify-center items-center text-center"
+                <h3
+                  class="mb-4 text-lg font-bold text-white"
                 >
                   <span
-                    class="material-symbols-outlined text-4xl text-[var(--primary-color)]"
+                    class="text-[var(--primary-color)]"
                   >
-                    psychology
+                    &gt;
                   </span>
-                  <h3
-                    class="mt-2 mb-2 text-lg font-bold text-white"
+                   Programming_Languages
+                </h3>
+                <ul
+                  class="space-y-2 text-sm text-neutral-300"
+                >
+                  <li
+                    class="flex items-center gap-2"
                   >
-                    Continuous_Learning
-                  </h3>
-                  <p
-                    class="text-sm text-neutral-400"
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     JavaScript
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
                   >
-                    Constantly upgrading my skill set to stay ahead in the ever-evolving tech landscape.
-                  </p>
-                </div>
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     TypeScript
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     HTML
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     CSS/LESS/SCSS
+                  </li>
+                </ul>
               </div>
               <div
-                class="mt-8 text-right text-xs text-neutral-500"
+                class="border border-[var(--primary-color)]/30 p-4"
               >
-                <p>
-                  SYSTEM_SCAN_COMPLETE: 
+                <h3
+                  class="mb-4 text-lg font-bold text-white"
+                >
                   <span
-                    class="text-[var(--primary-color)]/80"
+                    class="text-[var(--primary-color)]"
                   >
-                    All skills up-to-date.
+                    &gt;
                   </span>
+                   Frameworks_&_Libraries
+                </h3>
+                <ul
+                  class="space-y-2 text-sm text-neutral-300"
+                >
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Angular
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     React
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Next.js
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     NestJS
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="border border-[var(--primary-color)]/30 p-4"
+              >
+                <h3
+                  class="mb-4 text-lg font-bold text-white"
+                >
+                  <span
+                    class="text-[var(--primary-color)]"
+                  >
+                    &gt;
+                  </span>
+                   Databases
+                </h3>
+                <ul
+                  class="space-y-2 text-sm text-neutral-300"
+                >
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     PostgreSQL
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     MySQL
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="border border-[var(--primary-color)]/30 p-4"
+              >
+                <h3
+                  class="mb-4 text-lg font-bold text-white"
+                >
+                  <span
+                    class="text-[var(--primary-color)]"
+                  >
+                    &gt;
+                  </span>
+                   Tools_&_Platforms
+                </h3>
+                <ul
+                  class="space-y-2 text-sm text-neutral-300"
+                >
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Git & GitHub & GitLub
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Docker
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Webpack
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Jira & Confluence
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Azure
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="border border-[var(--primary-color)]/30 p-4"
+              >
+                <h3
+                  class="mb-4 text-lg font-bold text-white"
+                >
+                  <span
+                    class="text-[var(--primary-color)]"
+                  >
+                    &gt;
+                  </span>
+                   Soft_Skills
+                </h3>
+                <ul
+                  class="space-y-2 text-sm text-neutral-300"
+                >
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Mentoring
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Problem Solving
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Team Collaboration
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Agile Methodologies
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Communication
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[var(--primary-color)]"
+                    >
+                      //
+                    </span>
+                     Adaptability
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="border border-[var(--primary-color)]/30 p-4 flex flex-col justify-center items-center text-center"
+              >
+                <span
+                  class="material-symbols-outlined text-4xl text-[var(--primary-color)]"
+                >
+                  psychology
+                </span>
+                <h3
+                  class="mt-2 mb-2 text-lg font-bold text-white"
+                >
+                  Continuous_Learning
+                </h3>
+                <p
+                  class="text-sm text-neutral-400"
+                >
+                  Constantly upgrading my skill set to stay ahead in the ever-evolving tech landscape.
                 </p>
               </div>
+            </div>
+            <div
+              class="mt-8 text-right text-xs text-neutral-500"
+            >
+              <p>
+                SYSTEM_SCAN_COMPLETE: 
+                <span
+                  class="text-[var(--primary-color)]/80"
+                >
+                  All skills up-to-date.
+                </span>
+              </p>
             </div>
           </div>
         </div>

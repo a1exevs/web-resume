@@ -12,10 +12,26 @@ const ContactsPage: React.FC = () => {
           href="https://github.com/a1exevs"
           target="_blank"
         >
-          <span className="contact-icon text-3xl text-neutral-400 transition-colors duration-300 material-symbols-outlined">
-            {' '}
-            code{' '}
-          </span>
+          <svg
+            className="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+            fill="currentColor"
+            role="img"
+            viewBox="0 0 20 20"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Github</title>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path
+                    d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                    id="github-[#142]"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
           <span className="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300">
             Github
           </span>
@@ -54,10 +70,15 @@ const ContactsPage: React.FC = () => {
           href="mailto:aleksandrevstafiadi@gmail.com"
           target="_blank"
         >
-          <span className="contact-icon text-3xl text-neutral-400 transition-colors duration-300 material-symbols-outlined">
-            {' '}
-            mail{' '}
-          </span>
+          <svg
+            className="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            fill="currentColor"
+          >
+            <title>Google Email</title>
+            <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+          </svg>
           <span className="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300">
             Google Email
           </span>
@@ -67,10 +88,15 @@ const ContactsPage: React.FC = () => {
           href="mailto:evstafiadi.shura@yandex.ru"
           target="_blank"
         >
-          <span className="contact-icon text-3xl text-neutral-400 transition-colors duration-300 material-symbols-outlined">
-            {' '}
-            mail_outline{' '}
-          </span>
+          <svg
+            className="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            fill="currentColor"
+          >
+            <title>Yandex Email</title>
+            <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+          </svg>
           <span className="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300">
             Yandex Email
           </span>
@@ -102,12 +128,12 @@ const ContactsPage: React.FC = () => {
           <svg
             className="contact-icon h-8 w-8 text-neutral-400 transition-colors duration-300 group-hover:text-[var(--primary-color)]"
             fill="currentColor"
-            role="img"
             viewBox="0 0 24 24"
+            role="img"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>LeetCode</title>
-            <path d="M13.48 0L15.34 3.09H9.06L10.92 0h2.56zM21.9 8.24L17.58 12l4.32 3.76-2.04 3.53L13.48 14.5v9.5h-2.56v-9.5L4.54 19.29l-2.04-3.53L6.82 12 2.5 8.24l2.04-3.53L10.92 9.5V0h2.56v9.5l6.38-4.79 2.04 3.53z"></path>
+            <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
           </svg>
           <span className="contact-label text-lg font-medium text-neutral-300 transition-colors duration-300">
             LeetCode

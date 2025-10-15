@@ -1,1 +1,1 @@
-export { Header } from 'src/widgets/ui';
+export { Header, MainLayout } from 'src/widgets/ui';
