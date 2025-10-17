@@ -1,5 +1,5 @@
 import photo from 'src/assets/images/photo.jpg';
-import { ContentTabName, Store } from 'src/store/store.types';
+import { ContactLinkCode, ContentTabName, Store } from 'src/store/store.types';
 import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 const store: Store = {
@@ -295,6 +295,60 @@ const store: Store = {
         },
       ],
     },
+  },
+  contactsData: {
+    contactLinks: [
+      {
+        href: 'https://github.com/a1exevs',
+        label: 'Github',
+        code: ContactLinkCode.GITHUB,
+      },
+      {
+        href: 'https://voronezh.hh.ru/resume/10aa6646ff077b3cb70039ed1f47394e4f476f',
+        label: 'hh.ru',
+        code: ContactLinkCode.HEAD_HUNTER,
+      },
+      {
+        href: 'https://www.linkedin.com/in/alexander-evstafiadi/',
+        label: 'LinkedIn',
+        code: ContactLinkCode.LINKEDIN,
+      },
+      {
+        href: 'mailto:aleksandrevstafiadi@gmail.com',
+        label: 'Google Email',
+        code: ContactLinkCode.GOOGLE_EMAIL,
+      },
+      {
+        href: 'mailto:evstafiadi.shura@yandex.ru',
+        label: 'Yandex Email',
+        code: ContactLinkCode.YANDEX_EMAIL,
+      },
+      {
+        href: 'https://www.youtube.com/channel/UCVrwEd4-3guB5NFQ_oidREg',
+        label: 'YouTube',
+        code: ContactLinkCode.YOUTUBE,
+      },
+      {
+        href: 'https://leetcode.com/u/a1exevs/',
+        label: 'LeetCode',
+        code: ContactLinkCode.LEETCODE,
+      },
+      {
+        href: 'https://www.instagram.com/alexevs_gb',
+        label: 'Instagram',
+        code: ContactLinkCode.INSTAGRAM,
+      },
+      {
+        href: 'https://api.whatsapp.com/send?phone=79601254138',
+        label: 'WhatsApp',
+        code: ContactLinkCode.WHATSAPP,
+      },
+      {
+        href: 'https://t.me/AlexanderEvstafiadi',
+        label: 'Telegram',
+        code: ContactLinkCode.TELEGRAM,
+      },
+    ],
   },
   footer: {
     copyrightLabel: '© 2023 Alexander Evstafiadi',

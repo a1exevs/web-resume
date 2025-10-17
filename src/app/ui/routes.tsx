@@ -29,7 +29,7 @@ const appRoutes: RouteObject[] = [
       },
       {
         path: RoutePath.CONTACTS,
-        element: <ContactsPage />,
+        element: <ContactsPage contactLinks={store.contactsData.contactLinks} />,
       },
     ],
   },
