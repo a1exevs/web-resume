@@ -447,15 +447,6 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
           <div
             class="ContactsPage"
           >
-            <svg
-              class="Icon Icon_appFontSize"
-              color="currentColor"
-              fill="currentColor"
-            >
-              <use
-                xlink:href="FileMock#email"
-              />
-            </svg>
             <h2
               class="ContactsPage__Title glitch"
             >
