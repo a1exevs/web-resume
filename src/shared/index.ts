@@ -1,3 +1,6 @@
+// ui
+export { Icon } from 'src/shared/ui';
+
 // model
 export {
   DESKTOP_4K_SCREEN_WIDTH_PX,

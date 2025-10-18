@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Icon component "color" prop prop "color" has a value 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_appFontSize"
+    color="red"
+    fill="red"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "size" prop "size" prop has value = "AppFontSize" 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_appFontSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "size" prop "size" prop has value = "Large" 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_LargeSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "size" prop "size" prop has value = "Normal" 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_normalSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "size" prop "size" prop has value = "ParentFontSize" 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_parentFontSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "size" prop "size" prop has value = "Small" 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_smallSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "size" prop "size" prop has value = "SuperGiant" 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_superGiantSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component "width" and "height" props "width" and "height" props have some values 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon"
+    color="currentColor"
+    fill="currentColor"
+    height="24px"
+    width="'24px'"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icon component default rendering. 1`] = `
+<DocumentFragment>
+  <svg
+    class="Icon Icon_appFontSize"
+    color="currentColor"
+    fill="currentColor"
+  >
+    <use
+      xlink:href="FileMock#rect"
+    />
+  </svg>
+</DocumentFragment>
+`;
