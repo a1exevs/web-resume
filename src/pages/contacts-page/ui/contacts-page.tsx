@@ -3,8 +3,6 @@ import React from 'react';
 import ContactLink from 'src/pages/contacts-page/ui/contact-link/contact-link';
 import { ContactLinkCodeIconMap } from 'src/pages/contacts-page/ui/contacts-page.consts';
 import classes from 'src/pages/contacts-page/ui/contacts-page.module.scss';
-import { Icon } from 'src/shared';
-import { IconName } from 'src/shared/ui/icon/icon.names';
 import { ContactsData } from 'src/store/store.types';
 
 type Props = ContactsData;
@@ -12,7 +10,6 @@ type Props = ContactsData;
 const ContactsPage: React.FC<Props> = ({ contactLinks }) => {
   return (
     <div className={classes.ContactsPage}>
-      <Icon icon={IconName.EMAIL} />
       <h2 className={classes.ContactsPage__Title + ' glitch'}>Contacts</h2>
       <div className={classes.ContactsPage__Items}>
         {contactLinks.map(contact => {
