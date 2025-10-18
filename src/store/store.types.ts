@@ -106,9 +106,33 @@ export type FooterData = {
   copyrightLabel: string;
 };
 
+export type ContactLinkData = {
+  href: string;
+  label: string;
+  code: ContactLinkCode;
+};
+
+export type ContactsData = {
+  contactLinks: ContactLinkData[];
+};
+
 export type Store = {
   header: HeaderData;
   commonInfo: CommonInfoData;
   content: ContentData;
   footer: FooterData;
+  contactsData: ContactsData;
 };
+
+export enum ContactLinkCode {
+  GITHUB = 'GITHUB',
+  HEAD_HUNTER = 'HEAD_HUNTER',
+  LINKEDIN = 'LINKEDIN',
+  GOOGLE_EMAIL = 'GOOGLE_EMAIL',
+  YANDEX_EMAIL = 'YANDEX_EMAIL',
+  YOUTUBE = 'YOUTUBE',
+  LEETCODE = 'LEETCODE',
+  INSTAGRAM = 'INSTAGRAM',
+  WHATSAPP = 'WHATSAPP',
+  TELEGRAM = 'TELEGRAM',
+}
