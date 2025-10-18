@@ -1,5 +1,5 @@
 @import 'src/shared';
-@import "src/ui/Content/common/style/mixins";
+@import 'src/ui/Content/common/style/mixins';
 
 .ExperiencePage {
   &__Content {
@@ -16,6 +16,6 @@
     gap: $small-space;
   }
   &__ContributionsList {
-    padding: 0 4*$small-space;
+    padding: 0 4 * $small-space;
   }
 }

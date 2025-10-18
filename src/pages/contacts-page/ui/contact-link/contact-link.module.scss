@@ -1,4 +1,4 @@
-@import "src/shared";
+@import 'src/shared';
 
 .ContactLink {
   display: flex;
@@ -16,7 +16,7 @@
   &:focus {
     border-color: var(--primary-color);
     background: rgba(5, 199, 5, 0.12); // hover:bg-green-900/20
-    box-shadow: 0 0 15px rgba(5,199,5,0.5);
+    box-shadow: 0 0 15px rgba(5, 199, 5, 0.5);
     text-decoration: none;
   }
   &__Icon {

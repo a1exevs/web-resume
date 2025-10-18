@@ -25,9 +25,9 @@
     gap: 2rem;
   }
   &__NavLink {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
-    transition-timing-function:
-      cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+      -webkit-text-decoration-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 
     font-size: 0.875rem;
@@ -60,9 +60,9 @@
     color: rgb(255 255 255);
     background-color: rgb(39 58 39);
     padding: 0.5rem;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
-    transition-timing-function:
-      cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+      -webkit-text-decoration-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
     &:hover {
       background-color: var(--primary-color);
@@ -80,7 +80,7 @@
     --tw-backdrop-blur: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px #36BA0120, 0 4px 6px -4px #36BA0120;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px #36ba0120, 0 4px 6px -4px #36ba0120;
   }
   &__MenuItems {
     display: flex;
@@ -94,9 +94,9 @@
     font-weight: 500;
     color: rgb(255 255 255 / 0.8);
 
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
-    transition-timing-function:
-      cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+      -webkit-text-decoration-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 
     &:hover {

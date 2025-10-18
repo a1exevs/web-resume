@@ -51,6 +51,9 @@ Checks/updates available dependencies to the latest version.
 ### `yarn run format`
 Formats code using Prettier for TypeScript, TSX, and CSS, SCSS files.
 
+### `yarn run format:check`
+Checks code format using Prettier for TypeScript, TSX, and CSS, SCSS files.
+
 ### `yarn run lint`
 Runs ESLint for static code analysis on TypeScript and TSX files.
 

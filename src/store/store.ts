@@ -300,7 +300,7 @@ const store: Store = {
     contactLinks: [
       {
         href: 'https://github.com/a1exevs',
-        label: 'Github',
+        label: 'GitHub',
         code: ContactLinkCode.GITHUB,
       },
       {

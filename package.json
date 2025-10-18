@@ -25,6 +25,7 @@
     "check-deps": "yarn outdated",
     "upgrade-deps": "yarn upgrade --latest",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,scss}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,scss}\"",
     "lint": "eslint --config eslint.config.ts \"{src,.storybook,linter,tests,scripts}/**/*.{ts,tsx}\"",
     "lint:fix": "eslint \"{src,.storybook,linter,tests,scripts}/**/*.{ts,tsx}\" --fix",
     "test:unit": "jest --config tests/unit/config/config.ts",
