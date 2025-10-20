@@ -122,6 +122,7 @@ export type Store = {
   content: ContentData;
   footer: FooterData;
   contactsData: ContactsData;
+  skillsData: SkillsData;
 };
 
 export enum ContactLinkCode {
@@ -136,3 +137,9 @@ export enum ContactLinkCode {
   WHATSAPP = 'WHATSAPP',
   TELEGRAM = 'TELEGRAM',
 }
+
+export type SkillSet = { title: string; items: string[] };
+
+export type SkillsData = {
+  skills: SkillSet[];
+};

@@ -350,6 +350,37 @@ const store: Store = {
       },
     ],
   },
+  skillsData: {
+    skills: [
+      {
+        title: 'Programming_Languages',
+        items: ['JavaScript', 'TypeScript', 'HTML', 'CSS/LESS/SCSS'],
+      },
+      {
+        title: 'Frameworks_&_Libraries',
+        items: ['Angular', 'React', 'Next.js', 'NestJS'],
+      },
+      {
+        title: 'Databases',
+        items: ['PostgreSQL', 'MySQL'],
+      },
+      {
+        title: 'Tools_&_Platforms',
+        items: ['Git & GitHub & GitLub', 'Docker', 'Webpack', 'Jira & Confluence', 'Azure'],
+      },
+      {
+        title: 'Soft_Skills',
+        items: [
+          'Mentoring',
+          'Problem Solving',
+          'Team Collaboration',
+          'Agile Methodologies',
+          'Communication',
+          'Adaptability',
+        ],
+      },
+    ],
+  },
   footer: {
     copyrightLabel: '© 2023 Alexander Evstafiadi',
   },

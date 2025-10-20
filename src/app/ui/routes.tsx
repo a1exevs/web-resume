@@ -21,7 +21,7 @@ const appRoutes: RouteObject[] = [
       },
       {
         path: RoutePath.SKILLS,
-        element: <SkillsPage />,
+        element: <SkillsPage skills={store.skillsData.skills} />,
       },
       {
         path: RoutePath.PROJECTS,
