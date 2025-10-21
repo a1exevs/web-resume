@@ -1,4 +1,8 @@
+import handySurfLogo from 'src/assets/images/handy-surf-logo.png';
+import lipsyncTimingCheckerLogo from 'src/assets/images/lipsync-timing-checker-logo.png';
 import photo from 'src/assets/images/photo.jpg';
+import stroyInTekhLogo from 'src/assets/images/stroy-in-tekh-logo.png';
+import tsGuardsLogo from 'src/assets/images/ts-guards-logo.png';
 import { ContactLinkCode, ContentTabName, Store } from 'src/store/store.types';
 import { IconName } from 'src/ui/common/components/Icon/Icon';
 
@@ -378,6 +382,52 @@ const store: Store = {
           'Communication',
           'Adaptability',
         ],
+      },
+    ],
+  },
+  projectsData: {
+    projects: [
+      {
+        logo: handySurfLogo,
+        title: 'HandySurf',
+        description:
+          'Chrome extension. Your ultimate hands-free browser control with advanced gesture recognition and AI-powered navigation.',
+        stack: ['React', 'RxJS', 'Zustand', 'MUI', 'MediaPipe', 'Webpack', 'Typescript', 'Python'],
+        links: {
+          live: 'https://chromewebstore.google.com/detail/handysurf/bbpfkcnjhagmkpcglcmpgnnlkimpdeoo',
+        },
+      },
+      {
+        logo: stroyInTekhLogo,
+        title: 'SIT36 Website',
+        description:
+          'A website for a company "StroyInTekh" specializing in the manufacturing of storage and purification equipment.',
+        stack: ['Next.js', 'SCSS', 'Jest', 'Playwright', 'StoryBook'],
+        links: {
+          live: 'https://sit36.ru',
+          repo: 'https://github.com/a1exevs/stroy-in-tekh',
+        },
+      },
+      {
+        logo: lipsyncTimingCheckerLogo,
+        title: 'Lipsync Timing Checker',
+        description: 'Application for calibrating viseme according to Audio track.',
+        stack: ['React', 'Tailwind', 'Wavesurfer', 'Jest', 'Playwright', 'StoryBook'],
+        links: {
+          live: 'https://a1exevs.github.io/lipsync-timing-checker',
+          repo: 'https://github.com/a1exevs/lipsync-timing-checker',
+        },
+      },
+      {
+        logo: tsGuardsLogo,
+        title: 'TS-guards',
+        description:
+          'Typescript guards library. This library provides a robust set of utility functions to simplify and streamline type-checking and guard validation in your code.',
+        stack: ['Typescript'],
+        links: {
+          live: 'https://www.npmjs.com/package/@alexevs/ts-guards?activeTab=readme',
+          repo: 'https://github.com/a1exevs/ts-guards',
+        },
       },
     ],
   },
