@@ -26,9 +26,9 @@ export const ContactLinkCodeIconMap: Record<ContactLinkCode, React.FC<{ classNam
     <Icon icon={IconName.INSTAGRAM} className={className} title="Instagram" />
   ),
   [ContactLinkCode.WHATSAPP]: ({ className }) => (
-    <Icon icon={IconName.INSTAGRAM} className={className} title="WhatsApp" />
+    <Icon icon={IconName.WHATSAPP} className={className} title="WhatsApp" />
   ),
   [ContactLinkCode.TELEGRAM]: ({ className }) => (
-    <Icon icon={IconName.INSTAGRAM} className={className} title="Telegram" />
+    <Icon icon={IconName.TELEGRAM} className={className} title="Telegram" />
   ),
 };

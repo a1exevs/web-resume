@@ -662,7 +662,7 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
                     WhatsApp
                   </title>
                   <use
-                    xlink:href="FileMock#instagram"
+                    xlink:href="FileMock#whatsapp"
                   />
                 </svg>
                 <span
@@ -686,7 +686,7 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
                     Telegram
                   </title>
                   <use
-                    xlink:href="FileMock#instagram"
+                    xlink:href="FileMock#telegram"
                   />
                 </svg>
                 <span
@@ -2177,342 +2177,375 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
         <div
           class="MainLayout__Wrapper"
         >
-          <div>
+          <div
+            class="SkillsPage"
+          >
             <h2
-              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+              class="SkillsPage__Title glitch"
             >
               Skills_Matrix
             </h2>
             <div
-              class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+              class="SkillsPage__Items"
             >
               <div
-                class="border border-[var(--primary-color)]/30 p-4"
+                class="SkillsCard"
               >
                 <h3
-                  class="mb-4 text-lg font-bold text-white"
+                  class="SkillsCard__Title"
                 >
                   <span
-                    class="text-[var(--primary-color)]"
+                    class="SkillsCard__TitleIcon"
                   >
                     &gt;
                   </span>
-                   Programming_Languages
+                   
+                  Programming_Languages
                 </h3>
                 <ul
-                  class="space-y-2 text-sm text-neutral-300"
+                  class="SkillsCard__List"
                 >
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     JavaScript
+                     
+                    JavaScript
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     TypeScript
+                     
+                    TypeScript
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     HTML
+                     
+                    HTML
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     CSS/LESS/SCSS
+                     
+                    CSS/LESS/SCSS
                   </li>
                 </ul>
               </div>
               <div
-                class="border border-[var(--primary-color)]/30 p-4"
+                class="SkillsCard"
               >
                 <h3
-                  class="mb-4 text-lg font-bold text-white"
+                  class="SkillsCard__Title"
                 >
                   <span
-                    class="text-[var(--primary-color)]"
+                    class="SkillsCard__TitleIcon"
                   >
                     &gt;
                   </span>
-                   Frameworks_&_Libraries
+                   
+                  Frameworks_&_Libraries
                 </h3>
                 <ul
-                  class="space-y-2 text-sm text-neutral-300"
+                  class="SkillsCard__List"
                 >
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Angular
+                     
+                    Angular
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     React
+                     
+                    React
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Next.js
+                     
+                    Next.js
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     NestJS
+                     
+                    NestJS
                   </li>
                 </ul>
               </div>
               <div
-                class="border border-[var(--primary-color)]/30 p-4"
+                class="SkillsCard"
               >
                 <h3
-                  class="mb-4 text-lg font-bold text-white"
+                  class="SkillsCard__Title"
                 >
                   <span
-                    class="text-[var(--primary-color)]"
+                    class="SkillsCard__TitleIcon"
                   >
                     &gt;
                   </span>
-                   Databases
+                   
+                  Databases
                 </h3>
                 <ul
-                  class="space-y-2 text-sm text-neutral-300"
+                  class="SkillsCard__List"
                 >
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     PostgreSQL
+                     
+                    PostgreSQL
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     MySQL
+                     
+                    MySQL
                   </li>
                 </ul>
               </div>
               <div
-                class="border border-[var(--primary-color)]/30 p-4"
+                class="SkillsCard"
               >
                 <h3
-                  class="mb-4 text-lg font-bold text-white"
+                  class="SkillsCard__Title"
                 >
                   <span
-                    class="text-[var(--primary-color)]"
+                    class="SkillsCard__TitleIcon"
                   >
                     &gt;
                   </span>
-                   Tools_&_Platforms
+                   
+                  Tools_&_Platforms
                 </h3>
                 <ul
-                  class="space-y-2 text-sm text-neutral-300"
+                  class="SkillsCard__List"
                 >
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Git & GitHub & GitLub
+                     
+                    Git & GitHub & GitLub
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Docker
+                     
+                    Docker
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Webpack
+                     
+                    Webpack
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Jira & Confluence
+                     
+                    Jira & Confluence
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Azure
+                     
+                    Azure
                   </li>
                 </ul>
               </div>
               <div
-                class="border border-[var(--primary-color)]/30 p-4"
+                class="SkillsCard"
               >
                 <h3
-                  class="mb-4 text-lg font-bold text-white"
+                  class="SkillsCard__Title"
                 >
                   <span
-                    class="text-[var(--primary-color)]"
+                    class="SkillsCard__TitleIcon"
                   >
                     &gt;
                   </span>
-                   Soft_Skills
+                   
+                  Soft_Skills
                 </h3>
                 <ul
-                  class="space-y-2 text-sm text-neutral-300"
+                  class="SkillsCard__List"
                 >
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Mentoring
+                     
+                    Mentoring
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Problem Solving
+                     
+                    Problem Solving
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Team Collaboration
+                     
+                    Team Collaboration
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Agile Methodologies
+                     
+                    Agile Methodologies
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Communication
+                     
+                    Communication
                   </li>
                   <li
-                    class="flex items-center gap-2"
+                    class="SkillsCard__Item"
                   >
                     <span
-                      class="text-[var(--primary-color)]"
+                      class="SkillsCard__CodeIcon"
                     >
                       //
                     </span>
-                     Adaptability
+                     
+                    Adaptability
                   </li>
                 </ul>
               </div>
               <div
-                class="border border-[var(--primary-color)]/30 p-4 flex flex-col justify-center items-center text-center"
+                class="ContinuousLearningCard"
               >
-                <span
-                  class="material-symbols-outlined text-4xl text-[var(--primary-color)]"
+                <svg
+                  class="Icon ContinuousLearningCard__Icon"
+                  color="currentColor"
+                  fill="currentColor"
+                  width="5rem"
                 >
-                  psychology
-                </span>
+                  <use
+                    xlink:href="FileMock#psychology"
+                  />
+                </svg>
                 <h3
-                  class="mt-2 mb-2 text-lg font-bold text-white"
+                  class="ContinuousLearningCard__Title"
                 >
                   Continuous_Learning
                 </h3>
                 <p
-                  class="text-sm text-neutral-400"
+                  class="ContinuousLearningCard__Text"
                 >
                   Constantly upgrading my skill set to stay ahead in the ever-evolving tech landscape.
                 </p>
               </div>
             </div>
             <div
-              class="mt-8 text-right text-xs text-neutral-500"
+              class="SkillsPage__ScanInfo"
             >
               <p>
                 SYSTEM_SCAN_COMPLETE: 
                 <span
-                  class="text-[var(--primary-color)]/80"
+                  class="SkillsPage__ScanHighlight"
                 >
                   All skills up-to-date.
                 </span>
