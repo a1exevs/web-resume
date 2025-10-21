@@ -15,9 +15,7 @@ type Props = {
 const ExperiencePage: React.FC<Props> = ({ careerHistoryData }) => {
   return (
     <div className={classes.ExperiencePage}>
-      <h2 className="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]">
-        Work_Experience
-      </h2>
+      <h2 className={classes.ExperiencePage__Title + ' glitch'}>Work_Experience</h2>
       <div className={classes.ExperiencePage__Content}>
         <Stepper>
           {careerHistoryData.companyExperiences.map((experience, index) => (
