@@ -1686,382 +1686,441 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
         <div
           class="MainLayout__Wrapper"
         >
-          <div>
+          <div
+            class="ProjectsPage"
+          >
             <h2
-              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+              class="ProjectsPage__Title glitch"
             >
               Projects
             </h2>
             <div
-              class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+              class="ProjectsPage__Items"
             >
               <div
-                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                class="ProjectCard"
+                role="button"
+                tabindex="0"
               >
                 <div
-                  class="relative overflow-hidden"
+                  class="ProjectCard__ImageWrapper"
                 >
                   <img
-                    alt="Project 1"
-                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    alt="HandySurf"
+                    class="ProjectCard__Image"
                     src="FileMock"
                   />
                   <div
-                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                    class="ProjectCard__Overlay"
                   />
                 </div>
                 <div
-                  class="mt-4"
+                  class="ProjectCard__Content"
                 >
                   <h3
-                    class="project-title text-xl font-bold text-white transition-colors duration-300"
+                    class="ProjectCard__Title"
                   >
                     HandySurf
                   </h3>
                   <p
-                    class="mt-2 text-sm text-neutral-400"
+                    class="ProjectCard__Description"
                   >
                     Chrome extension. Your ultimate hands-free browser control with advanced gesture recognition and AI-powered navigation.
                   </p>
                   <div
-                    class="mt-4"
+                    class="ProjectCard__Stack"
                   >
                     <h4
-                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                      class="ProjectCard__StackTitle"
                     >
                       STACK:
                     </h4>
                     <div
-                      class="mt-2 flex flex-wrap gap-2"
+                      class="ProjectCard__StackList"
                     >
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         React
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         RxJS
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Zustand
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         MUI
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         MediaPipe
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Webpack
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Typescript
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Python
                       </span>
                     </div>
                   </div>
                   <div
-                    class="mt-4 flex items-center justify-between"
+                    class="ProjectCard__Footer"
                   >
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://chromewebstore.google.com/detail/handysurf/bbpfkcnjhagmkpcglcmpgnnlkimpdeoo"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         link 
-                      </span>
+                        <use
+                          xlink:href="FileMock#link"
+                        />
+                      </svg>
                       Live Demo
                     </a>
                   </div>
                 </div>
               </div>
               <div
-                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                class="ProjectCard"
+                role="button"
+                tabindex="0"
               >
                 <div
-                  class="relative overflow-hidden"
+                  class="ProjectCard__ImageWrapper"
                 >
                   <img
-                    alt="Project 2"
-                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    alt="SIT36 Website"
+                    class="ProjectCard__Image"
                     src="FileMock"
                   />
                   <div
-                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                    class="ProjectCard__Overlay"
                   />
                 </div>
                 <div
-                  class="mt-4"
+                  class="ProjectCard__Content"
                 >
                   <h3
-                    class="project-title text-xl font-bold text-white transition-colors duration-300"
+                    class="ProjectCard__Title"
                   >
                     SIT36 Website
                   </h3>
                   <p
-                    class="mt-2 text-sm text-neutral-400"
+                    class="ProjectCard__Description"
                   >
                     A website for a company "StroyInTekh" specializing in the manufacturing of storage and purification equipment.
                   </p>
                   <div
-                    class="mt-4"
+                    class="ProjectCard__Stack"
                   >
                     <h4
-                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                      class="ProjectCard__StackTitle"
                     >
                       STACK:
                     </h4>
                     <div
-                      class="mt-2 flex flex-wrap gap-2"
+                      class="ProjectCard__StackList"
                     >
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Next.js
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         SCSS
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Jest
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Playwright
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         StoryBook
                       </span>
                     </div>
                   </div>
                   <div
-                    class="mt-4 flex items-center justify-between"
+                    class="ProjectCard__Footer"
                   >
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://sit36.ru"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         link 
-                      </span>
+                        <use
+                          xlink:href="FileMock#link"
+                        />
+                      </svg>
                       Live Demo
                     </a>
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://github.com/a1exevs/stroy-in-tekh"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         code 
-                      </span>
+                        <use
+                          xlink:href="FileMock#code"
+                        />
+                      </svg>
                       Repository
                     </a>
                   </div>
                 </div>
               </div>
               <div
-                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                class="ProjectCard"
+                role="button"
+                tabindex="0"
               >
                 <div
-                  class="relative overflow-hidden"
+                  class="ProjectCard__ImageWrapper"
                 >
                   <img
-                    alt="Project 3"
-                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    alt="Lipsync Timing Checker"
+                    class="ProjectCard__Image"
                     src="FileMock"
                   />
                   <div
-                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                    class="ProjectCard__Overlay"
                   />
                 </div>
                 <div
-                  class="mt-4"
+                  class="ProjectCard__Content"
                 >
                   <h3
-                    class="project-title text-xl font-bold text-white transition-colors duration-300"
+                    class="ProjectCard__Title"
                   >
                     Lipsync Timing Checker
                   </h3>
                   <p
-                    class="mt-2 text-sm text-neutral-400"
+                    class="ProjectCard__Description"
                   >
                     Application for calibrating viseme according to Audio track.
                   </p>
                   <div
-                    class="mt-4"
+                    class="ProjectCard__Stack"
                   >
                     <h4
-                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                      class="ProjectCard__StackTitle"
                     >
                       STACK:
                     </h4>
                     <div
-                      class="mt-2 flex flex-wrap gap-2"
+                      class="ProjectCard__StackList"
                     >
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         React
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Tailwind
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Wavesurfer
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Jest
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Playwright
                       </span>
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         StoryBook
                       </span>
                     </div>
                   </div>
                   <div
-                    class="mt-4 flex items-center justify-between"
+                    class="ProjectCard__Footer"
                   >
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://a1exevs.github.io/lipsync-timing-checker"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         link 
-                      </span>
+                        <use
+                          xlink:href="FileMock#link"
+                        />
+                      </svg>
                       Live Demo
                     </a>
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://github.com/a1exevs/lipsync-timing-checker"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         code 
-                      </span>
+                        <use
+                          xlink:href="FileMock#code"
+                        />
+                      </svg>
                       Repository
                     </a>
                   </div>
                 </div>
               </div>
               <div
-                class="project-card group cursor-pointer border border-[#273a27] bg-black/30 p-4 transition-all duration-300 hover:border-[var(--primary-color)] hover:shadow-[0_0_20px_rgba(5,199,5,0.5)]"
+                class="ProjectCard"
+                role="button"
+                tabindex="0"
               >
                 <div
-                  class="relative overflow-hidden"
+                  class="ProjectCard__ImageWrapper"
                 >
                   <img
-                    alt="Project 4"
-                    class="project-image w-full h-48 object-cover transition-all duration-300 filter grayscale brightness-75"
+                    alt="TS-guards"
+                    class="ProjectCard__Image"
                     src="FileMock"
                   />
                   <div
-                    class="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:opacity-0"
+                    class="ProjectCard__Overlay"
                   />
                 </div>
                 <div
-                  class="mt-4"
+                  class="ProjectCard__Content"
                 >
                   <h3
-                    class="project-title text-xl font-bold text-white transition-colors duration-300"
+                    class="ProjectCard__Title"
                   >
                     TS-guards
                   </h3>
                   <p
-                    class="mt-2 text-sm text-neutral-400"
+                    class="ProjectCard__Description"
                   >
                     Typescript guards library. This library provides a robust set of utility functions to simplify and streamline type-checking and guard validation in your code.
                   </p>
                   <div
-                    class="mt-4"
+                    class="ProjectCard__Stack"
                   >
                     <h4
-                      class="text-sm font-semibold uppercase text-[var(--primary-color)]/80"
+                      class="ProjectCard__StackTitle"
                     >
                       STACK:
                     </h4>
                     <div
-                      class="mt-2 flex flex-wrap gap-2"
+                      class="ProjectCard__StackList"
                     >
                       <span
-                        class="rounded-sm bg-[#1a431a] px-2 py-1 text-xs text-green-300"
+                        class="ProjectCard__StackItem"
                       >
                         Typescript
                       </span>
                     </div>
                   </div>
                   <div
-                    class="mt-4 flex items-center justify-between"
+                    class="ProjectCard__Footer"
                   >
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://www.npmjs.com/package/@alexevs/ts-guards?activeTab=readme"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         link 
-                      </span>
+                        <use
+                          xlink:href="FileMock#link"
+                        />
+                      </svg>
                       Live Demo
                     </a>
                     <a
-                      class="flex items-center gap-1 text-sm text-green-400 transition-colors hover:text-white"
+                      class="ProjectCard__Link"
                       href="https://github.com/a1exevs/ts-guards"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span
-                        class="material-symbols-outlined text-base"
+                      <svg
+                        class="Icon"
+                        color="currentColor"
+                        fill="currentColor"
+                        height="2em"
+                        width="2em"
                       >
-                         code 
-                      </span>
+                        <use
+                          xlink:href="FileMock#code"
+                        />
+                      </svg>
                       Repository
                     </a>
                   </div>

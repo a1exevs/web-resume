@@ -123,6 +123,7 @@ export type Store = {
   footer: FooterData;
   contactsData: ContactsData;
   skillsData: SkillsData;
+  projectsData: ProjectsData;
 };
 
 export enum ContactLinkCode {
@@ -142,4 +143,16 @@ export type SkillSet = { title: string; items: string[] };
 
 export type SkillsData = {
   skills: SkillSet[];
+};
+
+export type ProjectItemData = {
+  logo: string;
+  title: string;
+  description: string;
+  stack: string[];
+  links: { live?: string; repo?: string };
+};
+
+export type ProjectsData = {
+  projects: ProjectItemData[];
 };

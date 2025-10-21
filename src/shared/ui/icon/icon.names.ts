@@ -56,4 +56,6 @@ export enum IconName {
   WHATSAPP = 'whatsapp',
   TELEGRAM = 'telegram',
   PSYCHOLOGY = 'psychology',
+  LINK = 'link',
+  CODE = 'code',
 }

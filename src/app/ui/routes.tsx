@@ -25,7 +25,7 @@ const appRoutes: RouteObject[] = [
       },
       {
         path: RoutePath.PROJECTS,
-        element: <ProjectsPage />,
+        element: <ProjectsPage projects={store.projectsData.projects} />,
       },
       {
         path: RoutePath.CONTACTS,
