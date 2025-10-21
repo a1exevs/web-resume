@@ -2,9 +2,43 @@ import React from 'react';
 
 import { CommonInfoData } from 'src/store/store.types';
 
-// TODO: [REDESIGN] Rewrite without tailwing
+type SectionData = {
+  title: string;
+  items: { label: string; value: string }[];
+};
 
-type Props = { commonInfoData: CommonInfoData };
+const sections: SectionData[] = [
+  {
+    title: 'Personal_Info',
+    items: [
+      { label: 'Age', value: '29' },
+      { label: 'Date_of_birthday', value: 'February 22, 1996' },
+      { label: 'Relocation', value: 'Open to offers' },
+      { label: 'Business_trips', value: 'Willing to travel' },
+    ],
+  },
+  {
+    title: 'Education',
+    items: [
+      { label: 'University', value: 'Voronezh State University' },
+      { label: 'Degree', value: "Master's degree" },
+      { label: 'Field_of_study', value: 'Radio Physical Sciences' },
+      { label: 'Website', value: 'https://vsu.ru' },
+    ],
+  },
+  {
+    title: 'Contact_Details',
+    items: [
+      { label: 'Phone', value: '+7 (960)-125-41-38' },
+      { label: 'Email', value: 'aleksandrevstafiadi@gmail.com' },
+      { label: 'Linkedin', value: 'https://www.linkedin.com/in/alexander-evstafiadi' },
+    ],
+  },
+];
+
+type Props = {
+  commonInfoData: CommonInfoData;
+};
 
 const HomePage: React.FC<Props> = ({ commonInfoData }) => {
   return (
@@ -28,75 +62,25 @@ const HomePage: React.FC<Props> = ({ commonInfoData }) => {
           </div>
         </div>
       </div>
+
       <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div>
-          <h3 className="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]">
-            Personal_Info
-          </h3>
-          <div className="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm">
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Age</span>{' '}
-              <span className="text-white">: 29</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Date_of_birthday</span>{' '}
-              <span className="text-white">: February 22, 1996</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Relocation</span>{' '}
-              <span className="text-white">: Open to offers</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Business_trips</span>{' '}
-              <span className="text-white">: Willing to travel</span>
-            </p>
+        {sections.map(({ title, items }) => (
+          <div key={title}>
+            <h3 className="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]">
+              {title}
+            </h3>
+            <div className="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm">
+              {items.map(({ label, value }) => (
+                <p key={label}>
+                  <span className="w-32 inline-block text-neutral-400 uppercase">{label}</span>{' '}
+                  <span className="text-white">: {value}</span>
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div>
-          <h3 className="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]">
-            Education
-          </h3>
-          <div className="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm">
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">University</span>{' '}
-              <span className="text-white">: Voronezh State University</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Degree</span>{' '}
-              <span className="text-white">: Master's degree</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Field_of_study</span>{' '}
-              <span className="text-white">: Radio Physical Sciences</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Website</span>{' '}
-              <span className="text-white">: https://vsu.ru</span>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="glitch mb-4 text-lg font-bold uppercase tracking-widest text-[var(--primary-color)]">
-            Contact_Details
-          </h3>
-          <div className="space-y-3 border-l-2 border-[var(--primary-color)]/30 pl-4 text-sm">
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Phone</span>{' '}
-              <span className="text-white">: +7 (960)-125-41-38</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Email</span>{' '}
-              <span className="text-white">: aleksandrevstafiadi@gmail.com</span>
-            </p>
-            <p>
-              <span className="w-32 inline-block text-neutral-400 uppercase">Linkedin</span>{' '}
-              <span className="text-white">: https://www.linkedin.com/in/alexander-evstafiadi</span>
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
+
       <div className="mt-8 text-right text-xs text-neutral-500">
         <p>
           LAST UPDATE: <span className="text-[var(--primary-color)]/80">July 26, 2024</span>
