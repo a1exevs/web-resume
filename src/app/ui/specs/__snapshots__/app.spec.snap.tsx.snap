@@ -809,7 +809,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
             class="ExperiencePage"
           >
             <h2
-              class="glitch mb-8 text-center text-3xl font-bold uppercase tracking-widest text-[var(--primary-color)]"
+              class="ExperiencePage__Title glitch"
             >
               Work_Experience
             </h2>
