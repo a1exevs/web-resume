@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from 'src/pages/home-page/home-page.module.scss';
 
 import AdditionalDetails from 'src/pages/home-page/ui/additional-details/additional-details';
+import classes from 'src/pages/home-page/ui/home-page.module.scss';
 import ProfileDetails from 'src/pages/home-page/ui/profile-details/profile-details';
 import { MainInfoData } from 'src/store/store.types';
 
