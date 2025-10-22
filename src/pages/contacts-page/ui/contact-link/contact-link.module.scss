@@ -10,8 +10,8 @@
   outline: none;
   background: transparent;
   cursor: pointer;
-
-  font-size: 1.125rem; // text-lg
+  font-size: 1.125rem;
+  text-decoration: none;
   &:hover,
   &:focus {
     border-color: var(--primary-color);
