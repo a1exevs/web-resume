@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 @import 'src/shared';
 
 body {
   font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 13 13 / var(--tw-bg-opacity, 1));
+  background-color: rgb(13 13 13);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,6 +12,13 @@ body {
   font-weight: 400;
   line-height: 1.25rem;
   color: #e8e6e3;
+}
+
+* {
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 canvas {

@@ -11,7 +11,7 @@ const store: Store = {
     photoPath: photo,
     lastUpdateDate: '2/13/2023',
   },
-  commonInfo: {
+  mainInfo: {
     photoPath: photo,
     fullName: 'Alexander Olegovich Evstafiadi',
     birthday: new Date('2/22/1996'),
@@ -19,6 +19,39 @@ const store: Store = {
     workAt: 'DSR Corporation',
     summary:
       'Over 3 years of experience in software engineering including system analysis, design, application development and writing technical documentation.',
+    additionalDetails: [
+      {
+        title: 'Personal_Info',
+        items: [
+          { label: 'Age', value: '29' },
+          { label: 'Date_of_birthday', value: 'February 22, 1996' },
+          { label: 'Relocation', value: 'Open to offers' },
+          { label: 'Business_trips', value: 'Willing to travel' },
+        ],
+      },
+      {
+        title: 'Education',
+        items: [
+          { label: 'University', value: 'Voronezh State University' },
+          { label: 'Degree', value: "Master's degree" },
+          { label: 'Field_of_study', value: 'Radio Physical Sciences' },
+          { label: 'Website', value: 'https://vsu.ru', isLink: true },
+        ],
+      },
+      {
+        title: 'Contact_Details',
+        items: [
+          { label: 'Phone', value: '+7 (960)-125-41-38', isLink: true, linkPrefix: 'tel:' },
+          { label: 'Email', value: 'aleksandrevstafiadi@gmail.com', isLink: true, linkPrefix: 'mailto:' },
+          {
+            label: 'Linkedin',
+            value: 'https://www.linkedin.com/in/alexander-evstafiadi',
+            linkDisplayValue: 'in/alexander-evstafiadi',
+            isLink: true,
+          },
+        ],
+      },
+    ],
   },
   content: {
     tabs: [

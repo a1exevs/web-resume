@@ -1,0 +1,52 @@
+.ProfileDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  &__Photo {
+    height: 8rem; // h-32
+    width: 8rem; // w-32
+    min-width: 8rem; // min-w-32
+    border-radius: 9999px; // rounded-full
+    border: 2px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px rgba(5, 199, 5, 0.5);
+  }
+  &__Info {
+    text-align: center;
+  }
+  &__Name {
+    font-size: 1.875rem; // text-3xl
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__Position {
+    color: var(--primary-color);
+  }
+  &__Meta {
+    margin-top: 0.5rem; // mt-2
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1rem; // gap-y-1 gap-x-4
+    font-size: 0.875rem; // text-sm
+    color: #a3a3a3; // text-neutral-400
+  }
+  &__Comments {
+    color: rgba(34, 197, 94, 0.7); // text-green-500/70
+  }
+}
+
+@media (min-width: 640px) {
+  .ProfileDetails {
+    flex-direction: row;
+    &__Info {
+      text-align: left;
+    }
+    &__Meta {
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { dateToString } from 'src/common/helpers/date-helper';
-import { CommonInfoData } from 'src/store/store.types';
+import { MainInfoData } from 'src/store/store.types';
 import Field from 'src/ui/common/components/Field/Field';
 import classes from 'src/ui/CommonInfo/CommonInfo.module.scss';
 
-type Props = { data: CommonInfoData };
+type Props = { data: MainInfoData };
 
 const CommonInfo: React.FC<Props> = ({ data }) => (
   <div className={classes.CommonInfo}>
