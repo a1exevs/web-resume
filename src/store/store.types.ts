@@ -5,13 +5,19 @@ export type HeaderData = {
   lastUpdateDate: string;
 };
 
-export type CommonInfoData = {
+type AdditionalDetails = {
+  title: string;
+  items: { label: string; value: string; isLink?: boolean; linkPrefix?: string; linkDisplayValue?: string }[];
+};
+
+export type MainInfoData = {
   photoPath: string;
   fullName: string;
   birthday: Date;
   city: string;
   workAt: string;
   summary: string;
+  additionalDetails: AdditionalDetails[];
 };
 
 export enum ContentTabName {
@@ -106,9 +112,53 @@ export type FooterData = {
   copyrightLabel: string;
 };
 
+export type ContactLinkData = {
+  href: string;
+  label: string;
+  code: ContactLinkCode;
+};
+
+export type ContactsData = {
+  contactLinks: ContactLinkData[];
+};
+
 export type Store = {
   header: HeaderData;
-  commonInfo: CommonInfoData;
+  mainInfo: MainInfoData;
   content: ContentData;
   footer: FooterData;
+  skillsData: SkillsData;
+  projectsData: ProjectsData;
+  contactsData: ContactsData;
+};
+
+export enum ContactLinkCode {
+  GITHUB = 'GITHUB',
+  HEAD_HUNTER = 'HEAD_HUNTER',
+  LINKEDIN = 'LINKEDIN',
+  GOOGLE_EMAIL = 'GOOGLE_EMAIL',
+  YANDEX_EMAIL = 'YANDEX_EMAIL',
+  YOUTUBE = 'YOUTUBE',
+  LEETCODE = 'LEETCODE',
+  INSTAGRAM = 'INSTAGRAM',
+  WHATSAPP = 'WHATSAPP',
+  TELEGRAM = 'TELEGRAM',
+}
+
+export type SkillSet = { title: string; items: string[] };
+
+export type SkillsData = {
+  skills: SkillSet[];
+};
+
+export type ProjectItemData = {
+  logo: string;
+  title: string;
+  description: string;
+  stack: string[];
+  links: { live?: string; repo?: string };
+};
+
+export type ProjectsData = {
+  projects: ProjectItemData[];
 };

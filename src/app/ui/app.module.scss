@@ -1,0 +1,28 @@
+@import 'src/shared';
+
+.App {
+  position: relative;
+  overflow-x: auto;
+  width: 100%;
+  min-height: 100vh;
+  &__CanvasWrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  &__Canvas {
+    position: absolute;
+    opacity: 0.9;
+    background-color: #1d1d1d;
+    inset: 0;
+  }
+  &__Wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    z-index: 10;
+  }
+}

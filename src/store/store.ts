@@ -1,5 +1,9 @@
+import handySurfLogo from 'src/assets/images/handy-surf-logo.png';
+import lipsyncTimingCheckerLogo from 'src/assets/images/lipsync-timing-checker-logo.png';
 import photo from 'src/assets/images/photo.jpg';
-import { ContentTabName, Store } from 'src/store/store.types';
+import stroyInTekhLogo from 'src/assets/images/stroy-in-tekh-logo.png';
+import tsGuardsLogo from 'src/assets/images/ts-guards-logo.png';
+import { ContactLinkCode, ContentTabName, Store } from 'src/store/store.types';
 import { IconName } from 'src/ui/common/components/Icon/Icon';
 
 const store: Store = {
@@ -7,7 +11,7 @@ const store: Store = {
     photoPath: photo,
     lastUpdateDate: '2/13/2023',
   },
-  commonInfo: {
+  mainInfo: {
     photoPath: photo,
     fullName: 'Alexander Olegovich Evstafiadi',
     birthday: new Date('2/22/1996'),
@@ -15,6 +19,39 @@ const store: Store = {
     workAt: 'DSR Corporation',
     summary:
       'Over 3 years of experience in software engineering including system analysis, design, application development and writing technical documentation.',
+    additionalDetails: [
+      {
+        title: 'Personal_Info',
+        items: [
+          { label: 'Age', value: '29' },
+          { label: 'Date_of_birthday', value: 'February 22, 1996' },
+          { label: 'Relocation', value: 'Open to offers' },
+          { label: 'Business_trips', value: 'Willing to travel' },
+        ],
+      },
+      {
+        title: 'Education',
+        items: [
+          { label: 'University', value: 'Voronezh State University' },
+          { label: 'Degree', value: "Master's degree" },
+          { label: 'Field_of_study', value: 'Radio Physical Sciences' },
+          { label: 'Website', value: 'https://vsu.ru', isLink: true },
+        ],
+      },
+      {
+        title: 'Contact_Details',
+        items: [
+          { label: 'Phone', value: '+7 (960)-125-41-38', isLink: true, linkPrefix: 'tel:' },
+          { label: 'Email', value: 'aleksandrevstafiadi@gmail.com', isLink: true, linkPrefix: 'mailto:' },
+          {
+            label: 'Linkedin',
+            value: 'https://www.linkedin.com/in/alexander-evstafiadi',
+            linkDisplayValue: 'in/alexander-evstafiadi',
+            isLink: true,
+          },
+        ],
+      },
+    ],
   },
   content: {
     tabs: [
@@ -295,6 +332,137 @@ const store: Store = {
         },
       ],
     },
+  },
+  contactsData: {
+    contactLinks: [
+      {
+        href: 'https://github.com/a1exevs',
+        label: 'GitHub',
+        code: ContactLinkCode.GITHUB,
+      },
+      {
+        href: 'https://voronezh.hh.ru/resume/10aa6646ff077b3cb70039ed1f47394e4f476f',
+        label: 'hh.ru',
+        code: ContactLinkCode.HEAD_HUNTER,
+      },
+      {
+        href: 'https://www.linkedin.com/in/alexander-evstafiadi/',
+        label: 'LinkedIn',
+        code: ContactLinkCode.LINKEDIN,
+      },
+      {
+        href: 'mailto:aleksandrevstafiadi@gmail.com',
+        label: 'Google Email',
+        code: ContactLinkCode.GOOGLE_EMAIL,
+      },
+      {
+        href: 'mailto:evstafiadi.shura@yandex.ru',
+        label: 'Yandex Email',
+        code: ContactLinkCode.YANDEX_EMAIL,
+      },
+      {
+        href: 'https://www.youtube.com/channel/UCVrwEd4-3guB5NFQ_oidREg',
+        label: 'YouTube',
+        code: ContactLinkCode.YOUTUBE,
+      },
+      {
+        href: 'https://leetcode.com/u/a1exevs/',
+        label: 'LeetCode',
+        code: ContactLinkCode.LEETCODE,
+      },
+      {
+        href: 'https://www.instagram.com/alexevs_gb',
+        label: 'Instagram',
+        code: ContactLinkCode.INSTAGRAM,
+      },
+      {
+        href: 'https://api.whatsapp.com/send?phone=79601254138',
+        label: 'WhatsApp',
+        code: ContactLinkCode.WHATSAPP,
+      },
+      {
+        href: 'https://t.me/AlexanderEvstafiadi',
+        label: 'Telegram',
+        code: ContactLinkCode.TELEGRAM,
+      },
+    ],
+  },
+  skillsData: {
+    skills: [
+      {
+        title: 'Programming_Languages',
+        items: ['JavaScript', 'TypeScript', 'HTML', 'CSS/LESS/SCSS'],
+      },
+      {
+        title: 'Frameworks_&_Libraries',
+        items: ['Angular', 'React', 'Next.js', 'NestJS'],
+      },
+      {
+        title: 'Databases',
+        items: ['PostgreSQL', 'MySQL'],
+      },
+      {
+        title: 'Tools_&_Platforms',
+        items: ['Git & GitHub & GitLub', 'Docker', 'Webpack', 'Jira & Confluence', 'Azure'],
+      },
+      {
+        title: 'Soft_Skills',
+        items: [
+          'Mentoring',
+          'Problem Solving',
+          'Team Collaboration',
+          'Agile Methodologies',
+          'Communication',
+          'Adaptability',
+        ],
+      },
+    ],
+  },
+  projectsData: {
+    projects: [
+      {
+        logo: handySurfLogo,
+        title: 'HandySurf',
+        description:
+          'Chrome extension. Your ultimate hands-free browser control with advanced gesture recognition and AI-powered navigation.',
+        stack: ['React', 'RxJS', 'Zustand', 'MUI', 'MediaPipe', 'Webpack', 'Typescript', 'Python'],
+        links: {
+          live: 'https://chromewebstore.google.com/detail/handysurf/bbpfkcnjhagmkpcglcmpgnnlkimpdeoo',
+        },
+      },
+      {
+        logo: stroyInTekhLogo,
+        title: 'SIT36 Website',
+        description:
+          'A website for a company "StroyInTekh" specializing in the manufacturing of storage and purification equipment.',
+        stack: ['Next.js', 'SCSS', 'Jest', 'Playwright', 'StoryBook'],
+        links: {
+          live: 'https://sit36.ru',
+          repo: 'https://github.com/a1exevs/stroy-in-tekh',
+        },
+      },
+      {
+        logo: lipsyncTimingCheckerLogo,
+        title: 'Lipsync Timing Checker',
+        description: 'Application for calibrating viseme according to Audio track.',
+        stack: ['React', 'Tailwind', 'Wavesurfer', 'Jest', 'Playwright', 'StoryBook'],
+        links: {
+          live: 'https://a1exevs.github.io/lipsync-timing-checker',
+          repo: 'https://github.com/a1exevs/lipsync-timing-checker',
+        },
+      },
+      {
+        logo: tsGuardsLogo,
+        title: 'TS-guards',
+        description:
+          'Typescript guards library. This library provides a robust set of utility functions to simplify and streamline type-checking and guard validation in your code.',
+        stack: ['Typescript'],
+        links: {
+          live: 'https://www.npmjs.com/package/@alexevs/ts-guards?activeTab=readme',
+          repo: 'https://github.com/a1exevs/ts-guards',
+        },
+      },
+    ],
   },
   footer: {
     copyrightLabel: '© 2023 Alexander Evstafiadi',

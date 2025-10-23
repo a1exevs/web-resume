@@ -1,5 +1,4 @@
-@import 'src/common/styles/constants';
-@import 'src/common/styles/mixins';
+@import 'src/shared';
 
 $active-tab-index: var(--active-tab-index, 0);
 $tabs-count: var(--tabs-count, 1);

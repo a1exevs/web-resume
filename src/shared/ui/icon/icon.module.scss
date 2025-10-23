@@ -1,0 +1,38 @@
+@import 'src/shared';
+
+:host {
+  font-size: 0;
+  line-height: 0;
+}
+
+.Icon {
+  &_appFontSize {
+    width: 1rem;
+    height: 1rem;
+  }
+  &_parentFontSize {
+    width: 1em;
+    height: 1em;
+  }
+  &_smallSize {
+    width: 8px;
+    height: 8px;
+  }
+  &_normalSize {
+    width: 3 * 8px;
+    height: 3 * 8px;
+  }
+
+  &_mediumSize {
+    width: 4 * 8px;
+    height: 4 * 8px;
+  }
+  &_LargeSize {
+    width: 8 * 8px;
+    height: 8 * 8px;
+  }
+  &_superGiantSize {
+    width: 16 * 8px;
+    height: 16 * 8px;
+  }
+}

@@ -18,7 +18,7 @@ const meta = {
 
 export default meta;
 
-const args = { commonInfoData: store.commonInfo };
+const args = { mainInfoData: store.mainInfo };
 
 export const Desktop4k = buildDesktop4KStoryObj<typeof meta>({ args });
 export const Desktop = buildDesktopStoryObj<typeof meta>({ args });

@@ -1,5 +1,4 @@
-@import 'src/common/styles/constants';
-@import 'src/common/styles/mixins';
+@import 'src/shared';
 
 .Block {
   @include block;
