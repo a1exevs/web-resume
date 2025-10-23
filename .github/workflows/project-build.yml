@@ -27,7 +27,7 @@ jobs:
 
       - name: Styling
         run: |
-          yarn format
+          yarn format:check
           yarn lint
 
       - name: Project build

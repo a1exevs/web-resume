@@ -1,0 +1,65 @@
+.SkillsPage {
+  width: 100%;
+  &__Title {
+    font-family: inherit;
+    font-size: 1.875rem; // text-3xl
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em; // tracking-widest
+    text-align: center;
+    margin-bottom: 2rem; // mb-8
+    margin-top: 0;
+  }
+  &__Items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; // gap-8
+  }
+  &__Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    background: none;
+  }
+  &__CardIcon {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+  }
+  &__CardTitle {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+  }
+  &__CardText {
+    font-size: 0.875rem;
+    color: #a3a3a3;
+  }
+  &__ScanInfo {
+    margin-top: 2rem;
+    text-align: right;
+    font-size: 0.75rem;
+    color: #71717a;
+  }
+  &__ScanHighlight {
+    color: var(--primary-color);
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 768px) {
+  .SkillsPage__Items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .SkillsPage__Items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

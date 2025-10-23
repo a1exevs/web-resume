@@ -6,3 +6,6 @@ export {
   MOBILE_SCREEN_WIDTH_PX,
   APP_MIN_WIDTH,
 } from 'src/shared/model/consts/common';
+
+// routes
+export { RoutePath } from 'src/shared/model/routes/routes';
