@@ -3,43 +3,44 @@ import * as React from 'react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 
 import appRoutes from 'src/app/ui/routes';
+import { RoutePath } from 'src/shared';
 
 describe('App', () => {
-  describe('Home page "/"', () => {
-    it('Renders subtitle of Home page', () => {
-      const router = createMemoryRouter(appRoutes, { initialEntries: ['/'] });
+  describe(`Page with route "${RoutePath.HOME}"`, () => {
+    it(`Renders subtitle of page with route "${RoutePath.HOME}"`, () => {
+      const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.HOME] });
       render(<RouterProvider router={router} />);
       const linkElement = screen.getByText('Alexander Evstafiadi');
       expect(linkElement).toBeInTheDocument();
     });
   });
-  describe('Experience page "/experience"', () => {
-    it('Renders subtitle of Experience page', () => {
-      const router = createMemoryRouter(appRoutes, { initialEntries: ['/experience'] });
+  describe(`Page with route "${RoutePath.EXPERIENCE}"`, () => {
+    it(`Renders subtitle of page with route "${RoutePath.EXPERIENCE}"`, () => {
+      const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.EXPERIENCE] });
       render(<RouterProvider router={router} />);
       const linkElement = screen.getByText('Work_Experience');
       expect(linkElement).toBeInTheDocument();
     });
   });
-  describe('Skills page "/skills"', () => {
-    it('Renders subtitle of Skills page', () => {
-      const router = createMemoryRouter(appRoutes, { initialEntries: ['/skills'] });
+  describe(`Page with route "${RoutePath.SKILLS}"`, () => {
+    it(`Renders subtitle of page with route "${RoutePath.SKILLS}"`, () => {
+      const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.SKILLS] });
       render(<RouterProvider router={router} />);
       const linkElement = screen.getByText('Skills_Matrix');
       expect(linkElement).toBeInTheDocument();
     });
   });
-  describe('Projects page "/projects"', () => {
-    it('Renders subtitle of Projects page', () => {
-      const router = createMemoryRouter(appRoutes, { initialEntries: ['/projects'] });
+  describe(`Page with route "${RoutePath.PROJECTS}"`, () => {
+    it(`Renders subtitle of page with route "${RoutePath.PROJECTS}"`, () => {
+      const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.PROJECTS] });
       render(<RouterProvider router={router} />);
       const linkElement = screen.getByText('Projects');
       expect(linkElement).toBeInTheDocument();
     });
   });
-  describe('Contacts page "/contacts"', () => {
-    it('Renders subtitle of Contacts page', () => {
-      const router = createMemoryRouter(appRoutes, { initialEntries: ['/contacts'] });
+  describe(`Page with route "${RoutePath.CONTACTS}"`, () => {
+    it(`Renders subtitle of page with route "${RoutePath.CONTACTS}"`, () => {
+      const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.CONTACTS] });
       render(<RouterProvider router={router} />);
       const linkElement = screen.getByText('Contacts');
       expect(linkElement).toBeInTheDocument();

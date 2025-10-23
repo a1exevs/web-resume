@@ -1,0 +1,31 @@
+.SkillsCard {
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  &__Title {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+  }
+  &__TitleIcon {
+    color: var(--primary-color);
+  }
+  &__List {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #d4d4d4;
+  }
+  &__Item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__CodeIcon {
+    color: var(--primary-color);
+  }
+}

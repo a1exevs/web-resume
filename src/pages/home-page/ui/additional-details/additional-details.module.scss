@@ -1,0 +1,36 @@
+.AdditionalDetails {
+  &__Title {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+  }
+  &__List {
+    border-left: 2px solid rgba(54, 186, 1, 0.3);
+    padding-left: 1rem;
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  &__Item {
+    color: #fff;
+  }
+  &__Label {
+    display: inline-block;
+    color: #a3a3a3;
+    text-transform: uppercase;
+  }
+  &__Value {
+    color: #fff;
+  }
+  &__Link {
+    color: var(--primary-color);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
