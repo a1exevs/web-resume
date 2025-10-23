@@ -3,12 +3,9 @@ import { NavLink } from 'react-router';
 
 import logo from 'src/logo.svg';
 import { RoutePath } from 'src/shared';
-import { HeaderData } from 'src/store/store.types';
 import classes from 'src/widgets/ui/header/header.module.scss';
 
-type Props = { data: HeaderData };
-
-const Header: React.FC<Props> = () => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 

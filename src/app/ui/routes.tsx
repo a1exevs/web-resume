@@ -13,7 +13,7 @@ const appRoutes: RouteObject[] = [
     children: [
       {
         path: RoutePath.HOME,
-        element: <HomePage commonInfoData={store.commonInfo} />,
+        element: <HomePage mainInfoData={store.mainInfo} />,
       },
       {
         path: RoutePath.EXPERIENCE,

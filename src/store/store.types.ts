@@ -5,13 +5,19 @@ export type HeaderData = {
   lastUpdateDate: string;
 };
 
-export type CommonInfoData = {
+type AdditionalDetails = {
+  title: string;
+  items: { label: string; value: string; isLink?: boolean; linkPrefix?: string; linkDisplayValue?: string }[];
+};
+
+export type MainInfoData = {
   photoPath: string;
   fullName: string;
   birthday: Date;
   city: string;
   workAt: string;
   summary: string;
+  additionalDetails: AdditionalDetails[];
 };
 
 export enum ContentTabName {
@@ -118,12 +124,12 @@ export type ContactsData = {
 
 export type Store = {
   header: HeaderData;
-  commonInfo: CommonInfoData;
+  mainInfo: MainInfoData;
   content: ContentData;
   footer: FooterData;
-  contactsData: ContactsData;
   skillsData: SkillsData;
   projectsData: ProjectsData;
+  contactsData: ContactsData;
 };
 
 export enum ContactLinkCode {
