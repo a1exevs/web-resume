@@ -44,5 +44,8 @@
     <symbol id="code" fill="currentColor" viewBox="0 -960 960 960">
       <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/>
     </symbol>
+    <symbol id="menu" fill="currentColor" viewBox="0 -960 960 960">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+    </symbol>
   </defs>
 </svg>

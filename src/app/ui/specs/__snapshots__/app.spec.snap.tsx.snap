@@ -86,11 +86,15 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               class="Header__MenuButton"
               type="button"
             >
-              <span
-                class="material-symbols-outlined"
+              <svg
+                class="Icon Icon_appFontSize"
+                color="currentColor"
+                fill="currentColor"
               >
-                 menu 
-              </span>
+                <use
+                  xlink:href="FileMock#menu"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -511,11 +515,15 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
               class="Header__MenuButton"
               type="button"
             >
-              <span
-                class="material-symbols-outlined"
+              <svg
+                class="Icon Icon_appFontSize"
+                color="currentColor"
+                fill="currentColor"
               >
-                 menu 
-              </span>
+                <use
+                  xlink:href="FileMock#menu"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -872,11 +880,15 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
               class="Header__MenuButton"
               type="button"
             >
-              <span
-                class="material-symbols-outlined"
+              <svg
+                class="Icon Icon_appFontSize"
+                color="currentColor"
+                fill="currentColor"
               >
-                 menu 
-              </span>
+                <use
+                  xlink:href="FileMock#menu"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -1753,11 +1765,15 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
               class="Header__MenuButton"
               type="button"
             >
-              <span
-                class="material-symbols-outlined"
+              <svg
+                class="Icon Icon_appFontSize"
+                color="currentColor"
+                fill="currentColor"
               >
-                 menu 
-              </span>
+                <use
+                  xlink:href="FileMock#menu"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -2303,11 +2319,15 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
               class="Header__MenuButton"
               type="button"
             >
-              <span
-                class="material-symbols-outlined"
+              <svg
+                class="Icon Icon_appFontSize"
+                color="currentColor"
+                fill="currentColor"
               >
-                 menu 
-              </span>
+                <use
+                  xlink:href="FileMock#menu"
+                />
+              </svg>
             </button>
           </div>
         </div>

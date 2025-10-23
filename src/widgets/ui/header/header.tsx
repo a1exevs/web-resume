@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router';
 
 import logo from 'src/logo.svg';
-import { RoutePath } from 'src/shared';
+import { Icon, RoutePath } from 'src/shared';
+import { IconName } from 'src/shared/ui/icon/icon.names';
 import classes from 'src/widgets/ui/header/header.module.scss';
 
 const Header: React.FC = () => {
@@ -64,7 +65,7 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(open => !open)}
             className={classes.Header__MenuButton}
           >
-            <span className="material-symbols-outlined"> menu </span>
+            <Icon icon={IconName.MENU} />
           </button>
           {isMenuOpen && (
             <div className={classes.Header__MenuItemsWrapper}>

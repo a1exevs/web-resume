@@ -58,4 +58,5 @@ export enum IconName {
   PSYCHOLOGY = 'psychology',
   LINK = 'link',
   CODE = 'code',
+  MENU = 'menu',
 }
