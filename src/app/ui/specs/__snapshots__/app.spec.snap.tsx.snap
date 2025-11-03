@@ -99,6 +99,9 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
           </div>
         </div>
       </header>
+      <div
+        class="ScanLine"
+      />
       <main
         class="MainLayout"
       >
@@ -112,7 +115,7 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               class="ProfileDetails"
             >
               <img
-                alt=""
+                alt="Avatar"
                 class="ProfileDetails__Photo"
                 src="FileMock"
               />
@@ -120,14 +123,19 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                 class="ProfileDetails__Info"
               >
                 <h2
-                  class="ProfileDetails__Name"
+                  class="TypeWriter ProfileDetails__Name"
                 >
-                  Alexander Evstafiadi
+                  <span
+                    class="TypeWriter__Cursor"
+                  >
+                    _
+                  </span>
                 </h2>
                 <p
                   class="ProfileDetails__Position"
                 >
-                  &gt;Senior Software Engineer
+                  &gt;
+                  Senior front-end developer
                 </p>
                 <div
                   class="ProfileDetails__Meta"
@@ -138,7 +146,14 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                     >
                       //
                     </span>
-                     STATUS: Not looking for a job
+                     
+                    <span
+                      class="ProfileDetails__Label"
+                    >
+                      Status
+                    </span>
+                    : 
+                    Not looking for a job
                   </span>
                   <span>
                     <span
@@ -146,7 +161,14 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                     >
                       //
                     </span>
-                     LOCATION: Voronezh, Russia
+                     
+                    <span
+                      class="ProfileDetails__Label"
+                    >
+                      Location
+                    </span>
+                    :
+                    Voronezh, Russia
                   </span>
                 </div>
               </div>
@@ -413,7 +435,13 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               class="HomePage__Footer"
             >
               <p>
-                LAST UPDATE: 
+                <span
+                  class="HomePage__Label"
+                >
+                  Last update
+                </span>
+                :
+                 
                 <span
                   class="HomePage__AccentText"
                 >
@@ -528,6 +556,9 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
           </div>
         </div>
       </header>
+      <div
+        class="ScanLine"
+      />
       <main
         class="MainLayout"
       >
@@ -538,9 +569,13 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
             class="ContactsPage"
           >
             <h2
-              class="ContactsPage__Title glitch"
+              class="TypeWriter ContactsPage__Title glitch"
             >
-              Contacts
+              <span
+                class="TypeWriter__Cursor"
+              >
+                _
+              </span>
             </h2>
             <div
               class="ContactsPage__Items"
@@ -893,6 +928,9 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
           </div>
         </div>
       </header>
+      <div
+        class="ScanLine"
+      />
       <main
         class="MainLayout"
       >
@@ -903,9 +941,13 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
             class="ExperiencePage"
           >
             <h2
-              class="ExperiencePage__Title glitch"
+              class="TypeWriter ExperiencePage__Title glitch"
             >
-              Work_Experience
+              <span
+                class="TypeWriter__Cursor"
+              >
+                _
+              </span>
             </h2>
             <div
               class="ExperiencePage__Content"
@@ -1002,7 +1044,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                       <label
                         class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
                       >
-                        Project list
+                        Project List
                       </label>
                       <label
                         class="Label Label_tiny Label_alignment-center"
@@ -1533,7 +1575,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                       <label
                         class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
                       >
-                        Project list
+                        Project List
                       </label>
                       <label
                         class="Label Label_tiny Label_alignment-center"
@@ -1778,6 +1820,9 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
           </div>
         </div>
       </header>
+      <div
+        class="ScanLine"
+      />
       <main
         class="MainLayout"
       >
@@ -1788,9 +1833,13 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
             class="ProjectsPage"
           >
             <h2
-              class="ProjectsPage__Title glitch"
+              class="TypeWriter ProjectsPage__Title glitch"
             >
-              Projects
+              <span
+                class="TypeWriter__Cursor"
+              >
+                _
+              </span>
             </h2>
             <div
               class="ProjectsPage__Items"
@@ -1898,7 +1947,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#link"
                         />
                       </svg>
-                      Live Demo
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Live demo
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -1991,7 +2044,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#link"
                         />
                       </svg>
-                      Live Demo
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Live demo
+                      </span>
                     </a>
                     <a
                       class="ProjectCard__Link"
@@ -2010,7 +2067,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#code"
                         />
                       </svg>
-                      Repository
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Repository
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -2108,7 +2169,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#link"
                         />
                       </svg>
-                      Live Demo
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Live demo
+                      </span>
                     </a>
                     <a
                       class="ProjectCard__Link"
@@ -2127,7 +2192,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#code"
                         />
                       </svg>
-                      Repository
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Repository
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -2200,7 +2269,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#link"
                         />
                       </svg>
-                      Live Demo
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Live demo
+                      </span>
                     </a>
                     <a
                       class="ProjectCard__Link"
@@ -2219,7 +2292,11 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                           xlink:href="FileMock#code"
                         />
                       </svg>
-                      Repository
+                      <span
+                        class="ProjectCard__LinkLabel ProjectCard__LinkLabel_capitalize"
+                      >
+                        Repository
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -2332,6 +2409,9 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
           </div>
         </div>
       </header>
+      <div
+        class="ScanLine"
+      />
       <main
         class="MainLayout"
       >
@@ -2342,9 +2422,13 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
             class="SkillsPage"
           >
             <h2
-              class="SkillsPage__Title glitch"
+              class="TypeWriter SkillsPage__Title glitch"
             >
-              Skills_Matrix
+              <span
+                class="TypeWriter__Cursor"
+              >
+                _
+              </span>
             </h2>
             <div
               class="SkillsPage__Items"
@@ -2691,7 +2775,7 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
                 <h3
                   class="ContinuousLearningCard__Title"
                 >
-                  Continuous_Learning
+                  Continuous_learning
                 </h3>
                 <p
                   class="ContinuousLearningCard__Text"
@@ -2704,7 +2788,12 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
               class="SkillsPage__ScanInfo"
             >
               <p>
-                SYSTEM_SCAN_COMPLETE: 
+                <span
+                  class="SkillsPage__ScanLabel"
+                >
+                  System_scan_complete
+                </span>
+                : 
                 <span
                   class="SkillsPage__ScanHighlight"
                 >
