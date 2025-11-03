@@ -1,24 +1,30 @@
 import React from 'react';
 
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { CareerHistoryData } from 'src/store/store.types';
-import Block from 'src/ui/common/components/Block/Block';
-import Card from 'src/ui/common/components/Card/Card';
-import Field from 'src/ui/common/components/Field/Field';
-import SimpleList from 'src/ui/common/components/SimpleList/SimpleList';
-import Stepper from 'src/ui/common/components/Stepper/Stepper';
+import { TypeWriter } from 'src/shared';
+import Block from 'src/shared/ui/block/block';
+import Card from 'src/shared/ui/card/card';
+import Field from 'src/shared/ui/field/field';
+import SimpleList from 'src/shared/ui/simple-list/simple-list';
+import Stepper from 'src/shared/ui/stepper/stepper';
+import { ExperienceData } from 'src/store/store.types';
 
 type Props = {
-  careerHistoryData: CareerHistoryData;
+  experienceData: ExperienceData;
 };
 
-const ExperiencePage: React.FC<Props> = ({ careerHistoryData }) => {
+const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
   return (
     <div className={classes.ExperiencePage}>
-      <h2 className={classes.ExperiencePage__Title + ' glitch'}>Work_Experience</h2>
+      <TypeWriter
+        text={'Work_Experience'}
+        variant="h2"
+        delay={40}
+        className={classes.ExperiencePage__Title + ' glitch'}
+      />
       <div className={classes.ExperiencePage__Content}>
         <Stepper>
-          {careerHistoryData.companyExperiences.map((experience, index) => (
+          {experienceData.companyExperiences.map((experience, index) => (
             <div className={classes.ExperiencePage__HistoryItem} key={index}>
               <Block>
                 <Field label={'Company'} value={experience.companyName} />

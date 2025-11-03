@@ -3,6 +3,7 @@ import React from 'react';
 import ContactLink from 'src/pages/contacts-page/ui/contact-link/contact-link';
 import { ContactLinkCodeIconMap } from 'src/pages/contacts-page/ui/contacts-page.consts';
 import classes from 'src/pages/contacts-page/ui/contacts-page.module.scss';
+import { TypeWriter } from 'src/shared';
 import { ContactsData } from 'src/store/store.types';
 
 type Props = ContactsData;
@@ -10,7 +11,7 @@ type Props = ContactsData;
 const ContactsPage: React.FC<Props> = ({ contactLinks }) => {
   return (
     <div className={classes.ContactsPage}>
-      <h2 className={classes.ContactsPage__Title + ' glitch'}>Contacts</h2>
+      <TypeWriter delay={40} variant="h2" text={'Contacts'} className={classes.ContactsPage__Title + ' glitch'} />
       <div className={classes.ContactsPage__Items}>
         {contactLinks.map(contact => {
           const IconComponent = ContactLinkCodeIconMap[contact.code];

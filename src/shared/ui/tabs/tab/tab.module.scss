@@ -1,0 +1,46 @@
+@import 'shared/index';
+
+$tab-height: calc(2 * $small-line-height);
+
+.Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: $normal-flex;
+  min-height: $tab-height;
+  cursor: pointer;
+  -webkit-tap-highlight-color: $active-element-tap-color;
+
+  &__Name {
+    display: flex;
+    gap: $small-space;
+    text-transform: uppercase;
+    @include tabName(false);
+
+    &_active {
+      @include tabName(true);
+    }
+
+    &:hover {
+      background: $hover-color;
+      opacity: $hover-opacity;
+      transition: $transition-tiny-duration ease-in-out;
+    }
+  }
+
+  &_withRightBorder {
+    border-right: $tiny-border;
+  }
+
+  &_active {
+    background-color: $card-background-color;
+  }
+}
+
+@media (max-width: $sm) {
+  .Tab {
+    &__NameText {
+      display: none;
+    }
+  }
+}

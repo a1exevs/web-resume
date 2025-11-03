@@ -1,0 +1,1 @@
+export const PROFILE_DETAILS_TYPE_WRITER_DELAY = 40;

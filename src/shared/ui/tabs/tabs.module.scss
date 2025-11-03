@@ -1,0 +1,39 @@
+@import '../../index';
+
+$active-tab-index: var(--active-tab-index, 0);
+$tabs-count: var(--tabs-count, 1);
+
+.Tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: $tiny-border;
+  border-top: $tiny-border;
+
+  position: relative;
+
+  &__ActiveTabUnderline {
+    position: absolute;
+    content: '';
+    left: calc((100% / $tabs-count) * $active-tab-index);
+    bottom: 0;
+    border-bottom: $green-underline;
+    width: calc(100% / $tabs-count);
+    transition: all $transition-small-duration $cb-like-ease-in-out 0ms;
+  }
+}
+
+.ActiveTabLabel {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  margin-top: $small-space;
+
+  @include tabName(true);
+}
+
+@media (max-width: $sm) {
+  .ActiveTabLabel {
+    display: flex;
+  }
+}
