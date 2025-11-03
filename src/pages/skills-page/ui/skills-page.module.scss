@@ -46,6 +46,9 @@
     font-size: 0.75rem;
     color: #71717a;
   }
+  &__ScanLabel {
+    text-transform: uppercase;
+  }
   &__ScanHighlight {
     color: var(--primary-color);
     opacity: 0.8;

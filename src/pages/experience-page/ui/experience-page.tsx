@@ -1,12 +1,8 @@
 import React from 'react';
 
+import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { TypeWriter } from 'src/shared';
-import Block from 'src/shared/ui/block/block';
-import Card from 'src/shared/ui/card/card';
-import Field from 'src/shared/ui/field/field';
-import SimpleList from 'src/shared/ui/simple-list/simple-list';
-import Stepper from 'src/shared/ui/stepper/stepper';
+import { Block, Card, currentLang, Field, SimpleList, Stepper, toUnderscore, TypeWriter } from 'src/shared';
 import { ExperienceData } from 'src/store/store.types';
 
 type Props = {
@@ -17,9 +13,9 @@ const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
   return (
     <div className={classes.ExperiencePage}>
       <TypeWriter
-        text={'Work_Experience'}
+        text={toUnderscore(currentLang.labels.WORK_EXPERIENCE)}
         variant="h2"
-        delay={40}
+        delay={EXPERIENCE_PAGE_TYPE_WRITER_DELAY}
         className={classes.ExperiencePage__Title + ' glitch'}
       />
       <div className={classes.ExperiencePage__Content}>
@@ -27,32 +23,32 @@ const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
           {experienceData.companyExperiences.map((experience, index) => (
             <div className={classes.ExperiencePage__HistoryItem} key={index}>
               <Block>
-                <Field label={'Company'} value={experience.companyName} />
-                <Field label={'Website'} value={experience.website} isLink />
-                <Field label={'Period'} value={experience.workPeriod} />
-                <Field label={'Career'} value={experience.career} />
+                <Field label={currentLang.labels.COMPANY} value={experience.companyName} />
+                <Field label={currentLang.labels.WEBSITE} value={experience.website} isLink />
+                <Field label={currentLang.labels.PERIOD} value={experience.workPeriod} />
+                <Field label={currentLang.labels.CAREER} value={experience.career} />
               </Block>
               <label
                 className={'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'}
               >
-                {'Project list'}
+                {currentLang.labels.PROJECT_LIST}
               </label>
               <label className={'Label Label_tiny Label_alignment-center'}>
-                {'(the most recent projects at the top)'}
+                {currentLang.messages.PROJECT_LIST_ORDER_MESSAGE}
               </label>
               {experience.projectList.map((project, index) => (
                 <Card key={index}>
-                  <Field label={'Project'} value={project.projectDescription} />
-                  <Field label={'Period'} value={project.workPeriod} />
-                  <Field label={'Environment'} value={project.environment.join(', ')} />
-                  <Field label={'Responsibilities'} value={project.responsibilities.join(', ')} />
+                  <Field label={currentLang.labels.PROJECT} value={project.projectDescription} />
+                  <Field label={currentLang.labels.PERIOD} value={project.workPeriod} />
+                  <Field label={currentLang.labels.ENVIRONMENT} value={project.environment.join(', ')} />
+                  <Field label={currentLang.labels.RESPONSIBILITIES} value={project.responsibilities.join(', ')} />
                   <div className={classes.ExperiencePage__ContributionsData}>
                     <label
                       className={
                         'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'
                       }
                     >
-                      {'Key contributions'}
+                      {currentLang.labels.KEY_CONTRIBUTIONS}
                     </label>
                     <SimpleList
                       className={classes.ExperiencePage__ContributionsList}

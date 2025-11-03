@@ -1,0 +1,1 @@
+export const SKILLS_PAGE_TYPE_WRITER_DELAY = 40;

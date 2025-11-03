@@ -1,5 +1,18 @@
 // ui
-export { Icon, ScanLine, TypeWriter } from 'src/shared/ui';
+export {
+  Icon,
+  ScanLine,
+  TypeWriter,
+  SimpleList,
+  Field,
+  RecordsList,
+  Stepper,
+  Card,
+  Chip,
+  Tabs,
+  Chips,
+  Block,
+} from 'src/shared/ui';
 
 // model
 export {
