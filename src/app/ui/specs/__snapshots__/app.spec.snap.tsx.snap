@@ -2780,7 +2780,7 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
                 <h3
                   class="ContinuousLearningCard__Title"
                 >
-                  Continuous_learning
+                  Continuous_Learning
                 </h3>
                 <p
                   class="ContinuousLearningCard__Text"
