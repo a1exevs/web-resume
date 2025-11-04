@@ -1047,7 +1047,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                       <label
                         class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
                       >
-                        Project List
+                        Project list
                       </label>
                       <label
                         class="Label Label_tiny Label_alignment-center"
@@ -1578,7 +1578,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                       <label
                         class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
                       >
-                        Project List
+                        Project list
                       </label>
                       <label
                         class="Label Label_tiny Label_alignment-center"

@@ -11,7 +11,7 @@ const enLabels = {
   WEBSITE: 'Website',
   PERIOD: 'Period',
   CAREER: 'Career',
-  PROJECT_LIST: 'Project List',
+  PROJECT_LIST: 'Project list',
   PROJECT: 'Project',
   ENVIRONMENT: 'Environment',
   RESPONSIBILITIES: 'Responsibilities',
