@@ -125,6 +125,7 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                 <h2
                   class="TypeWriter ProfileDetails__Name"
                 >
+                  Alexander Evstafiadi
                   <span
                     class="TypeWriter__Cursor"
                   >
@@ -571,6 +572,7 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
             <h2
               class="TypeWriter ContactsPage__Title glitch"
             >
+              Contacts
               <span
                 class="TypeWriter__Cursor"
               >
@@ -943,6 +945,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
             <h2
               class="TypeWriter ExperiencePage__Title glitch"
             >
+              Work_experience
               <span
                 class="TypeWriter__Cursor"
               >
@@ -1835,6 +1838,7 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
             <h2
               class="TypeWriter ProjectsPage__Title glitch"
             >
+              Projects
               <span
                 class="TypeWriter__Cursor"
               >
@@ -2424,6 +2428,7 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
             <h2
               class="TypeWriter SkillsPage__Title glitch"
             >
+              Skills_matrix
               <span
                 class="TypeWriter__Cursor"
               >
