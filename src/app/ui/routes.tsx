@@ -17,7 +17,7 @@ const appRoutes: RouteObject[] = [
       },
       {
         path: RoutePath.EXPERIENCE,
-        element: <ExperiencePage careerHistoryData={store.content.careerHistory} />,
+        element: <ExperiencePage experienceData={store.experienceData} />,
       },
       {
         path: RoutePath.SKILLS,

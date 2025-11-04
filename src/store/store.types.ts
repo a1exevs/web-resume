@@ -1,10 +1,3 @@
-import { IconName } from 'src/ui/common/components/Icon/Icon';
-
-export type HeaderData = {
-  photoPath: string;
-  lastUpdateDate: string;
-};
-
 type AdditionalDetails = {
   title: string;
   items: { label: string; value: string; isLink?: boolean; linkPrefix?: string; linkDisplayValue?: string }[];
@@ -13,53 +6,11 @@ type AdditionalDetails = {
 export type MainInfoData = {
   photoPath: string;
   fullName: string;
-  birthday: Date;
-  city: string;
-  workAt: string;
-  summary: string;
+  position: string;
+  status: string;
+  location: string;
+  resumeLastUpdateDate: string;
   additionalDetails: AdditionalDetails[];
-};
-
-export enum ContentTabName {
-  TECHNICAL_SKILLS = 'TECHNICAL_SKILLS',
-  CAREER_HISTORY = 'CAREER_HISTORY',
-  PERSONAL_INFORMATION = 'PERSONAL_INFORMATION',
-}
-
-export type Tab = {
-  tabId: ContentTabName;
-  displayName: string;
-  tabIcon?: IconName;
-};
-
-export type TechArea = {
-  name: string;
-  yearsCount: number;
-};
-
-export type TechnologySet = {
-  language: string;
-  technologies: string[];
-};
-
-export type SoftwareCategory = {
-  id: number;
-  softList: string[];
-};
-
-export type LanguageData = {
-  name: string;
-  link?: string;
-  isMain: boolean;
-};
-
-export type TechnicalSkillsData = {
-  technicalAreas: TechArea[];
-  languages: LanguageData[];
-  operatingSystems: string[];
-  technologies: TechnologySet[];
-  software: SoftwareCategory[];
-  networking: string[];
 };
 
 export type ProjectData = {
@@ -78,38 +29,8 @@ export type CompanyExperience = {
   projectList: ProjectData[];
 };
 
-export type ContactData = {
-  name: string;
-  address: string;
-  isLink: boolean;
-};
-
-export type EducationData = {
-  name: string;
-  degree: string;
-  fieldOfStudy: string;
-  studyPeriod: string;
-  website: string;
-};
-
-export type CareerHistoryData = {
+export type ExperienceData = {
   companyExperiences: CompanyExperience[];
-};
-
-export type PersonalInformationData = {
-  contacts: ContactData[];
-  education: EducationData[];
-};
-
-export type ContentData = {
-  tabs: Tab[];
-  technicalSkills: TechnicalSkillsData;
-  careerHistory: CareerHistoryData;
-  personalInformation: PersonalInformationData;
-};
-
-export type FooterData = {
-  copyrightLabel: string;
 };
 
 export type ContactLinkData = {
@@ -123,10 +44,8 @@ export type ContactsData = {
 };
 
 export type Store = {
-  header: HeaderData;
   mainInfo: MainInfoData;
-  content: ContentData;
-  footer: FooterData;
+  experienceData: ExperienceData;
   skillsData: SkillsData;
   projectsData: ProjectsData;
   contactsData: ContactsData;

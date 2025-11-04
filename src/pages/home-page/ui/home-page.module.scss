@@ -11,6 +11,9 @@
     font-size: 0.75rem;
     color: #737373;
   }
+  &__Label {
+    text-transform: uppercase;
+  }
   &__AccentText {
     color: rgba(54, 186, 1, 0.8);
   }

@@ -1,0 +1,2 @@
+export const TYPE_WRITER_DEFAULT_DELAY = 50;
+export const TYPE_WRITER_CURSOR_SYMBOL = '_';

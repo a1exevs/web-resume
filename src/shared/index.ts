@@ -1,5 +1,18 @@
 // ui
-export { Icon } from 'src/shared/ui';
+export {
+  Icon,
+  ScanLine,
+  TypeWriter,
+  SimpleList,
+  Field,
+  RecordsList,
+  Stepper,
+  Card,
+  Chip,
+  Tabs,
+  Chips,
+  Block,
+} from 'src/shared/ui';
 
 // model
 export {
@@ -8,4 +21,8 @@ export {
   TABLET_SCREEN_WIDTH_PX,
   MOBILE_SCREEN_WIDTH_PX,
   RoutePath,
+  currentLang,
+  capitalize,
+  capitalizeLabel,
+  toUnderscore,
 } from 'src/shared/model';

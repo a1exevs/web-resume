@@ -32,3 +32,5 @@ export const ContactLinkCodeIconMap: Record<ContactLinkCode, React.FC<{ classNam
     <Icon icon={IconName.TELEGRAM} className={className} title="Telegram" />
   ),
 };
+
+export const CONTACTS_PAGE_TYPE_WRITER_DELAY = 40;
