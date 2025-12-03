@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutMeDetails from 'src/pages/home-page/ui/about-me-details/about-me-details';
 import AdditionalDetails from 'src/pages/home-page/ui/additional-details/additional-details';
 import classes from 'src/pages/home-page/ui/home-page.module.scss';
 import ProfileDetails from 'src/pages/home-page/ui/profile-details/profile-details';
@@ -19,6 +20,11 @@ const HomePage: React.FC<Props> = ({ mainInfoData }) => {
         position={mainInfoData.position}
         status={mainInfoData.status}
         location={mainInfoData.location}
+      />
+      <AboutMeDetails
+        summary={mainInfoData.aboutMe.summary}
+        achievementBullets={mainInfoData.aboutMe.achievementBullets}
+        goal={mainInfoData.aboutMe.goal}
       />
       <div className={classes.HomePage__DetailsGrid}>
         {mainInfoData.additionalDetails.map(({ title, items }) => (

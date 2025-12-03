@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { Block, Card, currentLang, Field, SimpleList, Stepper, toUnderscore, TypeWriter } from 'src/shared';
+import { Block, Card, currentLang, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
 import { ExperienceData } from 'src/store/store.types';
 
 type Props = {
@@ -13,10 +13,10 @@ const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
   return (
     <div className={classes.ExperiencePage}>
       <TypeWriter
-        text={toUnderscore(currentLang.labels.WORK_EXPERIENCE)}
+        text={currentLang.labels.WORK_EXPERIENCE}
         variant="h2"
         delay={EXPERIENCE_PAGE_TYPE_WRITER_DELAY}
-        className={classes.ExperiencePage__Title + ' glitch'}
+        className={classes.ExperiencePage__Title}
       />
       <div className={classes.ExperiencePage__Content}>
         <Stepper>

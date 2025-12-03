@@ -13,10 +13,10 @@ const SkillsPage: React.FC<Props> = ({ skills }) => {
   return (
     <div className={classes.SkillsPage}>
       <TypeWriter
-        text={toUnderscore(currentLang.labels.SKILLS_MATRIX)}
+        text={currentLang.labels.SKILLS_MATRIX}
         variant="h2"
         delay={SKILLS_PAGE_TYPE_WRITER_DELAY}
-        className={classes.SkillsPage__Title + ' glitch'}
+        className={classes.SkillsPage__Title}
       />
       <div className={classes.SkillsPage__Items}>
         {skills.map(skill => (

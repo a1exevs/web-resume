@@ -15,7 +15,7 @@ const ProjectsPage: React.FC<Props> = ({ projects }) => {
         text={currentLang.labels.PROJECTS}
         delay={PROJECTS_PAGE_TYPE_WRITER_DELAY}
         variant="h2"
-        className={classes.ProjectsPage__Title + ' glitch'}
+        className={classes.ProjectsPage__Title}
       />
       <div className={classes.ProjectsPage__Items}>
         {projects.map((project, idx) => (

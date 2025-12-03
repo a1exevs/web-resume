@@ -175,13 +175,123 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               </div>
             </div>
             <div
+              class="AboutMeDetails"
+            >
+              <h3
+                class="GlitchText AboutMeDetails__Title"
+                style="animation-duration: 15s;"
+              >
+                About_me
+              </h3>
+              <div
+                class="AboutMeDetails__Content"
+              >
+                <p>
+                  Front-end developer with 5+ years of experience building B2B products - including LIMS platforms, medical information systems, Excel plugins, and micro-frontend applications.
+                </p>
+                <div
+                  class="SimpleList AboutMeDetails__AchivementsList"
+                >
+                  <ul
+                    class="SimpleList__Content"
+                  >
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Skilled in Angular (2+ & AngularJS), React, NestJS
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Strong focus on maintainable and testable code (Jasmine, Cypress, Karma, Playwright, Jest)
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Hands-on experience with complex business logic: layout editors, Excel-like tables, alias systems, licensing, permission-based UI
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Familiar with API integrations (e.g., Facebook, Instagram)
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Focused on performance optimization, architecture discussions, code reviews, and dev validation
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Comfortable working in distributed teams and long-term products
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Experienced in mentoring and onboarding new team members
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Created and delivered front-end training materials as part of extracurricular initiatives
+                      </label>
+                    </li>
+                    <li
+                      class="SimpleList__ContentItem"
+                    >
+                      <label
+                        class="SimpleList__ContentItemValue"
+                      >
+                        Actively improve skills via reading, building side projects, and engaging with the broader IT community
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Looking to grow into a senior or tech lead role on impactful and technically challenging projects.
+                </p>
+              </div>
+            </div>
+            <div
               class="HomePage__DetailsGrid"
             >
               <div
                 class="AdditionalDetails"
               >
                 <h3
-                  class="AdditionalDetails__Title glitch"
+                  class="GlitchText AdditionalDetails__Title"
+                  style="animation-duration: 15s;"
                 >
                   Personal_Info
                 </h3>
@@ -262,7 +372,8 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                 class="AdditionalDetails"
               >
                 <h3
-                  class="AdditionalDetails__Title glitch"
+                  class="GlitchText AdditionalDetails__Title"
+                  style="animation-duration: 15s;"
                 >
                   Education
                 </h3>
@@ -350,7 +461,8 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                 class="AdditionalDetails"
               >
                 <h3
-                  class="AdditionalDetails__Title glitch"
+                  class="GlitchText AdditionalDetails__Title"
+                  style="animation-duration: 15s;"
                 >
                   Contact_Details
                 </h3>
@@ -570,7 +682,7 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
             class="ContactsPage"
           >
             <h2
-              class="TypeWriter ContactsPage__Title glitch"
+              class="TypeWriter ContactsPage__Title"
             >
               Contacts
               <span
@@ -943,9 +1055,9 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
             class="ExperiencePage"
           >
             <h2
-              class="TypeWriter ExperiencePage__Title glitch"
+              class="TypeWriter ExperiencePage__Title"
             >
-              Work_experience
+              Work experience
               <span
                 class="TypeWriter__Cursor"
               >
@@ -1836,7 +1948,7 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
             class="ProjectsPage"
           >
             <h2
-              class="TypeWriter ProjectsPage__Title glitch"
+              class="TypeWriter ProjectsPage__Title"
             >
               Projects
               <span
@@ -2426,9 +2538,9 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
             class="SkillsPage"
           >
             <h2
-              class="TypeWriter SkillsPage__Title glitch"
+              class="TypeWriter SkillsPage__Title"
             >
-              Skills_matrix
+              Skills matrix
               <span
                 class="TypeWriter__Cursor"
               >
