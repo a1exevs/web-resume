@@ -1091,9 +1091,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                     <div
                       class="ExperiencePage__HistoryItem"
                     >
-                      <div
-                        class="Block"
-                      >
+                      <div>
                         <div
                           class="Field"
                         >
@@ -1120,6 +1118,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                           <a
                             class="Field__Value Link"
                             href="https://en.dsr-corporation.com"
+                            rel="noopener noreferrer"
                             title="https://en.dsr-corporation.com"
                           >
                             https://en.dsr-corporation.com
@@ -1622,9 +1621,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                     <div
                       class="ExperiencePage__HistoryItem"
                     >
-                      <div
-                        class="Block"
-                      >
+                      <div>
                         <div
                           class="Field"
                         >
@@ -1651,6 +1648,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                           <a
                             class="Field__Value Link"
                             href="https://tm-v.ru"
+                            rel="noopener noreferrer"
                             title="https://tm-v.ru"
                           >
                             https://tm-v.ru
