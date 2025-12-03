@@ -2,7 +2,7 @@
   "short_name": "Web-resume",
   "name": "Web-resume",
   "description": "The project is a web resume for easy demonstration of the basic skills of a software engineer.",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "icons": [
     {
       "src": "favicon.ico",
