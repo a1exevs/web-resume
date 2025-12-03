@@ -289,16 +289,12 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               <div
                 class="AdditionalDetails"
               >
-                <span
-                  class="GlitchText "
+                <h3
+                  class="GlitchText AdditionalDetails__Title"
                   style="animation-duration: 15s;"
                 >
-                  <h3
-                    class="AdditionalDetails__Title"
-                  >
-                    Personal_Info
-                  </h3>
-                </span>
+                  Personal_Info
+                </h3>
                 <div
                   class="AdditionalDetails__List"
                 >
@@ -375,16 +371,12 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               <div
                 class="AdditionalDetails"
               >
-                <span
-                  class="GlitchText "
+                <h3
+                  class="GlitchText AdditionalDetails__Title"
                   style="animation-duration: 15s;"
                 >
-                  <h3
-                    class="AdditionalDetails__Title"
-                  >
-                    Education
-                  </h3>
-                </span>
+                  Education
+                </h3>
                 <div
                   class="AdditionalDetails__List"
                 >
@@ -468,16 +460,12 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
               <div
                 class="AdditionalDetails"
               >
-                <span
-                  class="GlitchText "
+                <h3
+                  class="GlitchText AdditionalDetails__Title"
                   style="animation-duration: 15s;"
                 >
-                  <h3
-                    class="AdditionalDetails__Title"
-                  >
-                    Contact_Details
-                  </h3>
-                </span>
+                  Contact_Details
+                </h3>
                 <div
                   class="AdditionalDetails__List"
                 >
