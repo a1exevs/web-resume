@@ -1,19 +1,5 @@
 // ui
-export {
-  Icon,
-  ScanLine,
-  TypeWriter,
-  SimpleList,
-  Field,
-  RecordsList,
-  Stepper,
-  Card,
-  Chip,
-  Tabs,
-  Chips,
-  Block,
-  GlitchText,
-} from 'src/shared/ui';
+export { Icon, ScanLine, TypeWriter, SimpleList, Field, Stepper, Card, Tabs, GlitchText } from 'src/shared/ui';
 
 // model
 export {

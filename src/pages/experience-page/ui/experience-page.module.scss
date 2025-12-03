@@ -13,19 +13,21 @@
     margin-top: 0;
   }
   &__Content {
-    padding: $medium-space $small-space;
+    padding: 0;
   }
   &__HistoryItem {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
   }
   &__ContributionsData {
     display: flex;
     flex-direction: column;
-    gap: $small-space;
+    gap: 0.5rem;
   }
   &__ContributionsList {
-    padding: 0 4 * $small-space;
+    padding: 0 1rem;
   }
 }
