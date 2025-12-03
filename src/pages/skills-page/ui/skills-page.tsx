@@ -2,7 +2,9 @@ import React from 'react';
 
 import ContinuousLearningCard from 'src/pages/skills-page/ui/continuous-learning-card/continuous-learning-card';
 import SkillCard from 'src/pages/skills-page/ui/skills-card/skills-card';
+import { SKILLS_PAGE_TYPE_WRITER_DELAY } from 'src/pages/skills-page/ui/skills-page.consts';
 import classes from 'src/pages/skills-page/ui/skills-page.module.scss';
+import { currentLang, toUnderscore, TypeWriter } from 'src/shared';
 import { SkillsData } from 'src/store/store.types';
 
 type Props = SkillsData;
@@ -10,7 +12,12 @@ type Props = SkillsData;
 const SkillsPage: React.FC<Props> = ({ skills }) => {
   return (
     <div className={classes.SkillsPage}>
-      <h2 className={classes.SkillsPage__Title + ' glitch'}>Skills_Matrix</h2>
+      <TypeWriter
+        text={currentLang.labels.SKILLS_MATRIX}
+        variant="h2"
+        delay={SKILLS_PAGE_TYPE_WRITER_DELAY}
+        className={classes.SkillsPage__Title}
+      />
       <div className={classes.SkillsPage__Items}>
         {skills.map(skill => (
           <SkillCard key={skill.title} title={skill.title} items={skill.items} />
@@ -19,7 +26,8 @@ const SkillsPage: React.FC<Props> = ({ skills }) => {
       </div>
       <div className={classes.SkillsPage__ScanInfo}>
         <p>
-          SYSTEM_SCAN_COMPLETE: <span className={classes.SkillsPage__ScanHighlight}>All skills up-to-date.</span>
+          <span className={classes.SkillsPage__ScanLabel}>{toUnderscore(currentLang.labels.SYSTEM_SKAN_COMPLETE)}</span>
+          : <span className={classes.SkillsPage__ScanHighlight}>{currentLang.messages.SKILLS_DATA_UPDATE_MESSAGE}</span>
         </p>
       </div>
     </div>

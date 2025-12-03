@@ -1,52 +1,54 @@
 import React from 'react';
 
+import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { CareerHistoryData } from 'src/store/store.types';
-import Block from 'src/ui/common/components/Block/Block';
-import Card from 'src/ui/common/components/Card/Card';
-import Field from 'src/ui/common/components/Field/Field';
-import SimpleList from 'src/ui/common/components/SimpleList/SimpleList';
-import Stepper from 'src/ui/common/components/Stepper/Stepper';
+import { Block, Card, currentLang, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
+import { ExperienceData } from 'src/store/store.types';
 
 type Props = {
-  careerHistoryData: CareerHistoryData;
+  experienceData: ExperienceData;
 };
 
-const ExperiencePage: React.FC<Props> = ({ careerHistoryData }) => {
+const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
   return (
     <div className={classes.ExperiencePage}>
-      <h2 className={classes.ExperiencePage__Title + ' glitch'}>Work_Experience</h2>
+      <TypeWriter
+        text={currentLang.labels.WORK_EXPERIENCE}
+        variant="h2"
+        delay={EXPERIENCE_PAGE_TYPE_WRITER_DELAY}
+        className={classes.ExperiencePage__Title}
+      />
       <div className={classes.ExperiencePage__Content}>
         <Stepper>
-          {careerHistoryData.companyExperiences.map((experience, index) => (
+          {experienceData.companyExperiences.map((experience, index) => (
             <div className={classes.ExperiencePage__HistoryItem} key={index}>
               <Block>
-                <Field label={'Company'} value={experience.companyName} />
-                <Field label={'Website'} value={experience.website} isLink />
-                <Field label={'Period'} value={experience.workPeriod} />
-                <Field label={'Career'} value={experience.career} />
+                <Field label={currentLang.labels.COMPANY} value={experience.companyName} />
+                <Field label={currentLang.labels.WEBSITE} value={experience.website} isLink />
+                <Field label={currentLang.labels.PERIOD} value={experience.workPeriod} />
+                <Field label={currentLang.labels.CAREER} value={experience.career} />
               </Block>
               <label
                 className={'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'}
               >
-                {'Project list'}
+                {currentLang.labels.PROJECT_LIST}
               </label>
               <label className={'Label Label_tiny Label_alignment-center'}>
-                {'(the most recent projects at the top)'}
+                {currentLang.messages.PROJECT_LIST_ORDER_MESSAGE}
               </label>
               {experience.projectList.map((project, index) => (
                 <Card key={index}>
-                  <Field label={'Project'} value={project.projectDescription} />
-                  <Field label={'Period'} value={project.workPeriod} />
-                  <Field label={'Environment'} value={project.environment.join(', ')} />
-                  <Field label={'Responsibilities'} value={project.responsibilities.join(', ')} />
+                  <Field label={currentLang.labels.PROJECT} value={project.projectDescription} />
+                  <Field label={currentLang.labels.PERIOD} value={project.workPeriod} />
+                  <Field label={currentLang.labels.ENVIRONMENT} value={project.environment.join(', ')} />
+                  <Field label={currentLang.labels.RESPONSIBILITIES} value={project.responsibilities.join(', ')} />
                   <div className={classes.ExperiencePage__ContributionsData}>
                     <label
                       className={
                         'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'
                       }
                     >
-                      {'Key contributions'}
+                      {currentLang.labels.KEY_CONTRIBUTIONS}
                     </label>
                     <SimpleList
                       className={classes.ExperiencePage__ContributionsList}

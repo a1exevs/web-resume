@@ -1,7 +1,8 @@
+import cn from 'classnames';
 import React from 'react';
 
 import classes from 'src/pages/projects-page/ui/project-card/project-card.module.scss';
-import { Icon } from 'src/shared';
+import { currentLang, Icon } from 'src/shared';
 import { IconName } from 'src/shared/ui/icon/icon.names';
 import { ProjectItemData } from 'src/store/store.types';
 
@@ -47,7 +48,9 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
               rel="noopener noreferrer"
             >
               <Icon icon={IconName.LINK} width="2em" height="2em" />
-              Live Demo
+              <span className={cn(classes.ProjectCard__LinkLabel, classes.ProjectCard__LinkLabel_capitalize)}>
+                {currentLang.labels.LIVE_DEMO}
+              </span>
             </a>
           )}
           {project.links?.repo && (
@@ -58,7 +61,9 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
               rel="noopener noreferrer"
             >
               <Icon icon={IconName.CODE} width="2em" height="2em" />
-              Repository
+              <span className={cn(classes.ProjectCard__LinkLabel, classes.ProjectCard__LinkLabel_capitalize)}>
+                {currentLang.labels.REPOSITORY}
+              </span>
             </a>
           )}
         </div>

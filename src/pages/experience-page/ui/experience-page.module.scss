@@ -1,20 +1,19 @@
 @import 'src/shared';
-@import 'src/ui/Content/common/style/mixins';
 
 .ExperiencePage {
   &__Title {
     font-family: inherit;
     font-size: 1.875rem; // text-3xl
     font-weight: bold;
-    color: var(--primary-color);
-    text-transform: uppercase;
+    color: #fff;
+    text-transform: capitalize;
     letter-spacing: 0.1em; // tracking-widest
     text-align: center;
     margin-bottom: 2rem; // mb-8
     margin-top: 0;
   }
   &__Content {
-    @include content-page;
+    padding: $medium-space $small-space;
   }
   &__HistoryItem {
     display: flex;
