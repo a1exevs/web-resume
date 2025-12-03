@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { Block, Card, currentLang, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
+import { Card, currentLang, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
 import { ExperienceData } from 'src/store/store.types';
 
 type Props = {
@@ -22,12 +22,12 @@ const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
         <Stepper>
           {experienceData.companyExperiences.map((experience, index) => (
             <div className={classes.ExperiencePage__HistoryItem} key={index}>
-              <Block>
+              <div>
                 <Field label={currentLang.labels.COMPANY} value={experience.companyName} />
                 <Field label={currentLang.labels.WEBSITE} value={experience.website} isLink />
                 <Field label={currentLang.labels.PERIOD} value={experience.workPeriod} />
                 <Field label={currentLang.labels.CAREER} value={experience.career} />
-              </Block>
+              </div>
               <label
                 className={'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'}
               >
