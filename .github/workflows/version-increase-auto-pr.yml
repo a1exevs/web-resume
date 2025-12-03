@@ -42,11 +42,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: develop
-          head: common/version-increase
+          branch: common/version-increase
           title: ${{ steps.get_title.outputs.title }}
           body: |
             Automatically created pull request for the version bump from `common/version-increase`.
             Last commit: ${{ steps.get_title.outputs.title }}
           labels: common
-          update-existing: true
           draft: false
