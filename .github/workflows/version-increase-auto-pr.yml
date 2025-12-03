@@ -1,0 +1,52 @@
+name: PR for version bump auto-creation
+
+on:
+  push:
+    branches:
+      - 'common/version-increase'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Get last commit title
+        id: get_title
+        run: |
+          # Get the full message of the last commit
+          COMMIT_MSG="$(git log -1 --pretty=%B || true)"
+          
+          # Extract the first line (subject) and trim whitespace
+          SUBJECT="$(printf '%s' "$COMMIT_MSG" | sed -n '1p' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//')"
+          
+          # Fallback if the subject is empty
+          if [ -z "$SUBJECT" ]; then
+            SUBJECT="chore: bump version (automated)"
+          fi
+          
+          # Limit the length (just in case)
+          SUBJECT="${SUBJECT:0:200}"
+          
+          echo "title=$SUBJECT" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update pull request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: develop
+          head: common/version-increase
+          title: ${{ steps.get_title.outputs.title }}
+          body: |
+            Automatically created pull request for the version bump from `common/version-increase`.
+            Last commit: ${{ steps.get_title.outputs.title }}
+          labels: common
+          update-existing: true
+          draft: false
