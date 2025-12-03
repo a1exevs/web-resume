@@ -18,7 +18,7 @@ const meta = {
 
 export default meta;
 
-const args = { careerHistoryData: store.content.careerHistory };
+const args = { experienceData: store.experienceData };
 
 export const Desktop4k = buildDesktop4KStoryObj<typeof meta>({ args });
 export const Desktop = buildDesktopStoryObj<typeof meta>({ args });

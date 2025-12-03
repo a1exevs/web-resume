@@ -1,3 +1,22 @@
+# Release v1.1.4
+## What's Changed
+* [Common] RELEASE-NOTES.md v1.1.3 by @a1exevs in https://github.com/a1exevs/web-resume/pull/45
+* [Refactoring] RoutePath enum using instead hardcoded strings by @a1exevs in https://github.com/a1exevs/web-resume/pull/46
+* [Refactoring] Styles import by @a1exevs in https://github.com/a1exevs/web-resume/pull/47
+* [Refactoring] SCSS for Header by @a1exevs in https://github.com/a1exevs/web-resume/pull/48
+* [Refactoring][Bugfix] SCSS for AppLayout, Contact icons changes by @a1exevs in https://github.com/a1exevs/web-resume/pull/49
+* [Refactoring][Bugfix] SCSS for Contacts page, Contact Icon hover issue fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/50
+* [Refactoring][Contacts page] Icon component implementation and using by @a1exevs in https://github.com/a1exevs/web-resume/pull/51
+* [Refactoring][Skills page] Using of scss instead Tailwind and contacts icon issue fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/52
+* [Refactoring][Projects page] Using of scss instead Tailwind by @a1exevs in https://github.com/a1exevs/web-resume/pull/53
+* [Refactoring][Experience page] Using of scss instead Tailwind by @a1exevs in https://github.com/a1exevs/web-resume/pull/54
+* [Refactoring][Bugfix][Common] Migration to scss by @a1exevs in https://github.com/a1exevs/web-resume/pull/55
+* [Bugfix][Header] Fix of menu button by @a1exevs in https://github.com/a1exevs/web-resume/pull/56
+* [Feature][App] Background color change by @a1exevs in https://github.com/a1exevs/web-resume/pull/57
+* [Common] Version increase v1.1.4 by @a1exevs in https://github.com/a1exevs/web-resume/pull/58
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.1.3...v1.1.4
+
 # Release v1.1.3
 ## What's Changed
 * [Common] RELEASE-NOTES.md v1.1.2 by @a1exevs in https://github.com/a1exevs/web-resume/pull/39

@@ -9,3 +9,9 @@ export {
 
 // routes
 export { RoutePath } from 'src/shared/model/routes/routes';
+
+// lang
+export { currentLang } from 'src/shared/model/lang/lang.helper';
+
+// helpers
+export { capitalize, capitalizeLabel, toUnderscore } from 'src/shared/model/helpers/strings';

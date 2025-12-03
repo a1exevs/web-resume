@@ -1,0 +1,11 @@
+@import 'src/shared';
+
+$box-shadow: 0 4px 8px #2121211a;
+$card-border-radius: 4px;
+
+.Card {
+  padding: 0.5rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px #36ba0120, 0 4px 6px -4px #36ba0120;
+  border-radius: $card-border-radius;
+  background-color: $card-background-color;
+}

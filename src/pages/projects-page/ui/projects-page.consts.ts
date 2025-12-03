@@ -1,0 +1,1 @@
+export const PROJECTS_PAGE_TYPE_WRITER_DELAY = 40;
