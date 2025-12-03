@@ -24,6 +24,7 @@
   }
   &__Position {
     color: var(--primary-color);
+    text-transform: capitalize;
   }
   &__Meta {
     margin-top: 0.5rem; // mt-2
@@ -36,6 +37,9 @@
   }
   &__Comments {
     color: rgba(34, 197, 94, 0.7); // text-green-500/70
+  }
+  &__Label {
+    text-transform: uppercase;
   }
 }
 

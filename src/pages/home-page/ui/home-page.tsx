@@ -1,8 +1,10 @@
 import React from 'react';
 
+import AboutMeDetails from 'src/pages/home-page/ui/about-me-details/about-me-details';
 import AdditionalDetails from 'src/pages/home-page/ui/additional-details/additional-details';
 import classes from 'src/pages/home-page/ui/home-page.module.scss';
 import ProfileDetails from 'src/pages/home-page/ui/profile-details/profile-details';
+import { currentLang } from 'src/shared';
 import { MainInfoData } from 'src/store/store.types';
 
 type Props = {
@@ -12,7 +14,18 @@ type Props = {
 const HomePage: React.FC<Props> = ({ mainInfoData }) => {
   return (
     <div className={classes.HomePage}>
-      <ProfileDetails photoPath={mainInfoData.photoPath} />
+      <ProfileDetails
+        fullName={mainInfoData.fullName}
+        photoPath={mainInfoData.photoPath}
+        position={mainInfoData.position}
+        status={mainInfoData.status}
+        location={mainInfoData.location}
+      />
+      <AboutMeDetails
+        summary={mainInfoData.aboutMe.summary}
+        achievementBullets={mainInfoData.aboutMe.achievementBullets}
+        goal={mainInfoData.aboutMe.goal}
+      />
       <div className={classes.HomePage__DetailsGrid}>
         {mainInfoData.additionalDetails.map(({ title, items }) => (
           <AdditionalDetails key={title} title={title} items={items} />
@@ -20,7 +33,8 @@ const HomePage: React.FC<Props> = ({ mainInfoData }) => {
       </div>
       <div className={classes.HomePage__Footer}>
         <p>
-          LAST UPDATE: <span className={classes.HomePage__AccentText}>October 22, 2025</span>
+          <span className={classes.HomePage__Label}>{currentLang.labels.LAST_UPDATE}</span>:{' '}
+          <span className={classes.HomePage__AccentText}>{mainInfoData.resumeLastUpdateDate}</span>
         </p>
       </div>
     </div>

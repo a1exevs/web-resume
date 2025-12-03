@@ -18,9 +18,9 @@ class Point {
   static readonly fontSize = 20;
   static readonly vStartOffset = 1080;
   static readonly minSpeed = 1;
-  static readonly maxAvailableSpeed = 100;
+  static readonly maxAvailableSpeed = 50;
   static readonly speedChangeInterval = 15000;
-  static maxSpeed = 100;
+  static maxSpeed = 50;
 
   constructor(x: number, y: number) {
     this.x = x;
