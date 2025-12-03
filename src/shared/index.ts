@@ -12,6 +12,7 @@ export {
   Tabs,
   Chips,
   Block,
+  GlitchText,
 } from 'src/shared/ui';
 
 // model

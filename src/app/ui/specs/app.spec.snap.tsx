@@ -4,7 +4,7 @@ import React from 'react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 
 import appRoutes from 'src/app/ui/routes';
-import { currentLang, RoutePath, toUnderscore } from 'src/shared';
+import { currentLang, RoutePath } from 'src/shared';
 
 const TYPE_WRITER_ANIMATION_MAX_DURATION = 2000;
 
@@ -21,7 +21,7 @@ describe('App', () => {
     it(`matches snapshot, route "${RoutePath.EXPERIENCE}"`, async () => {
       const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.EXPERIENCE] });
       const { container } = render(<RouterProvider router={router} />);
-      await screen.findByText(toUnderscore(currentLang.labels.WORK_EXPERIENCE), undefined, {
+      await screen.findByText(currentLang.labels.WORK_EXPERIENCE, undefined, {
         timeout: TYPE_WRITER_ANIMATION_MAX_DURATION,
       });
       expect(container).toMatchSnapshot();
@@ -31,7 +31,7 @@ describe('App', () => {
     it(`matches snapshot, route "${RoutePath.SKILLS}"`, async () => {
       const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.SKILLS] });
       const { container } = render(<RouterProvider router={router} />);
-      await screen.findByText(toUnderscore(currentLang.labels.SKILLS_MATRIX), undefined, {
+      await screen.findByText(currentLang.labels.SKILLS_MATRIX, undefined, {
         timeout: TYPE_WRITER_ANIMATION_MAX_DURATION,
       });
       expect(container).toMatchSnapshot();

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 
 import appRoutes from 'src/app/ui/routes';
-import { currentLang, RoutePath, toUnderscore } from 'src/shared';
+import { currentLang, RoutePath } from 'src/shared';
 
 const TYPE_WRITER_ANIMATION_MAX_DURATION = 2000;
 
@@ -22,7 +22,7 @@ describe('App', () => {
     it(`Renders subtitle of page with route "${RoutePath.EXPERIENCE}"`, async () => {
       const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.EXPERIENCE] });
       render(<RouterProvider router={router} />);
-      const linkElement = await screen.findByText(toUnderscore(currentLang.labels.WORK_EXPERIENCE), undefined, {
+      const linkElement = await screen.findByText(currentLang.labels.WORK_EXPERIENCE, undefined, {
         timeout: TYPE_WRITER_ANIMATION_MAX_DURATION,
       });
       expect(linkElement).toBeInTheDocument();
@@ -32,7 +32,7 @@ describe('App', () => {
     it(`Renders subtitle of page with route "${RoutePath.SKILLS}"`, async () => {
       const router = createMemoryRouter(appRoutes, { initialEntries: [RoutePath.SKILLS] });
       render(<RouterProvider router={router} />);
-      const linkElement = await screen.findByText(toUnderscore(currentLang.labels.SKILLS_MATRIX), undefined, {
+      const linkElement = await screen.findByText(currentLang.labels.SKILLS_MATRIX, undefined, {
         timeout: TYPE_WRITER_ANIMATION_MAX_DURATION,
       });
       expect(linkElement).toBeInTheDocument();

@@ -46,6 +46,22 @@ const store: Store = {
         ],
       },
     ],
+    aboutMe: {
+      summary:
+        'Front-end developer with 5+ years of experience building B2B products - including LIMS platforms, medical information systems, Excel plugins, and micro-frontend applications.',
+      achievementBullets: [
+        'Skilled in Angular (2+ & AngularJS), React, NestJS',
+        'Strong focus on maintainable and testable code (Jasmine, Cypress, Karma, Playwright, Jest)',
+        'Hands-on experience with complex business logic: layout editors, Excel-like tables, alias systems, licensing, permission-based UI',
+        'Familiar with API integrations (e.g., Facebook, Instagram)',
+        'Focused on performance optimization, architecture discussions, code reviews, and dev validation',
+        'Comfortable working in distributed teams and long-term products',
+        'Experienced in mentoring and onboarding new team members',
+        'Created and delivered front-end training materials as part of extracurricular initiatives',
+        'Actively improve skills via reading, building side projects, and engaging with the broader IT community',
+      ],
+      goal: 'Looking to grow into a senior or tech lead role on impactful and technically challenging projects.',
+    },
   },
   experienceData: {
     companyExperiences: [

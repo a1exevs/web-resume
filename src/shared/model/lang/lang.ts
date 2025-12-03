@@ -23,6 +23,7 @@ const enLabels = {
   SYSTEM_SKAN_COMPLETE: 'System scan complete',
   CONTINUOUS_LEARNING: 'Continuous learning',
   CONTACTS: 'Contacts',
+  ABOUT_ME: 'About me',
 };
 
 const enMessages = {

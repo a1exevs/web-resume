@@ -11,6 +11,11 @@ export type MainInfoData = {
   location: string;
   resumeLastUpdateDate: string;
   additionalDetails: AdditionalDetails[];
+  aboutMe: {
+    summary: string;
+    achievementBullets: string[];
+    goal: string;
+  };
 };
 
 export type ProjectData = {

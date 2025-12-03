@@ -18,7 +18,7 @@ const ContactsPage: React.FC<Props> = ({ contactLinks }) => {
         delay={CONTACTS_PAGE_TYPE_WRITER_DELAY}
         variant="h2"
         text={currentLang.labels.CONTACTS}
-        className={classes.ContactsPage__Title + ' glitch'}
+        className={classes.ContactsPage__Title}
       />
       <div className={classes.ContactsPage__Items}>
         {contactLinks.map(contact => {
