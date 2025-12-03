@@ -47,6 +47,6 @@ jobs:
           body: |
             Automatically created pull request for the version bump from `common/version-increase`.
             Last commit: ${{ steps.get_title.outputs.title }}
-          labels: automated,version-bump
+          labels: common
           update-existing: true
           draft: false
