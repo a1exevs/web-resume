@@ -1,5 +1,18 @@
 // ui
-export { Icon, ScanLine, TypeWriter, SimpleList, Field, Stepper, Card, Tabs, GlitchText } from 'src/shared/ui';
+export {
+  Icon,
+  ScanLine,
+  TypeWriter,
+  SimpleList,
+  Field,
+  Stepper,
+  Card,
+  Tabs,
+  GlitchText,
+  Select,
+  IconName,
+} from 'src/shared/ui';
+export type { Option } from 'src/shared/ui';
 
 // model
 export {
@@ -12,4 +25,8 @@ export {
   capitalize,
   capitalizeLabel,
   toUnderscore,
+  LangProvider,
+  useLangContext,
+  languageCodes,
 } from 'src/shared/model';
+export type { LanguageCode } from 'src/shared/model';

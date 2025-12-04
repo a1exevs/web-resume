@@ -13,3 +13,37 @@ export function capitalizeLabel(label: string): string {
 export function toUnderscore(str: string) {
   return str.trim().replace(/\s+/g, '_');
 }
+
+/**
+ * Returns array of english chars
+ */
+export function getCharArray(): string[] {
+  return [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+  ];
+}

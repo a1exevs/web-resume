@@ -1,21 +1,14 @@
 import React from 'react';
-import { Outlet } from 'react-router';
 
-import classes from 'src/app/ui/app.module.scss';
-import { ScanLine } from 'src/shared';
-import { Header, MainLayout } from 'src/widgets';
+import MainWindow from 'src/app/ui/main-window';
+import { LangProvider } from 'src/shared';
 
-const App: React.FC = () => (
-  <div className={classes.App}>
-    <div className={classes.App__Canvas}></div>
-    <div className={classes.App__Wrapper}>
-      <Header />
-      <ScanLine />
-      <MainLayout>
-        <Outlet />
-      </MainLayout>
-    </div>
-  </div>
-);
+const App: React.FC = () => {
+  return (
+    <LangProvider>
+      <MainWindow />
+    </LangProvider>
+  );
+};
 
 export default App;
