@@ -2,7 +2,8 @@ import React from 'react';
 
 import { PROFILE_DETAILS_TYPE_WRITER_DELAY } from 'src/pages/home-page/ui/profile-details/profile-details.consts';
 import classes from 'src/pages/home-page/ui/profile-details/profile-details.module.scss';
-import { currentLang, TypeWriter } from 'src/shared';
+import { TypeWriter } from 'src/shared';
+import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 
 type Props = {
   fullName: string;
@@ -10,9 +11,10 @@ type Props = {
   position: string;
   status: string;
   location: string;
+  currentLang: LanguageConstants;
 };
 
-const ProfileDetails: React.FC<Props> = ({ fullName, photoPath, position, status, location }) => {
+const ProfileDetails: React.FC<Props> = ({ fullName, photoPath, position, status, location, currentLang }) => {
   return (
     <div className={classes.ProfileDetails}>
       <img alt={currentLang.imageAlts.AVATAR} className={classes.ProfileDetails__Photo} src={photoPath} />

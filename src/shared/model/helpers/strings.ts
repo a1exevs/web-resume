@@ -14,6 +14,10 @@ export function toUnderscore(str: string) {
   return str.trim().replace(/\s+/g, '_');
 }
 
+export function toDashes(str: string) {
+  return str.trim().replace(/\s+/g, '-');
+}
+
 /**
  * Returns array of english chars
  */

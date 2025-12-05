@@ -1,6 +1,8 @@
+import { isEmpty } from '@alexevs/ts-guards';
 import cn from 'classnames';
 import React, { useEffect, useState } from 'react';
 
+import usePrevious from 'src/shared/model/hooks/use-previous';
 import { TYPE_WRITER_CURSOR_SYMBOL, TYPE_WRITER_DEFAULT_DELAY } from 'src/shared/ui/type-writer/type-writer.consts';
 import classes from 'src/shared/ui/type-writer/type-writer.module.scss';
 import Typography from 'src/shared/ui/typography/typography';
@@ -17,14 +19,36 @@ const TypeWriter: React.FC<Props> = ({ text, delay = TYPE_WRITER_DEFAULT_DELAY, 
   const [currentText, setCurrentText] = useState<string>('');
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
+  // previous text to detect changes
+  const prevText = usePrevious(text);
+
+  // when `text` prop changes, reset typing state so it will re-type the new text
   useEffect(() => {
+    // if previous value is undefined (first render) we still want to start typing,
+    // but resetting on first render is harmless.
+    if (prevText !== text) {
+      setCurrentText('');
+      setCurrentIndex(0);
+    }
+  }, [text, prevText]);
+
+  useEffect(() => {
+    // guard: if text is empty, don't set timeouts
+    if (isEmpty(text)) {
+      setCurrentText('');
+      setCurrentIndex(0);
+      return;
+    }
+
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
         setCurrentText(prevText => prevText + text[currentIndex]);
         setCurrentIndex(prevIndex => prevIndex + 1);
       }, delay);
 
-      return () => clearTimeout(timeout);
+      return () => {
+        clearTimeout(timeout);
+      };
     }
   }, [currentIndex, delay, text]);
 

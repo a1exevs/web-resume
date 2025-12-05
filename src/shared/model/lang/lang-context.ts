@@ -1,11 +1,11 @@
 import { createContext } from 'react';
 
-import { currentLang } from 'src/shared/model/lang/lang.helper';
+import { defaultLang, defaultLangCode } from 'src/shared/model/lang/lang.consts';
 import { LangContext as Context } from 'src/shared/model/lang/lang.types';
 
 const defaultContext: Context = {
-  langCode: 'en',
-  currentLang: currentLang,
+  langCode: defaultLangCode,
+  currentLang: defaultLang,
   setCurrentLang: () => {},
 };
 

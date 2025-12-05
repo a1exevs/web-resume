@@ -25,12 +25,8 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -76,6 +72,22 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
         <div
           class="Header__RightBlock"
         >
+          <select
+            class="Select "
+          >
+            <option
+              class="Select__Option"
+              value="en"
+            >
+              English
+            </option>
+            <option
+              class="Select__Option"
+              value="ru"
+            >
+              Russian
+            </option>
+          </select>
           <div
             class="Header__Menu"
           >
@@ -136,7 +148,7 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                   class="ProfileDetails__Position"
                 >
                   &gt;
-                  Senior front-end developer
+                  Senior Front-end developer
                 </p>
                 <div
                   class="ProfileDetails__Meta"
@@ -595,12 +607,8 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -646,6 +654,22 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
         <div
           class="Header__RightBlock"
         >
+          <select
+            class="Select "
+          >
+            <option
+              class="Select__Option"
+              value="en"
+            >
+              English
+            </option>
+            <option
+              class="Select__Option"
+              value="ru"
+            >
+              Russian
+            </option>
+          </select>
           <div
             class="Header__Menu"
           >
@@ -968,12 +992,8 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -1019,6 +1039,22 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
         <div
           class="Header__RightBlock"
         >
+          <select
+            class="Select "
+          >
+            <option
+              class="Select__Option"
+              value="en"
+            >
+              English
+            </option>
+            <option
+              class="Select__Option"
+              value="ru"
+            >
+              Russian
+            </option>
+          </select>
           <div
             class="Header__Menu"
           >
@@ -1149,9 +1185,9 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                           </label>
                           <span
                             class="Field__Value Text"
-                            title="Software Engineer"
+                            title="Middle Front-end Developer - Senior Front-end Developer"
                           >
-                            Software Engineer
+                            Middle Front-end Developer - Senior Front-end Developer
                           </span>
                         </div>
                       </div>
@@ -1679,9 +1715,9 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                           </label>
                           <span
                             class="Field__Value Text"
-                            title="Software Engineer"
+                            title="Junior Front-end Developer - Middle Front-end Developer"
                           >
-                            Software Engineer
+                            Junior Front-end Developer - Middle Front-end Developer
                           </span>
                         </div>
                       </div>
@@ -1859,12 +1895,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -1910,6 +1942,22 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
         <div
           class="Header__RightBlock"
         >
+          <select
+            class="Select "
+          >
+            <option
+              class="Select__Option"
+              value="en"
+            >
+              English
+            </option>
+            <option
+              class="Select__Option"
+              value="ru"
+            >
+              Russian
+            </option>
+          </select>
           <div
             class="Header__Menu"
           >
@@ -1994,7 +2042,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2106,7 +2155,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2226,7 +2276,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2351,7 +2402,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2449,12 +2501,8 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -2500,6 +2548,22 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
         <div
           class="Header__RightBlock"
         >
+          <select
+            class="Select "
+          >
+            <option
+              class="Select__Option"
+              value="en"
+            >
+              English
+            </option>
+            <option
+              class="Select__Option"
+              value="ru"
+            >
+              Russian
+            </option>
+          </select>
           <div
             class="Header__Menu"
           >

@@ -21,12 +21,13 @@ export {
   TABLET_SCREEN_WIDTH_PX,
   MOBILE_SCREEN_WIDTH_PX,
   RoutePath,
-  currentLang,
+  defaultLang,
   capitalize,
   capitalizeLabel,
   toUnderscore,
   LangProvider,
   useLangContext,
   languageCodes,
+  useDocumentTitle,
 } from 'src/shared/model';
 export type { LanguageCode } from 'src/shared/model';

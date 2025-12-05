@@ -21,4 +21,5 @@ export const LABELS_RU = {
   CONTINUOUS_LEARNING: 'Непрерывное обучение',
   CONTACTS: 'Контакты',
   ABOUT_ME: 'Обо мне',
+  STACK: 'Стек',
 };

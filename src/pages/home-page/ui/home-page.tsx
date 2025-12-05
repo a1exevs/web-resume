@@ -16,6 +16,7 @@ const HomePage: React.FC<Props> = ({ mainInfoData, currentLang }) => {
   return (
     <div className={classes.HomePage}>
       <ProfileDetails
+        currentLang={currentLang}
         fullName={mainInfoData.fullName}
         photoPath={mainInfoData.photoPath}
         position={mainInfoData.position}
@@ -23,6 +24,7 @@ const HomePage: React.FC<Props> = ({ mainInfoData, currentLang }) => {
         location={mainInfoData.location}
       />
       <AboutMeDetails
+        currentLang={currentLang}
         summary={mainInfoData.aboutMe.summary}
         achievementBullets={mainInfoData.aboutMe.achievementBullets}
         goal={mainInfoData.aboutMe.goal}

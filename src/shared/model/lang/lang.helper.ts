@@ -5,13 +5,15 @@ import { CURRENT_LANG_KEY } from 'src/shared/model/lang/lang-context';
 import { defaultLangCode } from 'src/shared/model/lang/lang.consts';
 import { LanguageCode, LanguageConstants } from 'src/shared/model/lang/lang.types';
 
-export const currentLang: LanguageConstants = lang[defaultLangCode];
-
 function splitLang(code: string): string {
   return (code || '').split('-')[0];
 }
 
 export function detectLangCode(): LanguageCode {
+  if (process.env.ENV === 'tests') {
+    console.log('test env');
+    return defaultLangCode;
+  }
   const saved = getUserLangCode();
   if (saved) {
     return saved as LanguageCode;

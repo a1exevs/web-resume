@@ -21,4 +21,5 @@ export const LABELS_EN = {
   CONTINUOUS_LEARNING: 'Continuous learning',
   CONTACTS: 'Contacts',
   ABOUT_ME: 'About me',
+  STACK: 'Stack',
 };
