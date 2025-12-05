@@ -15,8 +15,7 @@
   cursor: pointer;
   outline: none;
 
-  transition:
-    border-color $transition-tiny-duration $cb-like-ease-in-out,
+  transition: border-color $transition-tiny-duration $cb-like-ease-in-out,
     box-shadow $transition-tiny-duration $cb-like-ease-in-out,
     background-color $transition-tiny-duration $cb-like-ease-in-out;
 
@@ -27,9 +26,7 @@
   // TODO: need to show arrow-up after select open
   background-image: linear-gradient(45deg, transparent 50%, $active-element-color 50%),
     linear-gradient(135deg, $active-element-color 50%, transparent 50%);
-  background-position:
-    calc(100% - 1rem) calc(50% - 0.1875rem),
-    calc(100% - 0.6875rem) calc(50% - 0.1875rem);
+  background-position: calc(100% - 1rem) calc(50% - 0.1875rem), calc(100% - 0.6875rem) calc(50% - 0.1875rem);
   background-size: 0.3125rem 0.3125rem, 0.3125rem 0.3125rem;
   background-repeat: no-repeat;
 
@@ -64,6 +61,3 @@
     }
   }
 }
-
-
-
