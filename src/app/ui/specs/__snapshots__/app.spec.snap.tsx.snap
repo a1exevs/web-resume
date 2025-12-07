@@ -25,12 +25,8 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -76,6 +72,26 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
         <div
           class="Header__RightBlock"
         >
+          <div
+            class="SelectCombobox"
+          >
+            <button
+              aria-activedescendant=":r0:-option-en"
+              aria-controls=":r0:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
+            >
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -136,7 +152,7 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
                   class="ProfileDetails__Position"
                 >
                   &gt;
-                  Senior front-end developer
+                  Senior Front-end developer
                 </p>
                 <div
                   class="ProfileDetails__Meta"
@@ -595,12 +611,8 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -646,6 +658,26 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
         <div
           class="Header__RightBlock"
         >
+          <div
+            class="SelectCombobox"
+          >
+            <button
+              aria-activedescendant=":r4:-option-en"
+              aria-controls=":r4:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
+            >
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -968,12 +1000,8 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -1019,6 +1047,26 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
         <div
           class="Header__RightBlock"
         >
+          <div
+            class="SelectCombobox"
+          >
+            <button
+              aria-activedescendant=":r1:-option-en"
+              aria-controls=":r1:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
+            >
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -1149,9 +1197,9 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                           </label>
                           <span
                             class="Field__Value Text"
-                            title="Software Engineer"
+                            title="Middle Front-end Developer - Senior Front-end Developer"
                           >
-                            Software Engineer
+                            Middle Front-end Developer - Senior Front-end Developer
                           </span>
                         </div>
                       </div>
@@ -1679,9 +1727,9 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
                           </label>
                           <span
                             class="Field__Value Text"
-                            title="Software Engineer"
+                            title="Junior Front-end Developer - Middle Front-end Developer"
                           >
-                            Software Engineer
+                            Junior Front-end Developer - Middle Front-end Developer
                           </span>
                         </div>
                       </div>
@@ -1859,12 +1907,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -1910,6 +1954,26 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
         <div
           class="Header__RightBlock"
         >
+          <div
+            class="SelectCombobox"
+          >
+            <button
+              aria-activedescendant=":r3:-option-en"
+              aria-controls=":r3:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
+            >
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -1994,7 +2058,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2106,7 +2171,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2226,7 +2292,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2351,7 +2418,8 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
                     <h4
                       class="ProjectCard__StackTitle"
                     >
-                      STACK:
+                      Stack
+                      :
                     </h4>
                     <div
                       class="ProjectCard__StackList"
@@ -2449,12 +2517,8 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
           <h1
             class="Header__LogoText"
           >
-            <div>
-              Web
-            </div>
-            <div>
-              Resume
-            </div>
+            Web
+resume
           </h1>
         </div>
         <div
@@ -2500,6 +2564,26 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
         <div
           class="Header__RightBlock"
         >
+          <div
+            class="SelectCombobox"
+          >
+            <button
+              aria-activedescendant=":r2:-option-en"
+              aria-controls=":r2:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
+            >
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >

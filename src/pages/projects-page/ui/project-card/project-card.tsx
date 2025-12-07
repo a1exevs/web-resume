@@ -2,15 +2,17 @@ import cn from 'classnames';
 import React from 'react';
 
 import classes from 'src/pages/projects-page/ui/project-card/project-card.module.scss';
-import { currentLang, Icon } from 'src/shared';
+import { Icon } from 'src/shared';
+import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 import { IconName } from 'src/shared/ui/icon/icon.names';
 import { ProjectItemData } from 'src/store/store.types';
 
 type Props = {
+  currentLang: LanguageConstants;
   project: ProjectItemData;
 };
 
-const ProjectCard: React.FC<Props> = ({ project }) => {
+const ProjectCard: React.FC<Props> = ({ currentLang, project }) => {
   return (
     <div
       className={classes.ProjectCard}
@@ -30,7 +32,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <h3 className={classes.ProjectCard__Title}>{project.title}</h3>
         <p className={classes.ProjectCard__Description}>{project.description}</p>
         <div className={classes.ProjectCard__Stack}>
-          <h4 className={classes.ProjectCard__StackTitle}>STACK:</h4>
+          <h4 className={classes.ProjectCard__StackTitle}>{currentLang.labels.STACK}:</h4>
           <div className={classes.ProjectCard__StackList}>
             {project.stack.map(item => (
               <span key={item} className={classes.ProjectCard__StackItem}>

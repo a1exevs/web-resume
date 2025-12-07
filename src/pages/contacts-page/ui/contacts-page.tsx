@@ -6,12 +6,16 @@ import {
   CONTACTS_PAGE_TYPE_WRITER_DELAY,
 } from 'src/pages/contacts-page/ui/contacts-page.consts';
 import classes from 'src/pages/contacts-page/ui/contacts-page.module.scss';
-import { currentLang, TypeWriter } from 'src/shared';
+import { TypeWriter } from 'src/shared';
+import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 import { ContactsData } from 'src/store/store.types';
 
-type Props = ContactsData;
+type Props = {
+  currentLang: LanguageConstants;
+  contactsData: ContactsData;
+};
 
-const ContactsPage: React.FC<Props> = ({ contactLinks }) => {
+const ContactsPage: React.FC<Props> = ({ currentLang, contactsData }) => {
   return (
     <div className={classes.ContactsPage}>
       <TypeWriter
@@ -21,7 +25,7 @@ const ContactsPage: React.FC<Props> = ({ contactLinks }) => {
         className={classes.ContactsPage__Title}
       />
       <div className={classes.ContactsPage__Items}>
-        {contactLinks.map(contact => {
+        {contactsData.contactLinks.map(contact => {
           const IconComponent = ContactLinkCodeIconMap[contact.code];
           return <ContactLink key={contact.href} href={contact.href} label={contact.label} Icon={IconComponent} />;
         })}
