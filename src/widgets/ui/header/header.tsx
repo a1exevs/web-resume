@@ -1,53 +1,44 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { RefObject } from 'react';
 import { NavLink } from 'react-router';
 
 import logo from 'src/logo.svg';
-import { Icon, RoutePath } from 'src/shared';
-import { IconName } from 'src/shared/ui/icon/icon.names';
+import { Icon, IconName, LanguageCode, Option, RoutePath } from 'src/shared';
+import { SelectCombobox } from 'src/shared/ui';
 import classes from 'src/widgets/ui/header/header.module.scss';
 
-const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+type Props = {
+  title: string;
+  links: { to: RoutePath; label: string }[];
+  langCode: LanguageCode;
+  langOptions: Option[];
+  onCurrentLangChange: (code: string) => void;
+  menuRef: RefObject<HTMLDivElement>;
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
+  closeMenu: () => void;
+};
 
-  // TODO Move to consts
-  const LINKS = [
-    { to: RoutePath.HOME, label: '/Home' },
-    { to: RoutePath.EXPERIENCE, label: '/Experience' },
-    { to: RoutePath.SKILLS, label: '/Skills' },
-    { to: RoutePath.PROJECTS, label: '/Projects' },
-    { to: RoutePath.CONTACTS, label: '/Contacts' },
-  ];
-
-  // TODO move to HeaderContainer
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (!isMenuOpen) {
-        return;
-      }
-      if (menuRef?.current && !menuRef?.current?.contains(event.target as Node)) {
-        setIsMenuOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isMenuOpen]);
-
-  const handleNavClick = () => setIsMenuOpen(false);
-
+const Header: React.FC<Props> = ({
+  title,
+  links,
+  langCode,
+  langOptions,
+  onCurrentLangChange,
+  menuRef,
+  isMenuOpen,
+  toggleMenu,
+  closeMenu,
+}) => {
   return (
     <header className={classes.Header}>
       <div className={classes.Header__LeftBlock}>
         <img alt="logo" src={logo} width={64} />
-        <h1 className={classes.Header__LogoText}>
-          <div>Web</div>
-          <div>Resume</div>
-        </h1>
+        <h1 className={classes.Header__LogoText}>{title}</h1>
       </div>
 
       {/* Desktop navigation */}
       <div className={classes.Header__NavLinks}>
-        {LINKS.map(link => (
+        {links.map(link => (
           <NavLink key={link.to} className={classes.Header__NavLink} to={link.to}>
             {link.label}
           </NavLink>
@@ -56,13 +47,15 @@ const Header: React.FC = () => {
 
       <div className={classes.Header__RightBlock}>
         {/* Mobile menu */}
+        <SelectCombobox value={langCode} onChange={onCurrentLangChange} options={langOptions} />
+
         <div className={classes.Header__Menu} ref={menuRef}>
           <button
             type="button"
             aria-haspopup="menu"
             aria-expanded={isMenuOpen}
             aria-label="Open menu"
-            onClick={() => setIsMenuOpen(open => !open)}
+            onClick={toggleMenu}
             className={classes.Header__MenuButton}
           >
             <Icon icon={IconName.MENU} />
@@ -70,11 +63,11 @@ const Header: React.FC = () => {
           {isMenuOpen && (
             <div className={classes.Header__MenuItemsWrapper}>
               <nav className={classes.Header__MenuItems} role="menu">
-                {LINKS.map(link => (
+                {links.map(link => (
                   <NavLink
                     key={link.to}
                     to={link.to}
-                    onClick={handleNavClick}
+                    onClick={closeMenu}
                     className={classes.Header__MenuItem}
                     role="menuitem"
                   >

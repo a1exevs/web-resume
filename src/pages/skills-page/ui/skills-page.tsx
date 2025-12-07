@@ -4,12 +4,16 @@ import ContinuousLearningCard from 'src/pages/skills-page/ui/continuous-learning
 import SkillCard from 'src/pages/skills-page/ui/skills-card/skills-card';
 import { SKILLS_PAGE_TYPE_WRITER_DELAY } from 'src/pages/skills-page/ui/skills-page.consts';
 import classes from 'src/pages/skills-page/ui/skills-page.module.scss';
-import { currentLang, toUnderscore, TypeWriter } from 'src/shared';
+import { toUnderscore, TypeWriter } from 'src/shared';
+import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 import { SkillsData } from 'src/store/store.types';
 
-type Props = SkillsData;
+type Props = {
+  currentLang: LanguageConstants;
+  skillsData: SkillsData;
+};
 
-const SkillsPage: React.FC<Props> = ({ skills }) => {
+const SkillsPage: React.FC<Props> = ({ currentLang, skillsData }) => {
   return (
     <div className={classes.SkillsPage}>
       <TypeWriter
@@ -19,10 +23,10 @@ const SkillsPage: React.FC<Props> = ({ skills }) => {
         className={classes.SkillsPage__Title}
       />
       <div className={classes.SkillsPage__Items}>
-        {skills.map(skill => (
+        {skillsData.skills.map(skill => (
           <SkillCard key={skill.title} title={skill.title} items={skill.items} />
         ))}
-        <ContinuousLearningCard />
+        <ContinuousLearningCard currentLang={currentLang} />
       </div>
       <div className={classes.SkillsPage__ScanInfo}>
         <p>

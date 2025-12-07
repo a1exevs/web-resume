@@ -17,14 +17,13 @@
     text-align: center;
   }
   &__Name {
-    font-size: 1.875rem; // text-3xl
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     color: #fff;
   }
   &__Position {
     color: var(--primary-color);
-    text-transform: capitalize;
   }
   &__Meta {
     margin-top: 0.5rem; // mt-2

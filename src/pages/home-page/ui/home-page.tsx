@@ -4,17 +4,19 @@ import AboutMeDetails from 'src/pages/home-page/ui/about-me-details/about-me-det
 import AdditionalDetails from 'src/pages/home-page/ui/additional-details/additional-details';
 import classes from 'src/pages/home-page/ui/home-page.module.scss';
 import ProfileDetails from 'src/pages/home-page/ui/profile-details/profile-details';
-import { currentLang } from 'src/shared';
+import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 import { MainInfoData } from 'src/store/store.types';
 
 type Props = {
   mainInfoData: MainInfoData;
+  currentLang: LanguageConstants;
 };
 
-const HomePage: React.FC<Props> = ({ mainInfoData }) => {
+const HomePage: React.FC<Props> = ({ mainInfoData, currentLang }) => {
   return (
     <div className={classes.HomePage}>
       <ProfileDetails
+        currentLang={currentLang}
         fullName={mainInfoData.fullName}
         photoPath={mainInfoData.photoPath}
         position={mainInfoData.position}
@@ -22,6 +24,7 @@ const HomePage: React.FC<Props> = ({ mainInfoData }) => {
         location={mainInfoData.location}
       />
       <AboutMeDetails
+        currentLang={currentLang}
         summary={mainInfoData.aboutMe.summary}
         achievementBullets={mainInfoData.aboutMe.achievementBullets}
         goal={mainInfoData.aboutMe.goal}
