@@ -1,6 +1,7 @@
 import type { Meta } from '@storybook/react';
 
 import ProjectsPage from 'src/pages/projects-page/ui/projects-page';
+import { defaultLang, defaultLangCode } from 'src/shared/model/lang/lang.consts';
 import store from 'src/store/store';
 import {
   buildDesktop4KStoryObj,
@@ -18,7 +19,7 @@ const meta = {
 
 export default meta;
 
-const args = { projects: store.projectsData.projects };
+const args = { currentLang: defaultLang, projectsData: store[defaultLangCode].projectsData };
 
 export const Desktop4k = buildDesktop4KStoryObj<typeof meta>({ args });
 export const Desktop = buildDesktopStoryObj<typeof meta>({ args });

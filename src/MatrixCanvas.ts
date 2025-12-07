@@ -1,7 +1,7 @@
 import { isNull, Nullable } from '@alexevs/ts-guards';
 
-import { randomFloat, randomInt } from 'src/common/helpers/number.helper';
-import { getCharArray } from 'src/common/helpers/string.helper';
+import { randomFloat, randomInt } from 'src/shared/model/helpers/numbers';
+import { getCharArray } from 'src/shared/model/helpers/strings';
 
 const WIDTH = window.innerWidth;
 const HEIGHT = window.innerHeight;
