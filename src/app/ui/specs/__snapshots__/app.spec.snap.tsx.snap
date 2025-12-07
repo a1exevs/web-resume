@@ -72,22 +72,26 @@ resume
         <div
           class="Header__RightBlock"
         >
-          <select
-            class="Select "
+          <div
+            class="SelectCombobox"
           >
-            <option
-              class="Select__Option"
-              value="en"
+            <button
+              aria-activedescendant=":r0:-option-en"
+              aria-controls=":r0:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
             >
-              English
-            </option>
-            <option
-              class="Select__Option"
-              value="ru"
-            >
-              Russian
-            </option>
-          </select>
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -654,22 +658,26 @@ resume
         <div
           class="Header__RightBlock"
         >
-          <select
-            class="Select "
+          <div
+            class="SelectCombobox"
           >
-            <option
-              class="Select__Option"
-              value="en"
+            <button
+              aria-activedescendant=":r4:-option-en"
+              aria-controls=":r4:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
             >
-              English
-            </option>
-            <option
-              class="Select__Option"
-              value="ru"
-            >
-              Russian
-            </option>
-          </select>
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -1039,22 +1047,26 @@ resume
         <div
           class="Header__RightBlock"
         >
-          <select
-            class="Select "
+          <div
+            class="SelectCombobox"
           >
-            <option
-              class="Select__Option"
-              value="en"
+            <button
+              aria-activedescendant=":r1:-option-en"
+              aria-controls=":r1:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
             >
-              English
-            </option>
-            <option
-              class="Select__Option"
-              value="ru"
-            >
-              Russian
-            </option>
-          </select>
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -1942,22 +1954,26 @@ resume
         <div
           class="Header__RightBlock"
         >
-          <select
-            class="Select "
+          <div
+            class="SelectCombobox"
           >
-            <option
-              class="Select__Option"
-              value="en"
+            <button
+              aria-activedescendant=":r3:-option-en"
+              aria-controls=":r3:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
             >
-              English
-            </option>
-            <option
-              class="Select__Option"
-              value="ru"
-            >
-              Russian
-            </option>
-          </select>
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >
@@ -2548,22 +2564,26 @@ resume
         <div
           class="Header__RightBlock"
         >
-          <select
-            class="Select "
+          <div
+            class="SelectCombobox"
           >
-            <option
-              class="Select__Option"
-              value="en"
+            <button
+              aria-activedescendant=":r2:-option-en"
+              aria-controls=":r2:"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="English"
+              class="SelectCombobox__Control"
+              role="combobox"
+              type="button"
             >
-              English
-            </option>
-            <option
-              class="Select__Option"
-              value="ru"
-            >
-              Russian
-            </option>
-          </select>
+              <span
+                class="SelectCombobox__Value"
+              >
+                English
+              </span>
+            </button>
+          </div>
           <div
             class="Header__Menu"
           >

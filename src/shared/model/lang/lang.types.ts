@@ -2,6 +2,7 @@ import { IMAGE_ALTS_EN } from 'src/shared/model/lang/en/image-alts';
 import { LABELS_EN } from 'src/shared/model/lang/en/labels';
 import { LANGS_EN } from 'src/shared/model/lang/en/langs';
 import { MESSAGES_EN } from 'src/shared/model/lang/en/messages';
+import { SHORT_LANGS_EN } from 'src/shared/model/lang/en/short-langs';
 import { languageCodes } from 'src/shared/model/lang/lang.consts';
 import { ROUTES_EN } from 'src/shared/model/lang/routes';
 
@@ -12,6 +13,7 @@ export type LanguageConstants = {
   messages: typeof MESSAGES_EN;
   imageAlts: typeof IMAGE_ALTS_EN;
   langs: typeof LANGS_EN;
+  shortLangs: typeof SHORT_LANGS_EN;
   routes: typeof ROUTES_EN;
 };
 

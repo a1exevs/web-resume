@@ -9,7 +9,7 @@ export {
   Card,
   Tabs,
   GlitchText,
-  Select,
+  SelectNative,
   IconName,
 } from 'src/shared/ui';
 export type { Option } from 'src/shared/ui';
@@ -29,5 +29,8 @@ export {
   useLangContext,
   languageCodes,
   useDocumentTitle,
+  useWindowSize,
+  useScreenWidthLessThen,
+  SM_PX,
 } from 'src/shared/model';
 export type { LanguageCode } from 'src/shared/model';

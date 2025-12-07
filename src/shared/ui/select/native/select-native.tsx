@@ -1,18 +1,10 @@
 import cn from 'classnames';
 import React, { ChangeEvent, FocusEvent, KeyboardEvent, MouseEvent, useState } from 'react';
 
-import classes from 'src/shared/ui/select//select.module.scss';
-import { Option } from 'src/shared/ui/select/select.types';
+import classes from 'src/shared/ui/select/native/select-native.module.scss';
+import { SelectProps } from 'src/shared/ui/select/select.types';
 
-type Props = {
-  value: string;
-  onChange: (value: string) => void;
-  className?: string;
-  options: Option[];
-  disabled?: boolean;
-};
-
-const Select: React.FC<Props> = ({ value, onChange, options, className = '', disabled = false }) => {
+const SelectNative: React.FC<SelectProps> = ({ value, onChange, options, className = '', disabled = false }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleChange = (e: ChangeEvent<HTMLSelectElement>): void => {
@@ -54,4 +46,4 @@ const Select: React.FC<Props> = ({ value, onChange, options, className = '', dis
   );
 };
 
-export default Select;
+export default SelectNative;

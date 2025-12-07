@@ -1,5 +1,7 @@
 import useDocumentTitle from 'src/shared/model/hooks/use-document-title';
 import usePrevious from 'src/shared/model/hooks/use-previous';
+import useScreenWidthLessThen from 'src/shared/model/hooks/use-screen-width-less-then';
+import useWindowSize from 'src/shared/model/hooks/use-window-size';
 import LangProvider from 'src/shared/model/lang/lang-provider';
 import useLangContext from 'src/shared/model/lang/use-lang-context';
 
@@ -10,6 +12,7 @@ export {
   DESKTOP_SCREEN_WIDTH_PX,
   MOBILE_SCREEN_WIDTH_PX,
   APP_MIN_WIDTH,
+  SM_PX,
 } from 'src/shared/model/consts/common';
 
 // routes
@@ -24,5 +27,4 @@ export { LangProvider, useLangContext };
 export { capitalize, capitalizeLabel, toUnderscore } from 'src/shared/model/helpers/strings';
 
 // hooks
-export { usePrevious };
-export { useDocumentTitle };
+export { usePrevious, useDocumentTitle, useWindowSize, useScreenWidthLessThen };
