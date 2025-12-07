@@ -8,6 +8,7 @@ const HomePageDataLayer: React.FC = () => {
   const { currentLang, langCode } = useLangContext();
   const mainInfoData = store[langCode].mainInfoData;
 
+  // TODO Move to Logic layer
   useDocumentTitle({
     appName: currentLang.labels.APP_NAME,
     pageName: currentLang.routes.HOME,

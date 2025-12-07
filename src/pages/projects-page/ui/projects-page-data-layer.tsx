@@ -8,6 +8,7 @@ const ProjectsPageDataLayer: React.FC = () => {
   const { currentLang, langCode } = useLangContext();
   const projectsData = store[langCode].projectsData;
 
+  // TODO Move to Logic layer
   useDocumentTitle({
     appName: currentLang.labels.APP_NAME,
     pageName: currentLang.routes.PROJECTS,

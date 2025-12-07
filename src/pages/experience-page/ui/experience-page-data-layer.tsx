@@ -8,6 +8,7 @@ const ExperiencePageDataLayer: React.FC = () => {
   const { currentLang, langCode } = useLangContext();
   const experienceData = store[langCode].experienceData;
 
+  // TODO Move to Logic layer
   useDocumentTitle({
     appName: currentLang.labels.APP_NAME,
     pageName: currentLang.routes.EXPERIENCE,

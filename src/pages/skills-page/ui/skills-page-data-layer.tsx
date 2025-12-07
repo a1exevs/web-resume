@@ -8,6 +8,7 @@ const SkillsPageDataLayer: React.FC = () => {
   const { currentLang, langCode } = useLangContext();
   const skillsData = store[langCode].skillsData;
 
+  // TODO Move to Logic layer
   useDocumentTitle({
     appName: currentLang.labels.APP_NAME,
     pageName: currentLang.routes.SKILLS,
