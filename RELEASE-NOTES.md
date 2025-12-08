@@ -1,3 +1,13 @@
+# Release v1.1.5
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.1.4 by @a1exevs in https://github.com/a1exevs/web-resume/pull/61
+* [Refactoring][Feature] Lang, Redundant code removing and ScanLine, TypeWriter features by @a1exevs in https://github.com/a1exevs/web-resume/pull/62
+* [Feature] About Me section, Glitch Text and Type Writer text components by @a1exevs in https://github.com/a1exevs/web-resume/pull/63
+* [65][Feature] Experience page layout improvement by @a1exevs in https://github.com/a1exevs/web-resume/pull/66
+* [Common] Version increase v1.1.5 by @a1exevs in https://github.com/a1exevs/web-resume/pull/67
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.1.4...v1.1.5
+
 # Release v1.1.4
 ## What's Changed
 * [Common] RELEASE-NOTES.md v1.1.3 by @a1exevs in https://github.com/a1exevs/web-resume/pull/45

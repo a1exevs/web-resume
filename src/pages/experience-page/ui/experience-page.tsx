@@ -2,14 +2,16 @@ import React from 'react';
 
 import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { Card, currentLang, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
+import { Card, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
+import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 import { ExperienceData } from 'src/store/store.types';
 
 type Props = {
+  currentLang: LanguageConstants;
   experienceData: ExperienceData;
 };
 
-const ExperiencePage: React.FC<Props> = ({ experienceData }) => {
+const ExperiencePage: React.FC<Props> = ({ currentLang, experienceData }) => {
   return (
     <div className={classes.ExperiencePage}>
       <TypeWriter

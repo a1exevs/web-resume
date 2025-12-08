@@ -4,7 +4,6 @@ import { RouteObject } from 'react-router';
 import App from 'src/app/ui/app';
 import { ContactsPage, ExperiencePage, HomePage, ProjectsPage, SkillsPage } from 'src/pages';
 import { RoutePath } from 'src/shared';
-import store from 'src/store/store';
 
 const appRoutes: RouteObject[] = [
   {
@@ -13,23 +12,23 @@ const appRoutes: RouteObject[] = [
     children: [
       {
         path: RoutePath.HOME,
-        element: <HomePage mainInfoData={store.mainInfo} />,
+        element: <HomePage />,
       },
       {
         path: RoutePath.EXPERIENCE,
-        element: <ExperiencePage experienceData={store.experienceData} />,
+        element: <ExperiencePage />,
       },
       {
         path: RoutePath.SKILLS,
-        element: <SkillsPage skills={store.skillsData.skills} />,
+        element: <SkillsPage />,
       },
       {
         path: RoutePath.PROJECTS,
-        element: <ProjectsPage projects={store.projectsData.projects} />,
+        element: <ProjectsPage />,
       },
       {
         path: RoutePath.CONTACTS,
-        element: <ContactsPage contactLinks={store.contactsData.contactLinks} />,
+        element: <ContactsPage />,
       },
     ],
   },

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classes from 'src/pages/skills-page/ui/skills-card/skills-card.module.scss';
+import { capitalizeLabel, toUnderscore } from 'src/shared';
 
 type Props = {
   title: string;
@@ -10,7 +11,7 @@ type Props = {
 const SkillsCard: React.FC<Props> = ({ title, items }) => (
   <div className={classes.SkillsCard}>
     <h3 className={classes.SkillsCard__Title}>
-      <span className={classes.SkillsCard__TitleIcon}>&gt;</span> {title}
+      <span className={classes.SkillsCard__TitleIcon}>&gt;</span> {toUnderscore(capitalizeLabel(title))}
     </h3>
     <ul className={classes.SkillsCard__List}>
       {items.map(item => (

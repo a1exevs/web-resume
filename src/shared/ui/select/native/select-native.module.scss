@@ -1,0 +1,23 @@
+@import 'src/shared';
+@import 'src/shared/ui/select/select.mixins';
+
+.Select {
+  @include select-control;
+
+  &_open {
+    @include opened-select-control;
+  }
+
+  &__Option {
+    background-color: $app-background-color;
+    color: $default-text-color;
+
+    &:hover {
+      @include select-option-hover;
+    }
+
+    &:checked {
+      @include select-option-selected;
+    }
+  }
+}

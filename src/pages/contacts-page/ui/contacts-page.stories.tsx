@@ -1,6 +1,7 @@
 import type { Meta } from '@storybook/react';
 
 import ContactsPage from 'src/pages/contacts-page/ui/contacts-page';
+import { defaultLang, defaultLangCode } from 'src/shared/model/lang/lang.consts';
 import store from 'src/store/store';
 import {
   buildDesktop4KStoryObj,
@@ -18,7 +19,7 @@ const meta = {
 
 export default meta;
 
-const args = { contactLinks: store.contactsData.contactLinks };
+const args = { currentLang: defaultLang, contactsData: store[defaultLangCode].contactsData };
 
 export const Desktop4k = buildDesktop4KStoryObj<typeof meta>({ args });
 export const Desktop = buildDesktopStoryObj<typeof meta>({ args });
