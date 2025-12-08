@@ -19,6 +19,8 @@
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.75rem;
+    text-transform: capitalize;
+    white-space: pre-wrap;
   }
   &__NavLinks {
     display: none;

@@ -1,5 +1,18 @@
 // ui
-export { Icon, ScanLine, TypeWriter, SimpleList, Field, Stepper, Card, Tabs, GlitchText } from 'src/shared/ui';
+export {
+  Icon,
+  ScanLine,
+  TypeWriter,
+  SimpleList,
+  Field,
+  Stepper,
+  Card,
+  Tabs,
+  GlitchText,
+  SelectNative,
+  IconName,
+} from 'src/shared/ui';
+export type { Option } from 'src/shared/ui';
 
 // model
 export {
@@ -8,8 +21,16 @@ export {
   TABLET_SCREEN_WIDTH_PX,
   MOBILE_SCREEN_WIDTH_PX,
   RoutePath,
-  currentLang,
+  defaultLang,
   capitalize,
   capitalizeLabel,
   toUnderscore,
+  LangProvider,
+  useLangContext,
+  languageCodes,
+  useDocumentTitle,
+  useWindowSize,
+  useScreenWidthLessThen,
+  SM_PX,
 } from 'src/shared/model';
+export type { LanguageCode } from 'src/shared/model';
