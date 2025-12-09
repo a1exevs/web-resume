@@ -20,11 +20,11 @@ import {
  * 3) call initMatrixCanvas() and drawMatrixCanvas() in your index.ts
  */
 
-let WIDTH = window.innerWidth;
-let HEIGHT = window.innerHeight;
+let WIDTH = -1;
+let HEIGHT = -1;
 
-let canvas1 = document.getElementById('matrix-canvas1') as Nullable<HTMLCanvasElement>;
-let canvas2 = document.getElementById('matrix-canvas2') as Nullable<HTMLCanvasElement>;
+let canvas1 = null;
+let canvas2 = null;
 let context1: Nullable<CanvasRenderingContext2D> = null;
 let context2: Nullable<CanvasRenderingContext2D> = null;
 let fallingCharArr: Point[] = [];
