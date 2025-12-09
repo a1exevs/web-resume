@@ -17,4 +17,5 @@ const MainWindow: React.FC = () => (
     </div>
   </div>
 );
+
 export default MainWindow;
