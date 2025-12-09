@@ -47,11 +47,11 @@ export class Point {
     this.speed = randomFloat(Point.minSpeed, Point.maxSpeed);
 
     context1.fillStyle = this.charTrackColor;
-    context1.font = `${Point.fontSize}px san-serif`;
+    context1.font = `${Point.fontSize}px sans-serif`;
     context1.fillText(this.value, this.x, this.y);
 
     context2.fillStyle = this.charColor;
-    context2.font = `${Point.fontSize}px san-serif`;
+    context2.font = `${Point.fontSize}px sans-serif`;
     context2.fillText(this.value, this.x, this.y);
 
     this.y += this.speed;
