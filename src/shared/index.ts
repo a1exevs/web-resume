@@ -11,6 +11,7 @@ export {
   GlitchText,
   SelectNative,
   IconName,
+  MatrixCanvas,
 } from 'src/shared/ui';
 export type { Option } from 'src/shared/ui';
 
