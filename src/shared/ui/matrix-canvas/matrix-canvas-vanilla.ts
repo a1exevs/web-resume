@@ -2,12 +2,12 @@ import { isNull, Nullable } from '@alexevs/ts-guards';
 
 import {
   createFallingChars,
-  defaultSpeedChangeOptions,
   drawFrame,
   Point,
   setupCharsSpeedChangeInterval,
   SpeedChangeOptions,
 } from 'src/shared/ui/matrix-canvas/matrix-canvas-core';
+import { defaultSpeedChangeOptions } from 'src/shared/ui/matrix-canvas/matrix-canvas.consts';
 
 /**
  * Matrix Canvas (Vanilla JS)

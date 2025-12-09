@@ -1,28 +1,34 @@
 import { randomFloat, randomInt } from 'src/shared/model/helpers/numbers';
 import { getCharArray } from 'src/shared/model/helpers/strings';
+import {
+  CANVAS_BACKGROUND_COLOR,
+  CHAR_COLOR,
+  CHAR_SPEED_DEFAULT_MAX_VALUE,
+  CHAR_SPEED_DEFAULT_VALUE,
+  CHAR_SPEED_MAX_AVAILABLE_VALUE,
+  CHAR_SPEED_MIN_VALUE,
+  CHAR_TRACK_COLOR,
+} from 'src/shared/ui/matrix-canvas/matrix-canvas.consts';
 
 export type SpeedChangeOptions = {
   intervalMs: number;
 };
 
-export const defaultSpeedChangeOptions = { intervalMs: 0 };
-
-export const canvasBackgroundColor = '#0000000d';
-
 export class Point {
   private readonly x: number;
   private y: number;
-  private speed = 10;
+  private speed = CHAR_SPEED_DEFAULT_VALUE;
   private value = '';
 
-  private readonly charTrackColor = '#0F0';
-  private readonly charColor = '#ffffffcc';
+  private readonly charTrackColor = CHAR_TRACK_COLOR;
+  private readonly charColor = CHAR_COLOR;
 
+  // TODO: rewrite with using rem
   static readonly fontSize = 20;
   static readonly vStartOffset = 1080;
-  static readonly minSpeed = 1;
-  static readonly maxAvailableSpeed = 10;
-  static maxSpeed = 10;
+  static readonly minSpeed = CHAR_SPEED_MIN_VALUE;
+  static readonly maxAvailableSpeed = CHAR_SPEED_MAX_AVAILABLE_VALUE;
+  static maxSpeed = CHAR_SPEED_DEFAULT_MAX_VALUE;
 
   constructor(x: number, y: number) {
     this.x = x;
@@ -91,7 +97,7 @@ export function drawFrame({
   height: number;
   fallingCharArr: Point[];
 }): void {
-  context1.fillStyle = canvasBackgroundColor;
+  context1.fillStyle = CANVAS_BACKGROUND_COLOR;
   context1.fillRect(0, 0, width, height);
 
   context2.clearRect(0, 0, width, height);

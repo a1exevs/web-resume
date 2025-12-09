@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from 'react';
 
 import {
   createFallingChars,
-  defaultSpeedChangeOptions,
   drawFrame,
   Point,
   setupCharsSpeedChangeInterval,
   SpeedChangeOptions,
 } from 'src/shared/ui/matrix-canvas/matrix-canvas-core';
+import { defaultSpeedChangeOptions } from 'src/shared/ui/matrix-canvas/matrix-canvas.consts';
 
 type Props = {
   speedChangeOptions?: SpeedChangeOptions;
