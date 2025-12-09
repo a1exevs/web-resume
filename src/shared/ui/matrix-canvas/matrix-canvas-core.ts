@@ -29,11 +29,19 @@ export class Point {
     this.y = y;
   }
 
-  static generateCharStartY() {
+  static generateCharStartY(): number {
     return randomFloat(-Point.vStartOffset, 0);
   }
 
-  draw(context1: CanvasRenderingContext2D, context2: CanvasRenderingContext2D, canvasHeight: number) {
+  draw({
+    context1,
+    context2,
+    canvasHeight,
+  }: {
+    context1: CanvasRenderingContext2D;
+    context2: CanvasRenderingContext2D;
+    canvasHeight: number;
+  }): void {
     const charArr = getCharArray();
     this.value = charArr[randomInt(0, charArr.length - 1)].toUpperCase();
     this.speed = randomFloat(Point.minSpeed, Point.maxSpeed);
@@ -70,13 +78,19 @@ export function createFallingChars(width: number): Point[] {
   return fallingCharArr;
 }
 
-export function drawFrame(
-  context1: CanvasRenderingContext2D,
-  context2: CanvasRenderingContext2D,
-  width: number,
-  height: number,
-  fallingCharArr: Point[],
-): void {
+export function drawFrame({
+  context1,
+  context2,
+  height,
+  width,
+  fallingCharArr,
+}: {
+  context1: CanvasRenderingContext2D;
+  context2: CanvasRenderingContext2D;
+  width: number;
+  height: number;
+  fallingCharArr: Point[];
+}): void {
   context1.fillStyle = canvasBackgroundColor;
   context1.fillRect(0, 0, width, height);
 
@@ -85,6 +99,6 @@ export function drawFrame(
   let i = fallingCharArr.length;
 
   while (i--) {
-    fallingCharArr[i].draw(context1, context2, height);
+    fallingCharArr[i].draw({ context1, context2, canvasHeight: height });
   }
 }

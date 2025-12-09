@@ -56,7 +56,7 @@ export const MatrixCanvas: React.FC<Props> = ({ speedChangeOptions = defaultSpee
     }
 
     const draw = () => {
-      drawFrame(context1, context2, WIDTH, HEIGHT, fallingCharArr);
+      drawFrame({ context1, context2, width: WIDTH, height: HEIGHT, fallingCharArr });
       animationFrameId = window.requestAnimationFrame(draw);
     };
 

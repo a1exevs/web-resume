@@ -63,7 +63,7 @@ export function drawMatrixCanvas(): void {
   if (isNull(context1) || isNull(context2) || fallingCharArr.length === 0) {
     return;
   }
-  drawFrame(context1, context2, WIDTH, HEIGHT, fallingCharArr);
+  drawFrame({ context1, context2, width: WIDTH, height: HEIGHT, fallingCharArr });
 
   requestAnimationFrame(drawMatrixCanvas);
 }
