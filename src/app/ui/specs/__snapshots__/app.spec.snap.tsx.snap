@@ -583,6 +583,16 @@ resume
       </main>
     </div>
   </div>
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
 </div>
 `;
 
@@ -972,6 +982,16 @@ resume
       </main>
     </div>
   </div>
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
 </div>
 `;
 
@@ -1879,6 +1899,16 @@ resume
       </main>
     </div>
   </div>
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
 </div>
 `;
 
@@ -2489,6 +2519,16 @@ resume
       </main>
     </div>
   </div>
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
 </div>
 `;
 
@@ -3005,5 +3045,15 @@ resume
       </main>
     </div>
   </div>
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
+  <canvas
+    class="matrix-canvas"
+    height="768"
+    width="1024"
+  />
 </div>
 `;
