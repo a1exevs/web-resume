@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React, { RefObject } from 'react';
 import { NavLink } from 'react-router';
 
@@ -16,6 +17,7 @@ type Props = {
   isMenuOpen: boolean;
   toggleMenu: () => void;
   closeMenu: () => void;
+  logoLinkPath: RoutePath;
 };
 
 const Header: React.FC<Props> = ({
@@ -28,13 +30,14 @@ const Header: React.FC<Props> = ({
   isMenuOpen,
   toggleMenu,
   closeMenu,
+  logoLinkPath,
 }) => {
   return (
     <header className={classes.Header}>
-      <div className={classes.Header__LeftBlock}>
-        <img alt="logo" src={logo} width={64} />
+      <NavLink to={logoLinkPath} className={cn(classes.Header__LeftBlock, classes.Header__LogoLink)}>
+        <img src={logo} width={64} alt="" aria-hidden="true" />
         <h1 className={classes.Header__LogoText}>{title}</h1>
-      </div>
+      </NavLink>
 
       {/* Desktop navigation */}
       <div className={classes.Header__NavLinks}>

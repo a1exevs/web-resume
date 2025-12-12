@@ -14,11 +14,15 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
       <header
         class="Header"
       >
-        <div
-          class="Header__LeftBlock"
+        <a
+          aria-current="page"
+          class="Header__LeftBlock Header__LogoLink active"
+          data-discover="true"
+          href="/"
         >
           <img
-            alt="logo"
+            alt=""
+            aria-hidden="true"
             src="FileMock"
             width="64"
           />
@@ -28,7 +32,7 @@ exports[`App Page with route "/" matches snapshot, route "/" 1`] = `
             Web
 resume
           </h1>
-        </div>
+        </a>
         <div
           class="Header__NavLinks"
         >
@@ -610,11 +614,14 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
       <header
         class="Header"
       >
-        <div
-          class="Header__LeftBlock"
+        <a
+          class="Header__LeftBlock Header__LogoLink"
+          data-discover="true"
+          href="/"
         >
           <img
-            alt="logo"
+            alt=""
+            aria-hidden="true"
             src="FileMock"
             width="64"
           />
@@ -624,7 +631,7 @@ exports[`App Page with route "/contacts" matches snapshot, route "/contacts" 1`]
             Web
 resume
           </h1>
-        </div>
+        </a>
         <div
           class="Header__NavLinks"
         >
@@ -1009,11 +1016,14 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
       <header
         class="Header"
       >
-        <div
-          class="Header__LeftBlock"
+        <a
+          class="Header__LeftBlock Header__LogoLink"
+          data-discover="true"
+          href="/"
         >
           <img
-            alt="logo"
+            alt=""
+            aria-hidden="true"
             src="FileMock"
             width="64"
           />
@@ -1023,7 +1033,7 @@ exports[`App Page with route "/experience" matches snapshot, route "/experience"
             Web
 resume
           </h1>
-        </div>
+        </a>
         <div
           class="Header__NavLinks"
         >
@@ -1926,11 +1936,14 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
       <header
         class="Header"
       >
-        <div
-          class="Header__LeftBlock"
+        <a
+          class="Header__LeftBlock Header__LogoLink"
+          data-discover="true"
+          href="/"
         >
           <img
-            alt="logo"
+            alt=""
+            aria-hidden="true"
             src="FileMock"
             width="64"
           />
@@ -1940,7 +1953,7 @@ exports[`App Page with route "/projects" matches snapshot, route "/projects" 1`]
             Web
 resume
           </h1>
-        </div>
+        </a>
         <div
           class="Header__NavLinks"
         >
@@ -2546,11 +2559,14 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
       <header
         class="Header"
       >
-        <div
-          class="Header__LeftBlock"
+        <a
+          class="Header__LeftBlock Header__LogoLink"
+          data-discover="true"
+          href="/"
         >
           <img
-            alt="logo"
+            alt=""
+            aria-hidden="true"
             src="FileMock"
             width="64"
           />
@@ -2560,7 +2576,7 @@ exports[`App Page with route "/skills" matches snapshot, route "/skills" 1`] = `
             Web
 resume
           </h1>
-        </div>
+        </a>
         <div
           class="Header__NavLinks"
         >
