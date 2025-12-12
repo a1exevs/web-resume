@@ -10,6 +10,7 @@ type Props = {
   langOptions: Option[];
   langMobileOptions: Option[];
   onCurrentLangChange: (code: string) => void;
+  logoLinkPath: RoutePath;
 };
 
 const HeaderLogicLayer: React.FC<Props> = ({
@@ -19,6 +20,7 @@ const HeaderLogicLayer: React.FC<Props> = ({
   langOptions,
   langMobileOptions,
   onCurrentLangChange,
+  logoLinkPath,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -55,6 +57,7 @@ const HeaderLogicLayer: React.FC<Props> = ({
       isMenuOpen={isMenuOpen}
       toggleMenu={toggleMenu}
       closeMenu={closeMenu}
+      logoLinkPath={logoLinkPath}
     />
   );
 };
