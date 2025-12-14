@@ -21,9 +21,8 @@
   }
 
   &__Label {
-  }
-
-  &__Value {
+    @include font-1000($gray-text-color);
+    word-break: keep-all;
   }
 }
 

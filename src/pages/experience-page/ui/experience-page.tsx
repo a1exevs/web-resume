@@ -30,12 +30,8 @@ const ExperiencePage: React.FC<Props> = ({ currentLang, experienceData }) => {
                 <Field label={currentLang.labels.PERIOD} value={experience.workPeriod} />
                 <Field label={currentLang.labels.CAREER} value={experience.career} />
               </div>
-              <label
-                className={'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'}
-              >
-                {currentLang.labels.PROJECT_LIST}
-              </label>
-              <label className={'Label Label_tiny Label_alignment-center'}>
+              <label className={classes.ExperiencePage__IntermediateTitle}>{currentLang.labels.PROJECT_LIST}</label>
+              <label className={classes.ExperiencePage__IntermediateSubTitle}>
                 {currentLang.messages.PROJECT_LIST_ORDER_MESSAGE}
               </label>
               {experience.projectList.map((project, index) => (
@@ -45,11 +41,7 @@ const ExperiencePage: React.FC<Props> = ({ currentLang, experienceData }) => {
                   <Field label={currentLang.labels.ENVIRONMENT} value={project.environment.join(', ')} />
                   <Field label={currentLang.labels.RESPONSIBILITIES} value={project.responsibilities.join(', ')} />
                   <div className={classes.ExperiencePage__ContributionsData}>
-                    <label
-                      className={
-                        'IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins'
-                      }
-                    >
+                    <label className={classes.ExperiencePage__IntermediateTitle}>
                       {currentLang.labels.KEY_CONTRIBUTIONS}
                     </label>
                     <SimpleList

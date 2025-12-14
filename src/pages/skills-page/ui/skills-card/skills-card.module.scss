@@ -1,11 +1,12 @@
+@import 'src/shared';
+
 .SkillsCard {
   border: 1px solid #e5e7eb;
   padding: 1rem;
   &__Title {
     margin-bottom: 1rem;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: white;
+
+    @include font-1125(#fff, $font-weight-700);
   }
   &__TitleIcon {
     color: var(--primary-color);
@@ -17,8 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    font-size: 0.875rem;
-    color: #d4d4d4;
+    @include font-1000(#d4d4d4);
   }
   &__Item {
     display: flex;

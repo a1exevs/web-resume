@@ -1,7 +1,7 @@
 @import 'src/shared';
 
 @mixin select-control() {
-  @include small-normal-text;
+  @include font-1000;
 
   display: inline-flex;
   align-items: center;

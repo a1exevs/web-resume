@@ -1,23 +1,31 @@
 @import 'src/shared/ui/styles/constants';
 
-@mixin tiny-padding {
-  padding: $tiny-space;
+@mixin font-750($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-750, $font-weight, $line-height-1250, $text-color);
 }
 
-@mixin tiny-normal-text($text-color: $default-text-color) {
-  @include font($tiny-font-size, $normal-font-weight, $tiny-line-height, $text-color);
+@mixin font-875($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-875, $font-weight, $line-height-1375, $text-color);
 }
 
-@mixin small-normal-text($text-color: $default-text-color) {
-  @include font($small-font-size, $normal-font-weight, $small-line-height, $text-color);
+@mixin font-1000($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-1000, $font-weight, $line-height-1500, $text-color);
 }
 
-@mixin small-bold-text($text-color: $default-text-color) {
-  @include font($small-font-size, $bold-font-weight, $small-line-height, $text-color);
+@mixin font-1125($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-1125, $font-weight, $line-height-1625, $text-color);
 }
 
-@mixin medium-bold-text {
-  @include font($medium-font-size, $bold-font-weight, $medium-line-height);
+@mixin font-1250($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-1250, $font-weight, $line-height-1750, $text-color);
+}
+
+@mixin font-1500($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-1500, $font-weight, $line-height-2000, $text-color);
+}
+
+@mixin font-1750($text-color: $default-text-color, $font-weight: $font-weight-400) {
+  @include font($font-size-1750, $font-weight, $line-height-2250, $text-color);
 }
 
 @mixin font($size, $weight, $height, $color: $default-text-color) {
@@ -34,8 +42,8 @@
   align-items: center;
   cursor: pointer;
   @if ($active) {
-    @include font($small-font-size, $super-bold-font-weight, $small-line-height, $active-element-color);
+    @include font($font-size-1000, $font-weight-900, $line-height-1250, $active-element-color);
   } @else {
-    @include font($small-font-size, $bold-font-weight, $small-line-height, $default-text-color);
+    @include font($font-size-1000, $font-weight-700, $line-height-1250, $default-text-color);
   }
 }
