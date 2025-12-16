@@ -1196,6 +1196,7 @@ resume
                             class="Link"
                             href="https://en.dsr-corporation.com"
                             rel="noopener noreferrer"
+                            target="_blank"
                             title="https://en.dsr-corporation.com"
                           >
                             https://en.dsr-corporation.com
@@ -1707,6 +1708,7 @@ resume
                             class="Link"
                             href="https://tm-v.ru"
                             rel="noopener noreferrer"
+                            target="_blank"
                             title="https://tm-v.ru"
                           >
                             https://tm-v.ru

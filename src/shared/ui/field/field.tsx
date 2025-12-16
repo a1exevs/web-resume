@@ -32,7 +32,7 @@ const Field: React.FC<Props> = ({
   >
     {label && <label className={classes.Field__Label}>{`${label}:`}</label>}
     {isLink ? (
-      <a className="Link" title={value} href={value} rel="noopener noreferrer">
+      <a className="Link" title={value} href={value} target="_blank" rel="noopener noreferrer">
         {value}
       </a>
     ) : (
