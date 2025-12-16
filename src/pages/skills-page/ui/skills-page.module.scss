@@ -2,6 +2,7 @@
 
 .SkillsPage {
   width: 100%;
+  container-type: inline-size;
   &__Title {
     @include font-1500(#fff, $font-weight-700);
     text-transform: capitalize;
@@ -29,13 +30,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@container (min-width: 712px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1024px) {
+@container (min-width: 904px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr 1fr;
   }

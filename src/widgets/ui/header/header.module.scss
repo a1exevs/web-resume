@@ -48,7 +48,7 @@
   }
   &__Menu {
     position: relative;
-    z-index: 10;
+    z-index: $z-index-10;
   }
   &__MenuButton {
     display: flex;

@@ -1,9 +1,11 @@
+@import 'src/shared/ui/styles/constants';
+
 .matrix-canvas {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: $z-index--1;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
