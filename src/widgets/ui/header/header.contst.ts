@@ -1,1 +1,1 @@
-export const MOBILE_VIEW_BREAKPOINT_PX = 796
+export const MOBILE_VIEW_BREAKPOINT_PX = 796;
