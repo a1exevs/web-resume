@@ -30,13 +30,13 @@
   }
 }
 
-@container (min-width: 712px) {
+@container (min-width: 640px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@container (min-width: 904px) {
+@container (min-width: 944px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr 1fr;
   }

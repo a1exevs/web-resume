@@ -1,5 +1,7 @@
 @import 'src/shared';
 
+$mobile-view-breakpoint: 796px;
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -105,7 +107,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mobile-view-breakpoint) {
   .Header {
     &__NavLinks {
       display: flex;

@@ -2,6 +2,7 @@
 
 .ProjectsPage {
   width: 100%;
+  container-type: inline-size;
   &__Title {
     @include font-1500(#fff, $font-weight-700);
     letter-spacing: 0.1em;
@@ -17,13 +18,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@container (min-width: 580px) {
   .ProjectsPage__Items {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1024px) {
+@container (min-width: 904px) {
   .ProjectsPage__Items {
     grid-template-columns: 1fr 1fr 1fr;
   }
