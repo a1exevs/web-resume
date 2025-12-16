@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { LanguageCode, Option, RoutePath, SM_PX, useScreenWidthLessThen } from 'src/shared';
+import { LanguageCode, Option, RoutePath, useScreenWidthLessThen } from 'src/shared';
 import Header from 'src/widgets/ui/header/header';
+import { MOBILE_VIEW_BREAKPOINT_PX } from 'src/widgets/ui/header/header.contst';
 
 type Props = {
   title: string;
@@ -25,7 +26,7 @@ const HeaderLogicLayer: React.FC<Props> = ({
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const isMobile = useScreenWidthLessThen(SM_PX);
+  const isMobile = useScreenWidthLessThen(MOBILE_VIEW_BREAKPOINT_PX);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

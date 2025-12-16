@@ -1,0 +1,1 @@
+export const MOBILE_VIEW_BREAKPOINT_PX = 796
