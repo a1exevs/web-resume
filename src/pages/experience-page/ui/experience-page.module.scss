@@ -2,15 +2,11 @@
 
 .ExperiencePage {
   &__Title {
-    font-family: inherit;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: bold;
-    color: #fff;
+    @include font-1500(#fff, $font-weight-700);
+    letter-spacing: 0.1em;
     text-transform: capitalize;
-    letter-spacing: 0.1em; // tracking-widest
     text-align: center;
-    margin-bottom: 2rem; // mb-8
+    margin-bottom: 2rem;
     margin-top: 0;
   }
   &__Content {
@@ -30,5 +26,16 @@
   }
   &__ContributionsList {
     padding: 0 1rem;
+  }
+  &__IntermediateTitle {
+    @include font-1125($default-text-color, $font-weight-700);
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__IntermediateSubTitle {
+    text-align: center;
+    @include font-750($gray-text-color);
   }
 }

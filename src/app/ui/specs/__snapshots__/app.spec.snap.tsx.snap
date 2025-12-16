@@ -1174,12 +1174,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Company:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="DSR Corporation"
                           >
                             DSR Corporation
@@ -1189,12 +1188,12 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Website:
                           </label>
                           <a
-                            class="Field__Value Link"
+                            class="Link"
                             href="https://en.dsr-corporation.com"
                             rel="noopener noreferrer"
                             title="https://en.dsr-corporation.com"
@@ -1206,12 +1205,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Mar 2022 – Present"
                           >
                             Mar 2022 – Present
@@ -1221,12 +1219,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Career:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Middle Front-end Developer - Senior Front-end Developer"
                           >
                             Middle Front-end Developer - Senior Front-end Developer
@@ -1234,12 +1231,12 @@ resume
                         </div>
                       </div>
                       <label
-                        class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                        class="ExperiencePage__IntermediateTitle"
                       >
                         Project list
                       </label>
                       <label
-                        class="Label Label_tiny Label_alignment-center"
+                        class="ExperiencePage__IntermediateSubTitle"
                       >
                         (the most recent projects at the top)
                       </label>
@@ -1250,12 +1247,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Project:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories."
                           >
                             eLIMS - a system for tracking, monitoring, and processing chemical sample data in laboratories.
@@ -1265,12 +1261,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Jun 2022 – Present"
                           >
                             Jun 2022 – Present
@@ -1280,12 +1275,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Environment:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Angular 2+ / AngularJS, React, RxJS, TypeScript, LESS, Azure, Webpack, Jasmine, Karma, Playwright"
                           >
                             Angular 2+ / AngularJS, React, RxJS, TypeScript, LESS, Azure, Webpack, Jasmine, Karma, Playwright
@@ -1295,12 +1289,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Responsibilities:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
                           >
                             front-end development, feature implementation, debugging, testing, code review, design, dev validation
@@ -1310,7 +1303,7 @@ resume
                           class="ExperiencePage__ContributionsData"
                         >
                           <label
-                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            class="ExperiencePage__IntermediateTitle"
                           >
                             Key contributions
                           </label>
@@ -1376,12 +1369,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Project:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data."
                           >
                             Add-In Plugin - a Microsoft Excel add-in designed for working with chemical lab analysis data.
@@ -1391,12 +1383,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Jan 2024 – Mar 2024"
                           >
                             Jan 2024 – Mar 2024
@@ -1406,12 +1397,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Environment:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Angular 2+, RxJS, TypeScript, Jasmine, Karma, Azure, MS Excel"
                           >
                             Angular 2+, RxJS, TypeScript, Jasmine, Karma, Azure, MS Excel
@@ -1421,12 +1411,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Responsibilities:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
                           >
                             front-end development, feature implementation, debugging, testing, code review, design, dev validation
@@ -1436,7 +1425,7 @@ resume
                           class="ExperiencePage__ContributionsData"
                         >
                           <label
-                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            class="ExperiencePage__IntermediateTitle"
                           >
                             Key contributions
                           </label>
@@ -1475,12 +1464,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Project:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories."
                           >
                             eLIMS Web Client - a client-facing web system for registering chemical sample analyses in laboratories.
@@ -1490,12 +1478,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Sep 2023 – Jan 2024"
                           >
                             Sep 2023 – Jan 2024
@@ -1505,12 +1492,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Environment:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Angular 2+, NgXs, RxJS, TypeScript, Jasmine, Cypress, Azure"
                           >
                             Angular 2+, NgXs, RxJS, TypeScript, Jasmine, Cypress, Azure
@@ -1520,12 +1506,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Responsibilities:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="front-end development, feature implementation, debugging, testing, code review, design, dev validation"
                           >
                             front-end development, feature implementation, debugging, testing, code review, design, dev validation
@@ -1535,7 +1520,7 @@ resume
                           class="ExperiencePage__ContributionsData"
                         >
                           <label
-                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            class="ExperiencePage__IntermediateTitle"
                           >
                             Key contributions
                           </label>
@@ -1574,12 +1559,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Project:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms."
                           >
                             Ad Builder - a micro-frontend app for creating rental property listings and publishing them across various social media platforms.
@@ -1589,12 +1573,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Mar 2022 – Jun 2022"
                           >
                             Mar 2022 – Jun 2022
@@ -1604,12 +1587,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Environment:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="React, Redux, NestJS, MikroORM, MariaDB, GitLab"
                           >
                             React, Redux, NestJS, MikroORM, MariaDB, GitLab
@@ -1619,12 +1601,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Responsibilities:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="full-stack development, feature implementation, debugging, testing"
                           >
                             full-stack development, feature implementation, debugging, testing
@@ -1634,7 +1615,7 @@ resume
                           class="ExperiencePage__ContributionsData"
                         >
                           <label
-                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            class="ExperiencePage__IntermediateTitle"
                           >
                             Key contributions
                           </label>
@@ -1704,12 +1685,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Company:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Technomarket"
                           >
                             Technomarket
@@ -1719,12 +1699,12 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Website:
                           </label>
                           <a
-                            class="Field__Value Link"
+                            class="Link"
                             href="https://tm-v.ru"
                             rel="noopener noreferrer"
                             title="https://tm-v.ru"
@@ -1736,12 +1716,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Nov 2019 – Mar 2022"
                           >
                             Nov 2019 – Mar 2022
@@ -1751,12 +1730,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Career:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Junior Front-end Developer - Middle Front-end Developer"
                           >
                             Junior Front-end Developer - Middle Front-end Developer
@@ -1764,12 +1742,12 @@ resume
                         </div>
                       </div>
                       <label
-                        class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                        class="ExperiencePage__IntermediateTitle"
                       >
                         Project list
                       </label>
                       <label
-                        class="Label Label_tiny Label_alignment-center"
+                        class="ExperiencePage__IntermediateSubTitle"
                       >
                         (the most recent projects at the top)
                       </label>
@@ -1780,12 +1758,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Project:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields."
                           >
                             SMART-RIS is a medical software solution that streamlines workflows for radiologists, functional diagnostics specialists, and clinicians across various fields.
@@ -1795,12 +1772,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Period:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="Nov 2019 – Mar 2022"
                           >
                             Nov 2019 – Mar 2022
@@ -1810,12 +1786,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Environment:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="React, Redux, NestJS, MySql, Sequilize, Jest, TypeScript, Git, Linux"
                           >
                             React, Redux, NestJS, MySql, Sequilize, Jest, TypeScript, Git, Linux
@@ -1825,12 +1800,11 @@ resume
                           class="Field"
                         >
                           <label
-                            class="Field__Label Label Label_keepWordBreak"
+                            class="Field__Label"
                           >
                             Responsibilities:
                           </label>
                           <span
-                            class="Field__Value Text"
                             title="full-stack development, tech leadership, features implementation, debugging, refactoring, testing, code review"
                           >
                             full-stack development, tech leadership, features implementation, debugging, refactoring, testing, code review
@@ -1840,7 +1814,7 @@ resume
                           class="ExperiencePage__ContributionsData"
                         >
                           <label
-                            class="IntermediateTitle IntermediateTitle_withCenterAlignment IntermediateTitle_withoutVMargins"
+                            class="ExperiencePage__IntermediateTitle"
                           >
                             Key contributions
                           </label>

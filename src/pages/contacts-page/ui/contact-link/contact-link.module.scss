@@ -10,7 +10,7 @@
   outline: none;
   background: transparent;
   cursor: pointer;
-  font-size: 1.125rem;
+  @include font-1125(#fff);
   text-decoration: none;
   &:hover,
   &:focus {

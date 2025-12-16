@@ -1,3 +1,5 @@
+@import 'src/shared';
+
 .ProjectCard {
   cursor: pointer;
   border: 1px solid #273a27;
@@ -43,27 +45,20 @@
     margin-top: 1rem;
   }
   &__Title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.25;
+    @include font-1125(#fff, $font-weight-700);
     transition: color 0.3s ease;
   }
   &__Description {
     margin-top: 0.5rem;
-    font-size: 0.875rem;
-    color: #a3a3a3;
-    line-height: 1.5;
+    @include font-1000(#a3a3a3);
   }
   &__Stack {
     margin-top: 1rem;
   }
   &__StackTitle {
-    font-size: 0.75rem;
-    font-weight: 600;
+    @include font-1000(var(--primary-color), $font-weight-600);
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--primary-color);
     opacity: 0.8;
   }
   &__StackList {
@@ -76,9 +71,7 @@
     border-radius: 2px;
     background: #1a431a;
     padding: 0.25rem 0.5rem;
-    font-size: 0.75rem;
-    color: #86efac;
-    line-height: 1;
+    @include font-750(#86efac);
     user-select: none;
   }
   &__Footer {
@@ -97,8 +90,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-    font-size: 0.875rem;
-    color: #34d399;
+    @include font-875(#34d399);
     text-decoration: none;
     transition: color 0.2s ease;
 
