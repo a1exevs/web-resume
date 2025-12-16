@@ -20,7 +20,7 @@
   }
   &__List {
     position: absolute;
-    z-index: 10;
+    z-index: $z-index-10;
     margin-top: 0.25rem;
     padding: 0.25rem 0;
 

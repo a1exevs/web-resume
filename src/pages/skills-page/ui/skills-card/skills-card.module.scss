@@ -5,6 +5,7 @@
   padding: 1rem;
   &__Title {
     margin-bottom: 1rem;
+    text-transform: capitalize;
 
     @include font-1125(#fff, $font-weight-700);
   }

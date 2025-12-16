@@ -89,7 +89,9 @@ $hover-color: transparent;
 $hover-opacity: 0.8;
 
 //z-indexes
-$z-index-large: 1000;
+$z-index--1: -1;
+$z-index-10: 10;
+$z-index-50: 50;
 
 :export {
   xs: $xsPx;
