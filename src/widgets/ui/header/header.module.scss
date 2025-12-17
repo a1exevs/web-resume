@@ -46,7 +46,7 @@ $mobile-view-breakpoint: 796px;
   &__RightBlock {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: $space;
   }
   &__Menu {
     position: relative;
@@ -89,7 +89,7 @@ $mobile-view-breakpoint: 796px;
   }
   &__MenuItem {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5 * $space $space;
     @include font-875(rgb(255 255 255 / 0.8), $font-weight-500);
 
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,

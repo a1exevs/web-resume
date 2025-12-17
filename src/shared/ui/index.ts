@@ -10,6 +10,7 @@ import SimpleList from 'src/shared/ui/simple-list/simple-list';
 import Stepper from 'src/shared/ui/stepper/stepper';
 import Tabs from 'src/shared/ui/tabs/tabs';
 import TypeWriter from 'src/shared/ui/type-writer/type-writer';
+import Typography from 'src/shared/ui/typography/typography';
 
 export { IconName } from 'src/shared/ui/icon/icon.names';
 export type { Option } from 'src/shared/ui/select/select.types';
@@ -27,4 +28,5 @@ export {
   SelectNative,
   SelectCombobox,
   MatrixCanvas,
+  Typography,
 };

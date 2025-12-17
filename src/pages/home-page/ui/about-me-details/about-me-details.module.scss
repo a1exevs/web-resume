@@ -1,9 +1,9 @@
 @import 'src/shared';
 
 .AboutMeDetails {
-  margin-top: 2rem;
+  margin-top: 2 * $space;
   &__Title {
-    margin-bottom: 1rem;
+    margin-bottom: $space;
     text-transform: uppercase;
     @include font-1125(var(--primary-color), $font-weight-700);
     letter-spacing: 0.1em;
@@ -11,12 +11,12 @@
   &__Content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: $space;
     border-left: 2px solid rgba(54, 186, 1, 0.3);
-    padding-left: 1rem;
+    padding-left: $space;
     @include font-1000(#d4d4d4);
   }
   &__AchivementsList {
-    padding: 0 0.5rem;
+    padding: 0 $space;
   }
 }
