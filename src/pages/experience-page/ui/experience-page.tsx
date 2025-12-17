@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
-import { Card, Field, SimpleList, Stepper, TypeWriter } from 'src/shared';
+import { Card, Field, SimpleList, Stepper, TypeWriter, Typography } from 'src/shared';
 import { LanguageConstants } from 'src/shared/model/lang/lang.types';
 import { ExperienceData } from 'src/store/store.types';
 
@@ -24,16 +24,20 @@ const ExperiencePage: React.FC<Props> = ({ currentLang, experienceData }) => {
         <Stepper>
           {experienceData.companyExperiences.map((experience, index) => (
             <div className={classes.ExperiencePage__HistoryItem} key={index}>
-              <div>
+              <div className={classes.ExperiencePage__CompanyDetails}>
                 <Field label={currentLang.labels.COMPANY} value={experience.companyName} />
                 <Field label={currentLang.labels.WEBSITE} value={experience.website} isLink />
                 <Field label={currentLang.labels.PERIOD} value={experience.workPeriod} />
                 <Field label={currentLang.labels.CAREER} value={experience.career} />
               </div>
-              <label className={classes.ExperiencePage__IntermediateTitle}>{currentLang.labels.PROJECT_LIST}</label>
-              <label className={classes.ExperiencePage__IntermediateSubTitle}>
-                {currentLang.messages.PROJECT_LIST_ORDER_MESSAGE}
-              </label>
+              <div className={classes.ExperiencePage__IntermediateTitleWrapper}>
+                <Typography variant="h3" className={classes.ExperiencePage__IntermediateTitle}>
+                  {currentLang.labels.PROJECT_LIST}
+                </Typography>
+                <Typography variant="span" className={classes.ExperiencePage__IntermediateSubTitle}>
+                  {currentLang.messages.PROJECT_LIST_ORDER_MESSAGE}
+                </Typography>
+              </div>
               {experience.projectList.map((project, index) => (
                 <Card key={index}>
                   <Field label={currentLang.labels.PROJECT} value={project.projectDescription} />
@@ -41,9 +45,9 @@ const ExperiencePage: React.FC<Props> = ({ currentLang, experienceData }) => {
                   <Field label={currentLang.labels.ENVIRONMENT} value={project.environment.join(', ')} />
                   <Field label={currentLang.labels.RESPONSIBILITIES} value={project.responsibilities.join(', ')} />
                   <div className={classes.ExperiencePage__ContributionsData}>
-                    <label className={classes.ExperiencePage__IntermediateTitle}>
+                    <Typography variant="h4" className={classes.ExperiencePage__IntermediateCardTitle}>
                       {currentLang.labels.KEY_CONTRIBUTIONS}
-                    </label>
+                    </Typography>
                     <SimpleList
                       className={classes.ExperiencePage__ContributionsList}
                       items={project.keyContributions}

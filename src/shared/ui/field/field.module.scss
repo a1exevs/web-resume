@@ -1,10 +1,10 @@
 @import 'src/shared';
 
 .Field {
-  margin: $tiny-space $small-space;
+  margin: 0.25 * $space 0.5 * $space;
   display: flex;
   flex-direction: row;
-  gap: $tiny-space;
+  gap: 0.25 * $space;
 
   &_withoutHMargin {
     margin-left: 0;

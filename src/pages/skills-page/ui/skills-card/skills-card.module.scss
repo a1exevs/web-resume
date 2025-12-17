@@ -2,9 +2,9 @@
 
 .SkillsCard {
   border: 1px solid #e5e7eb;
-  padding: 1rem;
+  padding: $space;
   &__Title {
-    margin-bottom: 1rem;
+    margin-bottom: $space;
     text-transform: capitalize;
 
     @include font-1125(#fff, $font-weight-700);

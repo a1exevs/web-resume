@@ -1,1 +1,1 @@
-export type TypographyVariant = 'h2' | 'h3' | 'p' | 'span';
+export type TypographyVariant = 'h2' | 'h3' | 'h4' | 'p' | 'span';

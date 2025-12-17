@@ -27,7 +27,7 @@ $tabs-count: var(--tabs-count, 1);
   display: none;
   width: 100%;
   justify-content: center;
-  margin-top: $small-space;
+  margin-top: 0.5 * $space;
 
   @include tabName(true);
 }

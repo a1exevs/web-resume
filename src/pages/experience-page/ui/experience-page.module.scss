@@ -6,36 +6,59 @@
     letter-spacing: 0.1em;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2 * $space;
     margin-top: 0;
   }
   &__Content {
     padding: 0;
   }
   &__HistoryItem {
+    width: 100%;
+    container-name: history-item;
+    container-type: inline-size;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
+    gap: 0.5 * $space;
+    margin: 0.5 * $space 0;
+  }
+  &__CompanyDetails {
+    margin-bottom: 3 * $space;
   }
   &__ContributionsData {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5 * $space;
+    margin-top: 2 * $space;
   }
   &__ContributionsList {
-    padding: 0 1rem;
+    padding: 0 1.6 * $space;
+  }
+  &__IntermediateTitleWrapper {
+    display: flex;
+    flex-direction: column;
   }
   &__IntermediateTitle {
+    @include font-1250($default-text-color, $font-weight-700);
+    display: flex;
+    margin: 0 0.5 * $space;
+  }
+  &__IntermediateCardTitle {
     @include font-1125($default-text-color, $font-weight-700);
     display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 0.5 * $space;
   }
   &__IntermediateSubTitle {
-    text-align: center;
+    margin: 0 0.5 * $space;
     @include font-750($gray-text-color);
+  }
+}
+
+@container history-item (min-width: 400px) {
+  .ExperiencePage {
+    &__IntermediateTitleWrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

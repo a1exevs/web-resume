@@ -30,7 +30,7 @@ const Field: React.FC<Props> = ({
       [classes.Field_withoutVMargin]: withoutVSpace,
     })}
   >
-    {label && <label className={classes.Field__Label}>{`${label}:`}</label>}
+    {label && <span className={classes.Field__Label}>{`${label}:`}</span>}
     {isLink ? (
       <a className="Link" title={value} href={value} target="_blank" rel="noopener noreferrer">
         {value}
