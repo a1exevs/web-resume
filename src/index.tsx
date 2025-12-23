@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 
 import { router } from 'src/app/ui/router';
-import { drawMatrixCanvas } from 'src/MatrixCanvas';
 import reportWebVitals from 'src/reportWebVitals';
 
 import 'src/index.scss';
@@ -14,8 +13,6 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 );
-
-drawMatrixCanvas();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

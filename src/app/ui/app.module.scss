@@ -13,7 +13,7 @@
   }
   &__Canvas {
     position: absolute;
-    opacity: 0.9;
+    opacity: $opacity-09;
     background-color: #1d1d1d;
     inset: 0;
   }
@@ -23,6 +23,6 @@
     position: relative;
     flex-grow: 1;
     height: 100%;
-    z-index: 10;
+    z-index: $z-index-10;
   }
 }

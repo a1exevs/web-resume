@@ -1,5 +1,7 @@
 @import 'src/shared';
 
+$mobile-view-breakpoint: 796px;
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -11,14 +13,14 @@
   &__LeftBlock {
     display: flex;
     align-items: center;
-    color: var(--primary-color);
     gap: 0.75rem;
   }
+  &__LogoLink {
+    text-decoration: none;
+  }
   &__LogoText {
+    @include font-1250(var(--primary-color), $font-weight-700);
     letter-spacing: 0.1em;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
     text-transform: capitalize;
     white-space: pre-wrap;
   }
@@ -33,11 +35,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-
-    color: rgb(255 255 255 / 0.8);
+    @include font-875(rgb(255 255 255 / 0.8), $font-weight-500);
     &:hover {
       color: var(--primary-color);
     }
@@ -48,11 +46,11 @@
   &__RightBlock {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: $space;
   }
   &__Menu {
     position: relative;
-    z-index: 10;
+    z-index: $z-index-10;
   }
   &__MenuButton {
     display: flex;
@@ -91,11 +89,8 @@
   }
   &__MenuItem {
     display: block;
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    color: rgb(255 255 255 / 0.8);
+    padding: 0.5 * $space $space;
+    @include font-875(rgb(255 255 255 / 0.8), $font-weight-500);
 
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
       -webkit-text-decoration-color;
@@ -112,7 +107,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mobile-view-breakpoint) {
   .Header {
     &__NavLinks {
       display: flex;

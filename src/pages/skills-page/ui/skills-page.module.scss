@@ -1,68 +1,42 @@
+@import 'src/shared';
+
 .SkillsPage {
   width: 100%;
+  container-type: inline-size;
   &__Title {
-    font-family: inherit;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: bold;
-    color: #fff;
+    @include font-1500(#fff, $font-weight-700);
     text-transform: capitalize;
-    letter-spacing: 0.1em; // tracking-widest
+    letter-spacing: 0.1em;
     text-align: center;
-    margin-bottom: 2rem; // mb-8
+    margin-bottom: 2rem;
     margin-top: 0;
   }
   &__Items {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem; // gap-8
-  }
-  &__Card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #e5e7eb;
-    padding: 1rem;
-    background: none;
-  }
-  &__CardIcon {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-  }
-  &__CardTitle {
-    margin: 0.5rem 0 0.5rem 0;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: white;
-  }
-  &__CardText {
-    font-size: 0.875rem;
-    color: #a3a3a3;
+    gap: 2rem;
   }
   &__ScanInfo {
     margin-top: 2rem;
     text-align: right;
-    font-size: 0.75rem;
-    color: #71717a;
+    @include font-750(#71717a);
   }
   &__ScanLabel {
     text-transform: uppercase;
   }
   &__ScanHighlight {
     color: var(--primary-color);
-    opacity: 0.8;
+    opacity: $opacity-08;
   }
 }
 
-@media (min-width: 768px) {
+@container (min-width: 640px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1024px) {
+@container (min-width: 944px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr 1fr;
   }

@@ -1,3 +1,5 @@
+@import 'src/shared';
+
 .ContinuousLearningCard {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@
   align-items: center;
   text-align: center;
   border: 1px solid #e5e7eb;
-  padding: 1rem;
+  padding: $space;
   background: none;
   &__Icon {
     color: var(--primary-color);
@@ -13,12 +15,9 @@
   }
   &__Title {
     margin: 0.5rem 0 0.5rem 0;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: white;
+    @include font-1125(#fff, $font-weight-700);
   }
   &__Text {
-    font-size: 0.875rem;
-    color: #a3a3a3;
+    @include font-1000(#a3a3a3);
   }
 }

@@ -1,3 +1,5 @@
+@import 'src/shared';
+
 .TypeWriter {
   &__Cursor {
     animation: cursor 1s linear infinite;
@@ -6,10 +8,10 @@
 
 @keyframes cursor {
   0% {
-    opacity: 1;
+    opacity: $opacity-1;
   }
   40% {
-    opacity: 1;
+    opacity: $opacity-1;
   }
   50% {
     opacity: 0;
