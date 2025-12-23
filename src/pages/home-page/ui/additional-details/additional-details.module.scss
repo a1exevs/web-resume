@@ -1,22 +1,25 @@
+@import 'src/shared';
+
 .AdditionalDetails {
   &__Title {
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    margin-bottom: $space;
+    @include font-1125(var(--primary-color), $font-weight-700);
     letter-spacing: 0.1em;
-    color: var(--primary-color);
+    text-transform: uppercase;
   }
   &__List {
     border-left: 2px solid rgba(54, 186, 1, 0.3);
-    padding-left: 1rem;
-    font-size: 0.875rem;
+    padding-left: $space;
+    @include font-1000;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.75 * $space;
   }
   &__Item {
+    display: flex;
+    flex-direction: column;
     color: #fff;
+    gap: 0;
   }
   &__Label {
     display: inline-block;
@@ -31,6 +34,15 @@
     text-decoration: none;
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  .AdditionalDetails {
+    &__Item {
+      flex-direction: row;
+      gap: 0.5 * $space;
     }
   }
 }

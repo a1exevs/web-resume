@@ -3,17 +3,17 @@
 .ContactLink {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: $space;
   border: 1px solid transparent;
-  padding: 0.75rem;
+  padding: 0.75 * $space;
   transition: all 0.3s $cb-like-ease-in-out;
   outline: none;
   background: transparent;
   cursor: pointer;
-  font-size: 1.125rem;
+  @include font-1125(#fff);
   text-decoration: none;
   &:hover,
-  &:focus {
+  &:focus-visible {
     border-color: var(--primary-color);
     background: rgba(5, 199, 5, 0.12); // hover:bg-green-900/20
     box-shadow: 0 0 15px rgba(5, 199, 5, 0.5);
@@ -30,7 +30,7 @@
     justify-content: center;
 
     .ContactLink:hover &,
-    .ContactLink:focus & {
+    .ContactLink:focus-visible & {
       color: var(--primary-color);
     }
   }
@@ -39,7 +39,7 @@
     color: #e5e5e5;
     transition: color 0.3s $cb-like-ease-in-out;
     .ContactLink:hover &,
-    .ContactLink:focus & {
+    .ContactLink:focus-visible & {
       color: var(--primary-color);
     }
   }

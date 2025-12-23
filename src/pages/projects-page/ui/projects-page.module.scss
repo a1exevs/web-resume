@@ -1,15 +1,14 @@
+@import 'src/shared';
+
 .ProjectsPage {
   width: 100%;
+  container-type: inline-size;
   &__Title {
-    font-family: inherit;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: bold;
-    color: #fff;
+    @include font-1500(#fff, $font-weight-700);
+    letter-spacing: 0.1em;
     text-transform: capitalize;
-    letter-spacing: 0.1em; // tracking-widest
     text-align: center;
-    margin-bottom: 2rem; // mb-8
+    margin-bottom: 2rem;
     margin-top: 0;
   }
   &__Items {
@@ -19,13 +18,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@container (min-width: 580px) {
   .ProjectsPage__Items {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1024px) {
+@container (min-width: 904px) {
   .ProjectsPage__Items {
     grid-template-columns: 1fr 1fr 1fr;
   }

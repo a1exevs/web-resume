@@ -26,6 +26,7 @@ const HeaderDataLayer: React.FC = () => {
     setCurrentLang(code as LanguageCode);
   };
   const title = currentLang.labels.APP_NAME.replace(' ', '\n');
+  const logoLinkPath = RoutePath.HOME;
 
   return (
     <HeaderLogicLayer
@@ -35,6 +36,7 @@ const HeaderDataLayer: React.FC = () => {
       langOptions={langOptions}
       langMobileOptions={langMobileOptions}
       onCurrentLangChange={onCurrentLangChange}
+      logoLinkPath={logoLinkPath}
     />
   );
 };

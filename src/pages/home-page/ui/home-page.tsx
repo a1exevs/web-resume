@@ -35,8 +35,8 @@ const HomePage: React.FC<Props> = ({ mainInfoData, currentLang }) => {
         ))}
       </div>
       <div className={classes.HomePage__Footer}>
-        <p>
-          <span className={classes.HomePage__Label}>{currentLang.labels.LAST_UPDATE}</span>:{' '}
+        <p className={classes.HomePage__FooterMessage}>
+          <span className={classes.HomePage__Label}>{currentLang.labels.LAST_UPDATE}:</span>
           <span className={classes.HomePage__AccentText}>{mainInfoData.resumeLastUpdateDate}</span>
         </p>
       </div>

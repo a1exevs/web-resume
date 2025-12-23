@@ -4,7 +4,7 @@ function useScreenWidthLessThen(screenWidth: number): boolean {
   const [isScreenLessThen, setScreenLessThen] = useState<boolean>(false);
   useLayoutEffect(() => {
     function updateState() {
-      setScreenLessThen(window.innerWidth <= screenWidth);
+      setScreenLessThen(window.innerWidth < screenWidth);
     }
 
     window.addEventListener('resize', updateState);

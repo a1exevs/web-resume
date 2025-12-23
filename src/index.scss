@@ -8,9 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.25rem;
+  @include font-1000;
   color: #e8e6e3;
 }
 
@@ -21,20 +19,13 @@ body {
   box-sizing: border-box;
 }
 
-canvas {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 // TODO: [REDESIGN] Use constants instead magic numbers
 :root {
   --primary-color: #36ba01;
+}
+
+a {
+  -webkit-tap-highlight-color: $link-tap-highlight-color;
 }
 
 a.active {

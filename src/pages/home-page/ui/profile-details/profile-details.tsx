@@ -25,7 +25,7 @@ const ProfileDetails: React.FC<Props> = ({ fullName, photoPath, position, status
           delay={PROFILE_DETAILS_TYPE_WRITER_DELAY}
           className={classes.ProfileDetails__Name}
         />
-        <p className={classes.ProfileDetails__Position}>&gt;{position}</p>
+        <p className={classes.ProfileDetails__Position}>&gt; {position}</p>
         <div className={classes.ProfileDetails__Meta}>
           <span>
             <span className={classes.ProfileDetails__Comments}>//</span>{' '}
@@ -33,7 +33,7 @@ const ProfileDetails: React.FC<Props> = ({ fullName, photoPath, position, status
           </span>
           <span>
             <span className={classes.ProfileDetails__Comments}>//</span>{' '}
-            <span className={classes.ProfileDetails__Label}>{currentLang.labels.LOCATION}</span>:{location}
+            <span className={classes.ProfileDetails__Label}>{currentLang.labels.LOCATION}</span>: {location}
           </span>
         </div>
       </div>
