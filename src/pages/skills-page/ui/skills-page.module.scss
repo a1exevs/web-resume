@@ -16,10 +16,20 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  &__ScanInfo {
+  &__Footer {
+    display: flex;
     margin-top: 2rem;
-    text-align: right;
+    justify-content: right;
+    align-items: center;
     @include font-750(#71717a);
+    container-name: footer;
+    container-type: inline-size;
+  }
+  &__ScanInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-end;
   }
   &__ScanLabel {
     text-transform: uppercase;
@@ -39,5 +49,14 @@
 @container (min-width: 944px) {
   .SkillsPage__Items {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@container footer (min-width: 448px) {
+  .SkillsPage {
+    &__ScanInfo {
+      flex-direction: row;
+      gap: 0.5 * $space;
+    }
   }
 }
