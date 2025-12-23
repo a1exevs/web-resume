@@ -325,13 +325,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Age
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       29
                     </span>
                   </p>
@@ -342,13 +340,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Date_of_birthday
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       February 22, 1996
                     </span>
                   </p>
@@ -359,13 +355,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Relocation
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       Open to offers
                     </span>
                   </p>
@@ -376,13 +370,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Business_trips
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       Willing to travel
                     </span>
                   </p>
@@ -407,13 +399,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       University
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       Voronezh State University
                     </span>
                   </p>
@@ -424,13 +414,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Degree
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       Master's degree
                     </span>
                   </p>
@@ -441,13 +429,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Field_of_study
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       Radio Physical Sciences
                     </span>
                   </p>
@@ -458,13 +444,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Website
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       <a
                         class="AdditionalDetails__Link"
                         href="https://vsu.ru"
@@ -496,13 +480,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Phone
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       <a
                         class="AdditionalDetails__Link"
                         href="tel:+7 (960)-125-41-38"
@@ -520,13 +502,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Email
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       <a
                         class="AdditionalDetails__Link"
                         href="mailto:aleksandrevstafiadi@gmail.com"
@@ -544,13 +524,11 @@ resume
                       class="AdditionalDetails__Label"
                     >
                       Linkedin
+                      :
                     </span>
-                     
                     <span
                       class="AdditionalDetails__Value"
                     >
-                      :
-                       
                       <a
                         class="AdditionalDetails__Link"
                         href="https://www.linkedin.com/in/alexander-evstafiadi"
@@ -567,14 +545,15 @@ resume
             <div
               class="HomePage__Footer"
             >
-              <p>
+              <p
+                class="HomePage__FooterMessage"
+              >
                 <span
                   class="HomePage__Label"
                 >
                   Last update
+                  :
                 </span>
-                :
-                 
                 <span
                   class="HomePage__AccentText"
                 >
@@ -3003,10 +2982,36 @@ resume
                 </ul>
               </div>
               <div
-                class="ContinuousLearningCard"
+                class="SkillsCard"
               >
+                <h3
+                  class="SkillsCard__Title"
+                >
+                  <span
+                    class="SkillsCard__TitleIcon"
+                  >
+                    &gt;
+                  </span>
+                   
+                  Continuous learning
+                </h3>
+                <ul
+                  class="SkillsCard__List"
+                >
+                  <li
+                    class="SkillsCard__Item"
+                  >
+                    <span
+                      class="SkillsCard__CodeIcon"
+                    >
+                      //
+                    </span>
+                     
+                    Constantly upgrading my skill set to stay ahead in the ever-evolving tech landscape.
+                  </li>
+                </ul>
                 <svg
-                  class="Icon ContinuousLearningCard__Icon"
+                  class="Icon SkillsCard__Icon"
                   color="currentColor"
                   fill="currentColor"
                   width="5rem"
@@ -3015,28 +3020,20 @@ resume
                     xlink:href="FileMock#psychology"
                   />
                 </svg>
-                <h3
-                  class="ContinuousLearningCard__Title"
-                >
-                  Continuous_Learning
-                </h3>
-                <p
-                  class="ContinuousLearningCard__Text"
-                >
-                  Constantly upgrading my skill set to stay ahead in the ever-evolving tech landscape.
-                </p>
               </div>
             </div>
             <div
-              class="SkillsPage__ScanInfo"
+              class="SkillsPage__Footer"
             >
-              <p>
+              <p
+                class="SkillsPage__ScanInfo"
+              >
                 <span
                   class="SkillsPage__ScanLabel"
                 >
                   System_scan_complete
+                  :
                 </span>
-                : 
                 <span
                   class="SkillsPage__ScanHighlight"
                 >
