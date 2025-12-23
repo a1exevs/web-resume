@@ -3,7 +3,7 @@
 exports[`Icon component "color" prop prop "color" has a value 1`] = `
 <DocumentFragment>
   <svg
-    class="Icon Icon_appFontSize"
+    class="Icon"
     color="red"
     fill="red"
   >
@@ -117,7 +117,7 @@ exports[`Icon component "width" and "height" props "width" and "height" props ha
 exports[`Icon component default rendering. 1`] = `
 <DocumentFragment>
   <svg
-    class="Icon Icon_appFontSize"
+    class="Icon"
     color="currentColor"
     fill="currentColor"
   >

@@ -107,7 +107,7 @@ resume
               type="button"
             >
               <svg
-                class="Icon Icon_appFontSize"
+                class="Icon"
                 color="currentColor"
                 fill="currentColor"
               >
@@ -685,7 +685,7 @@ resume
               type="button"
             >
               <svg
-                class="Icon Icon_appFontSize"
+                class="Icon"
                 color="currentColor"
                 fill="currentColor"
               >
@@ -729,7 +729,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -753,7 +753,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -777,7 +777,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -801,7 +801,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -825,7 +825,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -849,7 +849,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -873,7 +873,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -897,7 +897,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -921,7 +921,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -945,7 +945,7 @@ resume
                 target="_blank"
               >
                 <svg
-                  class="Icon Icon_appFontSize ContactLink__Icon"
+                  class="Icon ContactLink__Icon"
                   color="currentColor"
                   fill="currentColor"
                 >
@@ -1087,7 +1087,7 @@ resume
               type="button"
             >
               <svg
-                class="Icon Icon_appFontSize"
+                class="Icon"
                 color="currentColor"
                 fill="currentColor"
               >
@@ -1995,7 +1995,7 @@ resume
               type="button"
             >
               <svg
-                class="Icon Icon_appFontSize"
+                class="Icon"
                 color="currentColor"
                 fill="currentColor"
               >
@@ -2618,7 +2618,7 @@ resume
               type="button"
             >
               <svg
-                class="Icon Icon_appFontSize"
+                class="Icon"
                 color="currentColor"
                 fill="currentColor"
               >
