@@ -1,3 +1,23 @@
+# Release v1.2.1
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.2.0 by @a1exevs in https://github.com/a1exevs/web-resume/pull/80
+* [81][Bugfix][UI/UX Designer Audit] Matrix effect speed by @a1exevs in https://github.com/a1exevs/web-resume/pull/91
+* [Common] Update non-major by @renovate[bot] in https://github.com/a1exevs/web-resume/pull/74
+* [90][Improvement][UI/UX Designer Audit] Logo click-handler as a link to /Home by @a1exevs in https://github.com/a1exevs/web-resume/pull/92
+* [82][Improvement][UI/UX Designer Audit] Size of main font by @a1exevs in https://github.com/a1exevs/web-resume/pull/93
+* [86][Bugfix][UI/UX Designer Audit][Skills page] Cards styles by @a1exevs in https://github.com/a1exevs/web-resume/pull/95
+* [88][Improvement][UI/UX Designer Audit][Projects page] Project card layout by @a1exevs in https://github.com/a1exevs/web-resume/pull/96
+* [89][Bugfix][UI/UX Designer Audit][Contacts page] Link hover after click by @a1exevs in https://github.com/a1exevs/web-resume/pull/97
+* [85][Bugfix][UI/UX Designer Audit][Experience page] Text alignment by @a1exevs in https://github.com/a1exevs/web-resume/pull/98
+* [87][Bugfix][UI/UX Designer Audit][Skills page] Continuous Learning card styles by @a1exevs in https://github.com/a1exevs/web-resume/pull/99
+* [Common] Version increase v1.2.1 by @a1exevs in https://github.com/a1exevs/web-resume/pull/101
+* [Bugfix][Contacts page in Storybook][Icon component] Styles order loading issue fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/103
+
+## New Contributors
+* @renovate[bot] made their first contribution in https://github.com/a1exevs/web-resume/pull/74
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.2.0...v1.2.1
+
 # Release v1.2.0
 ## What's Changed
 * [Common][Github][Workflows] PR for version bump auto-creation by @a1exevs in https://github.com/a1exevs/web-resume/pull/71
