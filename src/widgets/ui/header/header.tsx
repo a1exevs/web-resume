@@ -61,7 +61,7 @@ const Header: React.FC<Props> = ({
             onClick={toggleMenu}
             className={classes.Header__MenuButton}
           >
-            <Icon icon={IconName.MENU} />
+            <Icon icon={IconName.MENU} width="1.5rem" height="1.5rem" />
           </button>
           {isMenuOpen && (
             <div className={classes.Header__MenuItemsWrapper}>
