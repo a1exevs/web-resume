@@ -1,3 +1,10 @@
+# Release v1.2.3
+## What's Changed
+* [Common][Bugfix] RELEASE-NOTES.md update v1.2.2, Snap-tests fix after hot-release, meta-tags fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/106
+* [Common] Version increase v1.2.3 by @a1exevs in https://github.com/a1exevs/web-resume/pull/107
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.2.2-hot...v1.2.3
+
 # Release v1.2.2
 ## What's Changed
 [HOT][Common][Header][Mobile version] Menu-icon size issue fix by @a1exevs in https://github.com/a1exevs/web-resume/commit/c873e31fb7372d2853c2138cc6fcde6f2238ee8d
