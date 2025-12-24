@@ -1,3 +1,9 @@
+# Release v1.2.2
+## What's Changed
+[HOT][Common][Header][Mobile version] Menu-icon size issue fix by @a1exevs in https://github.com/a1exevs/web-resume/commit/c873e31fb7372d2853c2138cc6fcde6f2238ee8d
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.2.1...v1.2.2-hot
+
 # Release v1.2.1
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.2.0 by @a1exevs in https://github.com/a1exevs/web-resume/pull/80
