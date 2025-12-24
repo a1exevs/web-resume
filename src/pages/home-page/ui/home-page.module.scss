@@ -1,3 +1,5 @@
+@import 'src/shared';
+
 .HomePage {
   &__DetailsGrid {
     margin-top: 2rem;
@@ -6,10 +8,20 @@
     gap: 2rem;
   }
   &__Footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     margin-top: 2rem;
-    text-align: right;
-    font-size: 0.75rem;
+    @include font-750;
     color: #737373;
+    container-name: footer;
+    container-type: inline-size;
+  }
+  &__FooterMessage {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-end;
   }
   &__Label {
     text-transform: uppercase;
@@ -23,6 +35,15 @@
   .HomePage {
     &__DetailsGrid {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@container footer (min-width: 300px) {
+  .HomePage {
+    &__FooterMessage {
+      flex-direction: row;
+      gap: 0.5 * $space;
     }
   }
 }

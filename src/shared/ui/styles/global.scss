@@ -2,66 +2,12 @@
 @import 'src/shared/ui/styles/mixins';
 
 .Link {
-  @include small-normal-text;
   color: $link-color;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
-}
-
-.Title {
-  @include medium-bold-text;
-}
-
-.IntermediateTitle {
-  @include medium-bold-text;
-  display: flex;
-  margin-bottom: $small-space;
-  margin-top: $medium-space;
-  justify-content: flex-start;
-
-  &_withCenterAlignment {
-    justify-content: center;
-  }
-
-  &_withRightAlignment {
-    justify-content: flex-end;
-  }
-
-  &_withoutTopMargin {
-    margin-top: 0;
-  }
-
-  &_withoutBottomMargin {
-    margin-bottom: 0;
-  }
-
-  &_withoutVMargins {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-.Label {
-  @include small-normal-text($gray-text-color);
-
-  &_tiny {
-    @include tiny-normal-text($gray-text-color);
-  }
-
-  &_alignment-center {
-    text-align: center;
-  }
-
-  &_keepWordBreak {
-    word-break: keep-all;
-  }
-}
-
-.Text {
-  @include small-normal-text;
 }
 
 .InlineLabel {

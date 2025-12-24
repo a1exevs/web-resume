@@ -1,4 +1,4 @@
-//breakpoints
+// breakpoints
 $xsPx: 0;
 $smPx: 600;
 $mdPx: 900;
@@ -11,7 +11,7 @@ $md: $mdPx * 1px;
 $lg: $lgPx * 1px;
 $xl: $xlPx * 1px;
 
-//colors
+// colors
 $default-text-color: #e8e6e3;
 $default-text-color-active: #e8e6e3bb;
 $gray-text-color: #a39b8e;
@@ -20,64 +20,76 @@ $link-color: #00ff2b;
 $border-color: #a39b8e;
 $active-element-color: #36ba01;
 $active-element-tap-color: #36ba011a;
+$link-tap-highlight-color: #36ba011a;
 $green-border-color: #009a22;
 $card-background-color: #212121;
 
-//paddings/margins
-$tiny-space: 5px;
-$small-space: 10px;
-$medium-space: 30px;
-$large-space: 60px;
+// spaces
+$space: 1rem;
 
-//font-sizes
-$tiny-font-size: 0.75rem;
-$small-font-size: 1rem;
-$medium-font-size: 1.25rem;
-$large-font-size: 1.75rem;
+// font-sizes
+$font-size-750: 0.75rem;
+$font-size-875: 0.875rem;
+$font-size-1000: 1rem;
+$font-size-1125: 1.125rem;
+$font-size-1250: 1.25rem;
+$font-size-1500: 1.5rem;
+$font-size-1750: 1.75rem;
 
-//line-heights
-$tiny-line-height: 1rem;
-$small-line-height: 1.25rem;
-$medium-line-height: 1.5rem;
-$large-line-height: 2rem;
+// line-heights
+$line-height-1250: 1.25rem; // ~1.67
+$line-height-1375: 1.375rem; // ~1.57
+$line-height-1500: 1.5rem; // 1.5
+$line-height-1625: 1.625rem; // ~1.44
+$line-height-1750: 1.75rem; // 1.4
+$line-height-2000: 2rem; // ~1.33
+$line-height-2250: 2.25rem; // ~1.29
 
-//font-weights
-$normal-font-weight: 400;
-$bold-font-weight: 700;
-$super-bold-font-weight: 900;
+// font-weights
+$font-weight-100: 100;
+$font-weight-200: 200;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
 
-//app constants
+// app constants
 $app-background-color: rgba(24, 26, 27, 0.75);
-$app-photo-width: 240px;
-$app-photo-height: 320px;
 
-//app bar
-$app-bar-shadow: #656d71 0 2px 5px 0, #4d5356 0 2px 10px 0;
-$app-bar-background-color: #181a1b;
-
-//flex
+// flex
 $normal-flex: 1;
 
-//borders/bars
+// borders/bars
 $tiny-border: 1px solid $border-color;
 $accent-border: 1px solid $green-border-color;
 $dotted-border: 2px dotted $default-text-color;
 $green-underline: 3px solid $active-element-color;
 $avatar-border: 2px solid $border-color;
 
-//transitions
+// transitions
 $transition-tiny-duration: 0.2s;
 $transition-small-duration: 0.3s;
 
-//cubic bezier
+// cubic bezier
 $cb-like-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 
-//hovers
+// hovers
 $hover-color: transparent;
-$hover-opacity: 0.8;
 
 //z-indexes
-$z-index-large: 1000;
+$z-index--1: -1;
+$z-index-10: 10;
+$z-index-50: 50;
+
+// opacity
+$opacity-02: 0.2;
+$opacity-05: 0.5;
+$opacity-08: 0.8;
+$opacity-09: 0.9;
+$opacity-1: 1;
 
 :export {
   xs: $xsPx;

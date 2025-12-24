@@ -1,11 +1,15 @@
+@import 'src/shared';
+
 .SkillsCard {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e5e7eb;
-  padding: 1rem;
+  padding: $space;
   &__Title {
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: white;
+    margin-bottom: $space;
+    text-transform: capitalize;
+
+    @include font-1125(#fff, $font-weight-700);
   }
   &__TitleIcon {
     color: var(--primary-color);
@@ -16,16 +20,22 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: #d4d4d4;
+    gap: 0.5 * $space;
+    @include font-1000(#d4d4d4);
   }
   &__Item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5 * $space;
   }
   &__CodeIcon {
+    white-space: nowrap;
+    align-self: flex-start;
     color: var(--primary-color);
+  }
+  &__Icon {
+    align-self: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
   }
 }

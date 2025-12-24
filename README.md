@@ -148,3 +148,6 @@ Automatically runs after dependencies installation to set up git hooks through h
 Link to repository https://github.com/a1exevs/web-resume.
 
 Link to project https://github.com/users/a1exevs/projects/1
+
+## Useful links
+Nu Html Checker - https://validator.w3.org/nu/

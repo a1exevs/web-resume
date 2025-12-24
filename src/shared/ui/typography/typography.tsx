@@ -17,6 +17,11 @@ const Typography: React.FC<PropsWithChildren<Props>> = ({ className = '', style 
           {children}
         </h3>
       )}
+      {variant === 'h4' && (
+        <h4 className={className} style={style}>
+          {children}
+        </h4>
+      )}
       {variant === 'p' && (
         <p className={className} style={style}>
           {children}

@@ -30,6 +30,24 @@ const appRoutes: RouteObject[] = [
         path: RoutePath.CONTACTS,
         element: <ContactsPage />,
       },
+      {
+        // TODO: Implement 404 page
+        path: '*',
+        element: (
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              lineHeight: '10rem',
+              fontSize: '10rem',
+              color: '#36ba01',
+            }}
+          >
+            404
+          </div>
+        ),
+      },
     ],
   },
 ];

@@ -48,13 +48,13 @@ $line-width: 1px;
   }
 
   &__Arrow {
-    margin: $small-space 0;
+    margin: 0.5 * $space 0;
     width: 0;
-    height: calc(100% - $indicator-size - 2 * $small-space);
+    height: calc(100% - $indicator-size - $space);
     border-right: $line-width dotted $border-color;
 
     &_current {
-      height: calc(100% - $indicator-active-size - 2 * $small-space);
+      height: calc(100% - $indicator-active-size - $space);
     }
   }
 }

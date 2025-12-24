@@ -18,17 +18,9 @@ type Props = {
   icon: IconName;
 };
 
-const Icon: React.FC<Props> = ({
-  size = IconSize.APP_FONT_SIZE,
-  icon,
-  color = ICON_DEFAULT_COLOR,
-  width,
-  height,
-  className = '',
-  title,
-}) => {
+const Icon: React.FC<Props> = ({ size, icon, color = ICON_DEFAULT_COLOR, width, height, className = '', title }) => {
   const getSizeClass = (sizeMap: Record<IconSize, string>): string => {
-    if (!isUndefined(width) || !isUndefined(height)) {
+    if (!isUndefined(width) || !isUndefined(height) || !size) {
       return '';
     }
     return sizeMap[size];

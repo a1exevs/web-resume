@@ -17,9 +17,8 @@ const AdditionalDetails: React.FC<Props> = ({ title, items }) => {
       <div className={classes.AdditionalDetails__List}>
         {items.map(({ label, value, isLink, linkPrefix, linkDisplayValue }) => (
           <p key={label} className={classes.AdditionalDetails__Item}>
-            <span className={classes.AdditionalDetails__Label}>{toUnderscore(label)}</span>{' '}
+            <span className={classes.AdditionalDetails__Label}>{toUnderscore(label)}:</span>
             <span className={classes.AdditionalDetails__Value}>
-              :{' '}
               {isLink ? (
                 <a
                   href={`${linkPrefix ?? ''}${value}`}

@@ -1,6 +1,6 @@
 @import 'src/shared';
 
-$tab-height: calc(2 * $small-line-height);
+$tab-height: calc(2 * $line-height-1250);
 
 .Tab {
   display: flex;
@@ -13,7 +13,7 @@ $tab-height: calc(2 * $small-line-height);
 
   &__Name {
     display: flex;
-    gap: $small-space;
+    gap: 0.5 * $space;
     text-transform: uppercase;
     @include tabName(false);
 
@@ -23,7 +23,7 @@ $tab-height: calc(2 * $small-line-height);
 
     &:hover {
       background: $hover-color;
-      opacity: $hover-opacity;
+      opacity: $opacity-08;
       transition: $transition-tiny-duration ease-in-out;
     }
   }

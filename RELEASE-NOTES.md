@@ -1,3 +1,13 @@
+# Release v1.2.0
+## What's Changed
+* [Common][Github][Workflows] PR for version bump auto-creation by @a1exevs in https://github.com/a1exevs/web-resume/pull/71
+* [Common] RELEASE-NOTES.md update v1.1.5 by @a1exevs in https://github.com/a1exevs/web-resume/pull/70
+* [64][Feature]Language switcher (ru, en) by @a1exevs in https://github.com/a1exevs/web-resume/pull/73
+* [Common][Github][Workflows][Revert] PR for version bump auto-creation by @a1exevs in https://github.com/a1exevs/web-resume/pull/76
+* [Common] Version increase v1.2.0 by @a1exevs in https://github.com/a1exevs/web-resume/pull/77
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.1.5...v1.2.0
+
 # Release v1.1.5
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.1.4 by @a1exevs in https://github.com/a1exevs/web-resume/pull/61
