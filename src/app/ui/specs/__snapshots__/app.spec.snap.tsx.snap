@@ -110,6 +110,8 @@ resume
                 class="Icon"
                 color="currentColor"
                 fill="currentColor"
+                height="1.5rem"
+                width="1.5rem"
               >
                 <use
                   xlink:href="FileMock#menu"
@@ -688,6 +690,8 @@ resume
                 class="Icon"
                 color="currentColor"
                 fill="currentColor"
+                height="1.5rem"
+                width="1.5rem"
               >
                 <use
                   xlink:href="FileMock#menu"
@@ -1090,6 +1094,8 @@ resume
                 class="Icon"
                 color="currentColor"
                 fill="currentColor"
+                height="1.5rem"
+                width="1.5rem"
               >
                 <use
                   xlink:href="FileMock#menu"
@@ -1998,6 +2004,8 @@ resume
                 class="Icon"
                 color="currentColor"
                 fill="currentColor"
+                height="1.5rem"
+                width="1.5rem"
               >
                 <use
                   xlink:href="FileMock#menu"
@@ -2621,6 +2629,8 @@ resume
                 class="Icon"
                 color="currentColor"
                 fill="currentColor"
+                height="1.5rem"
+                width="1.5rem"
               >
                 <use
                   xlink:href="FileMock#menu"
