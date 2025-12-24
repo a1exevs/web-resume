@@ -1,6 +1,8 @@
 @import 'src/shared';
 
 .SkillsCard {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e5e7eb;
   padding: $space;
   &__Title {
@@ -18,15 +20,22 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5 * $space;
     @include font-1000(#d4d4d4);
   }
   &__Item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5 * $space;
   }
   &__CodeIcon {
+    white-space: nowrap;
+    align-self: flex-start;
     color: var(--primary-color);
+  }
+  &__Icon {
+    align-self: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
   }
 }

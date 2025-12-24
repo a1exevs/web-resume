@@ -24,6 +24,10 @@ body {
   --primary-color: #36ba01;
 }
 
+a {
+  -webkit-tap-highlight-color: $link-tap-highlight-color;
+}
+
 a.active {
   color: var(--primary-color);
 }
