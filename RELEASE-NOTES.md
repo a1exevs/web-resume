@@ -1,3 +1,9 @@
+# Release v1.2.4
+## What's Changed
+* [HOT][Bugfix] og:site_name actualization by @a1exevs in https://github.com/a1exevs/web-resume/commit/a6fb1499dc9239f82760eb855ccd589f9b97b0e2
+
+**Full Changelog**: https://github.com/a1exevs/web-resume/compare/v1.2.3...v1.2.4
+
 # Release v1.2.3
 ## What's Changed
 * [Common][Bugfix] RELEASE-NOTES.md update v1.2.2, Snap-tests fix after hot-release, meta-tags fix by @a1exevs in https://github.com/a1exevs/web-resume/pull/106
