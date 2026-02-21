@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ProjectsPage from 'src/pages/projects-page/ui/projects-page';
 import { useDocumentTitle, useLangContext } from 'src/shared';
 import store from 'src/store/store';

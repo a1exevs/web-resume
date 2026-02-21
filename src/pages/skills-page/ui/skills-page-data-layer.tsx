@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SkillsPage from 'src/pages/skills-page/ui/skills-page';
 import { useDocumentTitle, useLangContext } from 'src/shared';
 import store from 'src/store/store';

@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import React from 'react';
 
 import classes from 'src/pages/projects-page/ui/project-card/project-card.module.scss';
 import { Icon } from 'src/shared';

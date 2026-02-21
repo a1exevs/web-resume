@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ContactsPage from 'src/pages/contacts-page/ui/contacts-page';
 import { useDocumentTitle, useLangContext } from 'src/shared';
 import store from 'src/store/store';

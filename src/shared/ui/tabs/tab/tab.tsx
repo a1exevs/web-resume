@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import React from 'react';
 
 import Icon from 'src/shared/ui/icon/icon';
 import { IconName } from 'src/shared/ui/icon/icon.names';

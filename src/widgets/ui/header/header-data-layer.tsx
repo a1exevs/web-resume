@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { LanguageCode, languageCodes, Option, RoutePath, useLangContext } from 'src/shared';
 import HeaderLogicLayer from 'src/widgets/ui/header/header-logic-layer';
 

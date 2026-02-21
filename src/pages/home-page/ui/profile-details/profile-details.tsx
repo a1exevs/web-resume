@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PROFILE_DETAILS_TYPE_WRITER_DELAY } from 'src/pages/home-page/ui/profile-details/profile-details.consts';
 import classes from 'src/pages/home-page/ui/profile-details/profile-details.module.scss';
 import { TypeWriter } from 'src/shared';

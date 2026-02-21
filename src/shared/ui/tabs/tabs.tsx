@@ -28,7 +28,7 @@ const Tabs: React.FC<Props> = ({ tabs, active, activeTabChanged }) => {
     activeTabChanged(tabId);
   };
   const getActiveTabDisplayName = (): string => {
-    return tabs[activeTab].displayName;
+    return tabs[activeTab]?.displayName ?? '';
   };
 
   return (

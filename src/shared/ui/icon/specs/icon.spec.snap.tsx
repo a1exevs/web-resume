@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-import React from 'react';
 
 import Icon from 'src/shared/ui/icon/icon';
 import { IconName } from 'src/shared/ui/icon/icon.names';

@@ -1,6 +1,5 @@
 import { isEmpty, isUndefined } from '@alexevs/ts-guards';
 import cn from 'classnames';
-import React from 'react';
 
 import icons from 'src/assets/icons/icons.svg';
 import { ICON_DEFAULT_COLOR, IconSizesMap } from 'src/shared/ui/icon/icon.consts';

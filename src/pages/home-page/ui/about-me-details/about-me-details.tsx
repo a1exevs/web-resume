@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classes from 'src/pages/home-page/ui/about-me-details/about-me-details.module.scss';
 import { capitalizeLabel, GlitchText, SimpleList, toUnderscore } from 'src/shared';
 import { LanguageConstants } from 'src/shared/model/lang/lang.types';

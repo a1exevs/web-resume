@@ -6,7 +6,7 @@ import { defaultLangCode } from 'src/shared/model/lang/lang.consts';
 import { LanguageCode, LanguageConstants } from 'src/shared/model/lang/lang.types';
 
 function splitLang(code: string): string {
-  return (code || '').split('-')[0];
+  return (code || '').split('-')?.[0] ?? '';
 }
 
 export function detectLangCode(): LanguageCode {
