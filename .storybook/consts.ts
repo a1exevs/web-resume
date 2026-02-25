@@ -5,10 +5,10 @@ import {
   TABLET_SCREEN_WIDTH_PX,
 } from 'src/shared';
 
-export const STORY_BOOK_DESKTOP_4K_VIEWPORT_ID = 'sitDesktop4k';
-export const STORY_BOOK_DESKTOP_VIEWPORT_ID = 'sitDesktop';
-export const STORY_BOOK_TABLET_VIEWPORT_ID = 'sitTablet';
-export const STORY_BOOK_MOBILE_VIEWPORT_ID = 'sitMobile';
+export const STORY_BOOK_DESKTOP_4K_VIEWPORT_ID = 'wrDesktop4k';
+export const STORY_BOOK_DESKTOP_VIEWPORT_ID = 'wrDesktop';
+export const STORY_BOOK_TABLET_VIEWPORT_ID = 'wrTablet';
+export const STORY_BOOK_MOBILE_VIEWPORT_ID = 'wrMobile';
 export const STORY_BOOK_VIEW_PORTS = {
   [STORY_BOOK_DESKTOP_4K_VIEWPORT_ID]: {
     name: `Desktop ${DESKTOP_4K_SCREEN_WIDTH_PX}`,
