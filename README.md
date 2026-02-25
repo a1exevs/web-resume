@@ -125,10 +125,10 @@ Automatically runs after dependencies installation to set up git hooks through h
 2) create PR with message "[Common] Version increase vX.X.X" from "common/version-increase" into "develop"
 3) create PR with message "[Testing] Release vX.X.X" from "develop" into "testing"
 4) go to [Vercel project](https://vercel.com/a1exevs-projects/web-resume/deployments),
-   wait for the production server update to complete, go to the [production site](https://sit36.ru) and make sure everything is working
+   wait for the test server update to complete and make sure everything is working
 5) create PR with message "Release vX.X.X" from "testing" into "main"
 6) go to [Vercel project](https://vercel.com/a1exevs-projects/web-resume/deployments),
-   wait for the production server update to complete, go to the [production site](https://web-resume-eosin.vercel.app) and make sure everything is working
+   wait for the production server update to complete, go to the [production site](https://alexevs-web-resume.vercel.app/) and make sure everything is working
 7) go to [Github Repo Home page](https://github.com/a1exevs/web-resume) -> Tags -> Releases -> Draft a new release.
 
    a) create a new tag via "Choose a tag" autocomplete
