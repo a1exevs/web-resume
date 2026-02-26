@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ContactLink from 'src/pages/contacts-page/ui/contact-link/contact-link';
 import {
   ContactLinkCodeIconMap,

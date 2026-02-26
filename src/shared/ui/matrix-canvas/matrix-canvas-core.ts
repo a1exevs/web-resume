@@ -49,7 +49,7 @@ export class Point {
     canvasHeight: number;
   }): void {
     const charArr = getCharArray();
-    this.value = charArr[randomInt(0, charArr.length - 1)].toUpperCase();
+    this.value = (charArr[randomInt(0, charArr.length - 1)] ?? '').toUpperCase();
     this.speed = randomFloat(Point.minSpeed, Point.maxSpeed);
 
     context1.fillStyle = this.charTrackColor;
@@ -105,6 +105,6 @@ export function drawFrame({
   let i = fallingCharArr.length;
 
   while (i--) {
-    fallingCharArr[i].draw({ context1, context2, canvasHeight: height });
+    fallingCharArr[i]?.draw({ context1, context2, canvasHeight: height });
   }
 }

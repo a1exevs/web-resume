@@ -1,6 +1,5 @@
 import { isEmpty } from '@alexevs/ts-guards';
 import cn from 'classnames';
-import React from 'react';
 
 import classes from 'src/shared/ui/simple-list/simple-list.module.scss';
 

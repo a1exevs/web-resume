@@ -1,5 +1,3 @@
-import React from 'react';
-
 import HomePage from 'src/pages/home-page/ui/home-page';
 import { useDocumentTitle, useLangContext } from 'src/shared';
 import store from 'src/store/store';

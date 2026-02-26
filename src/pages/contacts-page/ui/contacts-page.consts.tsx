@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Icon } from 'src/shared';
 import { IconName } from 'src/shared/ui/icon/icon.names';
 import { ContactLinkCode } from 'src/store/store.types';

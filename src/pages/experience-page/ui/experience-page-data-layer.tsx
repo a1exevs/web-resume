@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ExperiencePage from 'src/pages/experience-page/ui/experience-page';
 import { useDocumentTitle, useLangContext } from 'src/shared';
 import store from 'src/store/store';

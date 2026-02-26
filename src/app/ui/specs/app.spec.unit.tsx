@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import * as React from 'react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 
 import appRoutes from 'src/app/ui/routes';

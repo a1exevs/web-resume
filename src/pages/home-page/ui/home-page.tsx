@@ -1,5 +1,3 @@
-import React from 'react';
-
 import AboutMeDetails from 'src/pages/home-page/ui/about-me-details/about-me-details';
 import AdditionalDetails from 'src/pages/home-page/ui/additional-details/additional-details';
 import classes from 'src/pages/home-page/ui/home-page.module.scss';

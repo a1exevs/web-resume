@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classes from 'src/shared/ui/card/card.module.scss';
 
 type Props = {

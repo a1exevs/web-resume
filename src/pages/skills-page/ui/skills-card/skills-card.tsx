@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classes from 'src/pages/skills-page/ui/skills-card/skills-card.module.scss';
 import { Icon, IconName } from 'src/shared';
 

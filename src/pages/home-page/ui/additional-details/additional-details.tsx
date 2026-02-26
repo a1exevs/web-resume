@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classes from 'src/pages/home-page/ui/additional-details/additional-details.module.scss';
 import { capitalizeLabel, GlitchText, toUnderscore } from 'src/shared';
 

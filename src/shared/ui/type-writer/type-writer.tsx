@@ -1,4 +1,4 @@
-import { isEmpty } from '@alexevs/ts-guards';
+import { isEmpty, Optional } from '@alexevs/ts-guards';
 import cn from 'classnames';
 import React, { useEffect, useState } from 'react';
 
@@ -32,7 +32,7 @@ const TypeWriter: React.FC<Props> = ({ text, delay = TYPE_WRITER_DEFAULT_DELAY, 
     }
   }, [text, prevText]);
 
-  useEffect(() => {
+  useEffect((): Optional<() => void> => {
     // guard: if text is empty, don't set timeouts
     if (isEmpty(text)) {
       setCurrentText('');
@@ -50,6 +50,7 @@ const TypeWriter: React.FC<Props> = ({ text, delay = TYPE_WRITER_DEFAULT_DELAY, 
         clearTimeout(timeout);
       };
     }
+    return;
   }, [currentIndex, delay, text]);
 
   return (

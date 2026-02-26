@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { EXPERIENCE_PAGE_TYPE_WRITER_DELAY } from 'src/pages/experience-page/ui/experience-page.consts';
 import classes from 'src/pages/experience-page/ui/experience-page.module.scss';
 import { Card, Field, SimpleList, Stepper, TypeWriter, Typography } from 'src/shared';

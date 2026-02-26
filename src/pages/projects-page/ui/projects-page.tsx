@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ProjectCard from 'src/pages/projects-page/ui/project-card/project-card';
 import { PROJECTS_PAGE_TYPE_WRITER_DELAY } from 'src/pages/projects-page/ui/projects-page.consts';
 import classes from 'src/pages/projects-page/ui/projects-page.module.scss';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SkillsCard from 'src/pages/skills-page/ui/skills-card/skills-card';
 import { SKILLS_PAGE_TYPE_WRITER_DELAY } from 'src/pages/skills-page/ui/skills-page.consts';
 import classes from 'src/pages/skills-page/ui/skills-page.module.scss';

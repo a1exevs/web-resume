@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classes from 'src/pages/contacts-page/ui/contact-link/contact-link.module.scss';
 
 type Props = { href: string; label: string; Icon: React.FC<{ className: string }> };
